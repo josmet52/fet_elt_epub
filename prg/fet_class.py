@@ -147,6 +147,7 @@ class ClasseFet:
         # lecture des répertoires dans le fichier .ini
         self.ini_path_file_name = "".join([self.cwd, self.INI_FILE_NAME])
         if os.path.isfile(self.ini_path_file_name):
+
             with open(self.ini_path_file_name, "r", encoding="utf-8") as f_path:
                 r = f_path.readlines()
                 for p in r:
@@ -161,20 +162,35 @@ class ClasseFet:
                             if x[0] == "org_dir":
                                 self.org_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
-                                org_ok = True
+
                             elif x[0] == "new_dir":
                                 self.new_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
-                                new_ok = True
+
                             elif x[0] == "tmp_dir":
                                 self.tmp_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
-                                tmp_ok = True
-                                log_ok = True
+
+                            elif x[0] == "new_nav_dir":
+                                self.wnav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+                                                    "").replace("//", "/")
+
+                            elif x[0] == "new_js_css_dir":
+                                self.new_js_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+                                                    "").replace("//", "/")
+
+                            elif x[0] == "new_moodle_dir":
+                                self.new_moo_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+                                                    "").replace("//", "/")
+
+                            elif x[0] == "new_police_dir":
+                                self.police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+                                                    "").replace("//", "/")
+
                             elif x[0] == "js_css_dir":
                                 self.js_css_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
-                                js_css_ok = True
+
                             elif x[0] == "var_debug" :
                                 if x[1].replace("\n", "") == "true" : self.DEBUG = True
                                 else : self.DEBUG = False
@@ -202,23 +218,26 @@ class ClasseFet:
                             elif x[0] == "var_toc_deep" :
                                 self.TOC_DEEP = x[1]
 
-            if self.DEBUG:
-                print("\n", "ORG_PATH", self.org_path, "\n", "NEW_PATH", self.new_path, "\n", "TEMP_PATH",
-                                 self.tmp_path, "\n", "LOG_PATH", self.log_path, "\n",
-                                 self.js_css_path, "\n")
-            if not (org_ok and new_ok and tmp_ok and log_ok and js_css_ok):
-                msg_info = "".join(["Le fichier fet_epub.ini n'est pas complet ou comporte des erreurs. \n"
-                                    "Il doit definir les répertoires \n"
-                                    "org_dir: qui contient les fichiers source\n"
-                                    "new_dir: qui est le répertoire de sortie des fichiers modifiés\n"
-                                    "tmp_dir: qui est le répertoire temporaire\n"
-                                    "js_dir: qui est le répertoire des fichiers java script\n\n"
-                                    "Le programme se termine ici.\n"
-                                    "Corrigez le fichier .ini et relancez le programme.\n\n"
-                                    "Les entrées sont de la forme :\n"
-                                    "logDir=\"C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/log\""])
-                messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
-                exit()
+                            elif x[0] == "var_font" :
+                                self.FONT_NAME = x[1]
+
+            # if self.DEBUG:
+            #     print("\n", "ORG_PATH", self.org_path, "\n", "NEW_PATH", self.new_path, "\n", "TEMP_PATH",
+            #                      self.tmp_path, "\n", "LOG_PATH", self.log_path, "\n",
+            #                      self.js_css_path, "\n")
+            # if not (org_ok and new_ok and tmp_ok and log_ok and js_css_ok):
+            #     msg_info = "".join(["Le fichier fet_epub.ini n'est pas complet ou comporte des erreurs. \n"
+            #                         "Il doit definir les répertoires \n"
+            #                         "org_dir: qui contient les fichiers source\n"
+            #                         "new_dir: qui est le répertoire de sortie des fichiers modifiés\n"
+            #                         "tmp_dir: qui est le répertoire temporaire\n"
+            #                         "js_dir: qui est le répertoire des fichiers java script\n\n"
+            #                         "Le programme se termine ici.\n"
+            #                         "Corrigez le fichier .ini et relancez le programme.\n\n"
+            #                         "Les entrées sont de la forme :\n"
+            #                         "logDir=\"C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/log\""])
+            #     messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
+            #     exit()
 
             if not os.path.isdir(self.new_path):
                 os.mkdir(self.new_path)
@@ -276,7 +295,7 @@ class ClasseFet:
             messagebox.showerror("Fichier ini manquant \n", msg, icon='error')
             quit()
 
-    def file_job(self):
+    def file_improve_pw_epub(self):
         """
             Here will be started the operations needed to
             improve the quality of the epubs generated by the Publiwide platform.
@@ -418,12 +437,12 @@ class ClasseFet:
         return "".join(["Check status : ",str(n_fatal), " fatal / ", str(n_error), " errors / ", str(n_warn), " warnings"]), n_fatal, n_error,  n_warn
 
 
-    def dir_job(self):
+    def dir_improve_pw_epub(self):
 
         """
         Cette fonction permet de vérifier tous les epub's contenus dans un répertoire
         Elle parcoure le répertoire choisi, vérifie qu'il y ait bien des fichiers epub puis,
-        pour chaque ficheir epub, elle appelle la fonction file_job pour exécuter l'amélioration de façon individelle
+        pour chaque ficheir epub, elle appelle la fonction file_improve_job pour exécuter l'amélioration de façon individelle
         """
         # variable qui permet de savoir si l'utilisateur a demandé à interrompre la procédure
         self.asked_2_quit = False

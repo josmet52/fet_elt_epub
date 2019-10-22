@@ -2,5 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/epubs/z_bak/fet_elt_epub" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/epubs/z_bak/fet_elt_epub/prg/tests/ncxremove/ncxremove-sigil-plugin" vcs="Git" />
   </component>
 </project>
