@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="9ad1ba95c7d740eb8d2f01eb9770dc86" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>EPR_pour_ELO_v2f</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1">
+      <navLabel>
+        <text>Théorie énergie, puissance, rendement</text>
+      </navLabel>
+      <content src="Text/th_04.xhtml"/>
+      <navPoint id="navPoint2">
+        <navLabel>
+          <text>4.1 Energie (4.4</text>
+        </navLabel>
+        <content src="Text/th_04.xhtml#FET_toc_id_004"/>
+      </navPoint>
+      <navPoint id="navPoint3">
+        <navLabel>
+          <text>4.2 Masse (4.1)</text>
+        </navLabel>
+        <content src="Text/th_01.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint4">
+        <navLabel>
+          <text>4.3 Force (4.2)</text>
+        </navLabel>
+        <content src="Text/th_02.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint5">
+        <navLabel>
+          <text>4.4 Force de pesanteur (4.3)</text>
+        </navLabel>
+        <content src="Text/th_03.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint6">
+        <navLabel>
+          <text>4.5 Energie mécanique ou travail</text>
+        </navLabel>
+        <content src="Text/th_05.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint7">
+        <navLabel>
+          <text>4.6 Puissance mécanique</text>
+        </navLabel>
+        <content src="Text/th_07.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint8">
+        <navLabel>
+          <text>4.7 Energie électrique</text>
+        </navLabel>
+        <content src="Text/th_08.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint9">
+        <navLabel>
+          <text>4.8 Puissance électrique</text>
+        </navLabel>
+        <content src="Text/th_09.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint10">
+        <navLabel>
+          <text>4.9 Rendement</text>
+        </navLabel>
+        <content src="Text/th_10.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint11">
+      <navLabel>
+        <text>Exercices</text>
+      </navLabel>
+      <content src="Text/ex_01.xhtml"/>
+      <navPoint id="navPoint12">
+        <navLabel>
+          <text>Exercices 4.1, 4.2 et 4.3</text>
+        </navLabel>
+        <content src="Text/ex_01.xhtml#sigil_toc_id_1"/>
+      </navPoint>
+      <navPoint id="navPoint13">
+        <navLabel>
+          <text>Exercices 4.4</text>
+        </navLabel>
+        <content src="Text/ex_02.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint14">
+        <navLabel>
+          <text>Exercices 4.5 et 4.6</text>
+        </navLabel>
+        <content src="Text/ex_03.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint15">
+        <navLabel>
+          <text>Exercices 4.7</text>
+        </navLabel>
+        <content src="Text/ex_04.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint16">
+        <navLabel>
+          <text>Exercices 4.8</text>
+        </navLabel>
+        <content src="Text/ex_09.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint17">
+        <navLabel>
+          <text>Exercices 4.9</text>
+        </navLabel>
+        <content src="Text/ex_10.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint18">
+        <navLabel>
+          <text>Exercices globaux chapitre 4</text>
+        </navLabel>
+        <content src="Text/ex_11.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint19">
+      <navLabel>
+        <text>Vidéos</text>
+      </navLabel>
+      <content src="Text/vid_01.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint20">
+      <navLabel>
+        <text>Références</text>
+      </navLabel>
+      <content src="Text/page_reference.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

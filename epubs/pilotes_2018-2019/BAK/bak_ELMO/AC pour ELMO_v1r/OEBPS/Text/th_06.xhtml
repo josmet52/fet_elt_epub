@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Recepteur_purement_capacitif</title>
+    <link href="../Styles/pw_table_style_v1r.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/exercises_v1r.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v1r.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+    <div>
+        <h1 id="FET_toc_id_017"><span><b>10.6 Récepteur purement capacitif</b></span></h1>
+        <p>
+            <br/>
+        </p>
+        <p>Un récepteur est purement capacitif lorsquʼil est constitué dʼun condensateur parfait, cʼest-à-dire dont la résistance du diélectrique est infiniment grande.</p>
+        <p>En règle générale, en basse fréquence, on considère tous les condensateurs comme parfaits.</p>
+
+        <h4 class="sigil_not_in_toc"><b>Déphasage</b></h4>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+        <p>Dans ce circuit, la tension et lʼintensité du courant sont déphasés.</p>
+        <p>Lʼintensité du courant est en avance de 90° sur la tension. Lʼangle de déphasage <i>φ</i> est de 90°.</p>
+        </div>
+            <div class="fet_cellule_w35">
+                <img src="../Images/032c587a336445238414cf9ef54719b3.png" alt="image manquante"/>
+            </div>
+        </div>
+        </div>
+        <h4 class="sigil_not_in_toc"><b>Formule</b></h4>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+            <br/>
+            <p>φ : angle de déphasage [˚]</p>
+            <p>
+                <br/>
+            </p>
+        </div>
+
+                <div class="fet_cellule_w60">
+        <p class="fet_formula"><span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mo>φ = </mo><mi>90˚</mi></mstyle></math></span> 
+        </p>
+                    <br/>
+                    <div>
+                        <p style="text-align: center; "><span><br/>(I en avance sur U)</span>
+                        </p>
+                    </div>
+        </div>
+        </div>
+        </div>
+
+
+        <h2 id="FET_toc_id_018">10.6.1 Réactance de capacité</h2>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+        <p>Raccordé sous une tension alternative, un condensateur se charge et se décharge, faisant tantôt circuler un courant dans un sens et tantôt dans lʼautre.</p>
+        <p>Un ampèremètre monté sur les conducteurs indiquera un courant.</p>
+        <p>Le condensateur se comporte comme sʼil laissait circuler le courant alternatif.</p>
+        </div>
+            <div class="fet_cellule_w35">
+                <img src="../Images/6236ed9aae11407bb1854d94a47e4977.png" alt="image manquante"/>
+            </div>
+        </div>
+        </div>
+        <p>
+            <br/>
+        </p>
+        <h4 class="sigil_not_in_toc"><b>Définition de la grandeur</b></h4>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+        <p>La réactance de capacité est lʼopposition au passage dʼun courant alternatif due à la capacité du condensateur.</p>
+        </div>
+            <div class="fet_cellule_w35">
+                <img src="../Images/ffdc14a2dd864b65b5f1ba5607fc2ae9.png" alt="image manquante"/>
+            </div>
+        </div>
+        </div>
+        <h4 class="sigil_not_in_toc"><b>Formules</b></h4>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+            <br/>
+            <p>X<sub>C</sub> : réactance de capacité [Ω]</p>
+            <p>ω : vitesse angulaire [rad/s]</p>
+            <p>C : capacité [F]</p>
+            <p>I : intensité du courant [A]</p>
+            <p>U : tension [V]</p>
+        </div>
+                <div class="fet_cellule_w35">
+
+        <p><span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel">
+<mstyle>
+        <msub><mi>X</mi><mtext>C</mtext></msub><mo>=</mo><mfrac><mn>1</mn><mrow><mi>ω</mi><mo>⋅</mo><mi>C</mi></mrow></mfrac>
+</mstyle></math></span>
+        </p>
+
+        <p><span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel">
+<mstyle>
+        <mi>I</mi><mo>=</mo><mfrac><mi>U</mi><msub><mi>X</mi><mtext>C</mtext></msub></mfrac>
+</mstyle></math></span>
+        </p>
+        </div>
+        </div>
+        </div>
+        <br/>
+        <h4 class="sigil_not_in_toc">Remarque</h4>
+        <p>Plus la fréquence <u><b>augmente</b></u> plus la réactance de capacité&#160;<u><b>diminue</b></u>.</p>
+        <br/>
+        <h4 class="sigil_not_in_toc"><b>Exemple</b></h4>
+        <p>Calculer le courant parcourant un condensateur de 6&#160;<i>μ</i>F lorsquʼil est alimenté sous une tension de 230&#160;V - 50&#160;Hz.</p>
+        <p>Réactance de capacité:
+            <br/>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel">
+                <mstyle>
+                    <msub>
+                        <mi>X</mi>
+                        <mtext>C</mtext>
+                    </msub>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                            <mi>ω</mi>
+                            <mo>⋅</mo>
+                            <mi>C</mi>
+                        </mrow>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mn>1</mn>
+                        <mrow>
+                            <mn>314</mn>
+                            <mo>⋅</mo>
+                            <mn>6</mn>
+                            <mo>⋅</mo>
+                            <msup>
+                                <mn>10</mn>
+                                <mrow>
+                                    <mo>−</mo>
+                                    <mn>6</mn>
+                                </mrow>
+                            </msup>
+                        </mrow>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mn>531</mn>
+                    <mtext>Ω</mtext>
+                </mstyle>
+            </math>
+        </p>
+        <p>Intensité du courant:
+            <br/>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel">
+                <mstyle>
+                    <mi>I</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mi>U</mi>
+                        <msub>
+                            <mi>X</mi>
+                            <mtext>C</mtext>
+                        </msub>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                        <mn>230</mn>
+                        <mn>531</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mn>0</mn>
+                    <mo>,</mo>
+                    <mn>433</mn>
+                    <mtext>&#160;</mtext>
+                    <mtext>A</mtext>
+                </mstyle>
+            </math>
+        </p>
+        <h2 id="FET_toc_id_019">10.6.2 Puissance et énergie réactives</h2>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+        <p>La puissance est à chaque instant le produit de la valeur instantanée de la tension et de lʼintensité du courant.</p>
+        <p>Lorsque <i>u</i> et <i>i</i> sont de même sens, la puissance est positive.</p>
+        <p>Lorsque <i>u</i> et <i>i</i> sont de sens contraire, la puissance est négative.</p>
+        <p>La puissance positive signifie quʼelle est soutirée du réseau lors de la charge du condensateur.</p>
+        <p>La puissance négative signifie quʼelle est restituée au réseau sous forme de puissance électrique lors de la décharge du condensateur.</p>
+        <p>On lʼappelle puissance réactive.</p>
+        <p>Elle est pulsatoire, sa fréquence est le double de celle de <i>U</i> et <i>I</i> et sa valeur moyenne est nulle.</p>
+        </div>
+            <div class="fet_cellule_w35">
+                <img src="../Images/f6c4fb866bb8445b978f9df453182031.png" alt="image manquante"/>
+            </div>
+        </div>
+        </div>
+        <h4 class="sigil_not_in_toc"><b>Remarques</b></h4>
+        <p>La puissance réactive dʼun condensateur a les mêmes caractéristiques que la puissance réactive dʼune bobine mais de sens contraire. Lorsque la bobine absorbe de la puissance au réseau, au même instant le condensateur fournit de la puissance au
+            réseau et vice-versa.</p>
+        <p>Lorsque cela est nécessaire, on différencie la puissance réactive de la bobine et du condensateur par lʼindice L ou C.</p>
+        <p>Par exemple: <i>Q<sub>L</sub></i> ou <i>Q<sub>C</sub></i>.</p>
+        <h4 class="sigil_not_in_toc"><b>Formules</b></h4>
+        <p>Pour un récepteur purement capacitif, les formules de puissance et d'énergie vues au chapitre 4 s'appliquent. Toutefois, il convient de remplacer la résistance R par la réactance de capacité X<span style="vertical-align: sub;">C</span>
+        </p>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+            <p>Q : puissance réactive [var]</p>
+            <p>U : tension [V]</p>
+            <p>I : intensité du courant [A]</p>
+            <p>φ : angle de déphasage entre U et I [˚]</p>
+            <p>X<sub>C</sub> : réactance de capacité [Ω]</p>
+            <p>W<sub>q</sub> : énergie réactive [varh]</p>
+            <p>t : temps [h]</p>
+        </div>
+                <div class="fet_cellule_w35">
+        <p><span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>Q</mi><mo>=</mo><mfrac><msup><mi>U</mi><mn>2</mn></msup><msub><mi>X</mi><mtext>C</mtext></msub></mfrac></mstyle></math></span>
+        </p>
+        <p><span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>Q</mi><mo>=</mo><msub><mi>X</mi><mtext>C</mtext></msub><mo>⋅</mo><msup><mi>I</mi><mn>2</mn></msup></mstyle></math></span>
+        </p>
+        <p><span><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>W</mi><mi>q</mi></msub><mo>=</mo><mi>Q</mi><mo>⋅</mo><mi>t</mi></mstyle></math></span>
+        </p>
+        </div>
+        </div>
+        </div>
+        <br/>
+
+
+
+        <h4 class="sigil_not_in_toc"><b>Remarque</b></h4>
+        <p>Dans un récepteur purement capacitif, lʼangle de déphasage est égal à 90° dʼoù sin <i>φ</i> = 1.</p>
+        <h4 class="sigil_not_in_toc"><b>Exemple</b></h4>
+        <p>Calculer la puissance réactive dʼun condensateur dont la réactance de capacité est de 103&#160;Ω. La tension dʼalimentation est de 230&#160;V - 50&#160;Hz.</p>
+        <p>Puissance réactive du condensateur:</p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel">
+                <mstyle>
+                    <mi>Q</mi>
+                    <mo>=</mo>
+                    <mfrac>
+                        <msup>
+                            <mi>U</mi>
+                            <mn>2</mn>
+                        </msup>
+                        <msub>
+                            <mi>X</mi>
+                            <mtext>C</mtext>
+                        </msub>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mfrac>
+                        <msup>
+                            <mn>230</mn>
+                            <mn>2</mn>
+                        </msup>
+                        <mn>103</mn>
+                    </mfrac>
+                    <mo>=</mo>
+                    <mn>514</mn>
+                    <mo>&#160;</mo>
+                    <mtext>var</mtext>
+                </mstyle>
+            </math>
+        </p>
+    </div>
+</body>
+</html>

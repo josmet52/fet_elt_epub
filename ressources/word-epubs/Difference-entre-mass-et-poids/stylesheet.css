@@ -1,0 +1,120 @@
+.block_ {
+    background-color: #5B9BD5;
+    display: block;
+    font-size: 1.77778em;
+    font-weight: normal;
+    letter-spacing: 0.75pt;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border: #5B9BD5 solid 3pt;
+    margin: 5pt 0 0;
+    padding: 0
+    }
+.block_1 {
+    color: black;
+    display: block;
+    font-family: serif;
+    font-size: 0.88889em;
+    line-height: 1.2;
+    margin: 5pt 0 10pt;
+    padding: 0
+    }
+.block_2 {
+    color: black;
+    display: block;
+    font-size: 0.88889em;
+    line-height: 1.2;
+    text-align: center;
+    margin: 5pt 0 10pt;
+    padding: 0
+    }
+.block_3 {
+    background-color: #DEEAF6;
+    color: black;
+    display: block;
+    font-size: 0.88889em;
+    font-weight: normal;
+    letter-spacing: 0.75pt;
+    line-height: 1.2;
+    text-transform: uppercase;
+    border: #DEEAF6 solid 3pt;
+    margin: 5pt 0 0;
+    padding: 0
+    }
+.block_4 {
+    color: black;
+    display: list-item;
+    font-size: 0.88889em;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-left: 36pt;
+    margin-top: 5pt;
+    padding-bottom: 0;
+    padding-top: 0
+    }
+.block_5 {
+    color: black;
+    display: list-item;
+    font-size: 0.88889em;
+    line-height: 1.2;
+    margin-bottom: 10pt;
+    margin-left: 36pt;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-top: 0
+    }
+.block_6 {
+    color: black;
+    display: block;
+    font-size: 0.88889em;
+    line-height: 1.2;
+    margin: 5pt 0 10pt;
+    padding: 0
+    }
+.block_7 {
+    background-color: #FFF;
+    color: #000;
+    display: block;
+    font-family: "Helvetica", sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0;
+    padding: 0
+    }
+.calibre {
+    color: #FFF;
+    display: block;
+    font-family: "Calibri", sans-serif;
+    font-size: 1.125em;
+    line-height: 1.2;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    height: 278pt;
+    line-height: 1.2;
+    width: 428pt
+    }
+.list_ {
+    display: block;
+    list-style-type: disc;
+    margin-bottom: 0;
+    margin-right: 0;
+    margin-top: 0;
+    padding-bottom: 0;
+    padding-right: 0;
+    padding-top: 0
+    }
+.text_ {
+    font-family: "Calibri", sans-serif;
+    line-height: 1.2
+    }
+.text_1 {
+    color: #000;
+    font-family: "Helvetica", sans-serif;
+    line-height: 1.2;
+    text-decoration: none
+    }

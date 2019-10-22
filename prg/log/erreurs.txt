@@ -1,0 +1,143 @@
+20191015-201147 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201147 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201147 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201147 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201148 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201148 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201148 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201148 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201149 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201149 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201149 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201149 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201150 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201150 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201150 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201150 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201151 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201151 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201151 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201151 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201152 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201152 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201152 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201152 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201153 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201153 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201153 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201153 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201154 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201154 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201154 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201154 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201155 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201155 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201155 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201155 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201156 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201156 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201156 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201156 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201157 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201157 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201220 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201220 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201221 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201221 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201221 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201221 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201222 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201222 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201222 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201222 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201223 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201223 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201223 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201223 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201224 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201224 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201224 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201224 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201226 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201226 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201226 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201226 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201227 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201227 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201227 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201227 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201228 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201228 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201228 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201228 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201229 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201229 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201229 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201229 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201230 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201230 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201230 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201230 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201231 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201231 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201330 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201330 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201330 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201330 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201331 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201331 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201331 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201331 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201332 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201332 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201332 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201332 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201333 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201333 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201333 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201333 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201334 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201334 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201350 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201350 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201350 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201350 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201351 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201351 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201351 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201351 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201352 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201352 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201352 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201352 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201353 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201353 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201353 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201353 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201354 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201354 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201354 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201354 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201355 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201355 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201355 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201355 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201356 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201356 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201356 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201356 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201357 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201357 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201357 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201357 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201358 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201358 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201358 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201358 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201359 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201359 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191015-201359 passe :  0 ET_ch_01.epub 2nd try in Resize images  : : 
+20191015-201359 passe :  0 ET_ch_01.epub Error in Resize images  : TypeError: '>' not supported between instances of 'int' and 'str': 
+20191018-131132 passe :  0  2nd try in empty_dir: erasing empty directory  : : 
+20191018-131134 passe :  0  2nd try in function new_job, final tasks : remove temp dir  : : 
+20191019-114258 passe :  0  2nd try in function zip_epub : creating the final zip file  : : 

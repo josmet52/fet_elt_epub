@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" xmlns:xml="http://www.w3.org/XML/1998/namespace" lang="fr">
+<head>
+    <title>Anim_cercle_trigo_et_valeur_instatanee_v1d</title>
+    <link href="../Styles/pw_table_style_v1r.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/anim_styles_v1d.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/anim_cercle_trigo_val_inst_v1d.js" type="text/javascript"><!--empty--></script>
+</head>
+<body>
+	<h2>5.2.1 Le cercle trigonométrique: animation</h2>
+	<!-- Inserer un canvas pour l' animation-->
+    <canvas id="canvas_id" width="1183" height="430" class="canvas">
+		Ho la la !! <br/>
+		Malheureusement votre lecteur ne supporte pas Canvas ...  l'animation ne peut pas fonctionner.<br/>
+    </canvas>
+	<br/>
+    <form>
+		<!-- insérer les champos texte -->
+        <div class="textareaangle" id="txt_deg" style="display: none;">angle = 0.00˚</div>
+        <div class="textareasin" id="txt_sin" style="display: none;">sin = 0</div>
+        <div class="textareacos" id="txt_cos" style="display: none;">cos = 1.00</div>
+        <div class="textareatension" id="txt_tension">U = 0.00 V</div>
+
+		<!-- <textarea class="textareaangle" id="txt_deg" rows="1" cols="8">ɸ(deg)=0</textarea> -->
+		<!-- <textarea class="textareasin" id="txt_sin" rows="1" cols="8">sin=0</textarea> -->
+		<!-- <textarea class="textareacos" id="txt_cos" rows="1" cols="8">cos=1</textarea> -->
+		<!-- <textarea class="textareasin" id="txt_tension" rows="1" cols="8">U = 0V</textarea> -->
+		<!-- <br/> -->
+		
+		<!-- insérer les boutons de commande -->
+        <button class="button_plus_minus-space" type="button" onclick="btnStepMoinsMoins()">--</button>
+        <button class="button_plus_minus" type="button" onclick="btnStepMoins()">-</button>
+        <button class="button button-show" type="button" onclick="btnRun()">Go/Stop</button>
+        <button class="button_plus_minus" type="button" onclick="btnStepPlus()">+</button>
+        <button class="button_plus_minus" type="button" onclick="btnStepPlusPlus()">++</button>
+		
+		<!-- Insérer les options -->
+		<!-- <label class="btncheck">Etiquettes -->
+			<!-- <input type="checkbox" checked="" id="opt_etiquette_yesno" style="cursor: pointer;"/> -->
+		<!-- </label> -->
+		<!-- <label class="btncheck">Grille -->
+			<!-- <input type="checkbox" checked="" id="opt_grille_yesno" style="cursor: pointer;"/> -->
+		<!-- </label> -->
+		<!-- <label class="btncheck">Tension -->
+			<!-- <input type="checkbox" checked="" id="opt_tension_yesno" style="cursor: pointer;"/> -->
+		<!-- </label> -->
+
+		<!-- Et voila le script javascript-->
+        <script>
+		
+//************************** choix des options begin ***********************************
+			
+			var show_label = true;
+			var show_grid = true;
+			var show_line = true;
+			var show_sin = false;
+			var show_cos = false;
+			var show_angle = true;
+			var show_tension = false;
+			
+//************************** choix des options end ***********************************			
+			
+			// Fonction appellée par le resize
+			document.getElementsByTagName("body")[0].onresize = function() {onResizeAction()};
+			
+			// Fonctions appellées par les options
+			<!-- document.getElementById("opt_etiquette_yesno").onchange = function() {optEtiquetteYesNo(this.checked)}; -->
+			<!-- document.getElementById("opt_etiquette_yesno").checked = true; -->
+			<!-- document.getElementById("opt_grille_yesno").onchange = function() {optGrilleYesNo(this.checked)}; -->
+			<!-- document.getElementById("opt_grille_yesno").checked = true; -->
+			<!-- document.getElementById("opt_tension_yesno").onchange = function() {optTensionYesNo(this.checked)}; -->
+			<!-- document.getElementById("opt_tension_yesno").checked = true; -->
+		
+			// récupérer les informations du canvas
+			var canvas_element = document.getElementById("canvas_id");
+			var ctx = canvas_element.getContext("2d");
+			
+			var w1 = canvas_element.width;
+			var h1 = canvas_element.height;
+
+			var r_width;
+			var r_height;
+			var r_base;
+			var r_margin;
+			
+			var f_dim = 3.45; // grandeur de la zone de la courbe
+			
+			var anim_running = false;
+			var stop_asked = false;
+			var idVector;
+			
+			var axe_line_color = "#707070";
+			var grid_color = "#eaeaea";
+			var curve_line_color = "Black";
+			var fill_circle_color = "AliceBlue";
+			var fill_box_color = "#ffffe6"; //"LightYellow";
+			var label_text_color = "Gray";
+			
+			var ph1_color = "#ff4500"; // OrangeRed
+			var ph2_color = "#87cefa"; // LightSkyBlue
+			var ph3_color = "#32cd32"; // LimeGreen
+			
+			var sin_cos_color = "#ff00ba";
+			var cos_color = "#ff4500"; 
+			var sin_color = "#003bff"; 
+			var line_color = "#00baff"; 
+
+			var r_zone ;
+			var r_label;
+			var r_axe;
+			var r_circle;
+			var l_width;
+			var grad_len;
+			var letter_height;
+			var letter_style;
+			
+			// animation
+			ph_deg = 0;
+			ph_inc = 1;
+			sleep_time = 100;
+			
+			// programme principal
+			// ************************************************************************
+			onResizeAction();
+			RefreshGraph(ctx, r_zone, r_label, r_axe, r_circle, l_width, grad_len, letter_height, letter_style, ph_deg)
+        </script></form>
+</body>
+</html>

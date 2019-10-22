@@ -1,0 +1,133 @@
+.tableInvisible{border:none; border-collapse:collapse;}
+a{color:rgb(30, 178, 215);text-decoration:none}
+/*NORMAL TEXT*/
+/* .navbar-ul */
+/* { */
+	/* list-style-type: none; */
+	/* margin: 0; */
+	/* padding: 0; */
+	/* overflow: hidden; */
+	/* background-color: #f3f3f3; */
+	/* position: fixed; */
+	/* top: 0; */
+	/* width: 100%;  */
+/* } */
+.navbar-ul-top
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f3f3f3;
+	position: fixed;
+	top: 0;
+	width: 100%;
+}
+.navbar-ul-bottom
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f3f3f3;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+}
+h1
+{
+    font-family:Helvetica, sans-serif; /*Times-Bold,sans-serif;*/
+    font-size:28px;	
+	line-height:40px;
+	margin:0px 0px 0px 0px;	
+	color:#000000;
+	font-style:normal;
+	font-weight:normal;	
+	padding: 10px 30px 10px 30px;
+	background-color: #28bce1;
+}
+h1.reference{margin-bottom:50px}
+h2, 
+.h2
+{
+    font-family:Helvetica, sans-serif; /*Times-Bold,sans-serif;*/
+    font-size:22px;	
+	line-height:26px;
+	margin:50px 30px 25px 30px;
+	color:#000000;
+	font-style:normal;
+	font-weight:normal;
+	background-color: #28bce1;
+	padding:10px 10px 10px 10px;	
+}
+
+
+
+h3
+{
+    font-family:Helvetica, sans-serif; /*Times-Bold,sans-serif;*/
+    font-size:20px;	
+	line-height:22px;   
+	margin:35px 30px 20px 30px;
+	color:#000000;
+	font-style:normal;
+	font-weight:normal;	
+	background-color: #28bce1;
+    padding: 10px 10px 10px 10px;
+	
+}
+
+
+h4
+{
+    font-family:Helvetica, sans-serif; /*Times-Bold,sans-serif;*/
+    font-size:18px;	
+	line-height:20px;   
+	margin:35px 30px 15px 30px;
+	color:#000000;
+	font-style:normal;
+	font-weight:bold;	
+    padding: 10px 0px 10px 0px;
+	
+}
+
+p.text
+{
+    font-family:Helvetica, sans-serif;
+    font-size:14px;	
+	line-height:20px;
+	margin:0 30px 3px 30px;
+    font-style:normal;
+	font-weight:normal;
+	text-align:justify;
+}
+.p_figcaption
+{
+    font-family:Helvetica, sans-serif;
+    font-size:11px;	
+	line-height:20px;
+	margin:0 30px 3px 30px;
+    font-style:normal;
+	font-weight:normal;
+	text-align:center;
+}
+.p_titre_en_petit
+{
+    font-family:Helvetica, sans-serif;
+    font-size:12px;	
+    font-style:normal;
+    font-weight:normal;
+}
+img{width:97%}
+.imagecontainer {padding: 0; text-align: center; overflow: auto;margin:30px auto 5px auto;}
+.imagecontainer.w50 {width:50%}
+.imagecontainer.w80 {width:80%}
+.copyright
+{
+    font-family:Helvetica,sans-serif;
+    font-size:14px;	
+	margin:3px;
+    font-style:normal;
+	font-weight:normal;
+	text-align:center;
+}

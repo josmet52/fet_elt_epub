@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        myTableStyle
+    </title>
+    <link href="../Styles/pw_table_style_v1r.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/exercises_v1r.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v1r.css" rel="stylesheet" type="text/css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+    <div class="navbar-ul-bottom w3-bar w3-dark-gray" id="topMoodleNavBarId">
+        <a onclick="GoToMoodleHomePage()" href="javascript:void(0)"  class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Moodle
+        </a>
+        <a href="nav.xhtml" class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Menu
+        </a>
+        <a href="th_13_new.xhtml" class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Précédente
+        </a>
+        <a href="page_reference.xhtml" class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Suivante
+        </a>
+        <br/>
+    </div>
+    <div>
+        <h1 id="FET_toc_id_009"><span>10.14 Récepteur triphasé équilibré monté en triangle</span></h1>
+        <p>
+            <br/>
+        </p>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+                    <p>
+                        Ce couplage consiste à raccorder chaque élément (résistances bobines ou condensateurs), selon le schéma ci-dessous, sous la tension réseau. Si les éléments sont identiques et de même valeur, le couplage est équilibré.
+                    </p>
+                </div>
+                <div class="fet_cellule_w35">
+                    <img src="../Images/a932d39d36c940efaa859c9faa57c9a4.png" alt="image manquante"/>
+                    Symbole du couplage triangle
+                </div>
+            </div>
+        </div>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+                    <p>
+                        Ce couplage forme un circuit fermé sur lui-même. Le conducteur neutre N nʼest pas nécessaire.
+                    </p>
+                    <p>
+                        Le conducteur de protection PE ne participe pas au fonctionnement de lʼappareil. Sa fonction est de relier les parties métalliques des récepteurs à la terre.
+                    </p>
+                    <p>
+                        La tension de phase
+                        <i>
+                            U
+                        </i>
+                        <sub>
+                            z
+                        </sub>
+                        nʼintervient pas dans le couplage triangle. On ne tient compte que de la tension réseau
+                        <i>
+                            U.
+                        </i>
+                    </p>
+                    <p>
+                        La tension au
+                        <i>
+                            x
+                        </i>
+                        bornes de lʼélément
+                        <i>
+                            U
+                        </i>
+                        <sub>
+                            z
+                        </sub>
+                        est égale à la tension réseau
+                        <i>
+                            U.
+                        </i>
+                    </p>
+                    <p>
+                        Les courants de ligne
+                        <i>
+                            I
+                        </i>
+                        nʼont pas la même intensité que les courants dans le récepteur
+                        <i>
+                            I
+                        </i>
+                        <sub>
+                            z
+                        </sub>
+                        .
+                    </p>
+                    <p>
+                        La puissance absorbée par le récepteur est la même dans chacune des trois phases.
+                    </p>
+                </div>
+                <div class="fet_cellule_w35">
+                    <img src="../Images/recepteur_triphase_triangle_1.png" alt="image manquante"/>
+                </div>
+            </div>
+        </div>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Raccordements
+            </b>
+        </h4>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+                    <p>
+                        La phase L1 se raccorde sur les bornes U1 et W2 du récepteur.
+                    </p>
+                    <p>
+                        La phase L2 se raccorde sur les bornes V1 et U2 du récepteur.
+                    </p>
+                    <p>
+                        La phase L3 se raccorde sur les bornes W1 et V2 du récepteur.
+                    </p>
+                </div>
+                <div class="fet_cellule_w35">
+                    <img src="../Images/recepteur_triphase_triangle_2.png" alt="image manquante"/>
+                </div>
+            </div>
+        </div>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Formules
+            </b>
+        </h4>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+                    <p>
+                        I : intensité du courant de ligne [A]
+                    </p>
+                    <p>
+                        Iz : intensité du courant dans l'élément du récepteur [A]
+                    </p>
+                    <p>
+                        Uz : tension aux bornes de l'élément du récepteur [V]
+                    </p>
+                    <p>
+                        U : tension réseau [V]
+                    </p>
+                </div>
+                <br/>
+                <div class="fet_cellule_w50">
+                    <p class="fet_formula">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><msub><mrow><mi>U</mi></mrow><mrow><mi>z</mi></mrow></msub><mo>=</mo><mi>U</mi></math>
+                    </p>
+                    <br/>
+                    <br/>
+                    <p class="fet_formula">
+                        <span>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>I</mi><mo>=</mo><msub><mi>I</mi><mi>z</mi></msub><mo>·</mo><msqrt><mn>3</mn></msqrt></mstyle></math>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Puissances du récepteur en triphasé
+            </b>
+        </h4>
+        <p>
+            La puissance absorbée par phase dépend de la tension au
+            <i>
+                x
+            </i>
+            bornes de lʼimpédance, du courant dans lʼimpédance et du facteur de puissance (cos φ) résultant du déphasage entre le courant et la tension.
+        </p>
+        <p>
+            On trouve pour la puissance active totale:
+            <i>
+                P
+            </i>
+            = 3 ·
+            <i>
+                P
+            </i>
+            <sub>
+                R
+            </sub>
+        </p>
+        <p>
+            pour une phase:
+            <i>
+                P
+            </i>
+            <sub>
+                1
+            </sub>
+            =
+            <i>
+                U
+            </i>
+            <sub>
+                z
+            </sub>
+            ·
+            <i>
+                I
+            </i>
+            <sub>
+                z
+            </sub>
+            · cos&#160;φ
+        </p>
+        <p>
+            pour trois phases:
+            <i>
+                P
+            </i>
+            = 3 ·
+            <i>
+                U
+            </i>
+            <sub>
+                z
+            </sub>
+            ·
+            <i>
+                I
+            </i>
+            <sub>
+                z
+            </sub>
+            · cos&#160;φ
+        </p>
+        <p>
+            on sait que:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>I</mi><mi>z</mi></msub><mo>=</mo><mfrac><mi>I</mi><msqrt><mn>3</mn></msqrt></mfrac><mtext>&#160; et &#160;</mtext><mi>U</mi><mo>=</mo><msub><mi>U</mi><mrow><mtext>z</mtext></mrow></msub></mstyle></math>
+        </p>
+        <p>
+            d’où:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>P</mi><mo>=</mo><mn>3</mn><mo>·</mo><mi>U</mi><mo>·</mo><mfrac><mi>I</mi><msqrt><mn>3</mn></msqrt></mfrac><mo>·</mo><mi>cosφ</mi></mstyle></math>
+        </p>
+        <p>
+            et en simplifiant :
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>P</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>·</mo><mi>U</mi><mo>·</mo><mi>I</mi><mo>·</mo><mi>cosφ</mi></mstyle></math>
+        </p>
+        <p>
+            Le raisonnement est le même pour les puissances réactive et apparente.
+        </p>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Formules
+            </b>
+        </h4>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+                    <p>
+                        P : Puissance active triphasée [W]
+                    </p>
+                    <p>
+                        U : tension réseau [V]
+                    </p>
+                    <p>
+                        I : intensité du courant de ligne [A]
+                    </p>
+                    <p>
+                        φ : angle de déphasage [˚]
+                    </p>
+                    <p>
+                        Q : puissance réactive triphasée [var]
+                    </p>
+                    <p>
+                        S : puissance apparente triphasée [VA]
+                    </p>
+                </div>
+                <br/>
+                <div class="fet_cellule_w50">
+                    <p class="fet_formula">
+                        <span>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>P</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>·</mo><mi>U</mi><mo>·</mo><mi>I</mi><mo>·</mo><mi>cos</mi><mi>φ</mi></mstyle></math>
+                        </span>
+                    </p>
+                    <br/>
+                    <br/>
+                    <p class="fet_formula">
+                        <span>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>Q</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>·</mo><mi>U</mi><mo>·</mo><mi>I</mi><mo>·</mo><mi>sin</mi><mi>φ</mi></mstyle></math>
+                        </span>
+                    </p>
+                    <br/>
+                    <br/>
+                    <p class="fet_formula">
+                        <span>
+                            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>S</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>·</mo><mi>U</mi><mo>·</mo><mi>I</mi></mstyle></math>
+                        </span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+<br/></body>
+</html>
+

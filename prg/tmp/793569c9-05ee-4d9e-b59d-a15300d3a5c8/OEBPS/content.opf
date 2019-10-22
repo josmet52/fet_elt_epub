@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="3.0" unique-identifier="pubId" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">AC pour ELMO v1x</dc:title>
+    <dc:identifier id="pubId">9ad1ba95c7d740eb8d2f01eb9770dc86</dc:identifier>
+    <dc:language>fr</dc:language>
+    <meta property="dcterms:modified">2019-10-18T19:42:58Z</meta>
+    <meta name="Sigil version" content="0.9.18" />
+    <meta name="cover" content="FET_cover_AC_pour_ELMO.png" />
+  </metadata>
+  <manifest>
+    <item id="th_01.xhtml" href="Text/th_01.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+<item href="Styles/w3_v02_02.css" id="w3_v02_02" media-type="text/css"/>
+<item href="Misc/validation_fr_jo_v02_01.js" id="validation_fr_jo_v02_01" media-type="text/javascript"/>
+<item href="Styles/pw_table_style_v02_05.css" id="pw_table_style_v02_05" media-type="text/css"/>
+<item href="Misc/jquery.js" id="jquery" media-type="text/javascript"/>
+<item href="Styles/fet_styles_v02_04.css" id="fet_styles_v02_04" media-type="text/css"/>
+<item href="Styles/exercises_v02_02.css" id="exercises_v02_02" media-type="text/css"/>
+<item href="Styles/anim_styles_v02_03.css" id="anim_styles_v02_03" media-type="text/css"/>
+<item href="Misc/anim_rendement_v02_00.js" id="anim_rendement_v02_00" media-type="text/javascript"/>
+<item href="Misc/anim_freq-ampl-oscillo_v02_01.js" id="anim_freq-ampl-oscillo_v02_01" media-type="text/javascript"/>
+<item href="Misc/anim_cercle_trigo_val_inst_v02_01.js" id="anim_cercle_trigo_val_inst_v02_01" media-type="text/javascript"/>
+<item href="Misc/anim_alternateur_v02_01.js" id="anim_alternateur_v02_01" media-type="text/javascript"/>
+    <item id="cover.xhtml" href="Text/cover.xhtml" media-type="application/xhtml+xml" properties="scripted svg"/>
+    <item id="page_reference.xhtml" href="Text/page_reference.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="page_copyright.xhtml" href="Text/page_copyright.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="th_02.xhtml" href="Text/th_02.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="th_04.xhtml" href="Text/th_04.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="th_06.xhtml" href="Text/th_06.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="d683959424fe4d22b84977be9a419734.png" href="Images/d683959424fe4d22b84977be9a419734.png" media-type="image/png"/>
+    <item id="x6db0bc4e2490447ebbc5806ca14f1cf1.png" href="Images/6db0bc4e2490447ebbc5806ca14f1cf1.png" media-type="image/png"/>
+    <item id="x73de2942d8be44288236ceb3d9683436.png" href="Images/73de2942d8be44288236ceb3d9683436.png" media-type="image/png"/>
+    <item id="x28811ea7c39a4a05a2b2f6af2c013c97.png" href="Images/28811ea7c39a4a05a2b2f6af2c013c97.png" media-type="image/png"/>
+    <item id="x2a960a8b4ef04f298756ee1ead80d12a.png" href="Images/2a960a8b4ef04f298756ee1ead80d12a.png" media-type="image/png"/>
+    <item id="x8466af6b6e994bbbba9a5c85efe63f14.png" href="Images/8466af6b6e994bbbba9a5c85efe63f14.png" media-type="image/png"/>
+    <item id="b4db81ab4f284df4aa30bbbc85a6c1e1.png" href="Images/b4db81ab4f284df4aa30bbbc85a6c1e1.png" media-type="image/png"/>
+    <item id="db3ef12202f14fa9ae93b43bf08afa14.png" href="Images/db3ef12202f14fa9ae93b43bf08afa14.png" media-type="image/png"/>
+    <item id="e212cb36db4443b58e483fe1011f2465.png" href="Images/e212cb36db4443b58e483fe1011f2465.png" media-type="image/png"/>
+    <item id="x2403f5af1e1a4b20bd54bd624bde2e1f.png" href="Images/2403f5af1e1a4b20bd54bd624bde2e1f.png" media-type="image/png"/>
+    <item id="e3586c3be5744f148cbdd2558e770c6f.png" href="Images/e3586c3be5744f148cbdd2558e770c6f.png" media-type="image/png"/>
+    <item id="df8c2ca27c804654b773af8013ab6fc5.png" href="Images/df8c2ca27c804654b773af8013ab6fc5.png" media-type="image/png"/>
+    <item id="a17728ee0d0a4330a0dd049e2e911331.png" href="Images/a17728ee0d0a4330a0dd049e2e911331.png" media-type="image/png"/>
+    <item id="x1ef99ff1984e4dd5acece8df3676624d.png" href="Images/1ef99ff1984e4dd5acece8df3676624d.png" media-type="image/png"/>
+    <item id="x6fc7687199064fd180d2573e26dfbd30.png" href="Images/6fc7687199064fd180d2573e26dfbd30.png" media-type="image/png"/>
+    <item id="b26d99f4fcc249eba31ab400c48b03ba.png" href="Images/b26d99f4fcc249eba31ab400c48b03ba.png" media-type="image/png"/>
+    <item id="x4ccbad7d3b944fff8f6612f1dab6740e.png" href="Images/4ccbad7d3b944fff8f6612f1dab6740e.png" media-type="image/png"/>
+    <item id="d4f110db32754e939fbb9bd34e1d52a3.png" href="Images/d4f110db32754e939fbb9bd34e1d52a3.png" media-type="image/png"/>
+    <item id="x6fd85e20e0534baab5f8ad3fb54ccf91.png" href="Images/6fd85e20e0534baab5f8ad3fb54ccf91.png" media-type="image/png"/>
+    <item id="ba84944eddd0473688fd60218823a107.png" href="Images/ba84944eddd0473688fd60218823a107.png" media-type="image/png"/>
+    <item id="a125a9b337a74cf9bee6e75849b9af4d.png" href="Images/a125a9b337a74cf9bee6e75849b9af4d.png" media-type="image/png"/>
+    <item id="x1cd396e7d42441fabd1c68dc6a5003df.png" href="Images/1cd396e7d42441fabd1c68dc6a5003df.png" media-type="image/png"/>
+    <item id="x93eb3d53c1ff4d8b9e077bf0408f0ed6.png" href="Images/93eb3d53c1ff4d8b9e077bf0408f0ed6.png" media-type="image/png"/>
+    <item id="aa9af9bb345c4f2ea14120b6da33fb4b.png" href="Images/aa9af9bb345c4f2ea14120b6da33fb4b.png" media-type="image/png"/>
+    <item id="x8ecac86d737a438aaa5c9df2a500934f.png" href="Images/8ecac86d737a438aaa5c9df2a500934f.png" media-type="image/png"/>
+    <item id="x20030f80cf8a45d687d98bdde2e7006d.png" href="Images/20030f80cf8a45d687d98bdde2e7006d.png" media-type="image/png"/>
+    <item id="d9d78b8f872e43f099e59df2f263dfcd.png" href="Images/d9d78b8f872e43f099e59df2f263dfcd.png" media-type="image/png"/>
+    <item id="x75779677b3514fa4afba29bcda08b678.png" href="Images/75779677b3514fa4afba29bcda08b678.png" media-type="image/png"/>
+    <item id="x89602c13c78d462389c19d728f84ef1e.png" href="Images/89602c13c78d462389c19d728f84ef1e.png" media-type="image/png"/>
+    <item id="x1fe365d33d0e423ba31fbd6a691137d2.png" href="Images/1fe365d33d0e423ba31fbd6a691137d2.png" media-type="image/png"/>
+    <item id="x1be0f0eef2d7483bb9c4b218e8148e90.png" href="Images/1be0f0eef2d7483bb9c4b218e8148e90.png" media-type="image/png"/>
+    <item id="x6236ed9aae11407bb1854d94a47e4977.png" href="Images/6236ed9aae11407bb1854d94a47e4977.png" media-type="image/png"/>
+    <item id="ffdc14a2dd864b65b5f1ba5607fc2ae9.png" href="Images/ffdc14a2dd864b65b5f1ba5607fc2ae9.png" media-type="image/png"/>
+    <item id="x032c587a336445238414cf9ef54719b3.png" href="Images/032c587a336445238414cf9ef54719b3.png" media-type="image/png"/>
+    <item id="f6c4fb866bb8445b978f9df453182031.png" href="Images/f6c4fb866bb8445b978f9df453182031.png" media-type="image/png"/>
+    <item id="b3d42c7f62af46f49acb13df5f4ee086.png" href="Images/b3d42c7f62af46f49acb13df5f4ee086.png" media-type="image/png"/>
+    <item id="a374a130bb014d0981fd593ce2ff6055.png" href="Images/a374a130bb014d0981fd593ce2ff6055.png" media-type="image/png"/>
+    <item id="x2bb8502e8da7431fa5a30652dacef3e2.png" href="Images/2bb8502e8da7431fa5a30652dacef3e2.png" media-type="image/png"/>
+    <item id="x87abb4049535419d9bf29949b47dc3e3.png" href="Images/87abb4049535419d9bf29949b47dc3e3.png" media-type="image/png"/>
+    <item id="b7d88d2aeb1b4af883aa9c0eec227a13.png" href="Images/b7d88d2aeb1b4af883aa9c0eec227a13.png" media-type="image/png"/>
+    <item id="x1c53ce7767514cb59edf325478a5c3df.png" href="Images/1c53ce7767514cb59edf325478a5c3df.png" media-type="image/png"/>
+    <item id="x614f8155929949dcab877ab8a2c3887f.png" href="Images/614f8155929949dcab877ab8a2c3887f.png" media-type="image/png"/>
+    <item id="b411295120b44a80a2461dd256854a46.png" href="Images/b411295120b44a80a2461dd256854a46.png" media-type="image/png"/>
+    <item id="x5d19f9cc3a744d50a16889589f6e24eb.png" href="Images/5d19f9cc3a744d50a16889589f6e24eb.png" media-type="image/png"/>
+    <item id="d77f3bd1d08f4559b87f1ac01f6045bc.png" href="Images/d77f3bd1d08f4559b87f1ac01f6045bc.png" media-type="image/png"/>
+    <item id="nav.xhtml" href="Text/nav.xhtml" media-type="application/xhtml+xml" properties="scripted nav"/>
+    <item id="th_03.xhtml" href="Text/th_03.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="th_03_a.xhtml" href="Text/th_03_a.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="th_03_b.xhtml" href="Text/th_03_b.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="th_05.xhtml" href="Text/th_05.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="th_08_new.xhtml" href="Text/th_08_new.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="th_07_new.xhtml" href="Text/th_07_new.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="Recepteurs_purement_resistifs.png" href="Images/Recepteurs_purement_resistifs.png" media-type="image/png"/>
+    <item id="Recepteurs_complexes.png" href="Images/Recepteurs_complexes.png" media-type="image/png"/>
+    <item id="Recepteurs_avec_electronique.png" href="Images/Recepteurs_avec_electronique.png" media-type="image/png"/>
+    <item id="Self_en_dc.png" href="Images/Self_en_dc.png" media-type="image/png"/>
+    <item id="Impedance_dephasage_inductif.png" href="Images/Impedance_dephasage_inductif.png" media-type="image/png"/>
+    <item id="Impedance_addition_vectorielle.png" href="Images/Impedance_addition_vectorielle.png" media-type="image/png"/>
+    <item id="Self_en_ac.png" href="Images/Self_en_ac.png" media-type="image/png"/>
+    <item id="th_09_new.xhtml" href="Text/th_09_new.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="Mesure_puissance_ac_dc.png" href="Images/Mesure_puissance_ac_dc.png" media-type="image/png"/>
+    <item id="Emoticone_question.png" href="Images/Emoticone_question.png" media-type="image/png"/>
+    <item id="tension_courant_resistif.png" href="Images/tension_courant_resistif.png" media-type="image/png"/>
+    <item id="tension_courant_inductif.png" href="Images/tension_courant_inductif.png" media-type="image/png"/>
+    <item id="th_10_new.xhtml" href="Text/th_10_new.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="th_11_new.xhtml" href="Text/th_11_new.xhtml" media-type="application/xhtml+xml" properties="scripted mathml"/>
+    <item id="th_12_new.xhtml" href="Text/th_12_new.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="x2c790040c57f43fcb7cb035830547625.jpg" href="Images/2c790040c57f43fcb7cb035830547625.jpg" media-type="image/jpeg"/>
+    <item id="x482c3236c30449f284186eb099193501.png" href="Images/482c3236c30449f284186eb099193501.png" media-type="image/png"/>
+    <item id="eff2912e2bec44dea2f3d07947a5de86.png" href="Images/eff2912e2bec44dea2f3d07947a5de86.png" media-type="image/png"/>
+    <item id="th_13_new.xhtml" href="Text/th_13_new.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="x64aa60a63be24a1c820427e38f7715b9.png" href="Images/64aa60a63be24a1c820427e38f7715b9.png" media-type="image/png"/>
+    <item id="th_14_new.xhtml" href="Text/th_14_new.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="a932d39d36c940efaa859c9faa57c9a4.png" href="Images/a932d39d36c940efaa859c9faa57c9a4.png" media-type="image/png"/>
+    <item id="x582a5478eeaa4f8da734ad5cc89eedc1.jpg" href="Images/582a5478eeaa4f8da734ad5cc89eedc1.jpg" media-type="image/jpeg"/>
+    <item id="b238687f8ca647a9a8525bd6a18f4d9e.jpg" href="Images/b238687f8ca647a9a8525bd6a18f4d9e.jpg" media-type="image/jpeg"/>
+    <item id="x81aa185b5ceb4bf68da0fc2999608538.jpg" href="Images/81aa185b5ceb4bf68da0fc2999608538.jpg" media-type="image/jpeg"/>
+    <item id="x3b7475f7fd5d4ea4bfae6a89d560e355.jpg" href="Images/3b7475f7fd5d4ea4bfae6a89d560e355.jpg" media-type="image/jpeg"/>
+    <item id="x6811297e04c7439985be8cc2aa729e71.jpg" href="Images/6811297e04c7439985be8cc2aa729e71.jpg" media-type="image/jpeg"/>
+    <item id="x9b396af668a54fb5929c6f5438915559.jpg" href="Images/9b396af668a54fb5929c6f5438915559.jpg" media-type="image/jpeg"/>
+    <item id="x6e751656da39400392cc5f338aef72fb.jpg" href="Images/6e751656da39400392cc5f338aef72fb.jpg" media-type="image/jpeg"/>
+    <item id="def2d1b9cf4f48a292248d23d077b6fe.jpg" href="Images/def2d1b9cf4f48a292248d23d077b6fe.jpg" media-type="image/jpeg"/>
+    <item id="x74b3547023814235b2abe06cc15c810d.jpg" href="Images/74b3547023814235b2abe06cc15c810d.jpg" media-type="image/jpeg"/>
+    <item id="x4af66cd8fb20465db0b1b627202c7d70.jpg" href="Images/4af66cd8fb20465db0b1b627202c7d70.jpg" media-type="image/jpeg"/>
+    <item id="c2106855da3f4ac8878f387a6e58659d.jpg" href="Images/c2106855da3f4ac8878f387a6e58659d.jpg" media-type="image/jpeg"/>
+    <item id="f46bd817e85d4278bdcdda7053ab5f2d.jpg" href="Images/f46bd817e85d4278bdcdda7053ab5f2d.jpg" media-type="image/jpeg"/>
+    <item id="ex_03.xhtml" href="Text/ex_03.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="ex_04.xhtml" href="Text/ex_04.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="ex_05.xhtml" href="Text/ex_05.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="ex_06.xhtml" href="Text/ex_06.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="a87e662c3c984b50933428b0481e3ff4.jpg" href="Images/a87e662c3c984b50933428b0481e3ff4.jpg" media-type="image/jpeg"/>
+    <item id="ex_08.xhtml" href="Text/ex_08.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="FET_cover_AC_pour_ELMO.png" href="Images/FET_cover_AC_pour_ELMO.png" media-type="image/png" properties="cover-image"/>
+    <item id="Facteur_de_puissance.png" href="Images/Facteur_de_puissance.png" media-type="image/png"/>
+    <item id="Impedance_definition_grandeur.png" href="Images/Impedance_definition_grandeur.png" media-type="image/png"/>
+    <item id="recepteur_triphase_etoile_1.png" href="Images/recepteur_triphase_etoile_1.png" media-type="image/png"/>
+    <item id="recepteur_triphase_etoile_2.png" href="Images/recepteur_triphase_etoile_2.png" media-type="image/png"/>
+    <item id="recepteur_triphase_triangle_1.png" href="Images/recepteur_triphase_triangle_1.png" media-type="image/png"/>
+    <item id="recepteur_triphase_triangle_2.png" href="Images/recepteur_triphase_triangle_2.png" media-type="image/png"/>
+    <item id="anim_freq-ampl-oscillo_v1f.xhtml" href="Text/anim_freq-ampl-oscillo_v1f.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="tri_anim_alternateur_triphase_v1d.xhtml" href="Text/tri_anim_alternateur_triphase_v1d.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="val_inst_anim_cercle_trigo_val_inst_v1d.xhtml" href="Text/val_inst_anim_cercle_trigo_val_inst_v1d.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+    <item id="anim_cercle_trigo_val_inst_v1d.xhtml" href="Text/anim_cercle_trigo_val_inst_v1d.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="anim_alternateur_triphase_v1d.xhtml" href="Text/anim_alternateur_triphase_v1d.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="x3f8ed14356a1444080c554ab88cf3f8e.png" href="Images/3f8ed14356a1444080c554ab88cf3f8e.png" media-type="image/png"/>
+    <item id="x0df41a4e137b4892b24d84fcb9541ca7.png" href="Images/0df41a4e137b4892b24d84fcb9541ca7.png" media-type="image/png"/>
+    <item id="x3d9f011b192f445ea76dcd2602095e1f.png" href="Images/3d9f011b192f445ea76dcd2602095e1f.png" media-type="image/png"/>
+    <item id="x5ed9acefdd73444aadfdde845eb441aa.png" href="Images/5ed9acefdd73444aadfdde845eb441aa.png" media-type="image/png"/>
+    <item id="x0845ba4ab91c468d8c342615598868a5.png" href="Images/0845ba4ab91c468d8c342615598868a5.png" media-type="image/png"/>
+    <item id="x9136ab376d4a4828be9a4fc283dd87f1.png" href="Images/9136ab376d4a4828be9a4fc283dd87f1.png" media-type="image/png"/>
+    <item id="x1436066f943e481fbead7da5e0387e66.png" href="Images/1436066f943e481fbead7da5e0387e66.png" media-type="image/png"/>
+    <item id="b69d2e685b1a4c5793c5a891cf213eb1.png" href="Images/b69d2e685b1a4c5793c5a891cf213eb1.png" media-type="image/png"/>
+    <item id="bc3bdedc735b4f018e77ca875c50125d.png" href="Images/bc3bdedc735b4f018e77ca875c50125d.png" media-type="image/png"/>
+    <item id="f8adf76f1fdd47f086b4e587c2ea6b63.png" href="Images/f8adf76f1fdd47f086b4e587c2ea6b63.png" media-type="image/png"/>
+    <item id="ex_03_b.xhtml" href="Text/ex_03_b.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="x0ddc2d4d7e564e8b86442ed9439871ba.png" href="Images/0ddc2d4d7e564e8b86442ed9439871ba.png" media-type="image/png"/>
+    <item id="x1d716e063c3f426b9ab5480e567cbd89.png" href="Images/1d716e063c3f426b9ab5480e567cbd89.png" media-type="image/png"/>
+    <item id="x7d666bc4d0594952aec20d79d3a2b798.png" href="Images/7d666bc4d0594952aec20d79d3a2b798.png" media-type="image/png"/>
+    <item id="a730f228a4ea42a3980c1106b896d0e1.png" href="Images/a730f228a4ea42a3980c1106b896d0e1.png" media-type="image/png"/>
+    <item id="ce36954994bf43a7a0f6ca57b85e5ae0.png" href="Images/ce36954994bf43a7a0f6ca57b85e5ae0.png" media-type="image/png"/>
+    <item id="d932e1ce5ec540d0a96f7bcee0e12f2b.png" href="Images/d932e1ce5ec540d0a96f7bcee0e12f2b.png" media-type="image/png"/>
+    <item id="ff5cd2a4e8574c9389bc783bf3b8d78c.png" href="Images/ff5cd2a4e8574c9389bc783bf3b8d78c.png" media-type="image/png"/>
+    <item id="x3abe6388b999426db37188e8f5318d06.png" href="Images/3abe6388b999426db37188e8f5318d06.png" media-type="image/png"/>
+    <item id="x4a9b97e0932448b9a57cf3d1c3baeff3.png" href="Images/4a9b97e0932448b9a57cf3d1c3baeff3.png" media-type="image/png"/>
+    <item id="x6dc660f8dd0a4341a04545b5f4f2c68d.png" href="Images/6dc660f8dd0a4341a04545b5f4f2c68d.png" media-type="image/png"/>
+    <item id="x9b2e3825ae5a4022a19b55d287f7893c.png" href="Images/9b2e3825ae5a4022a19b55d287f7893c.png" media-type="image/png"/>
+    <item id="x9e78050997cd4decaf021f9be808937b.png" href="Images/9e78050997cd4decaf021f9be808937b.png" media-type="image/png"/>
+    <item id="x14f7554aec524a51b538af35a0372ceb.png" href="Images/14f7554aec524a51b538af35a0372ceb.png" media-type="image/png"/>
+    <item id="x27fd7585fbc54adb96d910e56b641707.png" href="Images/27fd7585fbc54adb96d910e56b641707.png" media-type="image/png"/>
+    <item id="x38cd7726512c4dd88dbd4194382b3337.png" href="Images/38cd7726512c4dd88dbd4194382b3337.png" media-type="image/png"/>
+    <item id="x61c0eee55d8e4276a04dc2a4cc469723.png" href="Images/61c0eee55d8e4276a04dc2a4cc469723.png" media-type="image/png"/>
+    <item id="x75851b258d024b229e2afcf10baebe8f.png" href="Images/75851b258d024b229e2afcf10baebe8f.png" media-type="image/png"/>
+    <item id="x350651f9b64b4f219d67f9a688525c7f.png" href="Images/350651f9b64b4f219d67f9a688525c7f.png" media-type="image/png"/>
+    <item id="a728f971a87c442ca785d37de3f46672.png" href="Images/a728f971a87c442ca785d37de3f46672.png" media-type="image/png"/>
+    <item id="d096a858c2c04ffdb7b5045f955dba43.png" href="Images/d096a858c2c04ffdb7b5045f955dba43.png" media-type="image/png"/>
+    <item id="fbb1ca6f70d94117ac6c03a1ec5931cd.png" href="Images/fbb1ca6f70d94117ac6c03a1ec5931cd.png" media-type="image/png"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover.xhtml" linear="yes"/>
+    <itemref idref="page_copyright.xhtml" linear="yes"/>
+    <itemref idref="th_01.xhtml" linear="yes"/>
+    <itemref idref="anim_alternateur_triphase_v1d.xhtml"/>
+    <itemref idref="th_02.xhtml"/>
+    <itemref idref="anim_cercle_trigo_val_inst_v1d.xhtml"/>
+    <itemref idref="th_03.xhtml"/>
+    <itemref idref="anim_freq-ampl-oscillo_v1f.xhtml"/>
+    <itemref idref="th_03_a.xhtml"/>
+    <itemref idref="ex_03.xhtml"/>
+    <itemref idref="th_03_b.xhtml"/>
+    <itemref idref="val_inst_anim_cercle_trigo_val_inst_v1d.xhtml"/>
+    <itemref idref="ex_03_b.xhtml"/>
+    <itemref idref="th_04.xhtml"/>
+    <itemref idref="ex_04.xhtml"/>
+    <itemref idref="th_05.xhtml"/>
+    <itemref idref="ex_05.xhtml"/>
+    <itemref idref="th_06.xhtml"/>
+    <itemref idref="ex_06.xhtml"/>
+    <itemref idref="th_07_new.xhtml"/>
+    <itemref idref="th_08_new.xhtml"/>
+    <itemref idref="th_09_new.xhtml"/>
+    <itemref idref="ex_08.xhtml"/>
+    <itemref idref="th_10_new.xhtml"/>
+    <itemref idref="th_11_new.xhtml"/>
+    <itemref idref="th_12_new.xhtml"/>
+    <itemref idref="tri_anim_alternateur_triphase_v1d.xhtml"/>
+    <itemref idref="th_13_new.xhtml"/>
+    <itemref idref="th_14_new.xhtml"/>
+    <itemref idref="page_reference.xhtml" linear="yes"/>
+    <itemref idref="nav.xhtml"/>
+  </spine>
+  <guide>
+    <reference type="cover" title="Couverture" href="Text/cover.xhtml"/>
+  </guide>
+</package>

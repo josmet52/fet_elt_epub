@@ -1,0 +1,72 @@
+.block_ {
+    display: block;
+    font-family: "Calibri Light", sans-serif;
+    font-size: 1.41667em;
+    font-weight: normal;
+    line-height: 1.2;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin: 12pt 0 0;
+    padding: 0
+    }
+.block_1 {
+    display: block;
+    font-family: "Calibri Light", sans-serif;
+    font-size: 1.125em;
+    font-weight: normal;
+    line-height: 1.2;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin: 2pt 0 0;
+    padding: 0
+    }
+.block_2 {
+    background-color: #FFF;
+    color: black;
+    display: block;
+    line-height: 1.2;
+    margin: 0 0 8pt;
+    padding: 0
+    }
+.block_3 {
+    background-color: #FFF;
+    display: block;
+    font-family: "Calibri Light", sans-serif;
+    font-size: 1.125em;
+    font-weight: normal;
+    line-height: 1.2;
+    page-break-after: avoid;
+    page-break-inside: avoid;
+    margin: 2pt 0 0;
+    padding: 0
+    }
+.block_4 {
+    background-color: #FFF;
+    color: #000;
+    display: block;
+    font-family: "Verdana", sans-serif;
+    font-size: 1.125em;
+    line-height: 1.2;
+    text-align: center;
+    margin: 0 0 8pt;
+    padding: 0
+    }
+.calibre {
+    color: #2E74B5;
+    display: block;
+    font-family: "Calibri", sans-serif;
+    font-size: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 5pt
+    }
+.calibre1 {
+    height: 169pt;
+    line-height: 1.2;
+    width: 345pt
+    }
+.calibre2 {
+    height: 162pt;
+    line-height: 1.2;
+    width: 362pt
+    }

@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="fr" lang="fr">
+<head>
+    <title>Animation_frequence-amplitude_v1d</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../Styles/pw_table_style_v1r.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/anim_styles_v1d.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/anim_freq-ampl-oscillo_v1d.js" type="text/javascript">
+        none
+    </script>
+</head>
+
+<body>
+    <h2> 7.1 Animation : oscilloscope et phase d'une onde simusoïdale</h2>
+    <div class="fet_tableau">
+        <div class="fet_ligne">
+            <div class="fet_cellule_canvas" id="cellule_canvas_id">
+                <canvas id="canvas_display_id" width="996" height="465">
+                    Holala !! ce browser ne supporte pas les animations
+                    <br/>
+                </canvas>
+
+            </div>
+            <div class="fet_cellule" id="cellule_cde_oscillo_id" style="display: table-cell;">
+                <div class="fet_ligne">
+                    <div class="fet_cellule">
+                        <div class="info-container-in" id="cde_volt_div_id">
+                            <p id="txt_volt_div_id">100 V/div</p>
+                            <button class="button_plus_minus" type="button" onclick="btnVoltMoins()">-</button>
+                            <button class="button_plus_minus" type="button" onclick="btnVoltPlus()">+</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="fet_ligne">
+                    <div class="fet_cellule">
+                        <div class="info-container-in" id="cde_ms_div_id">
+                            <p id="txt_ms_div_id">2 ms/div</p>
+                            <button class="button_plus_minus" type="button" onclick="btnDivMoins()">-</button>
+                            <button class="button_plus_minus" type="button" onclick="btnDivPlus()">+</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="fet_tableau">
+        <div class="fet_ligne">
+            <div class="fet_cellule_fap" id="cellule_tension_id" style="display: table-cell;">
+                <div class="slide-container">
+                    <input class="slider" id="slide_ampl_id" type="range" min="0" max="600" value="340" onchange="displayValue()"/>
+                    <p class="lbl-slider" id="txt_ampl_id">Amplitude<br/>[100 V/div]</p>
+                </div>
+                <div class="info-txt-container" id="txt_amplval_id">U<sub>efficace</sub> = 240V<br/>U<sub>crête</sub> = 340V<br/>U<sub>pp</sub> = 680V</div>
+            </div>
+            <div class="fet_cellule_fap" id="cellule_frequence_id" style="display: table-cell;">
+                <div class="slide-container">
+                    <input class="slider" id="slide_freq_id" type="range" min="10" max="1000" value="50" onchange="displayValue()"/>
+                    <p class="lbl-slider" id="txt_freq_id">Fréquence<br/>[2 ms/div]</p>
+                </div>
+                <div class="info-txt-container" id="txt_freqval_id">Fréquence = 50 Hz<br/>Période = 20.0 ms</div>
+            </div>
+            <div class="fet_cellule_fap" id="cellule_phase_id" style="display: table-cell;">
+                <div class="slide-container">
+                    <input class="slider" id="slide_phase_id" type="range" min="0" max="360" value="0" onchange="displayValue()"/>
+                    <p class="lbl-slider" id="txt_phase_id">Phase<br/>[36 °/div]</p>
+                </div>
+                <div class="info-txt-container" id="txt_phaseval_id">Phase = 0 °<br/>Phase = 0.00 rad</div>
+            </div>
+            <div class="fet_cellule_logo" id="cellule_logo_id" style="display: table-cell;">
+                <img src="../Images/logo_fet.png" width="50" height="50"/>
+                <!-- <br/> -->
+                <!-- <button  class="button" type="button" style="width:100px; background-color:#e57e70; padding-bottom:3px" onclick="showHideElement()">update</button> -->
+            </div>
+        </div>
+    </div>
+    <script>
+        // Variables globales
+
+         // affichage des éléments
+        var show_tension = true;
+        var show_frequence = true;
+        var show_phase = true;
+        var show_oscillo = true;
+        var show_logo = true;
+
+         // ******************************************************************
+        var color_fond_ecran = "#d9e8d9";
+        var color_divison_ecran = "#3a613a";
+        var color_border_ecran = "#243c24";
+
+        var color_courbe_1 = "#ff4500";
+        var color_courbe_2 = "#00baff";
+        var sinus_ref_color = "#b0ceec" //"#32cd32"; // LimeGreen
+        var color_curseur = "#00ff45";
+
+         // dimensions de reference
+        var r_base_y;
+        var r_base_x;
+
+        var xy_margin;
+        var line_width;
+        var resizing_ok = false;
+
+         // dimension des éléments
+        var r_display_x;
+        var x_0;
+        var x_min;
+        var x_max;
+
+        var r_display_y;
+        var y_0;
+        var y_min;
+        var y_max;
+
+        var r_base_x;
+        var r_base_y;
+
+         // reglages oscillosope
+        var nbre_grid = 10;
+        var volt_div = 100;
+        var ms_div = 2;
+        var amp_max = volt_div * 8;
+        var t_max = ms_div * nbre_grid;
+
+         // valeurs courbes
+        var freq;
+        var amp;
+        var phase;
+
+         // Initialisations
+
+        <!-- document.getElementsByTagName("body")[0].onresize = function() { -->
+            <!-- onResizeAction() -->
+        <!-- }; -->
+
+        var sleep_time = 100;
+        var id_display_values = setInterval(onResizeAction, sleep_time);
+
+        var canvas_element = document.getElementById("canvas_display_id");
+        var ctx = canvas_element.getContext("2d");
+
+
+        var lbl_amplval = document.getElementById("txt_amplval_id");
+        var lbl_ampl = document.getElementById("txt_ampl_id");
+        var slide_ampl = document.getElementById("slide_ampl_id");
+
+        var lbl_freqval = document.getElementById("txt_freqval_id");
+        var lbl_freq = document.getElementById("txt_freq_id");
+        var slide_freq = document.getElementById("slide_freq_id");
+
+
+        var lbl_phaseval = document.getElementById("txt_phaseval_id");
+        var lbl_phase = document.getElementById("txt_phase_id");
+        var slide_phase = document.getElementById("slide_phase_id");
+
+        var lbl_volt = document.getElementById("txt_volt_div_id");
+        var lbl_div = document.getElementById("txt_ms_div_id");
+
+        var cel_canvas = document.getElementById("cellule_canvas_id");
+        var cel_cde_osc = document.getElementById("cellule_cde_oscillo_id");
+
+        var cel_tension = document.getElementById("cellule_tension_id");
+        var cel_frequence = document.getElementById("cellule_frequence_id");
+        var cel_phase = document.getElementById("cellule_phase_id");
+        var cel_logo = document.getElementById("cellule_logo_id");
+
+        var cde_volt_div = document.getElementById("cde_volt_div_id");
+        var cde_ms_div = document.getElementById("cde_volt_div_id");
+
+        onResizeAction();
+    </script>
+</body>
+</html>

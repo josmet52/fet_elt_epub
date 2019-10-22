@@ -1,0 +1,277 @@
+.button,
+.textarea,
+.textareasin,
+.textareacos,
+.textareaangle,
+.textareatension,
+.textareaphi,
+.textareaph1,
+.textareaph2,
+.textareaph3,
+.canvas,
+.btncheck,
+.info-container, 
+.info-txt-container, 
+.info-container-in, 
+.info-container-in-bottom, 
+.slide-container,
+.hidenbutton {
+	font-family : Arial;
+	font-size: 14px;
+}
+.button,
+.button_plus_minus ,
+.button_plus_minus-space
+{
+	background-color: #c4c4c0; 
+	border-color : #b2b29c;
+	border-style : solid;
+	border-width : 1px;
+	border-radius: 8px;
+	color: black;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 5px 0px 5px 0px;
+}
+.button:hover {
+	background-color: #ffffe0;
+	cursor: pointer;
+}
+.button_plus_minus,
+.button_plus_minus-space
+ {
+	font-weight: bold;
+	font-size: 12px;
+	width : 40px;
+	border-radius: 4px;
+	padding: 8px 8px 8px 8px;
+	text-align: center;
+    border: 1px solid black; /* Green */
+}
+.button_plus_minus:hover {
+	background-color: #ffffe0;
+	cursor: pointer;
+}
+.button_plus_minus-space:hover {
+	background-color: #ffffe0;
+	cursor: pointer;
+}
+.button_plus_minus-space
+ {
+	margin-left: 25px;
+}		
+.button-show {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    margin: 0px 2px 0px 2px;
+    padding: 8px 32px;
+    border: 2px solid black; 
+	border-radius: 8px;
+}
+.button-show:hover {
+	background-color: grey;
+	cursor: pointer;
+}
+.button-go {
+	background-color: #b9b900; 
+}
+.btncheck
+ {
+	margin-left: 10px;
+}		
+.btncheck:hover {
+	background-color: lightgray;
+	cursor: pointer;
+	}	
+.textarea,
+.textareasin,
+.textareacos,
+.textareaangle,
+.textareatension,
+.textareaphi,
+.textareaph1,
+.textareaph2,
+.textareaph3,
+.oscillo,
+.canvas	{
+	background-color: #ebfaff; 
+	border-color : #2a7189;
+	border-radius: 0px;
+	border-style : solid;
+	border-width : 1px;
+	color: black;
+	padding: 10px 1px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 14px;
+	margin: 2px 1px;
+	float : left;
+	cursor: default;
+}
+.textareasin,
+.textareacos,
+.textareaangle,
+.textareatension,
+.textareaphi,
+.textareaph1,
+.textareaph2,
+.textareaph3{
+	border-radius: 6px;
+	margin: 3px 5px 0px 5px;
+	padding: 10px 2px 10px 2px;
+	vertical-align: middle;
+	width: 85px;
+}
+
+.textareasin {
+	color: #003bff;
+	font-weight: bold;
+	
+}
+.textareacos {
+	color: #ff4500;
+	font-weight: bold;
+}
+.textareaangle {
+	color: #00baff;
+	font-weight: bold;
+}
+.textareatension {
+	color: black;
+	font-weight: bold;
+}
+.textareaph1 {
+	color: #ff4500;
+	font-weight: bold;
+}
+.textareaph2 {
+	color: #0a97ee;
+	font-weight: bold;
+}
+.textareaph3 {
+	color: #32cd32;
+	font-weight: bold;
+}
+.textareaphi {
+	color: black;
+	font-weight: bold;
+}
+.canvas	{
+	float : left;
+}
+.slide-container,
+.info-container,
+.info-txt-container,
+.info-container-in {
+	border-radius: 5px;
+	background-color: #ebfaff;
+	border : 1px #2a7189 solid;
+	padding : 5px;
+	width: 100px;
+	margin : 2px;
+	display: inline-block;
+	text-align : center;
+}
+.slide-container {
+	margin: 5px 0px 5px 0px;
+	padding-top: 10px;
+	width: auto;
+	height: auto;
+}
+.slider {
+    width: 98%;
+	height : 15px;
+	padding-top: 0px;
+	margin: 0px;
+	background-color: lightgray;
+    opacity: 0.6; 
+}
+.slider:hover {
+	cursor: pointer;
+	color : red;
+    opacity: 1; 
+}
+.info-container {
+	background-color: #d9e8d9;
+	width: auto;
+}
+.info-txt-container {
+	background-color: white;
+	width: auto;
+	text-align: left;
+	border: none;
+    vertical-align: center;
+	padding : 0px;
+	cursor : default;
+	}
+.info-container-in {
+	background-color: #3a613a;
+	width: auto;
+	color : white;
+	font-weight: bold;
+	margin : 0px 0px 3px 0px;
+}
+.lbl-slider {
+	padding : 5px 0px 0px 0px;
+	margin: 0px;
+	cursor : default;
+}
+.empty_space {
+	width : 5px;
+	border : none;
+	display: inline-block;
+}
+.oscillo {
+	border-radius: 10px;
+}
+.fet_tableau {
+    display: table;
+    width: 95% ;
+    margin: 5px;
+    padding: 0px;
+	border-collapse: collapse;
+}
+.fet_ligne {
+	display: table-row;
+	margin: 0px;
+	padding: 0px;
+}
+
+.fet_cellule,
+.fet_cellule_canvas,
+.fet_cellule_fap,
+.fet_cellule_logo
+ {
+	display: table-cell;
+	vertical-align: center;
+	text-align: center;
+	width: 10%;
+	height: auto;
+}
+
+.fet_cellule_canvas {
+	padding-left: 5px;
+	padding-right: 5px;
+	vertical-align: top;
+	text-align: left;
+	width: 90%;
+}
+
+.fet_cellule_fap {
+	vertical-align: center;
+	width: 30.5%;
+}
+.fet_cellule_logo {
+	vertical-align: bottom;
+	text-align: right;
+	width: 5%;
+	height: 5%;
+}

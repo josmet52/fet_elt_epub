@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" xmlns:xml="http://www.w3.org/XML/1998/namespace" lang="fr">
+<head>
+    <title>Anim_alternateur_triphase_v1d</title>
+    <link href="../Styles/pw_table_style_v1r.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/anim_styles_v1d.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/anim_alternateur_v1d.js" type="text/javascript">
+        <!--empty-->
+    </script>
+</head>
+
+<body>
+	<h2>10.1.1 Animation : l'alternateur élémentaire</h2>
+	<!-- <p id="d0"></p> -->
+	<!-- <p id="d1"></p> -->
+	<!-- <p id="d2"></p> -->
+    <!-- Inserer un canvas pour l' animation-->
+    <canvas id="canvas_id" width="1218" height="406" class="canvas">
+        Ho la la !!
+        <br/>Malheureusement votre lecteur ne supporte pas Canvas ... l'animation ne peut pas fonctionner.
+        <br/>
+    </canvas>
+    <br/>
+    <form>
+        <!-- insérer les boutons de commande-->
+        <button class="button_plus_minus-space" type="button" onclick="stepRotorMoinsMoins()">--</button>
+        <button class="button_plus_minus" type="button" onclick="stepRotorMoins()">-</button>
+        <button class="button button-show" type="button" onclick="runMotor()">Go/Stop</button>
+        <button class="button_plus_minus" type="button" onclick="stepRotorPlus()">+</button>
+        <button class="button_plus_minus" type="button" onclick="stepRotorPlusPlus()">++</button>
+		
+		<!-- Insérer les options -->
+		<!-- <label class="btncheck">Mono -->
+			<!-- <input type="checkbox" checked="" id="opt_monophase_yesno" style="cursor: pointer;"/> -->
+		<!-- </label> -->
+		<!-- <label class="btncheck">Traits -->
+			<!-- <input type="checkbox" checked="" id="opt_lines_yesno" style="cursor: pointer;"/> -->
+		<!-- </label> -->
+		<!-- <label class="btncheck">Volts -->
+			<!-- <input type="checkbox" checked="" id="opt_tension_yesno" style="cursor: pointer;"/> -->
+		<!-- </label> -->
+		
+        <!-- insérer les champs pour les textes-->
+
+        <div class="textareaphi" id="txt_deg_id">phi = 0˚</div>
+        <div class="textareaph1" id="txt_ph1_id">U=0V</div>
+        <div class="textareaph2" id="txt_ph2_id" style="display: none;">ph2</div>
+        <div class="textareaph3" id="txt_ph3_id" style="display: none;">ph3</div>
+
+
+        <!-- <textarea class="textareaphi" id="txt_deg" rows="1" cols="12">phi</textarea> -->
+        <!-- <textarea class="textareaph1" id="txt_ph1" rows="1" cols="12">ph1</textarea> -->
+        <!-- <textarea class="textareaph2" id="txt_ph2" rows="1" cols="12">ph2</textarea> -->
+        <!-- <textarea class="textareaph3" id="txt_ph3" rows="1" cols="12">ph3</textarea> -->
+
+        <!-- Et voila le script javascript-->
+        <script>
+			
+//********************************* choix des fonctionnalités begin **************************************
+
+            var lines_YN = true; // sho/hide dotted lines
+            var tension_YN = true; // true : show sinus val
+            var monophase_YN = true; // true : monophase
+			var valeurs_YN = true;
+			
+//********************************* choix des fonctionnalités fin **************************************
+
+
+			// Fonction appellée par le resize
+            document.getElementsByTagName("body")[0].onresize = function() {onResizeAction()};
+			
+			// Fonctions appellées par les checkbox
+			<!-- document.getElementById("opt_lines_yesno").onchange = function() {optLinesYesNo(this.checked)}; -->
+			<!-- document.getElementById("opt_lines_yesno").checked = true; -->
+			<!-- document.getElementById("opt_tension_yesno").onchange = function() {optVoltsYesNo(this.checked)}; -->
+			<!-- document.getElementById("opt_tension_yesno").checked = true; -->
+			<!-- document.getElementById("opt_monophase_yesno").onchange = function() {optMonophaseYesNo(this.checked)}; -->
+			<!-- document.getElementById("opt_monophase_yesno").checked = false; -->
+
+             // récupérer les informations du canvas
+            var canvas_element = document.getElementById("canvas_id");
+            var ctx = canvas_element.getContext("2d");
+
+            var txt_deg = document.getElementById("txt_deg_id");
+            var txt_ph1 = document.getElementById("txt_ph1_id");
+            var txt_ph2 = document.getElementById("txt_ph2_id");
+            var txt_ph3 = document.getElementById("txt_ph3_id");
+            <!-- var txt_ph2 = document.getElementById("txt_ph2"); -->
+            <!-- var txt_ph3 = document.getElementById("txt_ph3"); -->
+            <!-- var btn_mono = document.getElementById("btn_mono"); -->
+			
+			<!-- var opt_show_sin_cos_lines = document.getElementById("opt_show_sin_cos_lines"); -->
+			<!-- var opt_tension_yesno = document.getElementById("opt_tension_yesno"); -->
+			<!-- var opt_monophase_yesno = document.getElementById("opt_monophase_yesno"); -->
+
+
+            var w1 = ctx.canvas.width;
+            var h1 = ctx.canvas.height;
+
+             // variable de gestion des dimensions 
+            var Rr; // Rr = demi hauteur du canvas
+            var R; // R = 20% de moins que le demi canvas
+            var Rx; // Rx = décalage pour le graphique
+            var l_width; // l_width = epaisseur des traits noirs
+            var gradLen; // longuer trait fraduation
+
+             // initialisation dimensions et décalage du graphqie
+            var Ymin;
+            var Ymax;
+            var Xmin;
+            var Xmax;
+            var Xlen; // longueur de l'axe des x
+
+            var s; // epaisseur du stator
+            var r; // rayon moyen du stator
+            var p = 0; // angle initial du rotor en degres
+            var c; // cote de l'encoche
+            var w; // diametre du fil
+
+            var sleep_time = 100; // pause en ms entre deux pas en automatique
+            var anim_running = false;
+            var stop_asked = false;
+            var p_inc = 1; // incrementation pour run auto
+            var u_crete = 326; // tension de crête
+
+            var ph1_color = "#ff4500"; // OrangeRed
+            var ph2_color = "#87cefa"; // LightSkyBlue
+            var ph3_color = "#32cd32"; // LimeGreen
+
+			
+			var verif_scope = "le scope est à vérifier";
+
+
+             // lancer l'animation
+             // translater le 0,0 du raphique au centre du stator
+             // ************************************************************************
+             // programme principal
+             // ************************************************************************
+            onResizeAction(); // calculate all the dimentions
+        </script></form>
+</body>
+</html>

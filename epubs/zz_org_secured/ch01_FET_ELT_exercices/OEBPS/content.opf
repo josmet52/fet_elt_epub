@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package version="3.0" unique-identifier="pubId" xmlns="http://www.idpf.org/2007/opf">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">modele_jmetra</dc:title>
+    <dc:identifier id="pubId">9ad1ba95c7d740eb8d2f01eb9770dc86</dc:identifier>
+    <dc:language>fr</dc:language>
+    <meta property="dcterms:modified">2018-04-23T16:30:12Z</meta>
+    <meta content="0.9.9" name="Sigil version" />
+    <meta name="cover" content="ch01_FET_cover.png" />
+  </metadata>
+  <manifest>
+    <item id="cover.xhtml" href="Text/cover.xhtml" media-type="application/xhtml+xml" properties="svg"/>
+    <item id="page_reference.xhtml" href="Text/page_reference.xhtml" media-type="application/xhtml+xml"/>
+    <item id="page_copyright.xhtml" href="Text/page_copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item id="pw_table_style.css" href="Styles/pw_table_style.css" media-type="text/css"/>
+    <item id="exercises.css" href="Styles/exercises.css" media-type="text/css"/>
+    <item id="font_1" href="Fonts/times.ttf" media-type="application/x-font-truetype"/>
+    <item id="font_2" href="Fonts/timesbd.ttf" media-type="application/x-font-truetype"/>
+    <item id="font_3" href="Fonts/timesi.ttf" media-type="application/x-font-truetype"/>
+    <item id="font_4" href="Fonts/timesbi.ttf" media-type="application/x-font-truetype"/>
+    <item id="res50bc" href="Misc/touch.js" media-type="text/javascript"/>
+    <item id="res9b22" href="Misc/pointermap.js" media-type="text/javascript"/>
+    <item id="res3644" href="Misc/platform-events.js" media-type="text/javascript"/>
+    <item id="res161a" href="Misc/installer.js" media-type="text/javascript"/>
+    <item id="res1f5a" href="Misc/touch-action.js" media-type="text/javascript"/>
+    <item id="res5c11" href="Misc/dispatcher.js" media-type="text/javascript"/>
+    <item id="resf7b9" href="Misc/mouse.js" media-type="text/javascript"/>
+    <item id="res79dc" href="Misc/PointerEvent.js" media-type="text/javascript"/>
+    <item id="resee39" href="Styles/exercises0001.css" media-type="text/css"/>
+    <item id="resd0d2" href="Misc/validation.js" media-type="text/javascript"/>
+    <item id="resf77c" href="Misc/boot.js" media-type="text/javascript"/>
+    <item id="res0370" href="Misc/capture.js" media-type="text/javascript"/>
+    <item id="res2481" href="Misc/ms.js" media-type="text/javascript"/>
+    <item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml"/>
+    <item id="nav" href="Text/nav.html" media-type="application/xhtml+xml" properties="nav"/>
+    <item id="ex_03.xhtml" href="Text/ex_03.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="ex_04.xhtml" href="Text/ex_04.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="ex_05.xhtml" href="Text/ex_05.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="ex_06.xhtml" href="Text/ex_06.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="ex_07.xhtml" href="Text/ex_07.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item id="x0effa1bcb50848e891f0ebf189f79f66.jpg" href="Images/0effa1bcb50848e891f0ebf189f79f66.jpg" media-type="image/jpeg"/>
+    <item id="x1bf86f83bb8b4e9eae529e0c182d891c.png" href="Images/1bf86f83bb8b4e9eae529e0c182d891c.png" media-type="image/png"/>
+    <item id="x2b1bd17135a04cdcb373b5a77c20cf09.jpg" href="Images/2b1bd17135a04cdcb373b5a77c20cf09.jpg" media-type="image/jpeg"/>
+    <item id="x2db62c59c103458db3056f3e24928179.jpg" href="Images/2db62c59c103458db3056f3e24928179.jpg" media-type="image/jpeg"/>
+    <item id="x2ff6a462bb8b4adc996fce6ae19f4c14.jpg" href="Images/2ff6a462bb8b4adc996fce6ae19f4c14.jpg" media-type="image/jpeg"/>
+    <item id="x3ee3d1dc88014c968337d6c337b8d9ef.jpg" href="Images/3ee3d1dc88014c968337d6c337b8d9ef.jpg" media-type="image/jpeg"/>
+    <item id="x5c6fbea6105f4c6f9c59ae8ef8d108a1.jpg" href="Images/5c6fbea6105f4c6f9c59ae8ef8d108a1.jpg" media-type="image/jpeg"/>
+    <item id="x037f24ddad5341a89010e2effef1af78.png" href="Images/037f24ddad5341a89010e2effef1af78.png" media-type="image/png"/>
+    <item id="x69d51284b5df48b69dc14ce1c41897bd.jpg" href="Images/69d51284b5df48b69dc14ce1c41897bd.jpg" media-type="image/jpeg"/>
+    <item id="x72f0d7d2753845b4baa31eb3967434bd.png" href="Images/72f0d7d2753845b4baa31eb3967434bd.png" media-type="image/png"/>
+    <item id="x260e21eaa6ae44f884087a08ce03d95e.jpg" href="Images/260e21eaa6ae44f884087a08ce03d95e.jpg" media-type="image/jpeg"/>
+    <item id="x765acb704f914fdea51dacfd2e8045c8.jpg" href="Images/765acb704f914fdea51dacfd2e8045c8.jpg" media-type="image/jpeg"/>
+    <item id="x786e416dde8348eb84a15414c67cfff8.png" href="Images/786e416dde8348eb84a15414c67cfff8.png" media-type="image/png"/>
+    <item id="x888a054f63124ca6bf6b650988f4f39a.jpg" href="Images/888a054f63124ca6bf6b650988f4f39a.jpg" media-type="image/jpeg"/>
+    <item id="x902dbce4b1f646ec92e43b1c0d65a686.jpg" href="Images/902dbce4b1f646ec92e43b1c0d65a686.jpg" media-type="image/jpeg"/>
+    <item id="x931a308b28144df5a162b549aa34d4f5.png" href="Images/931a308b28144df5a162b549aa34d4f5.png" media-type="image/png"/>
+    <item id="x9731c105379b4e47bd81803072ec68e5.png" href="Images/9731c105379b4e47bd81803072ec68e5.png" media-type="image/png"/>
+    <item id="a2ba9a8788b74bf3a01aa25da25f46f3.jpg" href="Images/a2ba9a8788b74bf3a01aa25da25f46f3.jpg" media-type="image/jpeg"/>
+    <item id="aecf17e2570240e3950f4f371c904e31.jpg" href="Images/aecf17e2570240e3950f4f371c904e31.jpg" media-type="image/jpeg"/>
+    <item id="bdbdf824eb224f77b4466f460a79c516.png" href="Images/bdbdf824eb224f77b4466f460a79c516.png" media-type="image/png"/>
+    <item id="ch01_FET_cover.png" href="Images/ch01_FET_cover.png" media-type="image/png" properties="cover-image"/>
+    <item id="d2689dd333294d13a8451f240238c71a.png" href="Images/d2689dd333294d13a8451f240238c71a.png" media-type="image/png"/>
+    <item id="dbc535ba42f04893a422df5d001d8227.png" href="Images/dbc535ba42f04893a422df5d001d8227.png" media-type="image/png"/>
+    <item id="deb91baa98b74bf6b5b1685f967942ed.png" href="Images/deb91baa98b74bf6b5b1685f967942ed.png" media-type="image/png"/>
+    <item id="defe68c954e44792ab904fba357e78ac.jpg" href="Images/defe68c954e44792ab904fba357e78ac.jpg" media-type="image/jpeg"/>
+    <item id="f4ff6a258dc54bf4a2949dca503cabd4.jpg" href="Images/f4ff6a258dc54bf4a2949dca503cabd4.jpg" media-type="image/jpeg"/>
+    <item id="f33593da94ea4550a9159f1be2f42ba9.png" href="Images/f33593da94ea4550a9159f1be2f42ba9.png" media-type="image/png"/>
+    <item id="fa8038464f99480282f3c8a6beb2ccdd.png" href="Images/fa8038464f99480282f3c8a6beb2ccdd.png" media-type="image/png"/>
+    <item id="fb02412853934c83979481f04914c0f8.png" href="Images/fb02412853934c83979481f04914c0f8.png" media-type="image/png"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover.xhtml" linear="yes"/>
+    <itemref idref="page_copyright.xhtml" linear="yes"/>
+    <itemref idref="ex_03.xhtml"/>
+    <itemref idref="ex_04.xhtml"/>
+    <itemref idref="ex_05.xhtml"/>
+    <itemref idref="ex_06.xhtml"/>
+    <itemref idref="ex_07.xhtml"/>
+    <itemref idref="page_reference.xhtml" linear="yes"/>
+    <itemref idref="nav"/>
+  </spine>
+  <guide>
+    <reference type="cover" title="Cover" href="Text/cover.xhtml"/>
+  </guide>
+</package>

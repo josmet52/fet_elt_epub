@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="9ad1ba95c7d740eb8d2f01eb9770dc86" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>MEM_pou_INFO_v0c</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1">
+      <navLabel>
+        <text>1 Les aimants (7.1)</text>
+      </navLabel>
+      <content src="Text/th_03_01.xhtml"/>
+      <navPoint id="navPoint2">
+        <navLabel>
+          <text>1.1 Définition (7.1.1)</text>
+        </navLabel>
+        <content src="Text/th_03_01.xhtml#FET_toc_id_002"/>
+      </navPoint>
+      <navPoint id="navPoint3">
+        <navLabel>
+          <text>1.2 Propriétés des aimants (7.1.2)</text>
+        </navLabel>
+        <content src="Text/th_03_01.xhtml#FET_toc_id_003"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint4">
+      <navLabel>
+        <text>2 Champ magnétique (7.2)</text>
+      </navLabel>
+      <content src="Text/th_03_02.xhtml"/>
+      <navPoint id="navPoint5">
+        <navLabel>
+          <text>2.1 Spectre magnétique (7.2.1)</text>
+        </navLabel>
+        <content src="Text/th_03_02.xhtml#FET_toc_id_005"/>
+      </navPoint>
+      <navPoint id="navPoint6">
+        <navLabel>
+          <text>2.2 Propriétés des lignes de champ magnétique (7.2.2)</text>
+        </navLabel>
+        <content src="Text/th_03_02.xhtml#FET_toc_id_006"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint7">
+      <navLabel>
+        <text>3 Matériaux dans le champ magnétique (7.3)</text>
+      </navLabel>
+      <content src="Text/th_03_03.xhtml"/>
+      <navPoint id="navPoint8">
+        <navLabel>
+          <text>3.1 Théorie simplifiée du magnétisme (7.3.1)</text>
+        </navLabel>
+        <content src="Text/th_03_03.xhtml#FET_toc_id_008"/>
+      </navPoint>
+      <navPoint id="navPoint9">
+        <navLabel>
+          <text>3.2 Matériaux amagnétiques (7.3.2)</text>
+        </navLabel>
+        <content src="Text/th_03_03.xhtml#FET_toc_id_009"/>
+      </navPoint>
+      <navPoint id="navPoint10">
+        <navLabel>
+          <text>3.3 Matériaux ferromagnétiques (7.3.3)</text>
+        </navLabel>
+        <content src="Text/th_03_03.xhtml#FET_toc_id_010"/>
+      </navPoint>
+      <navPoint id="navPoint11">
+        <navLabel>
+          <text>3.4 Aimantation temporaire (7.3.4)</text>
+        </navLabel>
+        <content src="Text/th_03_03.xhtml#FET_toc_id_011"/>
+      </navPoint>
+      <navPoint id="navPoint12">
+        <navLabel>
+          <text>3.5 Aimantation permanente (7.3.5)</text>
+        </navLabel>
+        <content src="Text/th_03_03.xhtml#FET_toc_id_012"/>
+      </navPoint>
+      <navPoint id="navPoint13">
+        <navLabel>
+          <text>3.6 Désaimantation (7.3.6)</text>
+        </navLabel>
+        <content src="Text/th_03_03.xhtml#FET_toc_id_013"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint14">
+      <navLabel>
+        <text>4 Electromagnétisme (7.4)</text>
+      </navLabel>
+      <content src="Text/th_03_05.xhtml"/>
+      <navPoint id="navPoint15">
+        <navLabel>
+          <text>4.1 Champ magnétique dʼune spire (7.4.1)</text>
+        </navLabel>
+        <content src="Text/th_03_05.xhtml#FET_toc_id_018"/>
+      </navPoint>
+      <navPoint id="navPoint16">
+        <navLabel>
+          <text>4.2 Champ magnétique dʼune bobine (7.4.2)</text>
+        </navLabel>
+        <content src="Text/th_03_05.xhtml#FET_toc_id_019"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint17">
+      <navLabel>
+        <text>5.1 Courant alternatif sinusoïdal (10.1)</text>
+      </navLabel>
+      <content src="Text/th_10_ELMO_01.xhtml"/>
+      <navPoint id="navPoint18">
+        <navLabel>
+          <text>5.1.1 L'alternateur élémentaire: animation</text>
+        </navLabel>
+        <content src="Text/th_10_ELMO_01_anim_alternateur_monophase_v5.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint19">
+      <navLabel>
+        <text>5.2 Représentation dʼun courant alternatif sinusoïdal (10.2)</text>
+      </navLabel>
+      <content src="Text/th_10_ELMO_02.xhtml"/>
+      <navPoint id="navPoint20">
+        <navLabel>
+          <text>5.2.1 Le cercle trigonométrique: animation</text>
+        </navLabel>
+        <content src="Text/th_10_ELMO_02_anim_cercle_trigo_v5.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint21">
+      <navLabel>
+        <text>5.3 Courant alternatif sinusoïdal (10.3)</text>
+      </navLabel>
+      <content src="Text/th_03.xhtml"/>
+      <navPoint id="navPoint22">
+        <navLabel>
+          <text>5.3.1 Période et fréquence (10.3.1)</text>
+        </navLabel>
+        <content src="Text/th_03.xhtml#FET_toc_id_005"/>
+      </navPoint>
+      <navPoint id="navPoint23">
+        <navLabel>
+          <text>5.3.2 Vitesse (pulsation) angulaire (10.3.2)</text>
+        </navLabel>
+        <content src="Text/th_03_a.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint24">
+        <navLabel>
+          <text>5.3.3 Valeur de crête (10.3.3)</text>
+        </navLabel>
+        <content src="Text/th_03_a.xhtml#FET_toc_id_007"/>
+      </navPoint>
+      <navPoint id="navPoint25">
+        <navLabel>
+          <text>5.3.4 Valeur efficace (10.3.4)</text>
+        </navLabel>
+        <content src="Text/th_03_b.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint26">
+        <navLabel>
+          <text>5.3.5 Animation : amplitude, fréquence et phase d'une tension</text>
+        </navLabel>
+        <content src="Text/anim_periode-frequence_v1c.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint27">
+        <navLabel>
+          <text>5.3.6 Valeur instantanée (10.3.5)</text>
+        </navLabel>
+        <content src="Text/th_03_c.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint28">
+        <navLabel>
+          <text>5.3.7 Valeur instantanée d'un signal alternatif: animation</text>
+        </navLabel>
+        <content src="Text/th_03_anim_valeur_instantanee_v5.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint29">
+      <navLabel>
+        <text>6 Le chemin de l'électricité (10.3)</text>
+      </navLabel>
+      <content src="Text/complement_INFO.xhtml"/>
+      <navPoint id="navPoint30">
+        <navLabel>
+          <text>6.1 Transport de l'électricité</text>
+        </navLabel>
+        <content src="Text/complement_INFO.xhtml#sigil_toc_id_4"/>
+      </navPoint>
+      <navPoint id="navPoint31">
+        <navLabel>
+          <text>6.2 De l'alternatif au continu (alimentation à découpage)</text>
+        </navLabel>
+        <content src="Text/complement_INFO.xhtml#sigil_toc_id_2"/>
+      </navPoint>
+      <navPoint id="navPoint32">
+        <navLabel>
+          <text>6.3 Battery backup pour ordinateur</text>
+        </navLabel>
+        <content src="Text/complement_INFO.xhtml#sigil_toc_id_3"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint33">
+      <navLabel>
+        <text>7 Oscilloscope (7.5)</text>
+      </navLabel>
+      <content src="Text/th_09_04.xhtml"/>
+      <navPoint id="navPoint34">
+        <navLabel>
+          <text>7.1 Animation : oscilloscope et phase d'une onde simusoïdale</text>
+        </navLabel>
+        <content src="Text/anim_freq-ampl-oscillo_v1c.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint35">
+      <navLabel>
+        <text>Références</text>
+      </navLabel>
+      <content src="Text/page_reference.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="pubId" version="3.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="title">modele_jmetra</dc:title>
+    <dc:identifier id="pubId">9ad1ba95c7d740eb8d2f01eb9770dc86</dc:identifier>
+    <dc:language>fr</dc:language>
+    <meta property="dcterms:modified">2018-04-16T08:06:46Z</meta>
+    <meta content="cover-image" name="cover"/>
+    <meta content="0.9.8" name="Sigil version"/>
+  </metadata>
+  <manifest>
+    <item href="Text/th_01.xhtml" id="th_01.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/cover.xhtml" id="cover.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/page_reference.xhtml" id="page_reference.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/page_copyright.xhtml" id="page_copyright.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Styles/pw_table_style.css" id="pw_table_style.css" media-type="text/css"/>
+    <item href="Styles/exercises.css" id="exercises.css" media-type="text/css"/>
+    <item href="Fonts/times.ttf" id="font_1" media-type="application/x-font-truetype"/>
+    <item href="Fonts/timesbd.ttf" id="font_2" media-type="application/x-font-truetype"/>
+    <item href="Fonts/timesi.ttf" id="font_3" media-type="application/x-font-truetype"/>
+    <item href="Fonts/timesbi.ttf" id="font_4" media-type="application/x-font-truetype"/>
+    <item href="Images/cover_Electrotechnique.png" id="cover" media-type="image/png" properties="cover-image"/>
+    <item href="Text/ex_01.xhtml" id="ex_01.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
+    <item href="Misc/touch.js" id="res50bc" media-type="text/javascript"/>
+    <item href="Misc/pointermap.js" id="res9b22" media-type="text/javascript"/>
+    <item href="Misc/platform-events.js" id="res3644" media-type="text/javascript"/>
+    <item href="Misc/installer.js" id="res161a" media-type="text/javascript"/>
+    <item href="Misc/touch-action.js" id="res1f5a" media-type="text/javascript"/>
+    <item href="Misc/dispatcher.js" id="res5c11" media-type="text/javascript"/>
+    <item href="Misc/mouse.js" id="resf7b9" media-type="text/javascript"/>
+    <item href="Misc/PointerEvent.js" id="res79dc" media-type="text/javascript"/>
+    <item href="Styles/exercises0001.css" id="resee39" media-type="text/css"/>
+    <item href="Misc/validation.js" id="resd0d2" media-type="text/javascript"/>
+    <item href="Misc/boot.js" id="resf77c" media-type="text/javascript"/>
+    <item href="Misc/capture.js" id="res0370" media-type="text/javascript"/>
+    <item href="Misc/ms.js" id="res2481" media-type="text/javascript"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+    <item href="Text/nav.html" id="nav" media-type="application/xhtml+xml" properties="nav"/>
+    <item href="Text/th_02.xhtml" id="th_02.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_03.xhtml" id="th_03.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_04.xhtml" id="th_04.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_05.xhtml" id="th_05.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_06.xhtml" id="th_06.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_07.xhtml" id="th_07.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_08.xhtml" id="th_08.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_09.xhtml" id="th_09.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_10.xhtml" id="th_10.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_11.xhtml" id="th_11.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_12.xhtml" id="th_12.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_13.xhtml" id="th_13.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_14.xhtml" id="th_14.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_15.xhtml" id="th_15.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_16.xhtml" id="th_16.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_17.xhtml" id="th_17.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_18.xhtml" id="th_18.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/th_19.xhtml" id="th_19.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_02.xhtml" id="ex_02.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_03.xhtml" id="ex_03.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_04.xhtml" id="ex_04.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_05.xhtml" id="ex_05.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_06.xhtml" id="ex_06.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_07.xhtml" id="ex_07.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_08.xhtml" id="ex_08.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_09.xhtml" id="ex_09.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_10.xhtml" id="ex_10.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_11.xhtml" id="ex_11.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_12.xhtml" id="ex_12.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_13.xhtml" id="ex_13.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_14.xhtml" id="ex_14.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_15.xhtml" id="ex_15.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_16.xhtml" id="ex_16.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_17.xhtml" id="ex_17.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_18.xhtml" id="ex_18.xhtml" media-type="application/xhtml+xml"/>
+    <item href="Text/ex_19.xhtml" id="ex_19.xhtml" media-type="application/xhtml+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="cover.xhtml" linear="yes"/>
+    <itemref idref="page_copyright.xhtml" linear="yes"/>
+    <itemref idref="th_01.xhtml" linear="yes"/>
+    <itemref idref="th_02.xhtml"/>
+    <itemref idref="th_03.xhtml"/>
+    <itemref idref="th_04.xhtml"/>
+    <itemref idref="th_05.xhtml"/>
+    <itemref idref="th_06.xhtml"/>
+    <itemref idref="th_07.xhtml"/>
+    <itemref idref="th_08.xhtml"/>
+    <itemref idref="th_09.xhtml"/>
+    <itemref idref="th_10.xhtml"/>
+    <itemref idref="th_11.xhtml"/>
+    <itemref idref="th_12.xhtml"/>
+    <itemref idref="th_13.xhtml"/>
+    <itemref idref="th_14.xhtml"/>
+    <itemref idref="th_15.xhtml"/>
+    <itemref idref="th_16.xhtml"/>
+    <itemref idref="th_17.xhtml"/>
+    <itemref idref="th_18.xhtml"/>
+    <itemref idref="th_19.xhtml"/>
+    <itemref idref="ex_01.xhtml" linear="yes"/>
+    <itemref idref="ex_02.xhtml"/>
+    <itemref idref="ex_03.xhtml"/>
+    <itemref idref="ex_04.xhtml"/>
+    <itemref idref="ex_05.xhtml"/>
+    <itemref idref="ex_06.xhtml"/>
+    <itemref idref="ex_07.xhtml"/>
+    <itemref idref="ex_08.xhtml"/>
+    <itemref idref="ex_09.xhtml"/>
+    <itemref idref="ex_10.xhtml"/>
+    <itemref idref="ex_11.xhtml"/>
+    <itemref idref="ex_12.xhtml"/>
+    <itemref idref="ex_13.xhtml"/>
+    <itemref idref="ex_14.xhtml"/>
+    <itemref idref="ex_15.xhtml"/>
+    <itemref idref="ex_16.xhtml"/>
+    <itemref idref="ex_17.xhtml"/>
+    <itemref idref="ex_18.xhtml"/>
+    <itemref idref="ex_19.xhtml"/>
+    <itemref idref="page_reference.xhtml" linear="yes"/>
+    <itemref idref="nav"/>
+  </spine>
+</package>

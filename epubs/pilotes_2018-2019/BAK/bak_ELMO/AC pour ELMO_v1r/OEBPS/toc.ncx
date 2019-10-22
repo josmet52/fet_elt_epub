@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="9ad1ba95c7d740eb8d2f01eb9770dc86" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>AC pour ELMO v1q</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1">
+      <navLabel>
+        <text>10.1 Généralités</text>
+      </navLabel>
+      <content src="Text/th_01.xhtml"/>
+      <navPoint id="navPoint2">
+        <navLabel>
+          <text>10.1.1 Animation : l'alternateur élémentaire</text>
+        </navLabel>
+        <content src="Text/th_01_anim_alternateur_monophase_v1d.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint3">
+      <navLabel>
+        <text>10.2 Représentation dʼun courant alternatif sinusoïdal</text>
+      </navLabel>
+      <content src="Text/th_02.xhtml"/>
+      <navPoint id="navPoint4">
+        <navLabel>
+          <text>10.2.1 Le cercle trigonométrique: animation</text>
+        </navLabel>
+        <content src="Text/th_02_anim_cercle_trigo_v5.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint5">
+      <navLabel>
+        <text>10.3 Grandeurs et unités</text>
+      </navLabel>
+      <content src="Text/th_03.xhtml"/>
+      <navPoint id="navPoint6">
+        <navLabel>
+          <text>10.3.1 Période et fréquence</text>
+        </navLabel>
+        <content src="Text/th_03.xhtml#FET_toc_id_005"/>
+      </navPoint>
+      <navPoint id="navPoint7">
+        <navLabel>
+          <text>10.3.2 Animation : période et fréquence</text>
+        </navLabel>
+        <content src="Text/th03_anim_freq-ampl-oscillo_v1d.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint8">
+        <navLabel>
+          <text>10.3.1b Exercices : grandeurs et unités</text>
+        </navLabel>
+        <content src="Text/ex_03.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint9">
+        <navLabel>
+          <text>10.3.2 Vitesse (pulsation) angulaire</text>
+        </navLabel>
+        <content src="Text/th_03_a.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint10">
+        <navLabel>
+          <text>10.3.3 Valeur de crête&gt;</text>
+        </navLabel>
+        <content src="Text/th_03_a.xhtml#FET_toc_id_007"/>
+      </navPoint>
+      <navPoint id="navPoint11">
+        <navLabel>
+          <text>10.3.4 Valeur efficace</text>
+        </navLabel>
+        <content src="Text/th_03_b.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint12">
+        <navLabel>
+          <text>10.3.5 Valeur instantanée</text>
+        </navLabel>
+        <content src="Text/th_03_c.xhtml"/>
+      </navPoint>
+      <navPoint id="navPoint13">
+        <navLabel>
+          <text>10.3.6 Animation: valeur instantanée</text>
+        </navLabel>
+        <content src="Text/th_03_anim_valeur_instantanee_v1d.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint14">
+      <navLabel>
+        <text>10.4 Récepteur purement résistif</text>
+      </navLabel>
+      <content src="Text/th_04.xhtml"/>
+      <navPoint id="navPoint15">
+        <navLabel>
+          <text>10.4.1 Résistance</text>
+        </navLabel>
+        <content src="Text/th_04.xhtml#FET_toc_id_011"/>
+      </navPoint>
+      <navPoint id="navPoint16">
+        <navLabel>
+          <text>10.4.2 Puissance et énergie actives</text>
+        </navLabel>
+        <content src="Text/th_04.xhtml#FET_toc_id_012"/>
+      </navPoint>
+      <navPoint id="navPoint17">
+        <navLabel>
+          <text>10.4.3 Exercices : récepteur purement résistif</text>
+        </navLabel>
+        <content src="Text/ex_04.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint18">
+      <navLabel>
+        <text>10.5 Récepteur purement inductif</text>
+      </navLabel>
+      <content src="Text/th_05.xhtml"/>
+      <navPoint id="navPoint19">
+        <navLabel>
+          <text>10.5.1 Réactance dʼinduction</text>
+        </navLabel>
+        <content src="Text/th_05.xhtml#FET_toc_id_014"/>
+      </navPoint>
+      <navPoint id="navPoint20">
+        <navLabel>
+          <text>10.5.2 Puissance et énergie réactives</text>
+        </navLabel>
+        <content src="Text/th_05.xhtml#FET_toc_id_015"/>
+      </navPoint>
+      <navPoint id="navPoint21">
+        <navLabel>
+          <text>10.5.3 Exercices : récepteur purement inductif</text>
+        </navLabel>
+        <content src="Text/ex_05.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint22">
+      <navLabel>
+        <text>10.6 Récepteur purement capacitif</text>
+      </navLabel>
+      <content src="Text/th_06.xhtml"/>
+      <navPoint id="navPoint23">
+        <navLabel>
+          <text>10.6.1 Réactance de capacité</text>
+        </navLabel>
+        <content src="Text/th_06.xhtml#FET_toc_id_018"/>
+      </navPoint>
+      <navPoint id="navPoint24">
+        <navLabel>
+          <text>10.6.2 Puissance et énergie réactives</text>
+        </navLabel>
+        <content src="Text/th_06.xhtml#FET_toc_id_019"/>
+      </navPoint>
+      <navPoint id="navPoint25">
+        <navLabel>
+          <text>10.6.3 Exercices : récepteur purement capacitif</text>
+        </navLabel>
+        <content src="Text/ex_06.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint26">
+      <navLabel>
+        <text>10.7 Récepteurs réels</text>
+      </navLabel>
+      <content src="Text/th_07_new.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint27">
+      <navLabel>
+        <text>10.8 Notions d'impédance</text>
+      </navLabel>
+      <content src="Text/th_08_new.xhtml"/>
+      <navPoint id="navPoint28">
+        <navLabel>
+          <text>10.8.1 Exercices : calcul des tensions, courants et impédences en alternatif</text>
+        </navLabel>
+        <content src="Text/ex_08.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint29">
+      <navLabel>
+        <text>10.9 Triangle des puissances</text>
+      </navLabel>
+      <content src="Text/th_09_new.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint30">
+      <navLabel>
+        <text>10.10 Amélioration du facteur de puissance</text>
+      </navLabel>
+      <content src="Text/th_10_new.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint31">
+      <navLabel>
+        <text>10.11 Comparaison des effets du courant alternatif et du courant continu</text>
+      </navLabel>
+      <content src="Text/th_11_new.xhtml"/>
+      <navPoint id="navPoint32">
+        <navLabel>
+          <text>10.11.1 Effet calorifique</text>
+        </navLabel>
+        <content src="Text/th_11_new.xhtml#FET_toc_id_037"/>
+      </navPoint>
+      <navPoint id="navPoint33">
+        <navLabel>
+          <text>10.11.2 Effet magnétique</text>
+        </navLabel>
+        <content src="Text/th_11_new.xhtml#FET_toc_id_038"/>
+      </navPoint>
+      <navPoint id="navPoint34">
+        <navLabel>
+          <text>10.11.3 Effet chimique</text>
+        </navLabel>
+        <content src="Text/th_11_new.xhtml#FET_toc_id_039"/>
+      </navPoint>
+      <navPoint id="navPoint35">
+        <navLabel>
+          <text>10.11.4 Effet lumineux</text>
+        </navLabel>
+        <content src="Text/th_11_new.xhtml#FET_toc_id_040"/>
+      </navPoint>
+      <navPoint id="navPoint36">
+        <navLabel>
+          <text>10.11.5 Effet piézo-électrique</text>
+        </navLabel>
+        <content src="Text/th_11_new.xhtml#FET_toc_id_041"/>
+      </navPoint>
+      <navPoint id="navPoint37">
+        <navLabel>
+          <text>10.11.6 Effet électrostatique</text>
+        </navLabel>
+        <content src="Text/th_11_new.xhtml#FET_toc_id_042"/>
+      </navPoint>
+      <navPoint id="navPoint38">
+        <navLabel>
+          <text>10.11.7 Effet physiologique</text>
+        </navLabel>
+        <content src="Text/th_11_new.xhtml#FET_toc_id_043"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint39">
+      <navLabel>
+        <text>10.12 Triphasé : généralités</text>
+      </navLabel>
+      <content src="Text/th_12_new.xhtml"/>
+      <navPoint id="navPoint40">
+        <navLabel>
+          <text>10.12.1 Animation : l'alternateur triphasé</text>
+        </navLabel>
+        <content src="Text/anim_alternateur_triphase_v1d.xhtml"/>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint41">
+      <navLabel>
+        <text>10.13 Récepteur triphasé équilibré monté en étoile</text>
+      </navLabel>
+      <content src="Text/th_13_new.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint42">
+      <navLabel>
+        <text>10.14 Récepteur triphasé équilibré monté en triangle</text>
+      </navLabel>
+      <content src="Text/th_14_new.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint43">
+      <navLabel>
+        <text>Références</text>
+      </navLabel>
+      <content src="Text/page_reference.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="2924-3615-2276-9277-1821-3405-8395" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Table of Contents</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint-1" playOrder="1">
+      <navLabel>
+        <text>myTableStyle</text>
+      </navLabel>
+      <content src="Text/th_01.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-2" playOrder="2">
+      <navLabel>
+        <text>tableStyle2</text>
+      </navLabel>
+      <content src="Text/tableStyle2.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint-3" playOrder="3">
+      <navLabel>
+        <text>Esercizi</text>
+      </navLabel>
+      <content src="Text/ex_01.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

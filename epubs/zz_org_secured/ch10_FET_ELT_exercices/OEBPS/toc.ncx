@@ -1,0 +1,506 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="9ad1ba95c7d740eb8d2f01eb9770dc86" />
+    <meta name="dtb:depth" content="2" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+<docTitle>
+  <text>modele_jmetra</text>
+</docTitle>
+<navMap>
+  <navPoint id="navPoint1">
+    <navLabel>
+      <text>Exercices 10.3 : Grandeurs et unités</text>
+    </navLabel>
+    <content src="Text/ex_03.xhtml" />
+    <navPoint id="navPoint2">
+      <navLabel>
+        <text>Exercice 10.3.1a Période et fréquence - application</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#sigil_toc_id_1" />
+    </navPoint>
+    <navPoint id="navPoint3">
+      <navLabel>
+        <text>Exercice 10.3.1b Période et fréquence - application</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#sigil_toc_id_2" />
+    </navPoint>
+    <navPoint id="navPoint4">
+      <navLabel>
+        <text>Exercice 10.3.5a Valeur instantanée - application</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#sigil_toc_id_3" />
+    </navPoint>
+    <navPoint id="navPoint5">
+      <navLabel>
+        <text>Exercice 10.3.5b Valeur instantanée - application</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#sigil_toc_id_4" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint6">
+    <navLabel>
+      <text>Exercices 10.4 : Récepteur purement ohmique</text>
+    </navLabel>
+    <content src="Text/ex_04.xhtml" />
+    <navPoint id="navPoint7">
+      <navLabel>
+        <text>Exercice 10.4.2a Puissance active - application</text>
+      </navLabel>
+      <content src="Text/ex_04.xhtml#sigil_toc_id_5" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint8">
+    <navLabel>
+      <text>Exercices 10.5 : Récepteur purement inductif</text>
+    </navLabel>
+    <content src="Text/ex_05.xhtml" />
+    <navPoint id="navPoint9">
+      <navLabel>
+        <text>Exercice 10.5.1a Réactance d'induction - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_6" />
+    </navPoint>
+    <navPoint id="navPoint10">
+      <navLabel>
+        <text>Exercice 10.5.2a Puissance réactive - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_7" />
+    </navPoint>
+    <navPoint id="navPoint11">
+      <navLabel>
+        <text>Exercice 10.5.2b Puissance réactive - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_8" />
+    </navPoint>
+    <navPoint id="navPoint12">
+      <navLabel>
+        <text>Exercice 10.5.2c Puissance réactive - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_9" />
+    </navPoint>
+    <navPoint id="navPoint13">
+      <navLabel>
+        <text>Exercice 10.5.2d Puissance réactive - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_10" />
+    </navPoint>
+    <navPoint id="navPoint14">
+      <navLabel>
+        <text>Exercice 10.5a Puissance réactive - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_11" />
+    </navPoint>
+    <navPoint id="navPoint15">
+      <navLabel>
+        <text>Exercice 10.5b Puissance réactive - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_12" />
+    </navPoint>
+    <navPoint id="navPoint16">
+      <navLabel>
+        <text>Exercice 10.5c Puissance réactive - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_13" />
+    </navPoint>
+    <navPoint id="navPoint17">
+      <navLabel>
+        <text>Exercice 10.5d Facteur de puissance - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_14" />
+    </navPoint>
+    <navPoint id="navPoint18">
+      <navLabel>
+        <text>Exercice 10.5e Facteur de puissance - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_15" />
+    </navPoint>
+    <navPoint id="navPoint19">
+      <navLabel>
+        <text>Exercice 10.5f Facteur de puissance - application</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#sigil_toc_id_16" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint20">
+    <navLabel>
+      <text>Exercices 10.6 : Récepteur purement capacitif</text>
+    </navLabel>
+    <content src="Text/ex_06.xhtml" />
+    <navPoint id="navPoint21">
+      <navLabel>
+        <text>Exercice 10.6.2a Puissance réactive</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#sigil_toc_id_17" />
+    </navPoint>
+    <navPoint id="navPoint22">
+      <navLabel>
+        <text>Exercice 10.6.2b Puissance réactive</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#sigil_toc_id_18" />
+    </navPoint>
+    <navPoint id="navPoint23">
+      <navLabel>
+        <text>Exercice 10.6a Réactance de capacité - application</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#sigil_toc_id_19" />
+    </navPoint>
+    <navPoint id="navPoint24">
+      <navLabel>
+        <text>Exercice 10.6b Réactance de capacité - application</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#sigil_toc_id_20" />
+    </navPoint>
+    <navPoint id="navPoint25">
+      <navLabel>
+        <text>Exercice 10.6c Réactance de capacité - application</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#sigil_toc_id_21" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint26">
+    <navLabel>
+      <text>Exercices 10.7 : Calcul des tensions, courants et impédences en alternatif</text>
+    </navLabel>
+    <content src="Text/ex_07.xhtml" />
+    <navPoint id="navPoint27">
+      <navLabel>
+        <text>Exercice 10.7a Impédance - application</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#sigil_toc_id_22" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint28">
+    <navLabel>
+      <text>Exercices 10.8 : Récepteur R-L en série</text>
+    </navLabel>
+    <content src="Text/ex_08.xhtml" />
+    <navPoint id="navPoint29">
+      <navLabel>
+        <text>Exercice 10.8a R-L série - application</text>
+      </navLabel>
+      <content src="Text/ex_08.xhtml#sigil_toc_id_23" />
+    </navPoint>
+    <navPoint id="navPoint30">
+      <navLabel>
+        <text>Exercice 10.8b R-L série - application</text>
+      </navLabel>
+      <content src="Text/ex_08.xhtml#sigil_toc_id_24" />
+    </navPoint>
+    <navPoint id="navPoint31">
+      <navLabel>
+        <text>Exercice 10.8c R-L série - application</text>
+      </navLabel>
+      <content src="Text/ex_08.xhtml#sigil_toc_id_25" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint32">
+    <navLabel>
+      <text>Exercices 10.9 : Récepteur R-C en série</text>
+    </navLabel>
+    <content src="Text/ex_09.xhtml" />
+    <navPoint id="navPoint33">
+      <navLabel>
+        <text>Exercice 10.9a Circuit R-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_09.xhtml#sigil_toc_id_26" />
+    </navPoint>
+    <navPoint id="navPoint34">
+      <navLabel>
+        <text>Exercice 10.9b Circuit R-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_09.xhtml#sigil_toc_id_27" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint35">
+    <navLabel>
+      <text>Exercices 10.10 : Récepteur R-L-C en série</text>
+    </navLabel>
+    <content src="Text/ex_10.xhtml" />
+    <navPoint id="navPoint36">
+      <navLabel>
+        <text>Exercice 10.10a R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_28" />
+    </navPoint>
+    <navPoint id="navPoint37">
+      <navLabel>
+        <text>Exercice 10.10b R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_29" />
+    </navPoint>
+    <navPoint id="navPoint38">
+      <navLabel>
+        <text>Exercice 10.10c R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_30" />
+    </navPoint>
+    <navPoint id="navPoint39">
+      <navLabel>
+        <text>Exercice 10.10d Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_31" />
+    </navPoint>
+    <navPoint id="navPoint40">
+      <navLabel>
+        <text>Exercice 10.10e Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_32" />
+    </navPoint>
+    <navPoint id="navPoint41">
+      <navLabel>
+        <text>Exercice 10.10f Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_33" />
+    </navPoint>
+    <navPoint id="navPoint42">
+      <navLabel>
+        <text>Exercice 10.10g Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_34" />
+    </navPoint>
+    <navPoint id="navPoint43">
+      <navLabel>
+        <text>Exercice 10.10h Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_35" />
+    </navPoint>
+    <navPoint id="navPoint44">
+      <navLabel>
+        <text>Exercice 10.10i Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_36" />
+    </navPoint>
+    <navPoint id="navPoint45">
+      <navLabel>
+        <text>Exercice 10.10j Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_37" />
+    </navPoint>
+    <navPoint id="navPoint46">
+      <navLabel>
+        <text>Exercice 10.10k Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_38" />
+    </navPoint>
+    <navPoint id="navPoint47">
+      <navLabel>
+        <text>Exercice 10.10l Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_39" />
+    </navPoint>
+    <navPoint id="navPoint48">
+      <navLabel>
+        <text>Exercice 10.10m Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_40" />
+    </navPoint>
+    <navPoint id="navPoint49">
+      <navLabel>
+        <text>Exercice 10.10n Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_41" />
+    </navPoint>
+    <navPoint id="navPoint50">
+      <navLabel>
+        <text>Exercice 10.10o Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_42" />
+    </navPoint>
+    <navPoint id="navPoint51">
+      <navLabel>
+        <text>Exercice 10.10p Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_43" />
+    </navPoint>
+    <navPoint id="navPoint52">
+      <navLabel>
+        <text>Exercice 10.10q Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_44" />
+    </navPoint>
+    <navPoint id="navPoint53">
+      <navLabel>
+        <text>Exercice 10.10r Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_45" />
+    </navPoint>
+    <navPoint id="navPoint54">
+      <navLabel>
+        <text>Exercice 10.10s Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_46" />
+    </navPoint>
+    <navPoint id="navPoint55">
+      <navLabel>
+        <text>Exercice 10.10u Circuit R-L-C série - application</text>
+      </navLabel>
+      <content src="Text/ex_10.xhtml#sigil_toc_id_47" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint56">
+    <navLabel>
+      <text>Exercices 10.11 : Récepteur R-L en parallèle</text>
+    </navLabel>
+    <content src="Text/ex_11.xhtml" />
+    <navPoint id="navPoint57">
+      <navLabel>
+        <text>Exercice 10.11a Circuit R-L parallèle - application</text>
+      </navLabel>
+      <content src="Text/ex_11.xhtml#sigil_toc_id_48" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint58">
+    <navLabel>
+      <text>Exercices 10.12 : Récepteur R-C en parallèle</text>
+    </navLabel>
+    <content src="Text/ex_12.xhtml" />
+    <navPoint id="navPoint59">
+      <navLabel>
+        <text>Exercice 10.12a Circuit R-C parallèle - application</text>
+      </navLabel>
+      <content src="Text/ex_12.xhtml#sigil_toc_id_49" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint60">
+    <navLabel>
+      <text>Exercices 10.13 : Récepteur R-L-C en parallèle</text>
+    </navLabel>
+    <content src="Text/ex_13.xhtml" />
+    <navPoint id="navPoint61">
+      <navLabel>
+        <text>Exercice 10.13a Circuit R-L-C parallèle - application</text>
+      </navLabel>
+      <content src="Text/ex_13.xhtml#sigil_toc_id_50" />
+    </navPoint>
+    <navPoint id="navPoint62">
+      <navLabel>
+        <text>Exercice 10.13b Circuit R-L-C parallèle - application</text>
+      </navLabel>
+      <content src="Text/ex_13.xhtml#sigil_toc_id_51" />
+    </navPoint>
+    <navPoint id="navPoint63">
+      <navLabel>
+        <text>Exercice 10.13c Circuit R-L-C parallèle - application</text>
+      </navLabel>
+      <content src="Text/ex_13.xhtml#sigil_toc_id_52" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint64">
+    <navLabel>
+      <text>Exercices 10.14 : Cas général</text>
+    </navLabel>
+    <content src="Text/ex_14.xhtml" />
+    <navPoint id="navPoint65">
+      <navLabel>
+        <text>Exercice 10.14a Circuit L-C parallèle - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_53" />
+    </navPoint>
+    <navPoint id="navPoint66">
+      <navLabel>
+        <text>Exercice 10.14b Circuit R-L-C mixte - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_54" />
+    </navPoint>
+    <navPoint id="navPoint67">
+      <navLabel>
+        <text>Exercice 10.14c Circuit R-L-C mixte - cas général - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_55" />
+    </navPoint>
+    <navPoint id="navPoint68">
+      <navLabel>
+        <text>Exercice 10.14d Circuit R-L-C mixte - cas général - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_56" />
+    </navPoint>
+    <navPoint id="navPoint69">
+      <navLabel>
+        <text>Exercice 10.14f Cas général - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_57" />
+    </navPoint>
+    <navPoint id="navPoint70">
+      <navLabel>
+        <text>Exercice 10.14g Cas général - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_58" />
+    </navPoint>
+    <navPoint id="navPoint71">
+      <navLabel>
+        <text>Exercice 10.14h Cas général - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_59" />
+    </navPoint>
+    <navPoint id="navPoint72">
+      <navLabel>
+        <text>Exercice 10.14i Amélioration du facteur de puissance - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_60" />
+    </navPoint>
+    <navPoint id="navPoint73">
+      <navLabel>
+        <text>Exercice 10.14j Amélioration du facteur de puissance - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_61" />
+    </navPoint>
+    <navPoint id="navPoint74">
+      <navLabel>
+        <text>Exercice 10.14k Amélioration du facteur de puissance - application</text>
+      </navLabel>
+      <content src="Text/ex_14.xhtml#sigil_toc_id_62" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint75">
+    <navLabel>
+      <text>Exercices 10.15 : Amélioration du facteur de puissance</text>
+    </navLabel>
+    <content src="Text/ex_15.xhtml" />
+    <navPoint id="navPoint76">
+      <navLabel>
+        <text>Exercice 10.15a Facteur de puissance - application</text>
+      </navLabel>
+      <content src="Text/ex_15.xhtml#sigil_toc_id_63" />
+    </navPoint>
+    <navPoint id="navPoint77">
+      <navLabel>
+        <text>Exercice 10.15b Facteur de puissance - application</text>
+      </navLabel>
+      <content src="Text/ex_15.xhtml#sigil_toc_id_64" />
+    </navPoint>
+  </navPoint>
+  <navPoint id="navPoint78">
+    <navLabel>
+      <text>Exercices</text>
+    </navLabel>
+    <content src="Text/ex_16.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint79">
+    <navLabel>
+      <text>Exercices</text>
+    </navLabel>
+    <content src="Text/ex_17.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint80">
+    <navLabel>
+      <text>Exercices</text>
+    </navLabel>
+    <content src="Text/ex_18.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint81">
+    <navLabel>
+      <text>Exercices</text>
+    </navLabel>
+    <content src="Text/ex_19.xhtml" />
+  </navPoint>
+  <navPoint id="navPoint82">
+    <navLabel>
+      <text>Références</text>
+    </navLabel>
+    <content src="Text/page_reference.xhtml" />
+  </navPoint>
+</navMap>
+</ncx>

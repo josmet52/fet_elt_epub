@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="fra">
+  <head>
+    <meta content="67c284d3-54d8-4c5d-9cc1-07165f487a41" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="calibre (2.69.0)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Unknown</text>
+  </docTitle>
+  <navMap>
+    <navPoint class="chapter" id="num_1" playOrder="1">
+      <navLabel>
+        <text>Le rendement comparaison entre l’ampoule à incandescence et la led</text>
+      </navLabel>
+      <content src="index.html"/>
+      <navPoint class="chapter" id="num_2" playOrder="2">
+        <navLabel>
+          <text>La notion de rendement</text>
+        </navLabel>
+        <content src="index.html#toc_id_2"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_3" playOrder="3">
+        <navLabel>
+          <text>Comparaison</text>
+        </navLabel>
+        <content src="index.html#toc_id_3"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

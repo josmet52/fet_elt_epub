@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="uuid_id" version="2.0">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:opf="http://www.idpf.org/2007/opf" xmlns:calibre="http://calibre.kovidgoyal.net/2009/metadata" xmlns:dcterms="http://purl.org/dc/terms/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <dc:contributor opf:role="bkp">calibre (2.78.0) [https://calibre-ebook.com]</dc:contributor>
+    <meta name="cover" content="cover"/>
+    <dc:creator opf:file-as="Metrailler, Joseph" opf:role="aut">Joseph Metrailler</dc:creator>
+    <dc:title>Unknown</dc:title>
+    <meta name="calibre:timestamp" content="2017-10-09T09:26:49.970699+00:00"/>
+    <dc:identifier id="uuid_id" opf:scheme="uuid">b6eb14c5-259d-40f4-be72-602a6e04d267</dc:identifier>
+    <dc:language>fr</dc:language>
+  </metadata>
+  <manifest>
+    <item href="cover_image.jpg" id="cover" media-type="image/jpeg"/>
+    <item href="images/image.jpeg" id="id3" media-type="image/jpeg"/>
+    <item href="index.html" id="id2" media-type="application/xhtml+xml"/>
+    <item href="page_styles.css" id="page_css" media-type="text/css"/>
+    <item href="stylesheet.css" id="css" media-type="text/css"/>
+    <item href="titlepage.xhtml" id="titlepage" media-type="application/xhtml+xml"/>
+    <item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+  </manifest>
+  <spine toc="ncx">
+    <itemref idref="titlepage"/>
+    <itemref idref="id2"/>
+  </spine>
+  <guide>
+    <reference href="titlepage.xhtml" title="Title Page" type="cover"/>
+  </guide>
+</package>

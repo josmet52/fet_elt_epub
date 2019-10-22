@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1" xml:lang="fra">
+  <head>
+    <meta content="4171c0c7-c550-44dd-b137-9d246f7356b6" name="dtb:uid"/>
+    <meta content="3" name="dtb:depth"/>
+    <meta content="calibre (3.7.0)" name="dtb:generator"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>Unknown</text>
+  </docTitle>
+  <navMap>
+    <navPoint class="chapter" id="num_1" playOrder="1">
+      <navLabel>
+        <text>Complément : Différence entre masse et poids</text>
+      </navLabel>
+      <content src="index.html"/>
+      <navPoint class="chapter" id="num_2" playOrder="2">
+        <navLabel>
+          <text>La masse, une quantité de matière</text>
+        </navLabel>
+        <content src="index.html#toc_id_2"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_3" playOrder="3">
+        <navLabel>
+          <text>Le poids, une force liée à la gravitation</text>
+        </navLabel>
+        <content src="index.html#toc_id_3"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_4" playOrder="4">
+        <navLabel>
+          <text>Le mystère du pèse-personne</text>
+        </navLabel>
+        <content src="index.html#toc_id_4"/>
+      </navPoint>
+      <navPoint class="chapter" id="num_5" playOrder="5">
+        <navLabel>
+          <text>Le lien entre masse et poids</text>
+        </navLabel>
+        <content src="index.html#toc_id_5"/>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>
