@@ -501,7 +501,7 @@ class ClasseNavBtn:
 
         # ask for the filename to work with
         self.in_path_file_name = filedialog.askopenfilename(title="Sélectionnez le fichier auquel il faut ajouter la barre de navigation",
-                                                     initialdir=self.new_path,
+                                                     initialdir=self.police_path,
                                                      filetypes=[('epub files', '.epub'), ('all files', '.*')])
 
         # disable all buttons that can not be used during this task
@@ -1192,13 +1192,32 @@ class ClasseNavBtn:
                     begin_head_found = False
 
                     for l in data:
+                        # if ("<script" in l or "<link" in l) :
+                        #     script_or_link_in_l = True
+                        # else:
+                        #     script_or_link_in_l = False
+                        # print("script_or_link_in_l ",script_or_link_in_l)
+                        #
+                        # if ("/>" in l or "</script>" in l) :
+                        #     end_script = True
+                        # else:
+                        #     end_script = False
+                        # print("end_script ",end_script)
+                        #
+                        # if ("/MathJax.js" in l) :
+                        #     mathjax_in_l = True
+                        # else:
+                        #     mathjax_in_l = False
+                        # print("mathjax_in_l ",mathjax_in_l)
+                        # print ("ttestcond ", script_or_link_in_l and end_script and not mathjax_in_l)
                         to_remove = False
                         if "<head>" in l :
                             begin_head_found = True
                         if begin_head_found and not end_head_found:
-                            if ("<script" in l or "<link" in l) and "/>" in l and "MathJax" not in l:
+                            if ("<script" in l or "<link" in l) and ("/>" in l or "</script>" in l) and not ("/MathJax.js" in l):
                                 to_remove = True
-                            if ("<script" in l or "<link" in l) and "/>" not in l:
+                            if ("<script" in l or "<link" in l) and not ("/>" in l or "</script>" in l) and not ("/MathJax.js" in l):
+                            # if ("<script" in l or "<link" in l) and "/>" not in l:
                                 begin_tag_found = True
                                 to_remove = True
                             if begin_tag_found and "</" in l:
@@ -1735,7 +1754,7 @@ class ClasseNavBtn:
 
         # ask for the filename to work with
         self.in_path_file_name = filedialog.askopenfilename(title="Sélectionnez à préparer pour moodle",
-                                                     initialdir=self.police_path,
+                                                     initialdir=self.wnav_path,
                                                      filetypes=[('epub files', '.epub'), ('all files', '.*')])
 
         # disable all buttons that can not be used during this task
@@ -1820,19 +1839,20 @@ class ClasseNavBtn:
                         if "<body>" in l:
                             in_body = True
                         if "</script>" in l and in_body:
-                            # for all the existing scripts
+                            new_xhtml_file.writelines("</script>\n")
+                            new_xhtml_file.writelines("<script>\n")
                             for js_in_file in os.listdir(self.js_path_dir):
                                 js_Path_file_name ="".join([self.js_path_dir, js_in_file])
-                                if "alternateur" in js_in_file or "cercle" in js_in_file or "oscillo" in js_in_file or "rendement" in js_in_file or "validation" in js_in_file:
+                                if "alternateur" in js_in_file or "cercle" in js_in_file or "oscillo" in js_in_file or "validation" in js_in_file: #  or "rendement" in js_in_file
                                     # read the script data
                                     with open(js_Path_file_name, "r", encoding="utf-8") as js_file:
                                         js_data = js_file.readlines()
                                     # write the script data in the xhtml file just before the </body> tag
-                                    new_xhtml_file.writelines("//<![CDATA[")
+                                    new_xhtml_file.writelines("//<![CDATA[\n")
                                     # new_xhtml_file.writelines("<script> //<![CDATA[")
                                     for l_j in js_data:
                                         new_xhtml_file.writelines(l_j)
-                                    new_xhtml_file.writelines("//]]>")
+                                    new_xhtml_file.writelines("//]]>\n")
                                     # new_xhtml_file.writelines("//]]></script>")
                             new_xhtml_file.writelines(l)
                         else:

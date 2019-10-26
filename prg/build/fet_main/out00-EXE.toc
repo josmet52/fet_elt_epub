@@ -39,7 +39,7 @@
  [],
  False,
  False,
- 1571431461,
+ 1571762946,
  [('run.exe',
    'c:\\users\\jmetr\\appdata\\local\\programs\\python\\python36\\lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit\\run.exe',
    'EXECUTABLE')])
