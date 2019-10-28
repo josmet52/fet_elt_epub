@@ -159,66 +159,66 @@ class ClasseFet:
                         # ne pas traiter les commentaires
                         if x[0][:1] != "#":
 
-                            if x[0] == "org_dir":
+                            if x[0] == "ini_org_dir":
                                 self.org_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_dir":
+                            elif x[0] == "ini_new_dir":
                                 self.new_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "tmp_dir":
+                            elif x[0] == "ini_tmp_dir":
                                 self.tmp_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_nav_dir":
-                                self.wnav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+                            elif x[0] == "ini_new_nav_dir":
+                                self.new_nav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_js_css_dir":
+                            elif x[0] == "ini_new_js_css_dir":
                                 self.new_js_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_moodle_dir":
+                            elif x[0] == "ini_new_moodle_dir":
                                 self.new_moo_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_police_dir":
-                                self.police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+                            elif x[0] == "ini_new_police_dir":
+                                self.new_police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "js_css_dir":
+                            elif x[0] == "ini_js_css_ok_dir":
                                 self.js_css_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "var_debug" :
+                            elif x[0] == "ini_var_debug" :
                                 if x[1].replace("\n", "") == "true" : self.DEBUG = True
                                 else : self.DEBUG = False
 
-                            elif x[0] == "var_log_this_run" :
+                            elif x[0] == "ini_var_log_this_run" :
                                 if x[1].replace("\n", "") == "true" : self.LOG_THIS_RUN = True
                                 else : self.LOG_THIS_RUN = False
 
-                            elif x[0] == "var_verbose" :
+                            elif x[0] == "ini_var_verbose" :
                                 if x[1].replace("\n", "") == "true" : self.VERBOSE = True
                                 else : self.VERBOSE = False
 
-                            elif x[0] == "var_with_dir" :
+                            elif x[0] == "ini_var_with_dir" :
                                 if x[1].replace("\n", "") == "true" : self.WITH_DIR = True
                                 else : self.WITH_DIR = False
 
-                            elif x[0] == "var_with_zip" :
+                            elif x[0] == "ini_var_with_zip" :
                                 if x[1].replace("\n", "") == "true" : self.WITH_ZIP = True
                                 else : self.WITH_ZIP = False
 
-                            elif x[0] == "var_img_size_max" :
+                            elif x[0] == "ini_var_img_size_max" :
                                 if x[1].isnumeric() : self.IMG_SIZE_MAX = int(x[1])
                                 else : self.IMG_SIZE_MAX = 20000
 
-                            elif x[0] == "var_toc_deep" :
+                            elif x[0] == "ini_var_toc_deep" :
                                 self.TOC_DEEP = x[1]
 
-                            elif x[0] == "var_font" :
+                            elif x[0] == "ini_var_font" :
                                 self.FONT_NAME = x[1]
 
             # if self.DEBUG:

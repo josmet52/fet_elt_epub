@@ -1,203 +1,76 @@
-2019-10-22 18:02:04.913060============================================================================================ 
-22.10.2019 18:2:15
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/AC pour ELMO_v1y_js_pol_wnav.epub
-1 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_04.xhtml (28-28)
-2 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_04.xhtml (31-31)
-3 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_04.xhtml (34-34)
-4 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_04.xhtml (37-37)
-5 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_04.xhtml (264-264)
-6 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (28-28)
-7 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (31-31)
-8 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (34-34)
-9 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (37-37)
-10 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (101-101)
-11 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (195-195)
-12 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (327-327)
-13 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (28-28)
-14 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (31-31)
-15 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (34-34)
-16 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (37-37)
-17 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (63-63)
-18 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (80-80)
-19 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (95-95)
-20 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (112-112)
-21 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (115-115)
-22 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (119-119)
-23 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (134-134)
-24 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (28-28)
-25 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (31-31)
-26 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], There are 75 additional locations for this message.
-Check status : 0 fatal / 0 errors / 26 warnings
+2019-10-28 11:34:31.513586============================================================================================ 
+28.10.2019 11:34:40
+c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/2_new_js_css/AC pour ELMO_v1y_js.epub
+1 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_04.xhtml (9-130)
+2 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_06.xhtml (9-130)
+3 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03.xhtml (9-130)
+4 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03_a.xhtml (9-130)
+5 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03_b.xhtml (9-130)
+6 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03_b.xhtml (11-130)
+7 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_05.xhtml (9-130)
+8 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_08_new.xhtml (9-130)
+9 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_09_new.xhtml (9-130)
+10 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_13_new.xhtml (9-130)
+11 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_14_new.xhtml (9-130)
+12 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/val_inst_anim_cercle_trigo_val_inst_v1d.xhtml (9-130)
+13 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_04.xhtml (251-251)
+14 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (88-88)
+15 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (182-182)
+16 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (314-314)
+17 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (50-50)
+18 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (67-67)
+19 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (82-82)
+20 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (99-99)
+21 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (102-102)
+22 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (106-106)
+23 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (121-121)
+24 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (87-87)
+25 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (122-122)
+26 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (149-149)
+27 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (152-152)
+28 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (217-217)
+29 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (239-239)
+30 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (174-174)
+31 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (177-177)
+32 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (181-181)
+33 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (193-193)
+34 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (196-196)
+35 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (200-200)
+36 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_05.xhtml (44-44)
+37 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_05.xhtml (91-91)
+38 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], There are 31 additional locations for this message.
+Check status : 0 fatal / 12 errors / 26 warnings
 ============================================================================================ 
-22.10.2019 18:2:29
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ELT_pour_INFO_v1d_js_pol_wnav.epub
-1 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (28-28)
-2 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (31-31)
-3 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (34-34)
-4 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (37-37)
-5 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (66-66)
-6 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (83-83)
-7 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (98-98)
-8 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (115-115)
-9 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (118-118)
-10 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (122-122)
-11 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (137-137)
-12 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (28-28)
-13 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (31-31)
-14 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (34-34)
-15 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (37-37)
-16 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (50-50)
-17 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (100-100)
-18 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (120-120)
-19 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (142-142)
-20 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (169-169)
-21 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (172-172)
-22 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (237-237)
-23 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (259-259)
-24 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (28-28)
-25 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (31-31)
-26 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], There are 35 additional locations for this message.
-Check status : 0 fatal / 0 errors / 26 warnings
-============================================================================================ 
-22.10.2019 18:2:43
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/EPRC_pour_AUMA_v1g_js_pol_wnav.epub
-1 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (28-28)
-2 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (31-31)
-3 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (34-34)
-4 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (37-37)
-5 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (75-75)
-6 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (78-78)
-7 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (81-81)
-8 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (87-87)
-9 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (122-122)
-10 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (123-123)
-11 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (124-124)
-12 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (128-128)
-13 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (129-129)
-14 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (130-130)
-15 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (135-135)
-16 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (136-136)
-17 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (137-137)
-18 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (141-141)
-19 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (142-142)
-20 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (143-143)
-21 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (147-147)
-22 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (150-150)
-23 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (153-153)
-24 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (156-156)
-25 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (28-28)
-26 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], There are 478 additional locations for this message.
-Check status : 0 fatal / 0 errors / 26 warnings
-============================================================================================ 
-22.10.2019 18:2:58
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/EPR_pour_ELO_v2i_js_pol_wnav.epub
-1 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (28-28)
-2 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (31-31)
-3 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (34-34)
-4 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (37-37)
-5 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (79-79)
-6 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (82-82)
-7 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (85-85)
-8 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (91-91)
-9 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (126-126)
-10 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (127-127)
-11 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (128-128)
-12 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (132-132)
-13 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (133-133)
-14 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (134-134)
-15 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (139-139)
-16 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (140-140)
-17 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (141-141)
-18 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (145-145)
-19 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (146-146)
-20 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (147-147)
-21 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (151-151)
-22 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (154-154)
-23 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (157-157)
-24 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_02.xhtml (160-160)
-25 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (28-28)
-26 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], There are 147 additional locations for this message.
-Check status : 0 fatal / 0 errors / 26 warnings
-============================================================================================ 
-22.10.2019 18:3:10
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_01_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:3:22
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_02_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:3:34
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_03_new_js_pol_wnav.epub
-1 : RSC-001, ERROR, [Le fichier 'OEBPS/Images/116_39_0.jpg' est introuvable.], ET_ch_03_new_js_pol_wnav.epub
-2 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/115_38_0.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (366-116)
-3 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/116_39_0.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (427-116)
-4 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/117_39_1.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (474-116)
-5 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/118_40_0.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (522-116)
-6 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/119_40_1.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (584-116)
-7 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/40.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (635-110)
-8 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/41.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (659-110)
-9 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/123_42_0.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (699-116)
-10 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/124_42_1.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (743-116)
-11 : MED-003, ERROR, [Un repli manifeste doit être prévu pour la ressource image 'OEBPS/Images/125_42_2.jpg' de type 'image/jpg'.], OEBPS/Text/th_05.xhtml (771-116)
-12 : OPF-003, WARN, [L'item 'OEBPS/Images/116_39_0.png' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-13 : OPF-003, WARN, [L'item 'OEBPS/Images/26e4ee1c986b4c92b63aede798145ce6.jpg' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-14 : OPF-003, WARN, [L'item 'OEBPS/Images/312e58ccc13048d6b9e8f702f08b95d6.jpg' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-15 : OPF-003, WARN, [L'item 'OEBPS/Images/542a5c7389bd4c39b5ec2fca6cbd648d.jpg' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-16 : OPF-003, WARN, [L'item 'OEBPS/Images/86eb02fdefdc4afe8169b9d0fdc3bb95.jpg' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-17 : OPF-003, WARN, [L'item 'OEBPS/Images/987b13d4921d4e4aa33b20e82433f008.jpg' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-18 : OPF-003, WARN, [L'item 'OEBPS/Images/afd3fbb1e7d04e3f9fd8da9a5d087029.png' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-19 : OPF-003, WARN, [L'item 'OEBPS/Images/cb6357510ea1440f8b3c64da2d7f3c33.jpg' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-20 : OPF-003, WARN, [L'item 'OEBPS/Images/cd226f6dd0894534942df1a2d013a0a8.jpg' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-21 : OPF-003, WARN, [L'item 'OEBPS/Images/f268f1aac5f3402f8680a958d8cfbec2.png' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-22 : OPF-003, WARN, [L'item 'OEBPS/Images/f87add1a341449e5a13394fa398256ed.jpg' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-23 : OPF-003, WARN, [L'item 'OEBPS/Images/fd1d838a83924be5b492783391c50924.jpg' existe dans l'EPUB, mais n'est pas déclaré dans le manifest de l'OPF.], ET_ch_03_new_js_pol_wnav.epub
-Check status : 0 fatal / 11 errors / 12 warnings
-============================================================================================ 
-22.10.2019 18:3:48
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_04_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:4:0
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_05_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:4:15
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_06_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:4:30
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_07_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:4:41
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_08_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:4:57
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_09_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:5:15
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_10_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:5:28
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_11_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:5:44
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_12_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:5:58
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_13_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:6:9
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_14_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
-============================================================================================ 
-22.10.2019 18:6:24
-c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/4_new_nav/ET_ch_15_new_js_pol_wnav.epub
-Check status : 0 fatal / 0 errors / 0 warnings
+28.10.2019 11:34:52
+c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/2_new_js_css/ELT_pour_INFO_v1d_js.epub
+1 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/630_Periode_frequence.xhtml (9-130)
+2 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/740_vitesse_angulaire.xhtml (9-130)
+3 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/760_valeur_efficace.xhtml (9-130)
+4 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/800_chemin_electricite.xhtml (9-130)
+5 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (53-53)
+6 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (70-70)
+7 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (85-85)
+8 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (102-102)
+9 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (105-105)
+10 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (109-109)
+11 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/630_Periode_frequence.xhtml (124-124)
+12 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (37-37)
+13 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (87-87)
+14 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (107-107)
+15 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (129-129)
+16 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (156-156)
+17 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (159-159)
+18 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (224-224)
+19 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/740_vitesse_angulaire.xhtml (246-246)
+20 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (101-101)
+21 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (106-106)
+22 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (184-184)
+23 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (187-187)
+24 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (191-191)
+25 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (203-203)
+26 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (206-206)
+27 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/760_valeur_efficace.xhtml (210-210)
+28 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/800_chemin_electricite.xhtml (39-39)
+29 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/800_chemin_electricite.xhtml (44-44)
+30 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], There are 19 additional locations for this message.
+Check status : 0 fatal / 4 errors / 26 warnings

@@ -42,6 +42,7 @@ version 0.28e - 15.10.2019 - correction pour la mise à jour des liens dans les 
 version 0.28f - 15.10.2019 - amélioration mise en page script
 version 0.29a - 15.10.2019 - CSS pour TOC amélioré
 version 0.30a - 22.10.2019 - menus réorganisés, boutons supprimés
+version 0.30b - 28.10.2019 - petites corrections
 """
 
 VERSION_FILE = "fet_main.py"
@@ -175,11 +176,11 @@ def file_prepare_for_moodle_go():
 
 # 2_3_4 et 1_2_3_4
 ##############
+def file_1_2_3_go():
+    z.file_1_2_3()
+
 def file_1_2_3_4_go():
     z.file_1_2_3_4()
-
-def file_2_3_4_go():
-    z.file_2_3_4()
 
 
 # ???? =======================================================================================
@@ -339,40 +340,40 @@ singleepubmenu.add_command(label="2 - Change police file", command=lambda: file_
 singleepubmenu.add_command(label="3 - Add nav btn file", command=lambda: file_add_nav_btn_go())
 singleepubmenu.add_command(label="4 - Prepare for moodle file", command=lambda: file_prepare_for_moodle_go())
 singleepubmenu.add_separator()
-singleepubmenu.add_command(label="1-2-3-4", command=lambda: file_1_2_3_4_go())
-singleepubmenu.add_command(label="2-3-4", command=lambda: file_2_3_4_go())
+singleepubmenu.add_command(label="1 - 2 - 3", command=lambda: file_1_2_3_go())
+singleepubmenu.add_command(label="1 - 2 - 3 - 4", command=lambda: file_1_2_3_4_go())
 menubar.add_cascade(label="1 epub", menu=singleepubmenu)
 
 # create a pulldown menu, and add it to the menu bar
 direpubmenu = Menu(menubar, tearoff=0)
 direpubmenu.add_command(label="Correct dir", command=lambda: dir_improve_pw_epub_go())
-direpubmenu.add_separator()
-direpubmenu.add_command(label="Add nav btn dir", command=lambda: dir_add_nav_btn_go())
-direpubmenu.add_command(label="Remove nav btn dir", command=lambda: dir_remove_nav_btn_go())
+# direpubmenu.add_separator()
+# direpubmenu.add_command(label="Remove nav btn dir", command=lambda: dir_remove_nav_btn_go())
 direpubmenu.add_separator()
 direpubmenu.add_command(label="Update js and css dir", command=lambda: dir_update_js_and_css_go())
 direpubmenu.add_command(label="Change police dir", command=lambda: dir_change_police_go())
+direpubmenu.add_command(label="Add nav btn dir", command=lambda: dir_add_nav_btn_go())
 direpubmenu.add_command(label="Prepare for moodle dir", command=lambda: dir_prepare_for_moodle_go())
 menubar.add_cascade(label="batch epub(s)", menu=direpubmenu)
 
 # GLOBAL EPUB MENU
-globalepubmenu = Menu(menubar, tearoff=0)
-globalepubmenu.add_command(label="Correct file", command=lambda: file_improve_pw_epub_go())
-globalepubmenu.add_command(label="Correct dir", command=lambda: file_improve_pw_epub_go())
-globalepubmenu.add_separator()
-globalepubmenu.add_command(label="Add nav btn file", command=lambda: file_add_nav_btn_go())
-globalepubmenu.add_command(label="Add nav btn dir", command=lambda: dir_add_nav_btn_go())
-globalepubmenu.add_command(label="Remove nav btn file", command=lambda: file_remove_nav_btn_go())
-globalepubmenu.add_separator()
-globalepubmenu.add_command(label="Update .js ans .css file", command=lambda: file_update_js_and_css_go())
-globalepubmenu.add_command(label="Update .js ans .css dir", command=lambda: dir_update_js_and_css_go())
-globalepubmenu.add_separator()
-globalepubmenu.add_command(label="Change police file", command=lambda: file_change_police_go())
-globalepubmenu.add_command(label="Change police dir", command=lambda: dir_change_police_go())
-globalepubmenu.add_separator()
-globalepubmenu.add_command(label="Prepare for moodle file", command=lambda: file_prepare_for_moodle_go())
-globalepubmenu.add_command(label="Prepare for moodle dir", command=lambda: dir_prepare_for_moodle_go())
-menubar.add_cascade(label="All epub tasks", menu=globalepubmenu)
+# globalepubmenu = Menu(menubar, tearoff=0)
+# globalepubmenu.add_command(label="Correct file", command=lambda: file_improve_pw_epub_go())
+# globalepubmenu.add_command(label="Correct dir", command=lambda: file_improve_pw_epub_go())
+# globalepubmenu.add_separator()
+# globalepubmenu.add_command(label="Add nav btn file", command=lambda: file_add_nav_btn_go())
+# globalepubmenu.add_command(label="Add nav btn dir", command=lambda: dir_add_nav_btn_go())
+# globalepubmenu.add_command(label="Remove nav btn file", command=lambda: file_remove_nav_btn_go())
+# globalepubmenu.add_separator()
+# globalepubmenu.add_command(label="Update .js ans .css file", command=lambda: file_update_js_and_css_go())
+# globalepubmenu.add_command(label="Update .js ans .css dir", command=lambda: dir_update_js_and_css_go())
+# globalepubmenu.add_separator()
+# globalepubmenu.add_command(label="Change police file", command=lambda: file_change_police_go())
+# globalepubmenu.add_command(label="Change police dir", command=lambda: dir_change_police_go())
+# globalepubmenu.add_separator()
+# globalepubmenu.add_command(label="Prepare for moodle file", command=lambda: file_prepare_for_moodle_go())
+# globalepubmenu.add_command(label="Prepare for moodle dir", command=lambda: dir_prepare_for_moodle_go())
+# menubar.add_cascade(label="All epub tasks", menu=globalepubmenu)
 
 # UTIL MENU
 utilmenu = Menu(menubar, tearoff=0)
@@ -402,11 +403,11 @@ btnFrame.pack(side=tk.BOTTOM)
 
 # file jobs
 col_no = 2
-btnFileImprove = tk.Button(btnFrame, text="Correct file", textvariable="btnFileImprove", command=lambda: file_improve_pw_epub_go(),
-                       bg="azure3").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
-col_no += 1
-btnFileAddNav = tk.Button(btnFrame, text="Add btn file", textvariable="btnFileAddNav", command=lambda: file_add_nav_btn_go(),
-                     bg="azure3").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
+# btnFileImprove = tk.Button(btnFrame, text="Correct file", textvariable="btnFileImprove", command=lambda: file_improve_pw_epub_go(),
+#                        bg="azure3").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
+# col_no += 1
+# btnFileAddNav = tk.Button(btnFrame, text="Add btn file", textvariable="btnFileAddNav", command=lambda: file_add_nav_btn_go(),
+#                      bg="azure3").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
 # col_no += 1
 # btnFileRemoveNav = tk.Button(btnFrame, text="Remove btn file", textvariable="btnFileRemoveNav", command=lambda: file_remove_nav_btn_go(),
 #                      bg="azure3").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
@@ -420,12 +421,12 @@ btnFileAddNav = tk.Button(btnFrame, text="Add btn file", textvariable="btnFileAd
 # btnFileMoodle = tk.Button(btnFrame, text="Moodle file", textvariable="btnFileMoodle", command=lambda: file_prepare_for_moodle_go(),
 #                      bg="azure3").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
 
-col_no += 1
-btnDirImprove = tk.Button(btnFrame, text="Correct dir", textvariable="btnDirImprove", command=lambda: dir_improve_pw_epub_go(),
-                      bg="azure").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
-col_no += 1
-btnDirAddNav = tk.Button(btnFrame, text="Add btn dir", textvariable="btnDirAddNav", command=lambda: dir_add_nav_btn_go(),
-                      bg="azure").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
+# col_no += 1
+# btnDirImprove = tk.Button(btnFrame, text="Correct dir", textvariable="btnDirImprove", command=lambda: dir_improve_pw_epub_go(),
+#                       bg="azure").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
+# col_no += 1
+# btnDirAddNav = tk.Button(btnFrame, text="Add btn dir", textvariable="btnDirAddNav", command=lambda: dir_add_nav_btn_go(),
+#                       bg="azure").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
 # col_no += 1
 # btnDirRemoveNav = tk.Button(btnFrame, text="Remove btn dir", textvariable="btnDirRemoveNav", command=lambda: dir_remove_nav_btn_go(),
 #                       bg="azure").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
@@ -440,9 +441,9 @@ btnDirAddNav = tk.Button(btnFrame, text="Add btn dir", textvariable="btnDirAddNa
 #                       bg="azure").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
 
 # quit
-col_no += 1
-btnQuit = tk.Button(btnFrame, text="QUIT", textvariable="btnQuit", command=lambda: clean_quit(msgDisplay),
-                    bg="light blue").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
+# col_no += 1
+# btnQuit = tk.Button(btnFrame, text="QUIT", textvariable="btnQuit", command=lambda: clean_quit(msgDisplay),
+#                     bg="light blue").grid(row=0, column=col_no, ipadx=15, padx=2, pady=5)
 
 
 nav_bar_choice = StringVar(msgDisplay)

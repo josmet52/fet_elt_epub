@@ -83,66 +83,66 @@ class ClasseNavBtn:
                         # ne pas traiter les commentaires
                         if x[0][:1] != "#":
 
-                            if x[0] == "org_dir":
+                            if x[0] == "ini_org_dir":
                                 self.org_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_dir":
+                            elif x[0] == "ini_new_dir":
                                 self.new_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "tmp_dir":
+                            elif x[0] == "ini_tmp_dir":
                                 self.tmp_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_nav_dir":
-                                self.wnav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+                            elif x[0] == "ini_new_nav_dir":
+                                self.new_nav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_js_css_dir":
+                            elif x[0] == "ini_new_js_css_dir":
                                 self.new_js_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_moodle_dir":
+                            elif x[0] == "ini_new_moodle_dir":
                                 self.new_moo_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "new_police_dir":
-                                self.police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+                            elif x[0] == "ini_new_police_dir":
+                                self.new_police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "js_css_dir":
+                            elif x[0] == "ini_js_css_ok_dir":
                                 self.js_css_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
                                                     "").replace("//", "/")
 
-                            elif x[0] == "var_debug" :
+                            elif x[0] == "ini_var_debug" :
                                 if x[1].replace("\n", "") == "true" : self.DEBUG = True
                                 else : self.DEBUG = False
 
-                            elif x[0] == "var_log_this_run" :
+                            elif x[0] == "ini_var_log_this_run" :
                                 if x[1].replace("\n", "") == "true" : self.LOG_THIS_RUN = True
                                 else : self.LOG_THIS_RUN = False
 
-                            elif x[0] == "var_verbose" :
+                            elif x[0] == "ini_var_verbose" :
                                 if x[1].replace("\n", "") == "true" : self.VERBOSE = True
                                 else : self.VERBOSE = False
 
-                            elif x[0] == "var_with_dir" :
+                            elif x[0] == "ini_var_with_dir" :
                                 if x[1].replace("\n", "") == "true" : self.WITH_DIR = True
                                 else : self.WITH_DIR = False
 
-                            elif x[0] == "var_with_zip" :
+                            elif x[0] == "ini_var_with_zip" :
                                 if x[1].replace("\n", "") == "true" : self.WITH_ZIP = True
                                 else : self.WITH_ZIP = False
 
-                            elif x[0] == "var_img_size_max" :
+                            elif x[0] == "ini_var_img_size_max" :
                                 if x[1].isnumeric() : self.IMG_SIZE_MAX = int(x[1])
                                 else : self.IMG_SIZE_MAX = 20000
 
-                            elif x[0] == "var_toc_deep" :
+                            elif x[0] == "ini_var_toc_deep" :
                                 self.TOC_DEEP = x[1]
 
-                            elif x[0] == "var_font" :
+                            elif x[0] == "ini_var_font" :
                                 self.FONT_NAME = x[1]
 
     def ask_2_quit(self):
@@ -343,7 +343,7 @@ class ClasseNavBtn:
     def get_link_js_string(self, js_file_path_name):
         return "".join(["<script src=\"../", js_file_path_name, "\" type=\"text/javascript\"></script>"])
 
-    def file_2_3_4(self):
+    def file_1_2_3(self):
         # clear the listbox
         u = ClasseFet(self.var_msg, self.msg_list, self.msg_display, self.btn_frame)
         u.msg_list.delete(0, END)
@@ -353,18 +353,33 @@ class ClasseNavBtn:
 
         # ask for the filename to work with
         self.in_path_file_name = filedialog.askopenfilename(title="Sélectionnez le fichier pour : addnav, js-css, police, moodle",
-                                                     initialdir=self.police_path,
+                                                     initialdir=self.new_path,
                                                      filetypes=[('epub files', '.epub'), ('all files', '.*')])
 
         # disable all buttons that can not be used during this task
         u.manage_buttons("btnAddNav", "in")
+        file_name = os.path.basename(self.in_path_file_name)
 
         if len(str(self.in_path_file_name)) > 0:
             self.t_start = time.time()  # store the start time
-            self.in_file_name = os.path.basename(self.in_path_file_name)
-            self.update_js_and_css(self.in_path_file_name)  # start the optimisation
-            self.change_police(self.in_path_file_name)  # start the optimisation
-            self.prepare_for_moodle(self.in_path_file_name)  # start the optimisation
+            #1
+            dir_name = self.new_path
+            work_in_path_file_name = "".join([dir_name, file_name])
+            self.update_js_and_css(work_in_path_file_name)  # start the optimisation
+            #2
+            dir_name = self.new_js_path
+            fn = file_name.split(".")
+            file_name = "".join([fn[0], "_js.", fn[1]])
+            work_in_path_file_name = "".join([dir_name, file_name])
+            self.change_police(work_in_path_file_name)  # start the optimisation
+            #3
+            dir_name = self.new_police_path
+            file_name = "".join([fn[0], "_js_pol.", fn[1]])
+            work_in_path_file_name = "".join([dir_name, file_name])
+            self.add_nav_btn(work_in_path_file_name)  # start the optimisation
+
+            u.manage_info("", u.DISPLAY_AND_LOG)
+            u.manage_info("".join(["1-2-3 terminated: ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.DISPLAY_AND_LOG, u.COLOR_RED_ON_YELLOW)
         else:
             self.msg_list.insert(tk.END, "Select a epub to improve")
             self.msg_display.update()
@@ -380,19 +395,39 @@ class ClasseNavBtn:
 
         # ask for the filename to work with
         self.in_path_file_name = filedialog.askopenfilename(title="Sélectionnez le fichier auquel il faut ajouter la barre de navigations",
-                                                     initialdir=self.police_path,
+                                                     initialdir=self.new_path,
                                                      filetypes=[('epub files', '.epub'), ('all files', '.*')])
 
         # disable all buttons that can not be used during this task
         u.manage_buttons("btnAddNav", "in")
+        file_name = os.path.basename(self.in_path_file_name)
+        dir_name = os.path.dirname(self.in_path_file_name)
 
         if len(str(self.in_path_file_name)) > 0:
             self.t_start = time.time()  # store the start time
-            self.in_file_name = os.path.basename(self.in_path_file_name)
-            self.add_nav_btn(self.in_path_file_name)  # start the optimisation
-            self.update_js_and_css(self.in_path_file_name)  # start the optimisation
-            self.change_police(self.in_path_file_name)  # start the optimisation
-            self.prepare_for_moodle(self.in_path_file_name)  # start the optimisation
+            #1 js_css
+            dir_name = self.new_path
+            work_in_path_file_name = "".join([dir_name, file_name])
+            self.update_js_and_css(work_in_path_file_name)  # start the optimisation
+            #2 police
+            dir_name = self.new_js_path
+            fn = file_name.split(".")
+            file_name = "".join([fn[0], "_js.", fn[1]])
+            work_in_path_file_name = "".join([dir_name, file_name])
+            self.change_police(work_in_path_file_name)  # start the optimisation
+            #3 nav btn
+            dir_name = self.new_police_path
+            file_name = "".join([fn[0], "_js_pol.", fn[1]])
+            work_in_path_file_name = "".join([dir_name, file_name])
+            self.add_nav_btn(work_in_path_file_name)  # start the optimisation
+            #4 moodle
+            dir_name = self.new_nav_path
+            file_name = "".join([fn[0], "_js_pol_wnav.", fn[1]])
+            work_in_path_file_name = "".join([dir_name, file_name])
+            self.prepare_for_moodle(work_in_path_file_name)  # start the optimisation
+
+            u.manage_info("", u.DISPLAY_AND_LOG)
+            u.manage_info("".join(["1-2-3-4 terminated: ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.DISPLAY_AND_LOG, u.COLOR_RED_ON_YELLOW)
         else:
             self.msg_list.insert(tk.END, "Select a epub to improve")
             self.msg_display.update()
@@ -419,7 +454,7 @@ class ClasseNavBtn:
         self.dir_job_status = True
         # demande le nom du répertoire à travailler
         file_options = {}
-        file_options['initialdir'] = self.new_path #self.org_path
+        file_options['initialdir'] = self.new_police_path #self.org_path
         file_options['title'] = 'Select a directory with epub files'
         dir_name = filedialog.askdirectory(**file_options)
 
@@ -444,14 +479,14 @@ class ClasseNavBtn:
                     self.t_start = time.time()
                     self.in_path_file_name = "/".join([dir_name, test_file])
                     self.in_file_name = os.path.basename(self.in_path_file_name)
-                    self.add_nav_btn(self.in_path_file_name)
+                    out_path_file_name = self.add_nav_btn(self.in_path_file_name)
 
                     u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
                     u.manage_info("".join(["VERIFICATION EPUB : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
                     u.manage_info("".join(["Fichier : ", os.path.basename(self.in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
                     u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
 
-                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(self.out_path_file_name, file_output_result_path_name)
+                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
                     fatal_tot += n_fatal
                     error_tot += n_error
                     warn_tot += n_warn
@@ -501,7 +536,7 @@ class ClasseNavBtn:
 
         # ask for the filename to work with
         self.in_path_file_name = filedialog.askopenfilename(title="Sélectionnez le fichier auquel il faut ajouter la barre de navigation",
-                                                     initialdir=self.police_path,
+                                                     initialdir=self.new_police_path,
                                                      filetypes=[('epub files', '.epub'), ('all files', '.*')])
 
         # disable all buttons that can not be used during this task
@@ -530,15 +565,15 @@ class ClasseNavBtn:
 
             # create the out_file_name with the in_file_name
             if "_wnav" not in in_path_file_name:
-                self.out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_wnav.epub")
+                out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_wnav.epub")
             else:
-                self.out_file_name = os.path.basename(in_path_file_name)
+                out_file_name = os.path.basename(in_path_file_name)
 
             # the out filename goes in the wnav directory
-            self.out_path_file_name = "".join([self.wnav_path, self.out_file_name])
+            out_path_file_name = "".join([self.new_nav_path, out_file_name])
             # prepare the text to display in and out files
             self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", self.out_path_file_name])
+            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
@@ -697,15 +732,15 @@ class ClasseNavBtn:
                 # creating the zipped epub file
                 msg = "... creating the final zipped epub file"
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                u.zip_epub(self.temp_path_dir, self.out_path_file_name)
+                u.zip_epub(self.temp_path_dir, out_path_file_name)
 
                 if u.WITH_ZIP:
                     # create also the zip file
-                    u.zip_epub(self.temp_path_dir, self.out_path_file_name.replace(".epub", ".zip"))
+                    u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
                 if u.WITH_DIR:
                     # and also the directory with all the epub files
-                    out_dir_name = self.out_path_file_name.replace(".epub", "")
+                    out_dir_name = out_path_file_name.replace(".epub", "")
 
                     # if exist delete the directory
                     if os.path.exists(out_dir_name):
@@ -747,7 +782,7 @@ class ClasseNavBtn:
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
                 msg = "".join(["Ajout des boutons de navigation dans le fichier : "])
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                msg = "".join([os.path.basename(self.in_file_name)])
+                msg = "".join([os.path.basename(in_path_file_name)])
                 u.manage_info(msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
                 msg = "".join(["terminée avec succès en ", str(round(elapsed_time, 3)), " s !\n"])
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
@@ -760,6 +795,8 @@ class ClasseNavBtn:
             u.manage_info("Cancel pressed", u.DISPLAY_ONLY, u.COLOR_BLUE)
             u.manage_info("Opération abandonnée", u.DISPLAY_ONLY, u.COLOR_BLUE)
 
+        return out_path_file_name
+
     def file_remove_nav_btn(self):
         # clear the listbox
         u = ClasseFet(self.var_msg, self.msg_list, self.msg_display, self.btn_frame)
@@ -770,7 +807,7 @@ class ClasseNavBtn:
 
         # ask for the filename to work with
         self.in_path_file_name = filedialog.askopenfilename(title="Sélectionnez le fichier auquel il faut retirer la barre de navigations",
-                                                     initialdir=self.wnav_path,
+                                                     initialdir=self.new_nav_path,
                                                      filetypes=[('epub files', '.epub'), ('all files', '.*')])
 
         # disable all buttons that can not be used during this task
@@ -799,15 +836,15 @@ class ClasseNavBtn:
 
             # create the out_file_name with the in_file_name
             if "_nonav" not in in_path_file_name:
-                self.out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_nonav.epub")
+                out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_nonav.epub")
             else:
-                self.out_file_name = os.path.basename(in_path_file_name)
+                out_file_name = os.path.basename(in_path_file_name)
 
             # the out filename goes in the wnav directory
-            self.out_path_file_name = "".join([self.wnav_path, self.out_file_name])
+            out_path_file_name = "".join([self.new_nav_path, out_file_name])
             # prepare the text to display in and out files
             self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", self.out_path_file_name])
+            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
@@ -891,15 +928,15 @@ class ClasseNavBtn:
                 # creating the zipped epub file
                 msg = "... creating the final zipped epub file"
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                u.zip_epub(self.temp_path_dir, self.out_path_file_name)
+                u.zip_epub(self.temp_path_dir, out_path_file_name)
 
                 if u.WITH_ZIP:
                     # create also the zip file
-                    u.zip_epub(self.temp_path_dir, self.out_path_file_name.replace(".epub", ".zip"))
+                    u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
                 if u.WITH_DIR:
                     # and also the directory with all the epub files
-                    out_dir_name = self.out_path_file_name.replace(".epub", "")
+                    out_dir_name = out_path_file_name.replace(".epub", "")
 
                     # if exist delete the directory
                     if os.path.exists(out_dir_name):
@@ -1004,14 +1041,14 @@ class ClasseNavBtn:
                     self.t_start = time.time()
                     self.in_path_file_name = "/".join([dir_name, test_file])
                     self.in_file_name = os.path.basename(self.in_path_file_name)
-                    self.update_js_and_css(self.in_path_file_name)
+                    out_path_file_name = self.update_js_and_css(self.in_path_file_name)
 
                     u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
                     u.manage_info("".join(["VERIFICATION EPUB : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
                     u.manage_info("".join(["Fichier : ", os.path.basename(self.in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
                     u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
 
-                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(self.out_path_file_name, file_output_result_path_name)
+                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
                     fatal_tot += n_fatal
                     error_tot += n_error
                     warn_tot += n_warn
@@ -1089,15 +1126,15 @@ class ClasseNavBtn:
 
             # create the out_file_name with the in_file_name
             if "_js" not in in_path_file_name:
-                self.out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_js.epub")
+                out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_js.epub")
             else:
-                self.out_file_name = os.path.basename(in_path_file_name)
+                out_file_name = os.path.basename(in_path_file_name)
 
             # the out filename goes in the wnav directory
-            self.out_path_file_name = "".join([self.new_js_path, self.out_file_name])
+            out_path_file_name = "".join([self.new_js_path, out_file_name])
             # prepare the text to display in and out files
             self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", self.out_path_file_name])
+            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
@@ -1320,15 +1357,15 @@ class ClasseNavBtn:
                 # creating the zipped epub file
                 msg = "... creating the final zipped epub file"
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                u.zip_epub(self.temp_path_dir, self.out_path_file_name)
+                u.zip_epub(self.temp_path_dir, out_path_file_name)
 
                 if u.WITH_ZIP:
                     # create also the zip file
-                    u.zip_epub(self.temp_path_dir, self.out_path_file_name.replace(".epub", ".zip"))
+                    u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
                 if u.WITH_DIR:
                     # and also the directory with all the epub files
-                    out_dir_name = self.out_path_file_name.replace(".epub", "")
+                    out_dir_name = out_path_file_name.replace(".epub", "")
 
                     # if exist delete the directory
                     if os.path.exists(out_dir_name):
@@ -1370,7 +1407,7 @@ class ClasseNavBtn:
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
                 msg = "".join(["Mise à jour .js et .css dans le fichier : "])
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                msg = "".join([os.path.basename(self.in_file_name)])
+                msg = "".join([os.path.basename(in_path_file_name)])
                 u.manage_info(msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
                 msg = "".join(["terminée avec succès en ", str(round(elapsed_time, 3)), " s !"])
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
@@ -1382,6 +1419,7 @@ class ClasseNavBtn:
             # no file selected so do nothing
             u.manage_info("Cancel pressed", u.DISPLAY_ONLY, u.COLOR_BLUE)
             u.manage_info("Select a epub", u.DISPLAY_ONLY, u.COLOR_BLUE)
+        return out_path_file_name
 
     def dir_change_police(self):
 
@@ -1429,14 +1467,14 @@ class ClasseNavBtn:
                     self.t_start = time.time()
                     self.in_path_file_name = "/".join([dir_name, test_file])
                     self.in_file_name = os.path.basename(self.in_path_file_name)
-                    self.change_police(self.in_path_file_name)
+                    out_path_file_name = self.change_police(self.in_path_file_name)
 
                     u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
                     u.manage_info("".join(["Changement police : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
                     u.manage_info("".join(["Fichier : ", os.path.basename(self.in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
                     u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
 
-                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(self.out_path_file_name, file_output_result_path_name)
+                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
                     fatal_tot += n_fatal
                     error_tot += n_error
                     warn_tot += n_warn
@@ -1516,15 +1554,15 @@ class ClasseNavBtn:
 
             # create the out_file_name with the in_file_name
             if "_pol" not in in_path_file_name:
-                self.out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_pol.epub")
+                out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_pol.epub")
             else:
-                self.out_file_name = os.path.basename(in_path_file_name)
+                out_file_name = os.path.basename(in_path_file_name)
 
             # the out filename goes in the wnav directory
-            self.out_path_file_name = "".join([self.police_path, self.out_file_name])
+            out_path_file_name = "".join([self.new_police_path, out_file_name])
             # prepare the text to display in and out files
             self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", self.out_path_file_name])
+            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
@@ -1539,7 +1577,7 @@ class ClasseNavBtn:
 
             # unzip all files from inFileName to the temp extractDir
             u.manage_info("... unzip epub", u.DISPLAY_AND_LOG)
-            with zipfile.ZipFile(self.in_path_file_name, "r") as z:
+            with zipfile.ZipFile(in_path_file_name, "r") as z:
                 z.extractall(self.temp_path_dir)
 
             # search for the name of the OPS directory (can be OEBPS or OPS)
@@ -1574,6 +1612,7 @@ class ClasseNavBtn:
             # adapter tous les fichiers texte pour que les boutons reprennent la police choisie (par le exercises.css
             for file in os.listdir(self.text_path_dir):
                 working_file="".join([self.text_path_dir, file])
+                u.manage_info(file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
                 with open(working_file, "r", encoding="utf-8") as xhtml_file:
                     xhtml_data = xhtml_file.readlines()
                 with open(working_file, "w", encoding="utf-8") as new_xhtml_file:
@@ -1586,15 +1625,15 @@ class ClasseNavBtn:
             # creating the zipped epub file
             msg = "... creating the final zipped epub file"
             u.manage_info(msg, u.DISPLAY_AND_LOG)
-            u.zip_epub(self.temp_path_dir, self.out_path_file_name)
+            u.zip_epub(self.temp_path_dir, out_path_file_name)
 
             if u.WITH_ZIP:
                 # create also the zip file
-                u.zip_epub(self.temp_path_dir, self.out_path_file_name.replace(".epub", ".zip"))
+                u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
             if u.WITH_DIR:
                 # and also the directory with all the epub files
-                out_dir_name = self.out_path_file_name.replace(".epub", "")
+                out_dir_name = out_path_file_name.replace(".epub", "")
 
                 # if exist delete the directory
                 if os.path.exists(out_dir_name):
@@ -1636,7 +1675,7 @@ class ClasseNavBtn:
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
                 msg = "".join(["Ajout des boutons de navigation dans le fichier : "])
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                msg = "".join([os.path.basename(self.in_file_name)])
+                msg = "".join([os.path.basename(in_path_file_name)])
                 u.manage_info(msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
                 msg = "".join(["terminée avec succès en ", str(round(elapsed_time, 3)), " s !\n"])
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
@@ -1648,6 +1687,7 @@ class ClasseNavBtn:
             # no file selected so do nothing
             u.manage_info("Cancel pressed", u.DISPLAY_ONLY, u.COLOR_BLUE)
             u.manage_info("Select a epub to verify", u.DISPLAY_ONLY, u.COLOR_BLUE)
+        return out_path_file_name
 
     def dir_prepare_for_moodle(self):
 
@@ -1670,7 +1710,7 @@ class ClasseNavBtn:
         self.dir_job_status = True
         # demande le nom du répertoire à travailler
         file_options = {}
-        file_options['initialdir'] = self.police_path #self.org_path
+        file_options['initialdir'] = self.new_nav_path #self.org_path
         file_options['title'] = 'Please select a directory with epub(s)'
         dir_name = filedialog.askdirectory(**file_options)
 
@@ -1695,14 +1735,14 @@ class ClasseNavBtn:
                     self.t_start = time.time()
                     self.in_path_file_name = "/".join([dir_name, test_file])
                     self.in_file_name = os.path.basename(self.in_path_file_name)
-                    self.prepare_for_moodle(self.in_path_file_name)
+                    out_path_file_name = self.prepare_for_moodle(self.in_path_file_name)
 
                     u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
                     u.manage_info("".join(["Préparation pour moodle : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
                     u.manage_info("".join(["Fichier : ", os.path.basename(self.in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
                     u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
 
-                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(self.out_path_file_name, file_output_result_path_name)
+                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
                     fatal_tot += n_fatal
                     error_tot += n_error
                     warn_tot += n_warn
@@ -1754,7 +1794,7 @@ class ClasseNavBtn:
 
         # ask for the filename to work with
         self.in_path_file_name = filedialog.askopenfilename(title="Sélectionnez à préparer pour moodle",
-                                                     initialdir=self.wnav_path,
+                                                     initialdir=self.new_nav_path,
                                                      filetypes=[('epub files', '.epub'), ('all files', '.*')])
 
         # disable all buttons that can not be used during this task
@@ -1783,15 +1823,15 @@ class ClasseNavBtn:
 
             # create the out_file_name with the in_file_name
             if "_moo" not in in_path_file_name:
-                self.out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_moo.epub")
+                out_file_name = os.path.basename(in_path_file_name).replace(".epub", "_moo.epub")
             else:
-                self.out_file_name = os.path.basename(in_path_file_name)
+                out_file_name = os.path.basename(in_path_file_name)
 
             # the out filename goes in the wnav directory
-            self.out_path_file_name = "".join([self.new_moo_path, self.out_file_name])
+            out_path_file_name = "".join([self.new_moo_path, out_file_name])
             # prepare the text to display in and out files
             self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", self.out_path_file_name])
+            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
@@ -1843,7 +1883,7 @@ class ClasseNavBtn:
                             new_xhtml_file.writelines("<script>\n")
                             for js_in_file in os.listdir(self.js_path_dir):
                                 js_Path_file_name ="".join([self.js_path_dir, js_in_file])
-                                if "alternateur" in js_in_file or "cercle" in js_in_file or "oscillo" in js_in_file or "validation" in js_in_file: #  or "rendement" in js_in_file
+                                if "alternateur" in js_in_file or "cercle" in js_in_file or "oscillo" in js_in_file or "validation" in js_in_file or "rendement" in js_in_file or "jquery" in js_in_file:
                                     # read the script data
                                     with open(js_Path_file_name, "r", encoding="utf-8") as js_file:
                                         js_data = js_file.readlines()
@@ -1875,15 +1915,15 @@ class ClasseNavBtn:
             # creating the zipped epub file
             msg = "... creating the final zipped epub file"
             u.manage_info(msg, u.DISPLAY_AND_LOG)
-            u.zip_epub(self.temp_path_dir, self.out_path_file_name)
+            u.zip_epub(self.temp_path_dir, out_path_file_name)
 
             if u.WITH_ZIP:
                 # create also the zip file
-                u.zip_epub(self.temp_path_dir, self.out_path_file_name.replace(".epub", ".zip"))
+                u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
             if u.WITH_DIR:
                 # and also the directory with all the epub files
-                out_dir_name = self.out_path_file_name.replace(".epub", "")
+                out_dir_name = out_path_file_name.replace(".epub", "")
 
                 # if exist delete the directory
                 if os.path.exists(out_dir_name):
@@ -1925,7 +1965,7 @@ class ClasseNavBtn:
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
                 msg = "".join(["Préparation pour moodle du fichier : "])
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                msg = "".join([os.path.basename(self.in_file_name)])
+                msg = "".join([os.path.basename(in_path_file_name)])
                 u.manage_info(msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
                 msg = "".join(["terminée avec succès en ", str(round(elapsed_time, 3)), " s !\n"])
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
@@ -1937,3 +1977,4 @@ class ClasseNavBtn:
             # no file selected so do nothing
             u.manage_info("Cancel pressed", u.DISPLAY_ONLY, u.COLOR_BLUE)
             u.manage_info("Select a epub to verify", u.DISPLAY_ONLY, u.COLOR_BLUE)
+        return out_path_file_name
