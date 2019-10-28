@@ -5,65 +5,25 @@
        name="epubcheck"
        release="4.2.0"
        xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/jhove.xsd">
-   <date>2019-10-28T16:16:18+01:00</date>
-   <repInfo uri="c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/3_new_police/AC pour ELMO_v1y_js_pol.epub">
-      <created>2019-10-28T16:16:08Z</created>
-      <lastModified>2019-10-21T17:32:41Z</lastModified>
+   <date>2019-10-28T19:45:34+01:00</date>
+   <repInfo uri="c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/1_new/ET_ch_02_new.epub">
+      <created>2019-10-28T19:45:26Z</created>
+      <lastModified>2018-03-18T08:51:21Z</lastModified>
       <format>application/epub+zip</format>
       <version>3.2</version>
-      <status>Not well-formed</status>
-      <messages>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_04.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_06.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03_a.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03_b.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03_b.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_05.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_08_new.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_09_new.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_13_new.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_14_new.xhtml (9-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/val_inst_anim_cercle_trigo_val_inst_v1d.xhtml (9-130)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_04.xhtml (249-249)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (86-86)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (180-180)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (312-312)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (48-48)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (65-65)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (80-80)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (97-97)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (100-100)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (104-104)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (119-119)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (85-85)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (120-120)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (147-147)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (150-150)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (215-215)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (237-237)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (172-172)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (175-175)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (179-179)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (191-191)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (194-194)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (198-198)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_05.xhtml (42-42)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_05.xhtml (89-89)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], There are 31 additional locations for this message.</message>
-      </messages>
+      <status>Well-formed</status>
       <mimeType>application/epub+zip</mimeType>
       <properties>
          <property>
             <name>FileName</name>
             <values arity="Scalar" type="String">
-               <value>AC pour ELMO_v1y_js_pol.epub</value>
+               <value>ET_ch_02_new.epub</value>
             </values>
          </property>
          <property>
             <name>CharacterCount</name>
             <values arity="Scalar" type="Long">
-               <value>157812</value>
+               <value>9698</value>
             </values>
          </property>
          <property>
@@ -84,19 +44,19 @@
                <property>
                   <name>CreationDate</name>
                   <values arity="Scalar" type="Date">
-                     <value>2019-10-28T16:16:08Z</value>
+                     <value>2019-10-28T19:45:26Z</value>
                   </values>
                </property>
                <property>
                   <name>ModDate</name>
                   <values arity="Scalar" type="Date">
-                     <value>2019-10-21T17:32:41Z</value>
+                     <value>2018-03-18T08:51:21Z</value>
                   </values>
                </property>
                <property>
                   <name>Title</name>
                   <values arity="Scalar" type="String">
-                     <value>AC pour ELMO v1x</value>
+                     <value>ET ch 02</value>
                   </values>
                </property>
             </values>
@@ -106,10 +66,10 @@
             <values arity="Array" type="String">
                <value>application/xhtml+xml</value>
                <value>text/css</value>
-               <value>text/javascript</value>
-               <value>application/x-dtbncx+xml</value>
+               <value>application/x-font-truetype</value>
                <value>image/png</value>
-               <value>image/jpeg</value>
+               <value>application/javascript</value>
+               <value>application/x-dtbncx+xml</value>
             </values>
          </property>
          <property>

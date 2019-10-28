@@ -1,5 +1,5 @@
-2019-10-28 16:16:08.153852============================================================================================ 
-28.10.2019 16:16:18
+2019-10-28 19:25:51.368261============================================================================================ 
+28.10.2019 19:26:2
 c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/3_new_police/AC pour ELMO_v1y_js_pol.epub
 1 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_04.xhtml (9-130)
 2 : RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_06.xhtml (9-130)
@@ -40,3 +40,11 @@ c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/3_new_police/AC pour ELM
 37 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_05.xhtml (89-89)
 38 : OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], There are 31 additional locations for this message.
 Check status : 0 fatal / 12 errors / 26 warnings
+============================================================================================ 
+28.10.2019 19:45:24
+c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/1_new/ET_ch_01_new.epub
+Check status : 0 fatal / 0 errors / 0 warnings
+============================================================================================ 
+28.10.2019 19:45:34
+c:/users/jmetr/_data/mandats/fet_new/fet_elt_epub/epubs/1_new/ET_ch_02_new.epub
+Check status : 0 fatal / 0 errors / 0 warnings

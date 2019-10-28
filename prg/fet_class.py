@@ -144,12 +144,25 @@ class ClasseFet:
         self.COLOR_PURPLE = 6
         self.COLOR_RED_ON_YELLOW = 4
 
+        # init variables
+        self.cwd = "".join([str(os.getcwd()).replace("\\", "/").replace("\n", ""), "/"])
+        self.org_path = ""
+        self.new_path = ""
+        self.tmp_path = ""
+        self.new_nav_path = ""
+        self.new_js_path = ""
+        self.new_moo_path = ""
+        self.new_police_path = ""
+        self.js_css_path = ""
+        self.log_path = "".join([self.cwd, "log/"])
+        self.log_path_file_name = "".join([self.log_path, self.LOG_FILE_NAME])
+
         # lecture des répertoires dans le fichier .ini
         self.ini_path_file_name = "".join([self.cwd, self.INI_FILE_NAME])
         if os.path.isfile(self.ini_path_file_name):
 
-            with open(self.ini_path_file_name, "r", encoding="utf-8") as f_path:
-                r = f_path.readlines()
+            with open(self.ini_path_file_name, "r", encoding="utf-8") as f_init:
+                r = f_init.readlines()
                 for p in r:
                     x = p.split("=")
                     x[0] = x[0].strip().lower()
