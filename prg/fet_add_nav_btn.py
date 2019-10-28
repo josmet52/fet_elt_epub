@@ -572,36 +572,36 @@ class ClasseNavBtn:
             # the out filename goes in the wnav directory
             out_path_file_name = "".join([self.new_nav_path, out_file_name])
             # prepare the text to display in and out files
-            self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
+            txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
+            txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
             u.manage_info("".join(["Add nav btn : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.DISPLAY_AND_LOG, u.COLOR_RED_ON_YELLOW)
-            u.manage_info(self.txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
-            u.manage_info(self.txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
             u.manage_info("", u.DISPLAY_AND_LOG)
 
             # search for a "unique directory name" and create the temp directory
-            self.temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
-            os.mkdir(self.temp_path_dir)
+            temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
+            os.mkdir(temp_path_dir)
 
             # unzip all files from inFileName to the temp extractDir
             u.manage_info("... unzip epub", u.DISPLAY_AND_LOG)
             with zipfile.ZipFile(in_path_file_name, "r") as z:
-                z.extractall(self.temp_path_dir)
+                z.extractall(temp_path_dir)
 
             # search for the name of the OPS directory (can be OEBPS or OPS)
-            ok, self.ops_dir = u.get_ops_dir(self.temp_path_dir)
+            ok, self.ops_dir = u.get_ops_dir(temp_path_dir)
             if not ok:
                 u.manage_info("get_ops_dir ERROR ... the programm give up", u.DISPLAY_AND_LOG)
-            self.ops_path_filename = "".join([self.temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
+            self.ops_path_filename = "".join([temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
 
             # path of the text directory
-            self.text_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Text/"])
-            self.css_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Styles/"])
-            self.js_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Misc/"])
-            self.font_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Fonts/"])
+            self.text_path_dir = "".join([temp_path_dir, self.ops_dir, "Text/"])
+            self.css_path_dir = "".join([temp_path_dir, self.ops_dir, "Styles/"])
+            self.js_path_dir = "".join([temp_path_dir, self.ops_dir, "Misc/"])
+            self.font_path_dir = "".join([temp_path_dir, self.ops_dir, "Fonts/"])
 
             f_ok = True
             self.t_start = time.time()  # store the start time
@@ -732,11 +732,11 @@ class ClasseNavBtn:
                 # creating the zipped epub file
                 msg = "... creating the final zipped epub file"
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                u.zip_epub(self.temp_path_dir, out_path_file_name)
+                u.zip_epub(temp_path_dir, out_path_file_name)
 
                 if u.WITH_ZIP:
                     # create also the zip file
-                    u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
+                    u.zip_epub(temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
                 if u.WITH_DIR:
                     # and also the directory with all the epub files
@@ -746,27 +746,27 @@ class ClasseNavBtn:
                     if os.path.exists(out_dir_name):
                         shutil.rmtree(out_dir_name, ignore_errors=True)
                     # create the new dir
-                    shutil.copytree(self.temp_path_dir, out_dir_name)
+                    shutil.copytree(temp_path_dir, out_dir_name)
                     os.chdir(self.cwd)
 
                 # info that all its finished and deleting temporary files and directories
                 u.manage_info("... putzing", u.DISPLAY_AND_LOG)
                 # remove temporary files and directories
-                if os.path.exists(self.temp_path_dir):
-                    v_return = u.empty_dir(self.temp_path_dir)
+                if os.path.exists(temp_path_dir):
+                    v_return = u.empty_dir(temp_path_dir)
                     if v_return != "":
                         v_msg = "".join([self.log_path_file_name, v_return])
                         u.write_in_logfile(v_msg)
                     f_msg = "function new_job, final tasks : remove temp dir"
                     try:
-                        os.rmdir(self.temp_path_dir)
+                        os.rmdir(temp_path_dir)
                     except:
                         try:
                             time.sleep(self.ERROR_WAIT_TIME)
                             self.second_try += 1
                             u.manage_info(" ".join(["2nd try in", f_msg]), u.DISPLAY_AND_LOG)
                             u.manage_error(" ".join(["2nd try in", f_msg]), "", 1)
-                            os.rmdir(self.temp_path_dir)
+                            os.rmdir(temp_path_dir)
                         except:
                             u.manage_error(" ".join(["Error in:", f_msg]), u.error_msg(sys.exc_info()), 3)
 
@@ -843,36 +843,36 @@ class ClasseNavBtn:
             # the out filename goes in the wnav directory
             out_path_file_name = "".join([self.new_nav_path, out_file_name])
             # prepare the text to display in and out files
-            self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
+            txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
+            txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
             u.manage_info("".join(["Add nav btn : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.DISPLAY_AND_LOG, u.COLOR_RED_ON_YELLOW)
-            u.manage_info(self.txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
-            u.manage_info(self.txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
             u.manage_info("", u.DISPLAY_AND_LOG)
 
             # search for a "unique directory name" and create the temp directory
-            self.temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
-            os.mkdir(self.temp_path_dir)
+            temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
+            os.mkdir(temp_path_dir)
 
             # unzip all files from inFileName to the temp extractDir
             u.manage_info("... unzip epub", u.DISPLAY_AND_LOG)
             with zipfile.ZipFile(in_path_file_name, "r") as z:
-                z.extractall(self.temp_path_dir)
+                z.extractall(temp_path_dir)
 
             # search for the name of the OPS directory (can be OEBPS or OPS)
-            ok, self.ops_dir = u.get_ops_dir(self.temp_path_dir)
+            ok, self.ops_dir = u.get_ops_dir(temp_path_dir)
             if not ok:
                 u.manage_info("get_ops_dir ERROR ... the programm give up", u.DISPLAY_AND_LOG)
-            self.ops_path_filename = "".join([self.temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
+            self.ops_path_filename = "".join([temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
 
             # path of the text directory
-            self.text_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Text/"])
-            self.css_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Styles/"])
-            self.js_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Misc/"])
-            self.font_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Fonts/"])
+            self.text_path_dir = "".join([temp_path_dir, self.ops_dir, "Text/"])
+            self.css_path_dir = "".join([temp_path_dir, self.ops_dir, "Styles/"])
+            self.js_path_dir = "".join([temp_path_dir, self.ops_dir, "Misc/"])
+            self.font_path_dir = "".join([temp_path_dir, self.ops_dir, "Fonts/"])
 
             f_ok = True
             self.t_start = time.time()  # store the start time
@@ -928,11 +928,11 @@ class ClasseNavBtn:
                 # creating the zipped epub file
                 msg = "... creating the final zipped epub file"
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                u.zip_epub(self.temp_path_dir, out_path_file_name)
+                u.zip_epub(temp_path_dir, out_path_file_name)
 
                 if u.WITH_ZIP:
                     # create also the zip file
-                    u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
+                    u.zip_epub(temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
                 if u.WITH_DIR:
                     # and also the directory with all the epub files
@@ -942,27 +942,27 @@ class ClasseNavBtn:
                     if os.path.exists(out_dir_name):
                         shutil.rmtree(out_dir_name, ignore_errors=True)
                     # create the new dir
-                    shutil.copytree(self.temp_path_dir, out_dir_name)
+                    shutil.copytree(temp_path_dir, out_dir_name)
                     os.chdir(self.cwd)
 
                 # info that all its finished and deleting temporary files and directories
                 u.manage_info("... putzing", u.DISPLAY_AND_LOG)
                 # remove temporary files and directories
-                if os.path.exists(self.temp_path_dir):
-                    v_return = u.empty_dir(self.temp_path_dir)
+                if os.path.exists(temp_path_dir):
+                    v_return = u.empty_dir(temp_path_dir)
                     if v_return != "":
                         v_msg = "".join([self.log_path_file_name, v_return])
                         u.write_in_logfile(v_msg)
                     f_msg = "function new_job, final tasks : remove temp dir"
                     try:
-                        os.rmdir(self.temp_path_dir)
+                        os.rmdir(temp_path_dir)
                     except:
                         try:
                             time.sleep(self.ERROR_WAIT_TIME)
                             self.second_try += 1
                             u.manage_info(" ".join(["2nd try in", f_msg]), u.DISPLAY_AND_LOG)
                             u.manage_error(" ".join(["2nd try in", f_msg]), "", 1)
-                            os.rmdir(self.temp_path_dir)
+                            os.rmdir(temp_path_dir)
                         except:
                             u.manage_error(" ".join(["Error in:", f_msg]), u.error_msg(sys.exc_info()), 3)
 
@@ -1133,36 +1133,36 @@ class ClasseNavBtn:
             # the out filename goes in the wnav directory
             out_path_file_name = "".join([self.new_js_path, out_file_name])
             # prepare the text to display in and out files
-            self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
+            txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
+            txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
             u.manage_info("".join(["Change .js and .css file with \"à jour\" files : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.DISPLAY_AND_LOG, u.COLOR_RED_ON_YELLOW)
-            u.manage_info(self.txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
-            u.manage_info(self.txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
             u.manage_info("", u.DISPLAY_AND_LOG)
 
             # search for a "unique directory name" and create the temp directory
-            self.temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
-            os.mkdir(self.temp_path_dir)
+            temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
+            os.mkdir(temp_path_dir)
 
             # unzip all files from inFileName to the temp extractDir
             u.manage_info("... unzip epub", u.DISPLAY_AND_LOG)
             with zipfile.ZipFile(in_path_file_name, "r") as z:
-                z.extractall(self.temp_path_dir)
+                z.extractall(temp_path_dir)
 
             # search for the name of the OPS directory (can be OEBPS or OPS)
-            ok, self.ops_dir = u.get_ops_dir(self.temp_path_dir)
+            ok, self.ops_dir = u.get_ops_dir(temp_path_dir)
             if not ok:
                 u.manage_info("get_ops_dir ERROR ... the programm give up", u.DISPLAY_AND_LOG)
-            self.ops_path_filename = "".join([self.temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
+            self.ops_path_filename = "".join([temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
 
             # path of the text directory
-            self.text_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Text/"])
-            self.css_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Styles/"])
-            self.js_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Misc/"])
-            self.font_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Fonts/"])
+            self.text_path_dir = "".join([temp_path_dir, self.ops_dir, "Text/"])
+            self.css_path_dir = "".join([temp_path_dir, self.ops_dir, "Styles/"])
+            self.js_path_dir = "".join([temp_path_dir, self.ops_dir, "Misc/"])
+            self.font_path_dir = "".join([temp_path_dir, self.ops_dir, "Fonts/"])
 
             f_ok = True
             self.t_start = time.time()  # store the start time
@@ -1357,11 +1357,11 @@ class ClasseNavBtn:
                 # creating the zipped epub file
                 msg = "... creating the final zipped epub file"
                 u.manage_info(msg, u.DISPLAY_AND_LOG)
-                u.zip_epub(self.temp_path_dir, out_path_file_name)
+                u.zip_epub(temp_path_dir, out_path_file_name)
 
                 if u.WITH_ZIP:
                     # create also the zip file
-                    u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
+                    u.zip_epub(temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
                 if u.WITH_DIR:
                     # and also the directory with all the epub files
@@ -1371,27 +1371,27 @@ class ClasseNavBtn:
                     if os.path.exists(out_dir_name):
                         shutil.rmtree(out_dir_name, ignore_errors=True)
                     # create the new dir
-                    shutil.copytree(self.temp_path_dir, out_dir_name)
+                    shutil.copytree(temp_path_dir, out_dir_name)
                     os.chdir(self.cwd)
 
                 # info that all its finished and deleting temporary files and directories
                 u.manage_info("... putzing", u.DISPLAY_AND_LOG)
                 # remove temporary files and directories
-                if os.path.exists(self.temp_path_dir):
-                    v_return = u.empty_dir(self.temp_path_dir)
+                if os.path.exists(temp_path_dir):
+                    v_return = u.empty_dir(temp_path_dir)
                     if v_return != "":
                         v_msg = "".join([self.log_path_file_name, v_return])
                         u.write_in_logfile(v_msg)
                     f_msg = "function new_job, final tasks : remove temp dir"
                     try:
-                        os.rmdir(self.temp_path_dir)
+                        os.rmdir(temp_path_dir)
                     except:
                         try:
                             time.sleep(self.ERROR_WAIT_TIME)
                             self.second_try += 1
                             u.manage_info(" ".join(["2nd try in", f_msg]), u.DISPLAY_AND_LOG)
                             u.manage_error(" ".join(["2nd try in", f_msg]), "", 1)
-                            os.rmdir(self.temp_path_dir)
+                            os.rmdir(temp_path_dir)
                         except:
                             u.manage_error(" ".join(["Error in:", f_msg]), u.error_msg(sys.exc_info()), 3)
 
@@ -1561,36 +1561,36 @@ class ClasseNavBtn:
             # the out filename goes in the wnav directory
             out_path_file_name = "".join([self.new_police_path, out_file_name])
             # prepare the text to display in and out files
-            self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
+            txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
+            txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
             u.manage_info("".join(["Change police : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.DISPLAY_AND_LOG, u.COLOR_RED_ON_YELLOW)
-            u.manage_info(self.txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
-            u.manage_info(self.txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
             u.manage_info("", u.DISPLAY_AND_LOG)
 
             # search for a "unique directory name" and create the temp directory
-            self.temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
-            os.mkdir(self.temp_path_dir)
+            temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
+            os.mkdir(temp_path_dir)
 
             # unzip all files from inFileName to the temp extractDir
             u.manage_info("... unzip epub", u.DISPLAY_AND_LOG)
             with zipfile.ZipFile(in_path_file_name, "r") as z:
-                z.extractall(self.temp_path_dir)
+                z.extractall(temp_path_dir)
 
             # search for the name of the OPS directory (can be OEBPS or OPS)
-            ok, self.ops_dir = u.get_ops_dir(self.temp_path_dir)
+            ok, self.ops_dir = u.get_ops_dir(temp_path_dir)
             if not ok:
                 u.manage_info("get_ops_dir ERROR ... the programm give up", u.DISPLAY_AND_LOG)
-            self.ops_path_filename = "".join([self.temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
+            self.ops_path_filename = "".join([temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
 
             # path of the text directory
-            self.text_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Text/"])
-            self.css_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Styles/"])
-            self.js_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Misc/"])
-            self.font_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Fonts/"])
+            self.text_path_dir = "".join([temp_path_dir, self.ops_dir, "Text/"])
+            self.css_path_dir = "".join([temp_path_dir, self.ops_dir, "Styles/"])
+            self.js_path_dir = "".join([temp_path_dir, self.ops_dir, "Misc/"])
+            self.font_path_dir = "".join([temp_path_dir, self.ops_dir, "Fonts/"])
 
             f_ok = True
             self.t_start = time.time()  # store the start time
@@ -1625,11 +1625,11 @@ class ClasseNavBtn:
             # creating the zipped epub file
             msg = "... creating the final zipped epub file"
             u.manage_info(msg, u.DISPLAY_AND_LOG)
-            u.zip_epub(self.temp_path_dir, out_path_file_name)
+            u.zip_epub(temp_path_dir, out_path_file_name)
 
             if u.WITH_ZIP:
                 # create also the zip file
-                u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
+                u.zip_epub(temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
             if u.WITH_DIR:
                 # and also the directory with all the epub files
@@ -1639,27 +1639,27 @@ class ClasseNavBtn:
                 if os.path.exists(out_dir_name):
                     shutil.rmtree(out_dir_name, ignore_errors=True)
                 # create the new dir
-                shutil.copytree(self.temp_path_dir, out_dir_name)
+                shutil.copytree(temp_path_dir, out_dir_name)
                 os.chdir(self.cwd)
 
             # info that all its finished and deleting temporary files and directories
             u.manage_info("... putzing", u.DISPLAY_AND_LOG)
             # remove temporary files and directories
-            if os.path.exists(self.temp_path_dir):
-                v_return = u.empty_dir(self.temp_path_dir)
+            if os.path.exists(temp_path_dir):
+                v_return = u.empty_dir(temp_path_dir)
                 if v_return != "":
                     v_msg = "".join([self.log_path_file_name, v_return])
                     u.write_in_logfile(v_msg)
                 f_msg = "function new_job, final tasks : remove temp dir"
                 try:
-                    os.rmdir(self.temp_path_dir)
+                    os.rmdir(temp_path_dir)
                 except:
                     try:
                         time.sleep(self.ERROR_WAIT_TIME)
                         self.second_try += 1
                         u.manage_info(" ".join(["2nd try in", f_msg]), u.DISPLAY_AND_LOG)
                         u.manage_error(" ".join(["2nd try in", f_msg]), "", 1)
-                        os.rmdir(self.temp_path_dir)
+                        os.rmdir(temp_path_dir)
                     except:
                         u.manage_error(" ".join(["Error in:", f_msg]), u.error_msg(sys.exc_info()), 3)
 
@@ -1830,36 +1830,36 @@ class ClasseNavBtn:
             # the out filename goes in the wnav directory
             out_path_file_name = "".join([self.new_moo_path, out_file_name])
             # prepare the text to display in and out files
-            self.txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
-            self.txt_out_file = "".join(["Dst file : ", out_path_file_name])
+            txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
+            txt_out_file = "".join(["Dst file : ", out_path_file_name])
 
             # display the files status
             u.manage_info("", u.DISPLAY_AND_LOG)
             u.manage_info("".join(["Prepare for moodle : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.DISPLAY_AND_LOG, u.COLOR_RED_ON_YELLOW)
-            u.manage_info(self.txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
-            u.manage_info(self.txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_in_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            u.manage_info(txt_out_file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
             u.manage_info("", u.DISPLAY_AND_LOG)
 
             # search for a "unique directory name" and create the temp directory
-            self.temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
-            os.mkdir(self.temp_path_dir)
+            temp_path_dir = "".join([self.tmp_path, str(uuid.uuid4()), "/"])
+            os.mkdir(temp_path_dir)
 
             # unzip all files from inFileName to the temp extractDir
             u.manage_info("... unzip epub", u.DISPLAY_AND_LOG)
             with zipfile.ZipFile(self.in_path_file_name, "r") as z:
-                z.extractall(self.temp_path_dir)
+                z.extractall(temp_path_dir)
 
             # search for the name of the OPS directory (can be OEBPS or OPS)
-            ok, self.ops_dir = u.get_ops_dir(self.temp_path_dir)
+            ok, self.ops_dir = u.get_ops_dir(temp_path_dir)
             if not ok:
                 u.manage_info("get_ops_dir ERROR ... the programm give up", u.DISPLAY_AND_LOG)
-            self.ops_path_filename = "".join([self.temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
+            self.ops_path_filename = "".join([temp_path_dir, self.ops_dir, self.CONTENT_OPF_FILE_NAME])
 
             # path of the text directory
-            self.text_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Text/"])
-            self.css_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Styles/"])
-            self.js_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Misc/"])
-            self.font_path_dir = "".join([self.temp_path_dir, self.ops_dir, "Fonts/"])
+            self.text_path_dir = "".join([temp_path_dir, self.ops_dir, "Text/"])
+            self.css_path_dir = "".join([temp_path_dir, self.ops_dir, "Styles/"])
+            self.js_path_dir = "".join([temp_path_dir, self.ops_dir, "Misc/"])
+            self.font_path_dir = "".join([temp_path_dir, self.ops_dir, "Fonts/"])
 
             f_ok = True
             self.t_start = time.time()  # store the start time
@@ -1874,30 +1874,33 @@ class ClasseNavBtn:
                     xhtml_data = xhtml_file.readlines()
                 with open(working_file, "w", encoding="utf-8") as new_xhtml_file:
                     in_body = False
+                    script_found = False
 
                     for l in xhtml_data:
                         if "<body>" in l:
                             in_body = True
                         if "</script>" in l and in_body:
-                            new_xhtml_file.writelines("</script>\n")
-                            new_xhtml_file.writelines("<script>\n")
+                            script_found = True
+                            # new_xhtml_file.writelines("</script>\n\n")
+                            # new_xhtml_file.writelines("<script>\n")
                             for js_in_file in os.listdir(self.js_path_dir):
                                 js_Path_file_name ="".join([self.js_path_dir, js_in_file])
-                                if "alternateur" in js_in_file or "cercle" in js_in_file or "oscillo" in js_in_file or "validation" in js_in_file or "rendement" in js_in_file or "jquery" in js_in_file:
-                                    # read the script data
-                                    with open(js_Path_file_name, "r", encoding="utf-8") as js_file:
-                                        js_data = js_file.readlines()
-                                    # write the script data in the xhtml file just before the </body> tag
-                                    new_xhtml_file.writelines("//<![CDATA[\n")
-                                    # new_xhtml_file.writelines("<script> //<![CDATA[")
-                                    for l_j in js_data:
-                                        new_xhtml_file.writelines(l_j)
-                                    new_xhtml_file.writelines("//]]>\n")
-                                    # new_xhtml_file.writelines("//]]></script>")
+                                # if "alternateur" in js_in_file or "cercle" in js_in_file or "oscillo" in js_in_file or "validation" in js_in_file or "rendement" in js_in_file or "jquery" in js_in_file:
+                                # read the script data
+                                with open(js_Path_file_name, "r", encoding="utf-8") as js_file:
+                                    js_data = js_file.readlines()
+                                # write the script data in the xhtml file just before the </body> tag
+                                new_xhtml_file.writelines("//<![CDATA[\n")
+                                # new_xhtml_file.writelines("<script> //<![CDATA[")
+                                for l_j in js_data:
+                                    new_xhtml_file.writelines(l_j)
+                                new_xhtml_file.writelines("//]]>\n")
+                                # new_xhtml_file.writelines("//]]></script>")
                             new_xhtml_file.writelines(l)
                         else:
                             new_xhtml_file.writelines(l)
                         if "</body>" in l:
+
                             in_body = False
 
             # adapter tous les fichiers texte pour que les boutons reprennent la police choisie (par le exercises.css
@@ -1915,11 +1918,11 @@ class ClasseNavBtn:
             # creating the zipped epub file
             msg = "... creating the final zipped epub file"
             u.manage_info(msg, u.DISPLAY_AND_LOG)
-            u.zip_epub(self.temp_path_dir, out_path_file_name)
+            u.zip_epub(temp_path_dir, out_path_file_name)
 
             if u.WITH_ZIP:
                 # create also the zip file
-                u.zip_epub(self.temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
+                u.zip_epub(temp_path_dir, out_path_file_name.replace(".epub", ".zip"))
 
             if u.WITH_DIR:
                 # and also the directory with all the epub files
@@ -1929,27 +1932,27 @@ class ClasseNavBtn:
                 if os.path.exists(out_dir_name):
                     shutil.rmtree(out_dir_name, ignore_errors=True)
                 # create the new dir
-                shutil.copytree(self.temp_path_dir, out_dir_name)
+                shutil.copytree(temp_path_dir, out_dir_name)
                 os.chdir(self.cwd)
 
             # info that all its finished and deleting temporary files and directories
             u.manage_info("... putzing", u.DISPLAY_AND_LOG)
             # remove temporary files and directories
-            if os.path.exists(self.temp_path_dir):
-                v_return = u.empty_dir(self.temp_path_dir)
+            if os.path.exists(temp_path_dir):
+                v_return = u.empty_dir(temp_path_dir)
                 if v_return != "":
                     v_msg = "".join([self.log_path_file_name, v_return])
                     u.write_in_logfile(v_msg)
                 f_msg = "function new_job, final tasks : remove temp dir"
                 try:
-                    os.rmdir(self.temp_path_dir)
+                    os.rmdir(temp_path_dir)
                 except:
                     try:
                         time.sleep(self.ERROR_WAIT_TIME)
                         self.second_try += 1
                         u.manage_info(" ".join(["2nd try in", f_msg]), u.DISPLAY_AND_LOG)
                         u.manage_error(" ".join(["2nd try in", f_msg]), "", 1)
-                        os.rmdir(self.temp_path_dir)
+                        os.rmdir(temp_path_dir)
                     except:
                         u.manage_error(" ".join(["Error in:", f_msg]), u.error_msg(sys.exc_info()), 3)
 
