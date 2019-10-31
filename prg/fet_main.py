@@ -28,7 +28,7 @@ Version 0.22d - 25.6.2018 - tests avec des fichiers provenant directement du sit
 Version 0.22e - 29.6.2018 - correction de la gestion du fichier NAV et de ses entrées dans le content.opf
 Version 0.23a - 03.02.2018 - ajout du management des boutons de navigation en cours
 Version 0.24a - 08.04.2018 - btn nav ok + corrections sur improve file (affichage des fichiers non traités
-Version 0.25b - 13.04.2018 - fet_add_nav_btn.py nettoyé
+Version 0.25b - 13.04.2018 - fet_epub_utils.py nettoyé
 Version 0.25c - 13.04.2018 - fet_class.py nettoyé
 Version 0.25d - 14.04.2018 - beautify: <h1>...</h1> and <h2>...</h2> on one line
 Version 0.26a - 14.04.2018 - avec ajout btn pour nav dans Moodle
@@ -43,14 +43,16 @@ version 0.28f - 15.10.2019 - amélioration mise en page script
 version 0.29a - 15.10.2019 - CSS pour TOC amélioré
 version 0.30a - 22.10.2019 - menus réorganisés, boutons supprimés
 version 0.30b - 28.10.2019 - petites corrections
+version 0.30c - 28.10.2019 - rempalcé variables globales (self.xxx)  par variables locales (xxx)
+version 0.30d - 31.10.2019 - nouveau code pour updater .js et .css
 """
 
 VERSION_FILE = "fet_main.py"
-VERSION_NO = "0.30a"
-VERSION_DATE = "22.10.2019"
+VERSION_NO = "0.30d"
+VERSION_DATE = "31.10.2019"
 VERSION_AUTEUR = "Joseph Métrailler"
-VERSION_DESCRIPTION = "Nouveaux menus"
-VERSION_STATUS = "stable"
+VERSION_DESCRIPTION = ".js and .css new code"
+VERSION_STATUS = "à tester"
 
 
 # external libraries
@@ -66,7 +68,7 @@ from PIL import Image, ImageTk
 # from fet_lib import ClassFetLib
 from fet_class import ClasseFet
 from fet_lib import ClasseFetLib
-from fet_add_nav_btn import ClasseNavBtn
+from fet_epub_utils import ClasseNavBtn
 from fet_xml_formatter import ClasseFetXmlFormatter
 
 
@@ -147,6 +149,9 @@ def dir_update_js_and_css_go():
 
 def file_update_js_and_css_go():
     z.file_update_js_and_css()
+
+# def test_file_update_js_and_css_go():
+#     z.update_js_and_css_new("C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/1_new/AC pour ELMO_v1y.epub")
 
 # CHANGE POLICE
 ##############
@@ -356,25 +361,6 @@ direpubmenu.add_command(label="Add nav btn dir", command=lambda: dir_add_nav_btn
 direpubmenu.add_command(label="Prepare for moodle dir", command=lambda: dir_prepare_for_moodle_go())
 menubar.add_cascade(label="batch epub(s)", menu=direpubmenu)
 
-# GLOBAL EPUB MENU
-# globalepubmenu = Menu(menubar, tearoff=0)
-# globalepubmenu.add_command(label="Correct file", command=lambda: file_improve_pw_epub_go())
-# globalepubmenu.add_command(label="Correct dir", command=lambda: file_improve_pw_epub_go())
-# globalepubmenu.add_separator()
-# globalepubmenu.add_command(label="Add nav btn file", command=lambda: file_add_nav_btn_go())
-# globalepubmenu.add_command(label="Add nav btn dir", command=lambda: dir_add_nav_btn_go())
-# globalepubmenu.add_command(label="Remove nav btn file", command=lambda: file_remove_nav_btn_go())
-# globalepubmenu.add_separator()
-# globalepubmenu.add_command(label="Update .js ans .css file", command=lambda: file_update_js_and_css_go())
-# globalepubmenu.add_command(label="Update .js ans .css dir", command=lambda: dir_update_js_and_css_go())
-# globalepubmenu.add_separator()
-# globalepubmenu.add_command(label="Change police file", command=lambda: file_change_police_go())
-# globalepubmenu.add_command(label="Change police dir", command=lambda: dir_change_police_go())
-# globalepubmenu.add_separator()
-# globalepubmenu.add_command(label="Prepare for moodle file", command=lambda: file_prepare_for_moodle_go())
-# globalepubmenu.add_command(label="Prepare for moodle dir", command=lambda: dir_prepare_for_moodle_go())
-# menubar.add_cascade(label="All epub tasks", menu=globalepubmenu)
-
 # UTIL MENU
 utilmenu = Menu(menubar, tearoff=0)
 utilmenu.add_command(label="Verify file", command=verify_job_go)
@@ -393,6 +379,10 @@ helpmenu = Menu(menubar, tearoff=0)
 helpmenu.add_command(label="About", command=about)
 helpmenu.add_command(label="Aide", command=aide)
 menubar.add_cascade(label="Help", menu=helpmenu)
+
+# testmenu = Menu(menubar, tearoff=0)
+# testmenu.add_command(label="test js css", command=lambda: test_file_update_js_and_css_go())
+# menubar.add_cascade(label="Test", menu=testmenu)
 
 # display the menu
 msgDisplay.config(menu=menubar)
