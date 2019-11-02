@@ -33,7 +33,9 @@ from PIL import Image
 from bs4 import BeautifulSoup
 
 from fet_lib import ClasseFetLib
+from fet_ini import ClasseIni
 y = ClasseFetLib()
+ini = ClasseIni()
 # from fet_xml_formatter import ClasseFetXmlFormatter
 # f = ClasseFetLib()
 
@@ -142,97 +144,149 @@ class ClasseFet:
         self.COLOR_GREEN = 3
         self.COLOR_ORANGE = 5
         self.COLOR_PURPLE = 6
+        self.COLOR_BLACK = 7
         self.COLOR_RED_ON_YELLOW = 4
 
         # init variables
         self.cwd = "".join([str(os.getcwd()).replace("\\", "/").replace("\n", ""), "/"])
-        self.org_path = ""
-        self.new_path = ""
-        self.tmp_path = ""
-        self.new_nav_path = ""
-        self.new_js_path = ""
-        self.new_moo_path = ""
-        self.new_police_path = ""
-        self.js_css_path = ""
+        # self.org_path = ""
+        # self.new_path = ""
+        # self.tmp_path = ""
+        # self.new_nav_path = ""
+        # self.new_js_path = ""
+        # self.new_moo_path = ""
+        # self.new_police_path = ""
+        # self.js_css_path = ""
         self.log_path = "".join([self.cwd, "log/"])
         self.log_path_file_name = "".join([self.log_path, self.LOG_FILE_NAME])
+        # self.strings_names_js = []
+        # self.strings_names_css = []
+        # self.mandatory_names_js = []
+        # self.mandatory_names_css = []
 
-        # lecture des répertoires dans le fichier .ini
-        self.ini_path_file_name = "".join([self.cwd, self.INI_FILE_NAME])
-        if os.path.isfile(self.ini_path_file_name):
+        # initialisation des variable de la classe à partir de la classe ini qui le fichier fet_epub.ini
+        self.strings_names_js = ini.strings_names_js
+        self.strings_names_css = ini.strings_names_css
+        self.mandatory_names_js = ini.mandatory_names_js
+        self.mandatory_names_css = ini.mandatory_names_css
+        self.org_path = ini.org_path
+        self.new_path = ini.new_path
+        self.tmp_path = ini.tmp_path
+        self.new_nav_path = ini.new_nav_path
+        self.new_js_path = ini.new_js_path
+        self.new_moo_path = ini.new_moo_path
+        self.new_police_path = ini.new_police_path
+        self.js_css_path = ini.js_css_path
+        self.DEBUG = ini.DEBUG
+        self.LOG_THIS_RUN = ini.LOG_THIS_RUN
+        self.VERBOSE = ini.VERBOSE
+        self.WITH_DIR = ini.WITH_DIR
+        self.WITH_ZIP = ini.WITH_ZIP
+        self.IMG_SIZE_MAX = ini.IMG_SIZE_MAX
+        self.TOC_DEEP = ini.TOC_DEEP
+        self.FONT_NAME = ini.TOC_DEEP
+        self.VERIF_EPUB = ini.VERIF_EPUB
 
-            with open(self.ini_path_file_name, "r", encoding="utf-8") as f_init:
-                r = f_init.readlines()
-                for p in r:
-                    x = p.split("=")
-                    x[0] = x[0].strip().lower()
-                    if len(x) > 1 :
-                        x[1] = x[1].strip().lower()
-
-                        # ne pas traiter les commentaires
-                        if x[0][:1] != "#":
-
-                            if x[0] == "ini_org_dir":
-                                self.org_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_dir":
-                                self.new_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_tmp_dir":
-                                self.tmp_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_nav_dir":
-                                self.new_nav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_js_css_dir":
-                                self.new_js_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_moodle_dir":
-                                self.new_moo_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_police_dir":
-                                self.new_police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_js_css_ok_dir":
-                                self.js_css_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_var_debug" :
-                                if x[1].replace("\n", "") == "true" : self.DEBUG = True
-                                else : self.DEBUG = False
-
-                            elif x[0] == "ini_var_log_this_run" :
-                                if x[1].replace("\n", "") == "true" : self.LOG_THIS_RUN = True
-                                else : self.LOG_THIS_RUN = False
-
-                            elif x[0] == "ini_var_verbose" :
-                                if x[1].replace("\n", "") == "true" : self.VERBOSE = True
-                                else : self.VERBOSE = False
-
-                            elif x[0] == "ini_var_with_dir" :
-                                if x[1].replace("\n", "") == "true" : self.WITH_DIR = True
-                                else : self.WITH_DIR = False
-
-                            elif x[0] == "ini_var_with_zip" :
-                                if x[1].replace("\n", "") == "true" : self.WITH_ZIP = True
-                                else : self.WITH_ZIP = False
-
-                            elif x[0] == "ini_var_img_size_max" :
-                                if x[1].isnumeric() : self.IMG_SIZE_MAX = int(x[1])
-                                else : self.IMG_SIZE_MAX = 20000
-
-                            elif x[0] == "ini_var_toc_deep" :
-                                self.TOC_DEEP = x[1]
-
-                            elif x[0] == "ini_var_font" :
-                                self.FONT_NAME = x[1]
+        # # lecture des répertoires dans le fichier .ini
+        # self.ini_path_file_name = "".join([self.cwd, self.INI_FILE_NAME])
+        # if os.path.isfile(self.ini_path_file_name):
+        #
+        #     with open(self.ini_path_file_name, "r", encoding="utf-8") as f_init:
+        #         r = f_init.readlines()
+        #         for p in r:
+        #             x = p.split("=")
+        #             x[0] = x[0].strip().lower()
+        #             if len(x) > 1 :
+        #                 x[1] = x[1].strip().lower()
+        #
+        #                 # ne pas traiter les commentaires
+        #                 if x[0][:1] != "#":
+        #
+        #                     if x[0] == "short_strings_names_js":
+        #                         x_js = x[1].split(" ")
+        #                         for x_js_strings in x_js:
+        #                             self.strings_names_js.append(x_js_strings)
+        #
+        #                     if x[0] == "short_strings_names_css":
+        #                         x_css = x[1].split(" ")
+        #                         for x_css_strings in x_css:
+        #                             self.strings_names_css.append(x_css_strings)
+        #
+        #                     if x[0] == "short_mandatory_files_js":
+        #                         x_js = x[1].split(" ")
+        #                         for x_js_strings in x_js:
+        #                             self.mandatory_names_js.append(x_js_strings)
+        #
+        #                     if x[0] == "short_mandatory_files_css":
+        #                         x_css = x[1].split(" ")
+        #                         for x_css_strings in x_css:
+        #                             self.mandatory_names_css.append(x_css_strings)
+        #
+        #                     if x[0] == "ini_org_dir":
+        #                         self.org_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_dir":
+        #                         self.new_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_tmp_dir":
+        #                         self.tmp_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_nav_dir":
+        #                         self.new_nav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_js_css_dir":
+        #                         self.new_js_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_moodle_dir":
+        #                         self.new_moo_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_police_dir":
+        #                         self.new_police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_js_css_ok_dir":
+        #                         self.js_css_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_var_debug" :
+        #                         if x[1].replace("\n", "") == "true" : self.DEBUG = True
+        #                         else : self.DEBUG = False
+        #
+        #                     elif x[0] == "ini_var_log_this_run" :
+        #                         if x[1].replace("\n", "") == "true" : self.LOG_THIS_RUN = True
+        #                         else : self.LOG_THIS_RUN = False
+        #
+        #                     elif x[0] == "ini_var_verbose" :
+        #                         if x[1].replace("\n", "") == "true" : self.VERBOSE = True
+        #                         else : self.VERBOSE = False
+        #
+        #                     elif x[0] == "ini_var_with_dir" :
+        #                         if x[1].replace("\n", "") == "true" : self.WITH_DIR = True
+        #                         else : self.WITH_DIR = False
+        #
+        #                     elif x[0] == "ini_var_with_zip" :
+        #                         if x[1].replace("\n", "") == "true" : self.WITH_ZIP = True
+        #                         else : self.WITH_ZIP = False
+        #
+        #                     elif x[0] == "ini_var_img_size_max" :
+        #                         if x[1].isnumeric() : self.IMG_SIZE_MAX = int(x[1])
+        #                         else : self.IMG_SIZE_MAX = 20000
+        #
+        #                     elif x[0] == "ini_var_toc_deep" :
+        #                         self.TOC_DEEP = x[1]
+        #
+        #                     elif x[0] == "ini_var_font" :
+        #                         self.FONT_NAME = x[1]
+        #
+        #                     elif x[0] == "ini_var_verif_epub" :
+        #                         if x[1].replace("\n", "") == "true" : self.VERIF_EPUB = True
+        #                         else : self.VERIF_EPUB = False
 
             # if self.DEBUG:
             #     print("\n", "ORG_PATH", self.org_path, "\n", "NEW_PATH", self.new_path, "\n", "TEMP_PATH",
@@ -252,61 +306,61 @@ class ClasseFet:
             #     messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
             #     exit()
 
-            if not os.path.isdir(self.new_path):
-                os.mkdir(self.new_path)
-            if not os.path.isdir(self.tmp_path):
-                os.mkdir(self.tmp_path)
-            if not os.path.isdir(self.org_path):
-                msg_info = "".join([
-                                "Le répertoire d'entrée org_dir n'existe pas\n" 
-                                "ou le fichier fet_epub.ini n'est pas complet ou comporte des erreurs. "
-                                "veuillez corriger le problème avant de relancer le programme\n\n" 
-                                "Le fichier fet_epub.ini doit se trouver dans le répertoire de lancement de l'application "
-                                "et doit definir les répertoires suivants\n\n"
-                                "org_dir: qui contient les fichiers epub à travailler (entrée)\n"
-                                "new_dir: qui est le répertoire de sortie des fichiers modifiés\n"
-                                "tmp_dir: qui est le répertoire de travail temporaire\n"
-                                "js_dir: qui est le répertoire des fichiers java script\n\n"
-                                "Les entrées sont de la forme :\n"
-                                "logDir=\"C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/log\""
-                                "\nLe programme se termine ici.\n"])
-                messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
-                messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
-            if not os.path.isdir(self.js_css_path):
-                msg_info = "".join([
-                                "Le répertoire d'entrée js_dir n'existe pas\n" 
-                                "ou le fichier fet_epub.ini n'est pas complet ou comporte des erreurs. "
-                                "veuillez corriger le problème avant de relancer le programme\n\n" 
-                                "Le fichier fet_epub.ini doit se trouver dans le répertoire de lancement de l'application "
-                                "et doit definir les répertoires suivants\n\n"
-                                "org_dir: qui contient les fichiers epub à travailler (entrée)\n"
-                                "new_dir: qui est le répertoire de sortie des fichiers modifiés\n"
-                                "tmp_dir: qui est le répertoire de travail temporaire\n"
-                                "js_dir: qui est le répertoire des fichiers java script\n\n"
-                                "Les entrées sont de la forme :\n"
-                                "logDir=\"C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/log\""
-                                "\nLe programme se termine ici.\n"])
-                messagebox.showerror("Fichier ini défectueux \n", "".join([msg_info]), icon='error')
-                quit()
+            # if not os.path.isdir(self.new_path):
+            #     os.mkdir(self.new_path)
+            # if not os.path.isdir(self.tmp_path):
+            #     os.mkdir(self.tmp_path)
+            # if not os.path.isdir(self.org_path):
+            #     msg_info = "".join([
+            #                     "Le répertoire d'entrée org_dir n'existe pas\n"
+            #                     "ou le fichier fet_epub.ini n'est pas complet ou comporte des erreurs. "
+            #                     "veuillez corriger le problème avant de relancer le programme\n\n"
+            #                     "Le fichier fet_epub.ini doit se trouver dans le répertoire de lancement de l'application "
+            #                     "et doit definir les répertoires suivants\n\n"
+            #                     "org_dir: qui contient les fichiers epub à travailler (entrée)\n"
+            #                     "new_dir: qui est le répertoire de sortie des fichiers modifiés\n"
+            #                     "tmp_dir: qui est le répertoire de travail temporaire\n"
+            #                     "js_dir: qui est le répertoire des fichiers java script\n\n"
+            #                     "Les entrées sont de la forme :\n"
+            #                     "logDir=\"C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/log\""
+            #                     "\nLe programme se termine ici.\n"])
+            #     messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
+            #     messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
+            # if not os.path.isdir(self.js_css_path):
+            #     msg_info = "".join([
+            #                     "Le répertoire d'entrée js_dir n'existe pas\n"
+            #                     "ou le fichier fet_epub.ini n'est pas complet ou comporte des erreurs. "
+            #                     "veuillez corriger le problème avant de relancer le programme\n\n"
+            #                     "Le fichier fet_epub.ini doit se trouver dans le répertoire de lancement de l'application "
+            #                     "et doit definir les répertoires suivants\n\n"
+            #                     "org_dir: qui contient les fichiers epub à travailler (entrée)\n"
+            #                     "new_dir: qui est le répertoire de sortie des fichiers modifiés\n"
+            #                     "tmp_dir: qui est le répertoire de travail temporaire\n"
+            #                     "js_dir: qui est le répertoire des fichiers java script\n\n"
+            #                     "Les entrées sont de la forme :\n"
+            #                     "logDir=\"C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/log\""
+            #                     "\nLe programme se termine ici.\n"])
+            #     messagebox.showerror("Fichier ini défectueux \n", "".join([msg_info]), icon='error')
+            #     quit()
 
-            n_epub = 0
-            for files in os.listdir(self.org_path):
-                if not os.path.isdir(self.org_path + files):
-                    f = files.split(".")
-                    if f[1] == "epub":
-                        n_epub += 1
-            if n_epub == 0:
-                msg = "Il n\'y a pas de fichier epub dans le répertoire d\'entrée orgPath\n" \
-                      "Le programme va se fermer!\n\n" \
-                      "Corrigez le chemin des fichiers d'entrée puis relancez le programme."
-                messagebox.showerror("Fichier ini défectueux \n", msg, icon='error')
-                quit()
-        else:
-            msg = "".join(["Le fichier fet_epub.ini doit se trouver dans le répertoire de lancement de l'application.\n"
-                           "Déplacez le fichier dans le bon répertoire et relancez l'application.\n\n"
-                           "Le programme va se fermer."])
-            messagebox.showerror("Fichier ini manquant \n", msg, icon='error')
-            quit()
+        #     n_epub = 0
+        #     for files in os.listdir(self.org_path):
+        #         if not os.path.isdir(self.org_path + files):
+        #             f = files.split(".")
+        #             if f[1] == "epub":
+        #                 n_epub += 1
+        #     if n_epub == 0:
+        #         msg = "Il n\'y a pas de fichier epub dans le répertoire d\'entrée orgPath\n" \
+        #               "Le programme va se fermer!\n\n" \
+        #               "Corrigez le chemin des fichiers d'entrée puis relancez le programme."
+        #         messagebox.showerror("Fichier ini défectueux \n", msg, icon='error')
+        #         quit()
+        # else:
+        #     msg = "".join(["Le fichier fet_epub.ini doit se trouver dans le répertoire de lancement de l'application.\n"
+        #                    "Déplacez le fichier dans le bon répertoire et relancez l'application.\n\n"
+        #                    "Le programme va se fermer."])
+        #     messagebox.showerror("Fichier ini manquant \n", msg, icon='error')
+        #     quit()
 
     def file_improve_pw_epub(self):
         """
@@ -502,20 +556,21 @@ class ClasseFet:
                     self.in_file_name = os.path.basename(self.in_path_file_name)
                     self.improve_epub()
 
-                    self.manage_info("---------------------------------------------------------", self.LOG_ONLY, self.COLOR_PURPLE)
-                    self.manage_info("".join(["VERIFICATION EPUB : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), self.LOG_ONLY, self.COLOR_PURPLE)
-                    self.manage_info("".join(["Fichier : ", os.path.basename(self.in_file_name)]), self.DISPLAY_AND_LOG, self.COLOR_PURPLE)
-                    self.manage_info("en cours de vérification. Patientez SVP ...", self.DISPLAY_AND_LOG, self.COLOR_PURPLE)
+                    if self.VERIF_EPUB:
+                        self.manage_info("---------------------------------------------------------", self.LOG_ONLY, self.COLOR_PURPLE)
+                        self.manage_info("".join(["VERIFICATION EPUB : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), self.LOG_ONLY, self.COLOR_PURPLE)
+                        self.manage_info("".join(["Fichier : ", os.path.basename(self.in_file_name)]), self.DISPLAY_AND_LOG, self.COLOR_PURPLE)
+                        self.manage_info("en cours de vérification. Patientez SVP ...", self.DISPLAY_AND_LOG, self.COLOR_PURPLE)
 
-                    ret_status, n_fatal, n_error,  n_warn = self.check_epub(self.out_path_file_name, file_output_result_path_name)
-                    fatal_tot += n_fatal
-                    error_tot += n_error
-                    warn_tot += n_warn
-                    recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
+                        ret_status, n_fatal, n_error,  n_warn = self.check_epub(self.out_path_file_name, file_output_result_path_name)
+                        fatal_tot += n_fatal
+                        error_tot += n_error
+                        warn_tot += n_warn
+                        recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
 
-                    self.manage_info(ret_status, self.DISPLAY_AND_LOG, self.COLOR_PURPLE)
-                    msg = " "
-                    self.manage_info(msg, self.DISPLAY_AND_LOG)
+                        self.manage_info(ret_status, self.DISPLAY_AND_LOG, self.COLOR_PURPLE)
+                        msg = " "
+                        self.manage_info(msg, self.DISPLAY_AND_LOG)
                     if self.asked_2_quit:
                         break
                     else:
@@ -530,9 +585,10 @@ class ClasseFet:
                         msg = "".join(["DIR job terminated with ok code in ", str(elapsed_min), " min ", str(elapsed_sec), " sec"])
                     else:
                         msg = "".join(["DIR job terminated with ok code in ", str(elapsed_sec), " sec"])
-                    for r in recap_tot:
-                        self.manage_info(r, self.DISPLAY_AND_LOG)
-                    self.manage_info(msg_err, self.DISPLAY_AND_LOG)
+                    if self.VERIF_EPUB:
+                        for r in recap_tot:
+                            self.manage_info(r, self.DISPLAY_AND_LOG)
+                        self.manage_info(msg_err, self.DISPLAY_AND_LOG)
                     self.manage_info(msg, self.DISPLAY_AND_LOG)
 
                     # self.manage_info(msg, self.DISPLAY_AND_LOG)
@@ -700,6 +756,7 @@ class ClasseFet:
         # path of the style directory
         self.style_file_name = "fet_styles.css"
         self.style_path_name = "".join([self.temp_path_dir, self.ops_dir, "Styles/"])
+        self.text_path_name = "".join([self.temp_path_dir, self.ops_dir, "Text/"])
         self.style_path_file_name = "".join([self.temp_path_dir, self.ops_dir, "Styles/", self.style_file_name])
         self.style_exercices_path_file_name = "".join([self.temp_path_dir, self.ops_dir, "Styles/", "exercises.css"])
         self.style_pw_table_path_file_name = "".join(
@@ -839,79 +896,178 @@ class ClasseFet:
 
         # CHANGE #6b
         # ===================
-        # delte all validation.js files in the ebook
+        # update all .js and .css files and refs in the ebook
         change_no += 1
         change_str = "   #" + str(change_no) + ": "
-        msg = "".join([change_str, "... deleting old validation...js files in ebook"])
+        msg = "".join([change_str, "... upgrading .js and .css files"])
         self.manage_info(msg, self.DISPLAY_AND_LOG)
 
+        # del .js files
         only_files = [f for f in listdir(self.misc_path_file_name) if isfile(join(self.misc_path_file_name, f))]
         for f in only_files:
-            if "validation.js" in f or "validation_fr.js" in f or "validation_fr_jo.js" in f or "validation_fr_jo_v02_00.js" in f or "validation_fr_jo-v2.js" in f or "validation_fr_jo_v2.js" in f:
-                os.remove(self.misc_path_file_name + f)
-                n_changes += 1
+            os.remove(self.misc_path_file_name + f)
+
+        # effacer les références des fichiers supprimés dans le fichier opf
+        opf_file_name = "".join([self.ops_path_dir, "content.opf"])
+        with open(opf_file_name, "r", encoding="utf-8") as opf_file:
+            opf_data = opf_file.readlines()
+        opf_data_new = []
+        for l in opf_data:
+            if not ".js" in l:
+                opf_data_new.append(l)
+        with open(opf_file_name, "w", encoding="utf-8") as opf_file:
+            opf_file.writelines(opf_data_new)
+        n_changes += 1
+
+        # copy the mandatory .js files
+        only_files = [f for f in listdir(self.js_css_path) if isfile(join(self.js_css_path, f))]
+        for f in only_files:
+            if ".js" in f:
+                for m in self.mandatory_names_js:
+                    if m in f:
+                        sce_file = "".join([self.js_css_path, f])
+                        dst_file = "".join([self.misc_path_file_name, f])
+                        copyfile(sce_file, dst_file)
+                        # add ref in content.opf
+                        txt2add = "<item id='" + f + "' href='Misc/" + f + "' media-type='text/javascript'/>\n"
+                        v_return, n_changes = self.add_line("".join([self.ops_path_dir, "content.opf"]), "manifest", txt2add)
+
+        # del .css files
+        only_files = [f for f in listdir(self.style_path_name) if isfile(join(self.style_path_name, f))]
+        for f in only_files:
+            os.remove(self.style_path_name + f)
+            n_changes += 1
+        # traitement fichier opf
+        opf_file_name = "".join([self.ops_path_dir, "content.opf"])
+        # lire le fichier
+        with open(opf_file_name, "r", encoding="utf-8") as opf_file:
+            opf_data = opf_file.readlines()
+        # supprimer les lignes avec .css
+        opf_data_new = []
+        for l in opf_data:
+            if not ".css" in l:
+                opf_data_new.append(l)
+        # ecrire les données dans le fichier
+        with open(opf_file_name, "w", encoding="utf-8") as opf_file:
+            opf_file.writelines(opf_data_new)
+        # copy the mandatory .js files
+        only_files = [f for f in listdir(self.js_css_path) if isfile(join(self.js_css_path, f))]
+        for f in only_files:
+            if ".css" in f:
+                for m in self.mandatory_names_css:
+                    if m in f:
+                        sce_file = "".join([self.js_css_path, f])
+                        dst_file = "".join([self.style_path_name, f])
+                        copyfile(sce_file, dst_file)
+                        # add ref in content.opf
+                        txt2add = "<item id='" + f + "' href='Styles/" + f + "' media-type='text/css'/>\n"
+                        v_return, n_changes = self.add_line("".join([self.ops_path_dir, "content.opf"]), "manifest", txt2add)
+
+        # update <head> in all xhtml files for mandatory css and js files
+        new_ref_txt = "<link href=\"../Styles/exercises_v02_02.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
+        new_ref_txt += "<link href=\"../Styles/fet_styles_v02_04.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
+        new_ref_txt += "<link href=\"../Styles/pw_table_style_v02_06.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
+        new_ref_txt += "<script src=\"../Misc/validation_fr_jo_v02_02.js\" type=\"text/javascript\"></script>\n"
+        for root, dirs, files in os.walk(self.text_path_name):
+            # pour tous les fichiers js et css à jour
+            for text_file in files:
+                with open(self.text_path_name + text_file, "r", encoding="utf-8") as xhtml_r_file:
+                    xhtml_data = xhtml_r_file.readlines()
+                i = 0
+                head_found = False
+                for l in xhtml_data:
+                    if "</head>" in l:
+                        index = i
+                        head_found = True
+                        break
+                    i += 1
+                if head_found :
+                    xhtml_data.insert(index, new_ref_txt)
+                    with open(self.text_path_name + text_file, "w", encoding="utf-8") as xhtml_w_file:
+                        xhtml_w_file.writelines(xhtml_data)
+
+
+
+
+
+
+
+
         tot_changes += n_changes
         n_content_changes += n_changes
+
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # msg = "".join([change_str, "... deleting old validation...js files in ebook"])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        #
+        # only_files = [f for f in listdir(self.misc_path_file_name) if isfile(join(self.misc_path_file_name, f))]
+        # for f in only_files:
+        #     if "validation.js" in f or "validation_fr.js" in f or "validation_fr_jo.js" in f or "validation_fr_jo_v02_00.js" in f or "validation_fr_jo-v2.js" in f or "validation_fr_jo_v2.js" in f:
+        #         os.remove(self.misc_path_file_name + f)
+        #         n_changes += 1
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
 
         # CHANGE #6c
         # ===================
         # copy the new js validation script in the ebook
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        msg = "".join([change_str, "... importing validation_fr_jo_v02_01.js"])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-        sce_file = "".join([self.js_css_path, "validation_fr_jo_v02_01.js"])
-        dst_file = "".join([self.misc_path_file_name, "validation_fr_jo_v02_01.js"])
-        copyfile(sce_file, dst_file)
-        n_styles_changes += 1
-        tot_changes += 1
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # msg = "".join([change_str, "... importing validation_fr_jo_v02_01.js"])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        # sce_file = "".join([self.js_css_path, "validation_fr_jo_v02_02.js"])
+        # dst_file = "".join([self.misc_path_file_name, "validation_fr_jo_v02_02.js"])
+        # copyfile(sce_file, dst_file)
+        # n_styles_changes += 1
+        # tot_changes += 1
 
         # CHANGE #6d
         # ===================
         # adapt the content.opf for the new validation_fr_jo_v02_01.js file
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        txt2add = "    <item id='validation_fr_jo_v02_01.js' href='Misc/validation_fr_jo_v02_01.js' media-type='text/javascript'/>\n"
-        v_return, n_changes = self.add_line("".join([self.ops_path_dir, "content.opf"]), "manifest", txt2add)
-        msg = "".join([change_str, "... ops.html modified .validation_fr_jo_v02_01.js added ..."])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-        if v_return != "":
-            self.manage_info(v_return, self.DISPLAY_AND_LOG)
-        n_content_changes += n_changes
-        tot_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # txt2add = "    <item id='validation_fr_jo_v02_01.js' href='Misc/validation_fr_jo_v02_01.js' media-type='text/javascript'/>\n"
+        # v_return, n_changes = self.add_line("".join([self.ops_path_dir, "content.opf"]), "manifest", txt2add)
+        # msg = "".join([change_str, "... ops.html modified .validation_fr_jo_v02_01.js added ..."])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        # if v_return != "":
+        #     self.manage_info(v_return, self.DISPLAY_AND_LOG)
+        # n_content_changes += n_changes
+        # tot_changes += n_changes
 
         # CHANGE #7a fet_style file
         # ===================
         # delete old fet_style in content.opf
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        msg = "".join([change_str, "... updating content.opf, deleting old_validation_fr lines"])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "/fet_styles")
-        tot_changes += n_changes
-        n_content_changes += n_changes
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "/fet_style_v1r")
-        tot_changes += n_changes
-        n_content_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # msg = "".join([change_str, "... updating content.opf, deleting old_validation_fr lines"])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "/fet_styles")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "/fet_style_v1r")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
 
         # CHANGE #7b
         # ===================
         # delte all fet_style...css files in the ebook
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        n_changes = 0
-        msg = "".join([change_str, "... deleting ols validation...js files in ebook"])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-
-        only_files = [f for f in listdir(self.style_path_name) if isfile(join(self.style_path_name, f))]
-        for f in only_files:
-            if "fet_styles.css" in f or "fet_style_v1r.css" in f:
-                os.remove(self.style_path_name + f)
-                n_changes += 1
-        tot_changes += n_changes
-        n_content_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # n_changes = 0
+        # msg = "".join([change_str, "... deleting ols validation...js files in ebook"])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        #
+        # only_files = [f for f in listdir(self.style_path_name) if isfile(join(self.style_path_name, f))]
+        # for f in only_files:
+        #     if "fet_styles.css" in f or "fet_style_v1r.css" in f:
+        #         os.remove(self.style_path_name + f)
+        #         n_changes += 1
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
 
         # # CHANGE #7c
         # # ===================
@@ -944,35 +1100,35 @@ class ClasseFet:
         # CHANGE #8a pw_table_style.css
         # ===================
         # delete old pw_table_stale in content.opf
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        msg = "".join([change_str, "... updating content.opf, deleting pw_table_style.ccs lines"])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "/pw_table_style")
-        tot_changes += n_changes
-        n_content_changes += n_changes
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "/pw_table_style")
-        tot_changes += n_changes
-        n_content_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # msg = "".join([change_str, "... updating content.opf, deleting pw_table_style.ccs lines"])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "/pw_table_style")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "/pw_table_style")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
 
         # CHANGE #8b
         # ===================
         # delte all pw_table_style...css files in the ebook
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        n_changes = 0
-        msg = "".join([change_str, "... deleting old pw_table_style...js files in ebook"])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-
-        only_files = [f for f in listdir(self.style_path_name) if isfile(join(self.style_path_name, f))]
-        for f in only_files:
-            if "pw_table_style.css" in f or "pw_table_style_v1r.css" in f:
-                os.remove(self.style_path_name + f)
-                n_changes += 1
-        tot_changes += n_changes
-        n_content_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # n_changes = 0
+        # msg = "".join([change_str, "... deleting old pw_table_style...js files in ebook"])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        #
+        # only_files = [f for f in listdir(self.style_path_name) if isfile(join(self.style_path_name, f))]
+        # for f in only_files:
+        #     if "pw_table_style.css" in f or "pw_table_style_v1r.css" in f:
+        #         os.remove(self.style_path_name + f)
+        #         n_changes += 1
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
 
         # # CHANGE #8c
         # # ===================
@@ -1124,32 +1280,32 @@ class ClasseFet:
         # CHANGE #17
         # ===================
         # change background colors in pw_table_style
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        msg = "".join([change_str, "... correcting background colors in pw_table_style"])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-        old_type = "background: linear-gradient(to right, #1eb2d7 , #c1e2f1 95%);"
-        new_type = ""
-        v_return, n_changes = self.change_txt(self.style_pw_table_path_file_name, old_type, new_type)
-        if v_return != "":
-            self.manage_info((v_return, self.DISPLAY_AND_LOG))
-        n_styles_changes += n_changes
-        tot_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # msg = "".join([change_str, "... correcting background colors in pw_table_style"])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        # old_type = "background: linear-gradient(to right, #1eb2d7 , #c1e2f1 95%);"
+        # new_type = ""
+        # v_return, n_changes = self.change_txt(self.style_pw_table_path_file_name, old_type, new_type)
+        # if v_return != "":
+        #     self.manage_info((v_return, self.DISPLAY_AND_LOG))
+        # n_styles_changes += n_changes
+        # tot_changes += n_changes
 
         # CHANGE #18
         # ===================
         # change -webkit-linear-gradient to backgrouncolor
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        msg = "".join([change_str, "... correcting background colors in pw_table_style"])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-        old_type = "background: -webkit-linear-gradient(left, #1eb2d7 ,#c1e2f1 95%);"
-        new_type = "background-color: #1eb2d7;"
-        v_return, n_changes = self.change_txt(self.style_pw_table_path_file_name, old_type, new_type)
-        if v_return != "":
-            self.manage_info((v_return, self.DISPLAY_AND_LOG))
-        n_styles_changes += n_changes
-        tot_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # msg = "".join([change_str, "... correcting background colors in pw_table_style"])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        # old_type = "background: -webkit-linear-gradient(left, #1eb2d7 ,#c1e2f1 95%);"
+        # new_type = "background-color: #1eb2d7;"
+        # v_return, n_changes = self.change_txt(self.style_pw_table_path_file_name, old_type, new_type)
+        # if v_return != "":
+        #     self.manage_info((v_return, self.DISPLAY_AND_LOG))
+        # n_styles_changes += n_changes
+        # tot_changes += n_changes
 
         # CHANGE #19
         # ===================
@@ -1243,16 +1399,16 @@ class ClasseFet:
         # CHANGE #22
         # ===================
         # adapt the head of the nav file
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        txt2add = "<link href='../Styles/pw_table_style.css' rel='stylesheet' type='text/css'/>"
-        v_return, n_changes = self.add_line(self.nav_path_file_name, "head", txt2add)
-        msg = "".join([change_str, "... nav.html modified ./Styles/pw_table_style.css added ..."])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-        if v_return != "":
-            self.manage_info((v_return, self.DISPLAY_AND_LOG))
-        n_nav_toc_changes += n_changes
-        tot_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # txt2add = "<link href='../Styles/pw_table_style.css' rel='stylesheet' type='text/css'/>"
+        # v_return, n_changes = self.add_line(self.nav_path_file_name, "head", txt2add)
+        # msg = "".join([change_str, "... nav.html modified ./Styles/pw_table_style.css added ..."])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        # if v_return != "":
+        #     self.manage_info((v_return, self.DISPLAY_AND_LOG))
+        # n_nav_toc_changes += n_changes
+        # tot_changes += n_changes
 
         # change 23
         change_no += 1
@@ -1287,62 +1443,62 @@ class ClasseFet:
                     # CHANGE #23b
                     # ===================
                     # delete all old validation reference in all .xhtml files
-                    change_str = "   -> #" + str(change_no) + "b1: "
-                    # print(v_file_path_name)
-                    n_del = 0
-                    v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation", "</script>")
-                    n_del += n_changes
-                    v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr", "</script>")
-                    n_del += n_changes
-                    v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr_jo", "</script>")
-                    n_del += n_changes
-                    v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr_jo_v02_01", "</script>")
-                    n_del += n_changes
-                    v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr_jo-v2", "</script>")
-                    n_del += n_changes
-                    v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr_jo_v2", "</script>")
-                    n_del += n_changes
-
-                    if n_del > 0:
-                        msg = " ".join([change_str, v_file, str(n_del), "correcting xhtml files for validation_fr_jo.js"])
-                        if self.VERBOSE:
-                            self.manage_info(msg, self.DISPLAY_AND_LOG)
-                        else:
-                            self.manage_info(msg, self.LOG_ONLY)
-                    if v_return != "":
-                        self.manage_info((v_return, self.DISPLAY_AND_LOG))
-                    tot_changes += n_del
-                    n_text_changes += n_del
-
-                    # insert the right validation reference in all .xhtml files
-                    if n_del > 0:
-                        change_str = "   -> #" + str(change_no) + "b2: "
-                        txt_2_add = "<script src=\"../Misc/validation_fr_jo_v02_01.js\" type=\"text/javascript\"><!--empty--></script>\n"
-                        v_return, n_changes = self.add_line(v_file_path_name, "head", txt_2_add)
-                        if n_changes > 0:
-                            msg = " ".join([change_str, v_file, str(n_changes), "correcting xhtml files for validation_fr_jo.js"])
-                            if self.VERBOSE:
-                                self.manage_info(msg, self.DISPLAY_AND_LOG)
-                            else:
-                                self.manage_info(msg, self.LOG_ONLY)
-                        if v_return != "":
-                            self.manage_info((v_return, self.DISPLAY_AND_LOG))
-                        tot_changes += n_changes
-                        n_text_changes += n_changes
-
-                    # delete all old fet_styles reference in all .xhtml files
-                    change_str = "   -> #" + str(change_no) + "b3: "
-                    v_return, n_changes = self.remove_txt(v_file_path_name, "<link href=\"../Styles/fet_styles", "/>")
-                    if n_changes > 0:
-                        msg = " ".join([change_str, v_file, str(n_changes), "correcting xhtml files for fet_styles...css"])
-                        if self.VERBOSE:
-                            self.manage_info(msg, self.DISPLAY_AND_LOG)
-                        else:
-                            self.manage_info(msg, self.LOG_ONLY)
-                    if v_return != "":
-                        self.manage_info((v_return, self.DISPLAY_AND_LOG))
-                    tot_changes += n_changes
-                    n_text_changes += n_changes
+                    # change_str = "   -> #" + str(change_no) + "b1: "
+                    # # print(v_file_path_name)
+                    # n_del = 0
+                    # v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation", "</script>")
+                    # n_del += n_changes
+                    # v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr", "</script>")
+                    # n_del += n_changes
+                    # v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr_jo", "</script>")
+                    # n_del += n_changes
+                    # v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr_jo_v02_01", "</script>")
+                    # n_del += n_changes
+                    # v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr_jo-v2", "</script>")
+                    # n_del += n_changes
+                    # v_return, n_changes = self.remove_txt(v_file_path_name, "<script src=\"../Misc/validation_fr_jo_v2", "</script>")
+                    # n_del += n_changes
+                    #
+                    # if n_del > 0:
+                    #     msg = " ".join([change_str, v_file, str(n_del), "correcting xhtml files for validation_fr_jo.js"])
+                    #     if self.VERBOSE:
+                    #         self.manage_info(msg, self.DISPLAY_AND_LOG)
+                    #     else:
+                    #         self.manage_info(msg, self.LOG_ONLY)
+                    # if v_return != "":
+                    #     self.manage_info((v_return, self.DISPLAY_AND_LOG))
+                    # tot_changes += n_del
+                    # n_text_changes += n_del
+                    #
+                    # # insert the right validation reference in all .xhtml files
+                    # if n_del > 0:
+                    #     change_str = "   -> #" + str(change_no) + "b2: "
+                    #     txt_2_add = "<script src=\"../Misc/validation_fr_jo_v02_01.js\" type=\"text/javascript\"><!--empty--></script>\n"
+                    #     v_return, n_changes = self.add_line(v_file_path_name, "head", txt_2_add)
+                    #     if n_changes > 0:
+                    #         msg = " ".join([change_str, v_file, str(n_changes), "correcting xhtml files for validation_fr_jo.js"])
+                    #         if self.VERBOSE:
+                    #             self.manage_info(msg, self.DISPLAY_AND_LOG)
+                    #         else:
+                    #             self.manage_info(msg, self.LOG_ONLY)
+                    #     if v_return != "":
+                    #         self.manage_info((v_return, self.DISPLAY_AND_LOG))
+                    #     tot_changes += n_changes
+                    #     n_text_changes += n_changes
+                    #
+                    # # delete all old fet_styles reference in all .xhtml files
+                    # change_str = "   -> #" + str(change_no) + "b3: "
+                    # v_return, n_changes = self.remove_txt(v_file_path_name, "<link href=\"../Styles/fet_styles", "/>")
+                    # if n_changes > 0:
+                    #     msg = " ".join([change_str, v_file, str(n_changes), "correcting xhtml files for fet_styles...css"])
+                    #     if self.VERBOSE:
+                    #         self.manage_info(msg, self.DISPLAY_AND_LOG)
+                    #     else:
+                    #         self.manage_info(msg, self.LOG_ONLY)
+                    # if v_return != "":
+                    #     self.manage_info((v_return, self.DISPLAY_AND_LOG))
+                    # tot_changes += n_changes
+                    # n_text_changes += n_changes
 
                     # insert the right fet_styles reference in all .xhtml files
                     # if n_changes > 0:
@@ -1361,18 +1517,18 @@ class ClasseFet:
                     #     n_text_changes += n_changes
 
                     # delete all old fet_styles reference in all .xhtml files
-                    change_str = "   -> #" + str(change_no) + "b5: "
-                    v_return, n_changes = self.remove_txt(v_file_path_name, "<link href=\"../Styles/pw_table_style", "/>")
-                    if n_changes > 0:
-                        msg = " ".join([change_str, v_file, str(n_changes), "correcting xhtml files for pw_table_style...css"])
-                        if self.VERBOSE:
-                            self.manage_info(msg, self.DISPLAY_AND_LOG)
-                        else:
-                            self.manage_info(msg, self.LOG_ONLY)
-                    if v_return != "":
-                        self.manage_info((v_return, self.DISPLAY_AND_LOG))
-                    tot_changes += n_changes
-                    n_text_changes += n_changes
+                    # change_str = "   -> #" + str(change_no) + "b5: "
+                    # v_return, n_changes = self.remove_txt(v_file_path_name, "<link href=\"../Styles/pw_table_style", "/>")
+                    # if n_changes > 0:
+                    #     msg = " ".join([change_str, v_file, str(n_changes), "correcting xhtml files for pw_table_style...css"])
+                    #     if self.VERBOSE:
+                    #         self.manage_info(msg, self.DISPLAY_AND_LOG)
+                    #     else:
+                    #         self.manage_info(msg, self.LOG_ONLY)
+                    # if v_return != "":
+                    #     self.manage_info((v_return, self.DISPLAY_AND_LOG))
+                    # tot_changes += n_changes
+                    # n_text_changes += n_changes
 
                     # insert the right fet_styles reference in all .xhtml files
                     # if n_changes > 0:
@@ -2932,6 +3088,8 @@ class ClasseFet:
                         self.msg_list.itemconfig(tk.END, fg='OrangeRed4')
                     elif v_color == 6:
                         self.msg_list.itemconfig(tk.END, fg='Purple1')
+                    elif v_color == 7:
+                        self.msg_list.itemconfig(tk.END, fg='Black')
                 self.msg_list.see("end")
                 self.write_in_logfile(v_msg)
             elif v_type == 3:  # only in the log file

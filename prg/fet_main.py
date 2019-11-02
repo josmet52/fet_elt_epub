@@ -187,6 +187,15 @@ def file_1_2_3_go():
 def file_1_2_3_4_go():
     z.file_1_2_3_4()
 
+# VERIFY BATCH
+##############
+def dir_verify_epub_go():
+    btnStop = tk.Button(btnFrame, text="CANCEL", textvariable="btnStop", command=lambda: ask_2_quit(),
+                        bg="light blue", state="disabled").grid(row=0, column=1, ipadx=15, padx=2, pady=5)
+    z.dir_verify_epub()
+    for b in btnFrame.winfo_children():
+        if str((b.cget("textvariable"))).strip() == "btnStop" or str((b.cget("textvariable"))).strip() == "lblInfo":
+            b.destroy()
 
 # ???? =======================================================================================
 
@@ -359,6 +368,8 @@ direpubmenu.add_command(label="Update js and css dir", command=lambda: dir_updat
 direpubmenu.add_command(label="Change police dir", command=lambda: dir_change_police_go())
 direpubmenu.add_command(label="Add nav btn dir", command=lambda: dir_add_nav_btn_go())
 direpubmenu.add_command(label="Prepare for moodle dir", command=lambda: dir_prepare_for_moodle_go())
+direpubmenu.add_separator()
+direpubmenu.add_command(label="Verify dir", command=lambda: dir_verify_epub_go())
 menubar.add_cascade(label="batch epub(s)", menu=direpubmenu)
 
 # UTIL MENU

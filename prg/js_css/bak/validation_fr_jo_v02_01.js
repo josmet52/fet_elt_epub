@@ -6,7 +6,7 @@ function GoToMoodleHomePage()
 {
     //window.location = '/?redirect=0';
     //alert(window.location.href)
-    window.location.href="/"
+    window.location.href="/course/index.php?categoryid=11"
 }
 
 function showAlertDialog(correct, qId) {

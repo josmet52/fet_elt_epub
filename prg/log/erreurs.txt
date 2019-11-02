@@ -141,3 +141,4 @@
 20191018-131132 passe :  0  2nd try in empty_dir: erasing empty directory  : : 
 20191018-131134 passe :  0  2nd try in function new_job, final tasks : remove temp dir  : : 
 20191019-114258 passe :  0  2nd try in function zip_epub : creating the final zip file  : : 
+20191102-220901 passe :  0 ET_ch_01.epub Error in: get_id_value  : TypeError: 'NoneType' object is not iterable: 

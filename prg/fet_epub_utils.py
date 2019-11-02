@@ -27,7 +27,10 @@ from tkinter import filedialog
 
 from fet_class import ClasseFet
 from fet_lib import ClasseFetLib
+from fet_ini import ClasseIni
+
 y = ClasseFetLib()
+ini = ClasseIni()
 
 class ClasseNavBtn:
 
@@ -56,105 +59,132 @@ class ClasseNavBtn:
 
         # init variables
         self.cwd = "".join([str(os.getcwd()).replace("\\", "/").replace("\n", ""), "/"])
-        self.org_path = ""
-        self.new_path = ""
-        self.tmp_path = ""
-        self.new_nav_path = ""
-        self.new_js_path = ""
-        self.new_moo_path = ""
-        self.new_police_path = ""
-        self.js_css_path = ""
         self.log_path = "".join([self.cwd, "log/"])
         self.log_path_file_name = "".join([self.log_path, self.LOG_FILE_NAME])
-        self.strings_names_js = []
-        self.strings_names_css = []
 
-        # lecture des répertoires dans le fichier .ini
-        self.ini_path_file_name = "".join([self.cwd, self.INI_FILE_NAME])
-        if os.path.isfile(self.ini_path_file_name):
+        # initialisation des variable de la classe à partir de la classe ini qui le fichier fet_epub.ini
+        self.strings_names_js = ini.strings_names_js
+        self.strings_names_css = ini.strings_names_css
+        self.mandatory_names_js = ini.mandatory_names_js
+        self.mandatory_names_css = ini.mandatory_names_css
+        self.org_path = ini.org_path
+        self.new_path = ini.new_path
+        self.tmp_path = ini.tmp_path
+        self.new_nav_path = ini.new_nav_path
+        self.new_js_path = ini.new_js_path
+        self.new_moo_path = ini.new_moo_path
+        self.new_police_path = ini.new_police_path
+        self.js_css_path = ini.js_css_path
+        self.DEBUG = ini.DEBUG
+        self.LOG_THIS_RUN = ini.LOG_THIS_RUN
+        self.VERBOSE = ini.VERBOSE
+        self.WITH_DIR = ini.WITH_DIR
+        self.WITH_ZIP = ini.WITH_ZIP
+        self.IMG_SIZE_MAX = ini.IMG_SIZE_MAX
+        self.TOC_DEEP = ini.TOC_DEEP
+        self.FONT_NAME = ini.TOC_DEEP
+        self.VERIF_EPUB = ini.VERIF_EPUB
 
-            with open(self.ini_path_file_name, "r", encoding="utf-8") as f_init:
-                r = f_init.readlines()
-                for p in r:
-                    x = p.split("=")
-                    x[0] = x[0].strip().lower()
-                    if len(x) > 1 :
-                        x[1] = x[1].strip().lower()
-
-                        # ne pas traiter les commentaires
-                        if x[0][:1] != "#":
-
-                            if x[0] == "short_strings_names_js":
-                                x_js = x[1].split(" ")
-                                for x_js_strings in x_js:
-                                    self.strings_names_js.append(x_js_strings)
-
-                            if x[0] == "short_strings_names_css":
-                                x_css = x[1].split(" ")
-                                for x_css_strings in x_css:
-                                    self.strings_names_css.append(x_css_strings)
-
-                            if x[0] == "ini_org_dir":
-                                self.org_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_dir":
-                                self.new_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_tmp_dir":
-                                self.tmp_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_nav_dir":
-                                self.new_nav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_js_css_dir":
-                                self.new_js_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_moodle_dir":
-                                self.new_moo_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_new_police_dir":
-                                self.new_police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_js_css_ok_dir":
-                                self.js_css_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-                                                    "").replace("//", "/")
-
-                            elif x[0] == "ini_var_debug" :
-                                if x[1].replace("\n", "") == "true" : self.DEBUG = True
-                                else : self.DEBUG = False
-
-                            elif x[0] == "ini_var_log_this_run" :
-                                if x[1].replace("\n", "") == "true" : self.LOG_THIS_RUN = True
-                                else : self.LOG_THIS_RUN = False
-
-                            elif x[0] == "ini_var_verbose" :
-                                if x[1].replace("\n", "") == "true" : self.VERBOSE = True
-                                else : self.VERBOSE = False
-
-                            elif x[0] == "ini_var_with_dir" :
-                                if x[1].replace("\n", "") == "true" : self.WITH_DIR = True
-                                else : self.WITH_DIR = False
-
-                            elif x[0] == "ini_var_with_zip" :
-                                if x[1].replace("\n", "") == "true" : self.WITH_ZIP = True
-                                else : self.WITH_ZIP = False
-
-                            elif x[0] == "ini_var_img_size_max" :
-                                if x[1].isnumeric() : self.IMG_SIZE_MAX = int(x[1])
-                                else : self.IMG_SIZE_MAX = 20000
-
-                            elif x[0] == "ini_var_toc_deep" :
-                                self.TOC_DEEP = x[1]
-
-                            elif x[0] == "ini_var_font" :
-                                self.FONT_NAME = x[1]
+        # # lecture des répertoires dans le fichier .ini
+        # self.ini_path_file_name = "".join([self.cwd, self.INI_FILE_NAME])
+        # if os.path.isfile(self.ini_path_file_name):
+        #
+        #     with open(self.ini_path_file_name, "r", encoding="utf-8") as f_init:
+        #         r = f_init.readlines()
+        #         for p in r:
+        #             x = p.split("=")
+        #             x[0] = x[0].strip().lower()
+        #             if len(x) > 1 :
+        #                 x[1] = x[1].strip().lower()
+        #
+        #                 # ne pas traiter les commentaires
+        #                 if x[0][:1] != "#":
+        #
+        #                     if x[0] == "short_strings_names_js":
+        #                         x_js = x[1].split(" ")
+        #                         for x_js_strings in x_js:
+        #                             self.strings_names_js.append(x_js_strings)
+        #
+        #                     if x[0] == "short_strings_names_css":
+        #                         x_css = x[1].split(" ")
+        #                         for x_css_strings in x_css:
+        #                             self.strings_names_css.append(x_css_strings)
+        #
+        #                     if x[0] == "short_mandatory_files_js":
+        #                         x_js = x[1].split(" ")
+        #                         for x_js_strings in x_js:
+        #                             self.mandatory_names_js.append(x_js_strings)
+        #
+        #                     if x[0] == "short_mandatory_files_css":
+        #                         x_css = x[1].split(" ")
+        #                         for x_css_strings in x_css:
+        #                             self.mandatory_names_css.append(x_css_strings)
+        #
+        #                     if x[0] == "ini_org_dir":
+        #                         self.org_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_dir":
+        #                         self.new_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_tmp_dir":
+        #                         self.tmp_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_nav_dir":
+        #                         self.new_nav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_js_css_dir":
+        #                         self.new_js_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_moodle_dir":
+        #                         self.new_moo_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_new_police_dir":
+        #                         self.new_police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_js_css_ok_dir":
+        #                         self.js_css_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
+        #                                             "").replace("//", "/")
+        #
+        #                     elif x[0] == "ini_var_debug" :
+        #                         if x[1].replace("\n", "") == "true" : self.DEBUG = True
+        #                         else : self.DEBUG = False
+        #
+        #                     elif x[0] == "ini_var_log_this_run" :
+        #                         if x[1].replace("\n", "") == "true" : self.LOG_THIS_RUN = True
+        #                         else : self.LOG_THIS_RUN = False
+        #
+        #                     elif x[0] == "ini_var_verbose" :
+        #                         if x[1].replace("\n", "") == "true" : self.VERBOSE = True
+        #                         else : self.VERBOSE = False
+        #
+        #                     elif x[0] == "ini_var_with_dir" :
+        #                         if x[1].replace("\n", "") == "true" : self.WITH_DIR = True
+        #                         else : self.WITH_DIR = False
+        #
+        #                     elif x[0] == "ini_var_with_zip" :
+        #                         if x[1].replace("\n", "") == "true" : self.WITH_ZIP = True
+        #                         else : self.WITH_ZIP = False
+        #
+        #                     elif x[0] == "ini_var_img_size_max" :
+        #                         if x[1].isnumeric() : self.IMG_SIZE_MAX = int(x[1])
+        #                         else : self.IMG_SIZE_MAX = 20000
+        #
+        #                     elif x[0] == "ini_var_toc_deep" :
+        #                         self.TOC_DEEP = x[1]
+        #
+        #                     elif x[0] == "ini_var_font" :
+        #                         self.FONT_NAME = x[1]
+        #
+        #                     elif x[0] == "ini_var_verif_epub" :
+        #                         if x[1].replace("\n", "") == "true" : self.VERIF_EPUB = True
+        #                         else : self.VERIF_EPUB = False
 
     def ask_2_quit(self):
         """
@@ -302,24 +332,25 @@ class ClasseNavBtn:
                     in_file_name = os.path.basename(in_path_file_name)
                     out_path_file_name = self.update_js_and_css(in_path_file_name)
 
-                    u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
-                    u.manage_info("".join(["VERIFICATION EPUB : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
-                    u.manage_info("".join(["Fichier : ", os.path.basename(in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
-                    u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                    if self.VERIF_EPUB:
+                        u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
+                        u.manage_info("".join(["VERIFICATION EPUB : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
+                        u.manage_info("".join(["Fichier : ", os.path.basename(in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                        u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
 
-                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
-                    fatal_tot += n_fatal
-                    error_tot += n_error
-                    warn_tot += n_warn
-                    recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
+                        ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
+                        fatal_tot += n_fatal
+                        error_tot += n_error
+                        warn_tot += n_warn
+                        recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
 
-                    u.manage_info(ret_status, u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
-                    msg = " "
-                    u.manage_info(msg, u.DISPLAY_AND_LOG)
-                    if self.asked_2_quit:
-                        break
-                    else:
-                        time.sleep(u.pause_time)
+                        u.manage_info(ret_status, u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                        msg = " "
+                        u.manage_info(msg, u.DISPLAY_AND_LOG)
+                        if self.asked_2_quit:
+                            break
+                        else:
+                            time.sleep(u.pause_time)
                 msg_err = "".join(["Check status total : ", str(fatal_tot), " fatal / ", str(error_tot), " error / ", str(warn_tot), " warn"])
                 if not self.asked_2_quit:
                     elapsed_time = int(time.time() - dirjob_tstart)
@@ -330,14 +361,16 @@ class ClasseNavBtn:
                     else:
                         msg = "".join(["DIR job terminated with ok code in ", str(elapsed_sec), " sec"])
 
-                    for r in recap_tot:
-                        u.manage_info(r, u.DISPLAY_AND_LOG)
-                    u.manage_info(msg_err, u.DISPLAY_AND_LOG)
-                    u.manage_info(msg, u.DISPLAY_AND_LOG)
+                    if self.VERIF_EPUB:
+                        for r in recap_tot:
+                            u.manage_info(r, u.DISPLAY_AND_LOG)
+                        u.manage_info(msg_err, u.DISPLAY_AND_LOG)
+                        u.manage_info(msg, u.DISPLAY_AND_LOG)
                 else:
                     msg = "".join(["Job terminated by user !"])
-                    for r in recap_tot:
-                        u.manage_info(r, u.DISPLAY_AND_LOG)
+                    if self.VERIF_EPUB:
+                        for r in recap_tot:
+                            u.manage_info(r, u.DISPLAY_AND_LOG)
                     u.manage_info(msg_err, u.DISPLAY_AND_LOG)
                     u.manage_info(msg, u.DISPLAY_AND_LOG)
             else:
@@ -428,75 +461,75 @@ class ClasseNavBtn:
             u.manage_info("... remplacement des fichiers .js et .css en cours . Patientez SVP ...", u.DISPLAY_AND_LOG)
 
             # créer le dictionnaire des fichiers js et css existants
-            js_files_string = {}
-            css_files_string = {}
-            new_js_files_names = {}
-            new_css_files_names = {}
-            for root, dirs, files in os.walk(self.js_css_path):
-                # pour tous les fichiers js et css à jour
-                for jscss_new_file in files:
-                    f_l = jscss_new_file.split(".")
-                    jscss_file_name = f_l[0]
-                    jscss_file_ext = f_l[1]
-                    # fichiers javascript
-                    if jscss_file_ext == "js":
-                        for js_strings_names in self.strings_names_js: # parcourir la liste des string extraite du fichier .ini
-                            if js_strings_names in jscss_file_name: # c'est un fichier à remplacer
-                                js_files_string[js_strings_names] = False # ajouter le string au dictionnaire des strings
-                                new_js_files_names[js_strings_names] = jscss_new_file # ajouter le nom du nopuveau fichier au dictionnaire des fichiers
-                                new_name = new_js_files_names[js_strings_names]
-
-                    if jscss_file_ext == "css":
-                        for css_strings_names in self.strings_names_css:
-                            if css_strings_names in jscss_file_name:
-                                css_files_string[css_strings_names] = False
-                                new_css_files_names[css_strings_names] = jscss_new_file
-
-            # remplacer les fichiers .js par ceux à jour
-            for existing_string in js_files_string:
-                # chercher old_js_file_name dans le répertoire/misc/... du epub
-                for r_js, d_js, f_js in os.walk(js_path_dir): # répertoire js du epub
-                    # pour tous les fichiers anciens
-                    for old_js_file_name in f_js:
-                        if existing_string in old_js_file_name: # c'est le fichier à remplacer
-                            old_file_name = old_js_file_name
-                            new_file_name = new_js_files_names[existing_string]
-                            # remplacer seulement si c'est une nouvelle version
-                            if old_file_name != new_file_name:
-                                # noter que le fichier est nouveau
-                                js_files_string[existing_string] = True
-                                # supprimer le fichier old
-                                os.remove("".join([js_path_dir, old_file_name])) # supprimer le fichier js existant
-                                # copier le fichier new
-                                sce = "".join([self.js_css_path, new_file_name])
-                                dst = "".join([js_path_dir, new_js_files_names[existing_string]])
-                                shutil.copy2(sce, dst)
-                                v_msg = "remplacement du fichier " + old_file_name + " par " + new_file_name
-                                u.manage_info(v_msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
-            u.manage_info(" ", u.DISPLAY_AND_LOG, u.COLOR_BLUE)
-
-            # remplacer les fichiers .css par ceux à jour
-            for existing_string in css_files_string:
-                # chercher old_css_file_name dans le répertoire /styles/... du epub
-                for r_css, d_css, f_css in os.walk(css_path_dir): # répertoire css du epub
-                    # pour tous les fichiers anciens
-                    for old_css_file_name in f_css:
-                        if existing_string in old_css_file_name: # c'est le fichier à remplacer
-                            old_file_name = old_css_file_name
-                            new_file_name = new_css_files_names[existing_string]
-                            # remplacer seulement si c'est une nouvelle version
-                            if old_file_name != new_file_name:
-                                # noter que le fichier est nouveau
-                                css_files_string[existing_string] = True
-                                # supprimer le fichier old
-                                os.remove("".join([css_path_dir, old_file_name])) # supprimer le fichier css existant
-                                # copier le fichier new
-                                sce = "".join([self.js_css_path, new_file_name])
-                                dst = "".join([css_path_dir, new_css_files_names[existing_string]])
-                                shutil.copy2(sce, dst)
-                                v_msg = "remplacement du fichier " + old_file_name + " par " + new_file_name
-                                u.manage_info(v_msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
-            u.manage_info(" ", u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            # js_files_string = {}
+            # css_files_string = {}
+            # new_js_files_names = {}
+            # new_css_files_names = {}
+            # for root, dirs, files in os.walk(self.js_css_path):
+            #     # pour tous les fichiers js et css à jour
+            #     for jscss_new_file in files:
+            #         f_l = jscss_new_file.split(".")
+            #         jscss_file_name = f_l[0]
+            #         jscss_file_ext = f_l[1]
+            #         # fichiers javascript
+            #         if jscss_file_ext == "js":
+            #             for js_strings_names in self.strings_names_js: # parcourir la liste des string extraite du fichier .ini
+            #                 if js_strings_names in jscss_file_name: # c'est un fichier à remplacer
+            #                     js_files_string[js_strings_names] = False # ajouter le string au dictionnaire des strings
+            #                     new_js_files_names[js_strings_names] = jscss_new_file # ajouter le nom du nopuveau fichier au dictionnaire des fichiers
+            #                     new_name = new_js_files_names[js_strings_names]
+            #
+            #         if jscss_file_ext == "css":
+            #             for css_strings_names in self.strings_names_css:
+            #                 if css_strings_names in jscss_file_name:
+            #                     css_files_string[css_strings_names] = False
+            #                     new_css_files_names[css_strings_names] = jscss_new_file
+            #
+            # # remplacer les fichiers .js par ceux à jour
+            # for existing_string in js_files_string:
+            #     # chercher old_js_file_name dans le répertoire/misc/... du epub
+            #     for r_js, d_js, f_js in os.walk(js_path_dir): # répertoire js du epub
+            #         # pour tous les fichiers anciens
+            #         for old_js_file_name in f_js:
+            #             if existing_string in old_js_file_name: # c'est le fichier à remplacer
+            #                 old_file_name = old_js_file_name
+            #                 new_file_name = new_js_files_names[existing_string]
+            #                 # remplacer seulement si c'est une nouvelle version
+            #                 if old_file_name != new_file_name:
+            #                     # noter que le fichier est nouveau
+            #                     js_files_string[existing_string] = True
+            #                     # supprimer le fichier old
+            #                     os.remove("".join([js_path_dir, old_file_name])) # supprimer le fichier js existant
+            #                     # copier le fichier new
+            #                     sce = "".join([self.js_css_path, new_file_name])
+            #                     dst = "".join([js_path_dir, new_js_files_names[existing_string]])
+            #                     shutil.copy2(sce, dst)
+            #                     v_msg = "remplacement du fichier " + old_file_name + " par " + new_file_name
+            #                     u.manage_info(v_msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            # u.manage_info(" ", u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            #
+            # # remplacer les fichiers .css par ceux à jour
+            # for existing_string in css_files_string:
+            #     # chercher old_css_file_name dans le répertoire /styles/... du epub
+            #     for r_css, d_css, f_css in os.walk(css_path_dir): # répertoire css du epub
+            #         # pour tous les fichiers anciens
+            #         for old_css_file_name in f_css:
+            #             if existing_string in old_css_file_name: # c'est le fichier à remplacer
+            #                 old_file_name = old_css_file_name
+            #                 new_file_name = new_css_files_names[existing_string]
+            #                 # remplacer seulement si c'est une nouvelle version
+            #                 if old_file_name != new_file_name:
+            #                     # noter que le fichier est nouveau
+            #                     css_files_string[existing_string] = True
+            #                     # supprimer le fichier old
+            #                     os.remove("".join([css_path_dir, old_file_name])) # supprimer le fichier css existant
+            #                     # copier le fichier new
+            #                     sce = "".join([self.js_css_path, new_file_name])
+            #                     dst = "".join([css_path_dir, new_css_files_names[existing_string]])
+            #                     shutil.copy2(sce, dst)
+            #                     v_msg = "remplacement du fichier " + old_file_name + " par " + new_file_name
+            #                     u.manage_info(v_msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            # u.manage_info(" ", u.DISPLAY_AND_LOG, u.COLOR_BLUE)
 
             # open opf file and read <spine> elements
             v_return, spine_list = self.read_spine_in_content_opf(ops_path_filename)
@@ -525,111 +558,73 @@ class ClasseNavBtn:
                         for line in opf_data:
                             opf_file.writelines(line)
 
-                    # relire la spinelist mise à jour
-                    v_return, spine_list = self.read_spine_in_content_opf(ops_path_filename)
+                self.update_js_and_css_heart(ops_path_filename, js_path_dir, css_path_dir, text_path_dir)
 
-                # pour tous les fichiers inclus dans la Spine_list
-                for current_page_number in range(len(spine_list)):
-                    v_msg = spine_list[current_page_number] + " : mise à jour des ref js et css"
-                    u.manage_info(v_msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
-                    working_file = "".join([text_path_dir, spine_list[current_page_number]])
-                    data = []
-                    data_new = []
-
-                    # replace all modified .js references
-                    # read the xhtml file
-                    with open(working_file, "r", encoding="utf-8") as rFile:
-                        data = rFile.readlines()
-                    end_head_found = False
-                    begin_head_found = False
-
-                    for l in data:
-                        if "<head>" in l :
-                            begin_head_found = True
-                        if begin_head_found and not end_head_found:
-                            for exist_str in js_files_string:
-                                if js_files_string[exist_str] and exist_str in l and "<script" in l:
-                                    # to_replace = True
-                                    if "</script>" in l:
-                                        txt_to_insert = self.get_link_js_string("".join(["Misc/",new_js_files_names[exist_str]]))
-                                    else: # <script et </script sur la même ligne
-                                        txt_to_insert = self.get_link_js_string("".join(["Misc/",new_js_files_names[exist_str]])).replace("</script>", "")
-                                    l = txt_to_insert
-                        if "</head>" in l :
-                            end_head_found = True
-                        data_new.append(l)
-
-                    with open(working_file, "w", encoding="utf-8") as txt_file:
-                        for l in data_new:
-                            txt_file.writelines(l)
-
-                    # replace all modified .css references
-                    data_new = []
-                    # read the xhtml file
-                    with open(working_file, "r", encoding="utf-8") as rFile:
-                        data = rFile.readlines()
-                    end_head_found = False
-                    begin_head_found = False
-
-                    for l in data:
-                        if "<head>" in l :
-                            begin_head_found = True
-                        if begin_head_found and not end_head_found:
-                            for exist_str in css_files_string:
-                                if css_files_string[exist_str] and exist_str in l and "<link" in l:
-                                    l = self.get_link_css_string("".join(["Styles/",new_css_files_names[exist_str]]))
-                        if "</head>" in l :
-                            end_head_found = True
-                        data_new.append(l)
-
-                    with open(working_file, "w", encoding="utf-8") as txt_file:
-                        for l in data_new:
-                            txt_file.writelines(l)
-
-                    # add property scripted
-                    # with open(ops_path_filename, "r", encoding="utf-8") as opfFile:
-                    #     opf_data = opfFile.readlines()
-                    # new_data = []
-                    # for this_line in opf_data:
-                    #     if "<item " in this_line and spine_list[current_page_number] in this_line:
-                    #         txt_2_search = "properties=\""
-                    #         pos_start_properties = this_line.find(txt_2_search)
-                    #         if pos_start_properties != -1:
-                    #             pos_start_properties += len(txt_2_search)
-                    #             pos_end_properties = this_line.find("\"/>", pos_start_properties)
-                    #             properties_val = this_line[pos_start_properties:pos_end_properties]
-                    #             if "scripted" not in properties_val:
-                    #                 this_line = this_line[:pos_start_properties] + "scripted " + this_line[pos_start_properties:]
-                    #         else:
-                    #             pos_start_properties = this_line.find("/>")
-                    #             this_line = this_line[:pos_start_properties] + " properties=\"scripted\"" + this_line[pos_start_properties:]
-                    #     new_data.append(this_line)
-                    # with open(ops_path_filename, "w", encoding="utf-8") as new_file:
-                    #     new_file.writelines(new_data)
-
-                    # if btn bars exist, remove it
-                    # top_moodle_nav_div_begin_found = False
-                    # top_moodle_nav_div_end_found = False
-                    # break_ok = False
-                    # index_start_string_nav_div = 0
-                    # index_end_string_nav_div = 0
-                    #
-                    # for x in range(len(data)):
-                    #     if top_moodle_nav_div_begin_found and self.get_div_end_string() in data[x]:
-                    #         top_moodle_nav_div_end_found = True
-                    #         index_end_string_nav_div = x + 1
-                    #     if top_moodle_nav_div_begin_found and top_moodle_nav_div_end_found:
-                    #         del data[index_start_string_nav_div:index_end_string_nav_div]
-                    #         top_moodle_nav_div_begin_found = False
-                    #         top_moodle_nav_div_end_found = False
-                    #         break_ok = True
-                    #     if break_ok:
-                    #         break
-
-                # traitement du manifest de content.opf
-                opf_file = ops_path_filename
-                self.update_manifest_line(opf_file, ".js", "Misc/", js_files_string, new_js_files_names)
-                self.update_manifest_line(opf_file, ".css", "Styles/", css_files_string, new_css_files_names)
+                #     # relire la spinelist mise à jour
+                #     v_return, spine_list = self.read_spine_in_content_opf(ops_path_filename)
+                #
+                # # pour tous les fichiers inclus dans la Spine_list
+                # for current_page_number in range(len(spine_list)):
+                #     v_msg = spine_list[current_page_number] + " : mise à jour des ref js et css"
+                #     u.manage_info(v_msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+                #     working_file = "".join([text_path_dir, spine_list[current_page_number]])
+                #     data = []
+                #     data_new = []
+                #
+                #     # replace all modified .js references
+                #     # read the xhtml file
+                #     with open(working_file, "r", encoding="utf-8") as rFile:
+                #         data = rFile.readlines()
+                #     end_head_found = False
+                #     begin_head_found = False
+                #
+                #     for l in data:
+                #         if "<head>" in l :
+                #             begin_head_found = True
+                #         if begin_head_found and not end_head_found:
+                #             for exist_str in js_files_string:
+                #                 if js_files_string[exist_str] and exist_str in l and "<script" in l:
+                #                     # to_replace = True
+                #                     if "</script>" in l:
+                #                         txt_to_insert = self.get_link_js_string("".join(["Misc/",new_js_files_names[exist_str]]))
+                #                     else: # <script et </script sur la même ligne
+                #                         txt_to_insert = self.get_link_js_string("".join(["Misc/",new_js_files_names[exist_str]])).replace("</script>", "")
+                #                     l = txt_to_insert
+                #         if "</head>" in l :
+                #             end_head_found = True
+                #         data_new.append(l)
+                #
+                #     with open(working_file, "w", encoding="utf-8") as txt_file:
+                #         for l in data_new:
+                #             txt_file.writelines(l)
+                #
+                #     # replace all modified .css references
+                #     data_new = []
+                #     # read the xhtml file
+                #     with open(working_file, "r", encoding="utf-8") as rFile:
+                #         data = rFile.readlines()
+                #     end_head_found = False
+                #     begin_head_found = False
+                #
+                #     for l in data:
+                #         if "<head>" in l :
+                #             begin_head_found = True
+                #         if begin_head_found and not end_head_found:
+                #             for exist_str in css_files_string:
+                #                 if css_files_string[exist_str] and exist_str in l and "<link" in l:
+                #                     l = self.get_link_css_string("".join(["Styles/",new_css_files_names[exist_str]]))
+                #         if "</head>" in l :
+                #             end_head_found = True
+                #         data_new.append(l)
+                #
+                #     with open(working_file, "w", encoding="utf-8") as txt_file:
+                #         for l in data_new:
+                #             txt_file.writelines(l)
+                #
+                # # traitement du manifest de content.opf
+                # opf_file = ops_path_filename
+                # self.update_manifest_line(opf_file, ".js", "Misc/", js_files_string, new_js_files_names)
+                # self.update_manifest_line(opf_file, ".css", "Styles/", css_files_string, new_css_files_names)
 
                 # FINAL TASKS
                 # ===================
@@ -708,6 +703,151 @@ class ClasseNavBtn:
             u.manage_info("Select a epub", u.DISPLAY_ONLY, u.COLOR_BLUE)
         return out_path_file_name
 
+    def update_js_and_css_heart(self, ops_path_filename, js_path_dir, css_path_dir, text_path_dir):
+
+        u = ClasseFet(self.var_msg, self.msg_list, self.msg_display, self.btn_frame)
+
+        # créer le dictionnaire des fichiers js et css existants
+        js_files_string = {}
+        css_files_string = {}
+        new_js_files_names = {}
+        new_css_files_names = {}
+        for root, dirs, files in os.walk(self.js_css_path):
+            # pour tous les fichiers js et css à jour
+            for jscss_new_file in files:
+                f_l = jscss_new_file.split(".")
+                jscss_file_name = f_l[0]
+                jscss_file_ext = f_l[1]
+                # fichiers javascript
+                if jscss_file_ext == "js":
+                    for js_strings_names in self.strings_names_js: # parcourir la liste des string extraite du fichier .ini
+                        if js_strings_names in jscss_file_name: # c'est un fichier à remplacer
+                            js_files_string[js_strings_names] = False # ajouter le string au dictionnaire des strings
+                            new_js_files_names[js_strings_names] = jscss_new_file # ajouter le nom du nopuveau fichier au dictionnaire des fichiers
+                            new_name = new_js_files_names[js_strings_names]
+
+                if jscss_file_ext == "css":
+                    for css_strings_names in self.strings_names_css:
+                        if css_strings_names in jscss_file_name:
+                            css_files_string[css_strings_names] = False
+                            new_css_files_names[css_strings_names] = jscss_new_file
+
+        # remplacer les fichiers .js par ceux à jour
+        for existing_string in js_files_string:
+            # chercher old_js_file_name dans le répertoire/misc/... du epub
+            for r_js, d_js, f_js in os.walk(js_path_dir): # répertoire js du epub
+                # pour tous les fichiers anciens
+                for old_js_file_name in f_js:
+                    if existing_string in old_js_file_name: # c'est le fichier à remplacer
+                        old_file_name = old_js_file_name
+                        new_file_name = new_js_files_names[existing_string]
+                        # remplacer seulement si c'est une nouvelle version
+                        if old_file_name != new_file_name:
+                            # noter que le fichier est nouveau
+                            js_files_string[existing_string] = True
+                            # supprimer le fichier old
+                            os.remove("".join([js_path_dir, old_file_name])) # supprimer le fichier js existant
+                            # copier le fichier new
+                            sce = "".join([self.js_css_path, new_file_name])
+                            dst = "".join([js_path_dir, new_js_files_names[existing_string]])
+                            shutil.copy2(sce, dst)
+                            v_msg = "remplacement du fichier " + old_file_name + " par " + new_file_name
+                            u.manage_info(v_msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+        u.manage_info(" ", u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+
+        # remplacer les fichiers .css par ceux à jour
+        for existing_string in css_files_string:
+            # chercher old_css_file_name dans le répertoire /styles/... du epub
+            for r_css, d_css, f_css in os.walk(css_path_dir): # répertoire css du epub
+                # pour tous les fichiers anciens
+                for old_css_file_name in f_css:
+                    if existing_string in old_css_file_name: # c'est le fichier à remplacer
+                        old_file_name = old_css_file_name
+                        new_file_name = new_css_files_names[existing_string]
+                        # remplacer seulement si c'est une nouvelle version
+                        if old_file_name != new_file_name:
+                            # noter que le fichier est nouveau
+                            css_files_string[existing_string] = True
+                            # supprimer le fichier old
+                            os.remove("".join([css_path_dir, old_file_name])) # supprimer le fichier css existant
+                            # copier le fichier new
+                            sce = "".join([self.js_css_path, new_file_name])
+                            dst = "".join([css_path_dir, new_css_files_names[existing_string]])
+                            shutil.copy2(sce, dst)
+                            v_msg = "remplacement du fichier " + old_file_name + " par " + new_file_name
+                            u.manage_info(v_msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+        u.manage_info(" ", u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+
+        # lire la spinelist mise à jour
+        v_return, spine_list = self.read_spine_in_content_opf(ops_path_filename)
+
+        # pour tous les fichiers xhtml inclus dans la Spine_list
+        for current_page_number in range(len(spine_list)):
+            v_msg = spine_list[current_page_number] + " : mise à jour des ref js et css"
+            u.manage_info(v_msg, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
+            working_file = "".join([text_path_dir, spine_list[current_page_number]])
+            data = []
+            data_new = []
+
+            # replace all modified .js references
+            # read the xhtml file
+            with open(working_file, "r", encoding="utf-8") as rFile:
+                data = rFile.readlines()
+            end_head_found = False
+            begin_head_found = False
+
+            for l in data:
+                if "<head>" in l :
+                    begin_head_found = True
+                if begin_head_found and not end_head_found:
+                    for exist_str in js_files_string:
+                        # if js_files_string[exist_str] and exist_str in l and "<script" in l:
+                        if exist_str in l and "<script" in l:
+                            # to_replace = True
+                            if "</script>" in l:
+                                txt_to_insert = self.get_link_js_string("".join(["Misc/",new_js_files_names[exist_str]]))
+                            else: # <script et </script sur la même ligne
+                                txt_to_insert = self.get_link_js_string("".join(["Misc/",new_js_files_names[exist_str]])).replace("</script>", "")
+                            l = txt_to_insert
+                if "</head>" in l :
+                    end_head_found = True
+                data_new.append(l)
+
+            with open(working_file, "w", encoding="utf-8") as txt_file:
+                for l in data_new:
+                    txt_file.writelines(l)
+
+            # replace all modified .css references
+            data_new = []
+            # read the xhtml file
+            with open(working_file, "r", encoding="utf-8") as rFile:
+                data = rFile.readlines()
+            end_head_found = False
+            begin_head_found = False
+
+            for l in data:
+                if "<head>" in l :
+                    begin_head_found = True
+                if begin_head_found and not end_head_found:
+                    for exist_str in css_files_string:
+                        # if css_files_string[exist_str] and exist_str in l and "<link" in l:
+                        if exist_str in l and "<link" in l:
+                            l = self.get_link_css_string("".join(["Styles/",new_css_files_names[exist_str]]))
+                if "</head>" in l :
+                    end_head_found = True
+                data_new.append(l)
+
+            with open(working_file, "w", encoding="utf-8") as txt_file:
+                for l in data_new:
+                    txt_file.writelines(l)
+
+        # traitement du manifest de content.opf
+        opf_file = ops_path_filename
+        self.update_manifest_line(opf_file, ".js", "Misc/", js_files_string, new_js_files_names)
+        self.update_manifest_line(opf_file, ".css", "Styles/", css_files_string, new_css_files_names)
+
+        return ""
+
     def dir_change_police(self):
 
         """
@@ -756,24 +896,25 @@ class ClasseNavBtn:
                     in_file_name = os.path.basename(in_path_file_name)
                     out_path_file_name = self.change_police(in_path_file_name)
 
-                    u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
-                    u.manage_info("".join(["Changement police : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
-                    u.manage_info("".join(["Fichier : ", os.path.basename(in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
-                    u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                    if self.VERIF_EPUB:
+                        u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
+                        u.manage_info("".join(["Changement police : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
+                        u.manage_info("".join(["Fichier : ", os.path.basename(in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                        u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
 
-                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
-                    fatal_tot += n_fatal
-                    error_tot += n_error
-                    warn_tot += n_warn
-                    recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
+                        ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
+                        fatal_tot += n_fatal
+                        error_tot += n_error
+                        warn_tot += n_warn
+                        recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
 
-                    u.manage_info(ret_status, u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
-                    msg = " "
-                    u.manage_info(msg, u.DISPLAY_AND_LOG)
-                    if self.asked_2_quit:
-                        break
-                    else:
-                        time.sleep(u.pause_time)
+                        u.manage_info(ret_status, u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                        msg = " "
+                        u.manage_info(msg, u.DISPLAY_AND_LOG)
+                        if self.asked_2_quit:
+                            break
+                        else:
+                            time.sleep(u.pause_time)
                 msg_err = "".join(["Check status total : ", str(fatal_tot), " fatal / ", str(error_tot), " error / ", str(warn_tot), " warn"])
                 if not self.asked_2_quit:
                     elapsed_time = int(time.time() - dirjob_tstart)
@@ -784,14 +925,16 @@ class ClasseNavBtn:
                     else:
                         msg = "".join(["Police job terminated with ok code in ", str(elapsed_sec), " sec"])
 
-                    for r in recap_tot:
-                        u.manage_info(r, u.DISPLAY_AND_LOG)
-                    u.manage_info(msg_err, u.DISPLAY_AND_LOG)
-                    u.manage_info(msg, u.DISPLAY_AND_LOG)
+                    if self.VERIF_EPUB:
+                        for r in recap_tot:
+                            u.manage_info(r, u.DISPLAY_AND_LOG)
+                        u.manage_info(msg_err, u.DISPLAY_AND_LOG)
+                        u.manage_info(msg, u.DISPLAY_AND_LOG)
                 else:
                     msg = "".join(["Job terminated by user !"])
-                    for r in recap_tot:
-                        u.manage_info(r, u.DISPLAY_AND_LOG)
+                    if self.VERIF_EPUB:
+                        for r in recap_tot:
+                            u.manage_info(r, u.DISPLAY_AND_LOG)
                     u.manage_info("\n", u.DISPLAY_AND_LOG)
                     u.manage_info(msg_err, u.DISPLAY_AND_LOG)
                     u.manage_info("\n", u.DISPLAY_AND_LOG)
@@ -1024,24 +1167,25 @@ class ClasseNavBtn:
                     in_file_name = os.path.basename(in_path_file_name)
                     out_path_file_name = self.prepare_for_moodle(in_path_file_name)
 
-                    u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
-                    u.manage_info("".join(["Préparation pour moodle : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
-                    u.manage_info("".join(["Fichier : ", os.path.basename(in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
-                    u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                    if self.VERIF_EPUB:
+                        u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
+                        u.manage_info("".join(["Préparation pour moodle : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
+                        u.manage_info("".join(["Fichier : ", os.path.basename(in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                        u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
 
-                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
-                    fatal_tot += n_fatal
-                    error_tot += n_error
-                    warn_tot += n_warn
-                    recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
+                        ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
+                        fatal_tot += n_fatal
+                        error_tot += n_error
+                        warn_tot += n_warn
+                        recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
 
-                    u.manage_info(ret_status, u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
-                    msg = " "
-                    u.manage_info(msg, u.DISPLAY_AND_LOG)
-                    if self.asked_2_quit:
-                        break
-                    else:
-                        time.sleep(u.pause_time)
+                        u.manage_info(ret_status, u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                        msg = " "
+                        u.manage_info(msg, u.DISPLAY_AND_LOG)
+                        if self.asked_2_quit:
+                            break
+                        else:
+                            time.sleep(u.pause_time)
                 msg_err = "".join(["Check status total : ", str(fatal_tot), " fatal / ", str(error_tot), " error / ", str(warn_tot), " warn"])
                 if not self.asked_2_quit:
                     elapsed_time = int(time.time() - dirjob_tstart)
@@ -1052,14 +1196,16 @@ class ClasseNavBtn:
                     else:
                         msg = "".join(["Police job terminated with ok code in ", str(elapsed_sec), " sec"])
 
-                    for r in recap_tot:
-                        u.manage_info(r, u.DISPLAY_AND_LOG)
-                    u.manage_info(msg_err, u.DISPLAY_AND_LOG)
-                    u.manage_info(msg, u.DISPLAY_AND_LOG)
+                    if self.VERIF_EPUB:
+                        for r in recap_tot:
+                            u.manage_info(r, u.DISPLAY_AND_LOG)
+                        u.manage_info(msg_err, u.DISPLAY_AND_LOG)
+                        u.manage_info(msg, u.DISPLAY_AND_LOG)
                 else:
                     msg = "".join(["Job terminated by user !"])
-                    for r in recap_tot:
-                        u.manage_info(r, u.DISPLAY_AND_LOG)
+                    if self.VERIF_EPUB:
+                        for r in recap_tot:
+                            u.manage_info(r, u.DISPLAY_AND_LOG)
                     u.manage_info("\n", u.DISPLAY_AND_LOG)
                     u.manage_info(msg_err, u.DISPLAY_AND_LOG)
                     u.manage_info("\n", u.DISPLAY_AND_LOG)
@@ -1318,24 +1464,25 @@ class ClasseNavBtn:
                     in_file_name = os.path.basename(in_path_file_name)
                     out_path_file_name = self.add_nav_btn(in_path_file_name)
 
-                    u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
-                    u.manage_info("".join(["VERIFICATION EPUB : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
-                    u.manage_info("".join(["Fichier : ", os.path.basename(in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
-                    u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                    if self.VERIF_EPUB:
+                        u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
+                        u.manage_info("".join(["VERIFICATION EPUB : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
+                        u.manage_info("".join(["Fichier : ", os.path.basename(in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                        u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
 
-                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
-                    fatal_tot += n_fatal
-                    error_tot += n_error
-                    warn_tot += n_warn
-                    recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
+                        ret_status, n_fatal, n_error,  n_warn = u.check_epub(out_path_file_name, file_output_result_path_name)
+                        fatal_tot += n_fatal
+                        error_tot += n_error
+                        warn_tot += n_warn
+                        recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
 
-                    u.manage_info(ret_status, u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
-                    msg = " "
-                    u.manage_info(msg, u.DISPLAY_AND_LOG)
-                    if self.asked_2_quit:
-                        break
-                    else:
-                        time.sleep(u.pause_time)
+                        u.manage_info(ret_status, u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                        msg = " "
+                        u.manage_info(msg, u.DISPLAY_AND_LOG)
+                        if self.asked_2_quit:
+                            break
+                        else:
+                            time.sleep(u.pause_time)
                 msg_err = "".join(["Check status total : ", str(fatal_tot), " fatal / ", str(error_tot), " error / ", str(warn_tot), " warn"])
                 if not self.asked_2_quit:
                     elapsed_time = int(time.time() - dirjob_tstart)
@@ -1346,14 +1493,16 @@ class ClasseNavBtn:
                     else:
                         msg = "".join(["DIR job terminated with ok code in ", str(elapsed_sec), " sec"])
 
-                    for r in recap_tot:
-                        u.manage_info(r, u.DISPLAY_AND_LOG)
-                    u.manage_info(msg_err, u.DISPLAY_AND_LOG)
-                    u.manage_info(msg, u.DISPLAY_AND_LOG)
+                    if self.VERIF_EPUB:
+                        for r in recap_tot:
+                            u.manage_info(r, u.DISPLAY_AND_LOG)
+                        u.manage_info(msg_err, u.DISPLAY_AND_LOG)
+                        u.manage_info(msg, u.DISPLAY_AND_LOG)
                 else:
                     msg = "".join(["Job terminated by user !"])
-                    for r in recap_tot:
-                        u.manage_info(r, u.DISPLAY_AND_LOG)
+                    if self.VERIF_EPUB:
+                        for r in recap_tot:
+                            u.manage_info(r, u.DISPLAY_AND_LOG)
                     u.manage_info(msg_err, u.DISPLAY_AND_LOG)
                     u.manage_info(msg, u.DISPLAY_AND_LOG)
             else:
@@ -1471,14 +1620,66 @@ class ClasseNavBtn:
                             opf_file.writelines(line)
                     v_return, spine_list = self.read_spine_in_content_opf(ops_path_filename)
 
-                # pour tous les fichiers inclus dans la Spine_list
+                # remove files nav_bar(...).js and nav_bar(...).css if exists
+                for r, d, f in os.walk(css_path_dir):
+                    for css_file in f:
+                        if "nav_bar" in css_file:
+                            os.remove("".join([css_path_dir, css_file]))
+                for r, d, f in os.walk(js_path_dir):
+                    for js_file in f:
+                        if "nav_bar" in js_file:
+                            os.remove("".join([js_path_dir, js_file]))
+
+                # import updated files nav_bar(...).js and nav_bar(...).css in the epub
+                css_nav_bar_file_name = ""
+                js_nav_bar_file_name = ""
+                txt2add = ""
+
+                for r, d, f in os.walk(self.js_css_path):
+                    for jscss_file in f:
+                        if  "nav_bar" in jscss_file:
+                            sce = "".join([self.js_css_path, jscss_file])
+                            if jscss_file.split(".")[1] == "js":
+                                dst = "".join([js_path_dir, jscss_file])
+                                js_nav_bar_file_name = jscss_file
+                                txt2add = "<item id='" + jscss_file + "' href='Misc/" + jscss_file + "' media-type='text/javascript'/>\n"
+                            elif jscss_file.split(".")[1] == "css":
+                                dst = "".join([css_path_dir, jscss_file])
+                                css_nav_bar_file_name = jscss_file
+                                txt2add = "<item id='" + jscss_file + "' href='Styles/" + jscss_file + "' media-type='text/css'/>\n"
+                            shutil.copy2(sce, dst)
+                            # add ref in content.opf
+                            with open(ops_path_filename, "r", encoding="utf-8") as rFile:
+                                data = rFile.readlines()
+                            i = 0
+                            for l in data:
+                                if "</manifest>" in l:
+                                    index = i
+                                i += 1
+                            data.insert(index, txt2add)
+                            with open(ops_path_filename, "w", encoding="utf-8") as wFile:
+                                wFile.writelines(data)
+
+
+
+
+                # pour tous les fichiers xhtml inclus dans la Spine_list
                 for current_page_number in range(len(spine_list)):
                     u.manage_info(spine_list[current_page_number], u.DISPLAY_AND_LOG, u.COLOR_BLUE)
                     working_file = "".join([text_path_dir, spine_list[current_page_number]])
+
                     # read the file
-                    # remove all .js ans .css references
                     with open(working_file, "r", encoding="utf-8") as rFile:
                         data = rFile.readlines()
+
+                    # add nav references for .js and .css in all xhtml files
+                    i = 0
+                    for l in data:
+                        if "</head>" in l:
+                            data.insert(i, self.get_nav_bar_js_string(js_nav_bar_file_name))
+                            data.insert(i, self.get_nav_bar_css_string(css_nav_bar_file_name))
+                            break
+                        i += 1
 
                     # add property scripted
                     with open(ops_path_filename, "r", encoding="utf-8") as opfFile:
@@ -1558,6 +1759,10 @@ class ClasseNavBtn:
 
                 # FINAL TASKS
                 # ===================
+
+                # update all js and css ref
+                self.update_js_and_css_heart(ops_path_filename, js_path_dir, css_path_dir, text_path_dir)
+
                 # beautify the epub en attente car pas terminé manque la reprise correcte du code javascript
                 u.manage_info("pretifying the xhtml", u.LOG_ONLY, u.COLOR_PURPLE)
                 y.pretify_xhtml(text_path_dir)
@@ -1832,6 +2037,99 @@ class ClasseNavBtn:
             u.manage_info("Cancel pressed", u.DISPLAY_ONLY, u.COLOR_BLUE)
             u.manage_info("Select a epub", u.DISPLAY_ONLY, u.COLOR_BLUE)
 
+    def dir_verify_epub(self):
+
+        """
+        Cette fonction permet de vérifier tous les epub's contenus dans un répertoire
+        Elle parcoure le répertoire choisi, vérifie qu'il y ait bien des fichiers epub puis,
+        pour chaque ficheir epub, elle appelle la fonction file_job pour exécuter l'amélioration de façon individelle
+        """
+        # variable qui permet de savoir si l'utilisateur a demandé à interrompre la procédure
+        u = ClasseFet(self.var_msg, self.msg_list, self.msg_display, self.btn_frame)
+        # clear the listbox
+        u.msg_list.delete(0, END)
+        u.msg_display.update()
+        # disable all buttons that can not be used during this task
+        u.manage_buttons("btnDirJob", "in")
+        self.asked_2_quit = False
+
+        dirjob_tstart = time.time()
+        # variable pour que la fonction sache que l'appel vient d'ici et gère les messages en conséquence
+        self.dir_job_status = True
+        # demande le nom du répertoire à travailler
+        file_options = {}
+        file_options['initialdir'] = self.new_path #self.org_path
+        file_options['title'] = 'Select a directory with epub files to verify'
+        dir_name = filedialog.askdirectory(**file_options)
+
+        file_output_result_path_name = "".join([self.log_path, "epub_check_result.txt"])
+        with open(file_output_result_path_name, "w", encoding="utf-8") as prob_file:
+            prob_file.write(str(datetime.now()))
+
+        # erreurs totales
+        fatal_tot = 0
+        error_tot = 0
+        warn_tot = 0
+        recap_tot = []
+
+        # On controle que le répertoire n'est pas vide
+        if dir_name != "":
+            # only the .epub files
+            only_epub_files = [f for f in os.listdir(dir_name) if os.path.isfile(os.path.join(dir_name, f))
+                               and os.path.splitext(f)[1] == ".epub"]
+            if len(only_epub_files) > 0:
+                # there is .epub files
+                for test_file in only_epub_files:
+                    t_start = time.time()
+                    in_path_file_name = "/".join([dir_name, test_file])
+                    in_file_name = os.path.basename(in_path_file_name)
+
+                    u.manage_info("---------------------------------------------------------", u.LOG_ONLY, u.COLOR_PURPLE)
+                    u.manage_info("".join(["VERIFICATION EPUB : ", datetime.now().strftime("%Y%m%d-%H%M%S")]), u.LOG_ONLY, u.COLOR_PURPLE)
+                    u.manage_info("".join(["Fichier : ", os.path.basename(in_file_name)]), u.DISPLAY_AND_LOG, u.COLOR_BLACK)
+                    u.manage_info("en cours de vérification. Patientez SVP ...", u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+
+                    ret_status, n_fatal, n_error,  n_warn = u.check_epub(in_path_file_name, file_output_result_path_name)
+                    fatal_tot += n_fatal
+                    error_tot += n_error
+                    warn_tot += n_warn
+                    recap_tot.append("".join([test_file, " : ",str(n_fatal), " fatals / ", str(n_error), " errors / ", str(n_warn), " warnings\n"]))
+
+                    u.manage_info(ret_status, u.DISPLAY_AND_LOG, u.COLOR_PURPLE)
+                    msg = " "
+                    u.manage_info(msg, u.DISPLAY_AND_LOG)
+                    if self.asked_2_quit:
+                        break
+                    else:
+                        time.sleep(u.pause_time)
+                msg_err = "".join(["Check status total : ", str(fatal_tot), " fatal / ", str(error_tot), " error / ", str(warn_tot), " warn"])
+                if not self.asked_2_quit:
+                    elapsed_time = int(time.time() - dirjob_tstart)
+                    elapsed_min = elapsed_time // 60
+                    elapsed_sec = elapsed_time % 60
+                    if elapsed_min > 0 :
+                        msg = "".join(["DIR job terminated with ok code in ", str(elapsed_min), " min ", str(elapsed_sec), " sec"])
+                    else:
+                        msg = "".join(["DIR job terminated with ok code in ", str(elapsed_sec), " sec"])
+
+                    for r in recap_tot:
+                        u.manage_info(r, u.DISPLAY_AND_LOG)
+                    u.manage_info(msg_err, u.DISPLAY_AND_LOG)
+                    u.manage_info(msg, u.DISPLAY_AND_LOG)
+                else:
+                    msg = "".join(["Job terminated by user !"])
+                    for r in recap_tot:
+                        u.manage_info(r, u.DISPLAY_AND_LOG)
+                    u.manage_info(msg_err, u.DISPLAY_AND_LOG)
+                    u.manage_info(msg, u.DISPLAY_AND_LOG)
+            else:
+                # there is no .epub files
+                tk.messagebox.showinfo("Répertoire d'entrée \n", "Il n'y a pas de fichiers .epub dans ce répertoire. \nRefaites votre choix", icon='info')
+
+        # rétablir l'état normal des boutons'
+        u.manage_buttons("btnDirJob", "out")
+
+
     #===============================================================================================================
     # btn nav strings
     #===============================================================================================================
@@ -1881,13 +2179,21 @@ class ClasseNavBtn:
             self.menu_bar_font_size,\
             "\"> Moodle </a>\n"])
         return moodle_btn_str
-            # "<a onclick=\"javascript:GoToMoodleHomePage()\" href=\"javascript:void(0)\"  class=\"w3-bar-item w3-button w3-padding-small\" style=\"font-size:",\
-    #
+
     def get_link_css_string(self, css_file_path_name):
         return "".join(["<link href=\"../", css_file_path_name, "\" rel=\"stylesheet\" type=\"text/css\"/>"])
 
     def get_link_js_string(self, js_file_path_name):
         return "".join(["<script src=\"../", js_file_path_name, "\" type=\"text/javascript\"></script>"])
+
+    def get_nav_bar_css_string(self, nav_bar_css_file_name):
+        nav_bar_css_string = "".join(["<link href=\"../Styles/", nav_bar_css_file_name, "\" rel=\"stylesheet\" type=\"text/css\"/>"])
+        return nav_bar_css_string
+
+    def get_nav_bar_js_string(self, nav_bar_js_file_name):
+        nav_bar_js_string = "".join(["<script src=\"../Misc/", nav_bar_js_file_name, "\" type=\"text/javascript\"></script>"])
+        return nav_bar_js_string
+
 
     def read_spine_in_content_opf(self, v_path_file_name):
         """
