@@ -82,7 +82,7 @@ class ClasseNavBtn:
         self.WITH_ZIP = ini.WITH_ZIP
         self.IMG_SIZE_MAX = ini.IMG_SIZE_MAX
         self.TOC_DEEP = ini.TOC_DEEP
-        self.FONT_NAME = ini.TOC_DEEP
+        self.FONT_NAME = ini.FONT_NAME
         self.VERIF_EPUB = ini.VERIF_EPUB
 
         # # lecture des répertoires dans le fichier .ini
@@ -725,7 +725,7 @@ class ClasseNavBtn:
                             js_files_string[js_strings_names] = False # ajouter le string au dictionnaire des strings
                             new_js_files_names[js_strings_names] = jscss_new_file # ajouter le nom du nopuveau fichier au dictionnaire des fichiers
                             new_name = new_js_files_names[js_strings_names]
-
+                # fichiers css
                 if jscss_file_ext == "css":
                     for css_strings_names in self.strings_names_css:
                         if css_strings_names in jscss_file_name:
@@ -804,9 +804,9 @@ class ClasseNavBtn:
                         # if js_files_string[exist_str] and exist_str in l and "<script" in l:
                         if exist_str in l and "<script" in l:
                             # to_replace = True
-                            if "</script>" in l:
+                            if "</script>" in l: # <script et </script sur la même ligne
                                 txt_to_insert = self.get_link_js_string("".join(["Misc/",new_js_files_names[exist_str]]))
-                            else: # <script et </script sur la même ligne
+                            else: # <script et </script sur deux lignes
                                 txt_to_insert = self.get_link_js_string("".join(["Misc/",new_js_files_names[exist_str]])).replace("</script>", "")
                             l = txt_to_insert
                 if "</head>" in l :

@@ -184,7 +184,7 @@ class ClasseFet:
         self.WITH_ZIP = ini.WITH_ZIP
         self.IMG_SIZE_MAX = ini.IMG_SIZE_MAX
         self.TOC_DEEP = ini.TOC_DEEP
-        self.FONT_NAME = ini.TOC_DEEP
+        self.FONT_NAME = ini.FONT_NAME
         self.VERIF_EPUB = ini.VERIF_EPUB
 
         # # lecture des répertoires dans le fichier .ini
@@ -799,6 +799,7 @@ class ClasseFet:
         n_pages_deleted = 0
         tot_changes = 0
         change_no = 0
+        n_changes = 0
 
         msg = " ".join(["... corrections"])
         self.manage_info(msg, self.DISPLAY_AND_LOG)
@@ -857,42 +858,42 @@ class ClasseFet:
         # CHANGE #6a validation file
         # ===================
         # delete old_validation_script_line in content.opf
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        msg = "".join([change_str, "... updating content.opf, deleting old_validation_fr lines"])
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation")
-        tot_changes += n_changes
-        n_content_changes += n_changes
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr")
-        tot_changes += n_changes
-        n_content_changes += n_changes
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo")
-        tot_changes += n_changes
-        n_content_changes += n_changes
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo_v1r")
-        tot_changes += n_changes
-        n_content_changes += n_changes
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo-v2")
-        tot_changes += n_changes
-        n_content_changes += n_changes
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo_v2")
-        tot_changes += n_changes
-        n_content_changes += n_changes
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo_v02_00")
-        tot_changes += n_changes
-        n_content_changes += n_changes
-
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo_v02_01")
-        tot_changes += n_changes
-        n_content_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # msg = "".join([change_str, "... updating content.opf, deleting old_validation_fr lines"])
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo_v1r")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo-v2")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo_v2")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo_v02_00")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
+        #
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, "validation_fr_jo_v02_01")
+        # tot_changes += n_changes
+        # n_content_changes += n_changes
 
         # CHANGE #6b
         # ===================
@@ -901,6 +902,38 @@ class ClasseFet:
         change_str = "   #" + str(change_no) + ": "
         msg = "".join([change_str, "... upgrading .js and .css files"])
         self.manage_info(msg, self.DISPLAY_AND_LOG)
+
+        # add nav.xhtml in spine if not exist
+        opf_file_name = "".join([self.ops_path_dir, "content.opf"])
+        with open(opf_file_name, "r", encoding="utf-8") as opf_file:
+            opf_data = opf_file.readlines()
+        begin_spine_found = False
+        end_spine_found = False
+        nav_found = False
+        index_end_spine = 0
+        i = 0
+        new_opf_data = []
+        for l in opf_data:
+            if "<spine" in l:
+                begin_spine_found = True
+            if begin_spine_found and not end_spine_found:
+                if "nav.xhtml" in l:
+                    nav_found = True
+                elif "idref=\"nav\"" in l:
+                    l = l.replace("idref=\"nav\"", "idref=\"nav.xhtml\"")
+                    nav_found = True
+            if "</spine" in l:
+                end_spine_found = True
+                index_end_spine = i
+            new_opf_data.append(l)
+            i += 1
+        if not nav_found:
+            nav_txt = "<itemref idref=\"nav.xhtml\"/>"
+            new_opf_data.insert(index_end_spine, nav_txt)
+        with open(opf_file_name, "w", encoding="utf-8") as opf_file:
+            opf_file.writelines(new_opf_data)
+        n_changes += 1
+
 
         # del .js files
         only_files = [f for f in listdir(self.misc_path_file_name) if isfile(join(self.misc_path_file_name, f))]
@@ -929,7 +962,7 @@ class ClasseFet:
                         dst_file = "".join([self.misc_path_file_name, f])
                         copyfile(sce_file, dst_file)
                         # add ref in content.opf
-                        txt2add = "<item id='" + f + "' href='Misc/" + f + "' media-type='text/javascript'/>\n"
+                        txt2add = "    <item id='" + f + "' href='Misc/" + f + "' media-type='text/javascript'/>\n"
                         v_return, n_changes = self.add_line("".join([self.ops_path_dir, "content.opf"]), "manifest", txt2add)
 
         # del .css files
@@ -960,19 +993,47 @@ class ClasseFet:
                         dst_file = "".join([self.style_path_name, f])
                         copyfile(sce_file, dst_file)
                         # add ref in content.opf
-                        txt2add = "<item id='" + f + "' href='Styles/" + f + "' media-type='text/css'/>\n"
+                        txt2add = "    <item id='" + f + "' href='Styles/" + f + "' media-type='text/css'/>\n"
                         v_return, n_changes = self.add_line("".join([self.ops_path_dir, "content.opf"]), "manifest", txt2add)
 
         # update <head> in all xhtml files for mandatory css and js files
-        new_ref_txt = "<link href=\"../Styles/exercises_v02_02.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
-        new_ref_txt += "<link href=\"../Styles/fet_styles_v02_04.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
-        new_ref_txt += "<link href=\"../Styles/pw_table_style_v02_06.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
-        new_ref_txt += "<script src=\"../Misc/validation_fr_jo_v02_02.js\" type=\"text/javascript\"></script>\n"
+        new_ref_txt = "    <link href=\"../Styles/exercises_v02_02.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
+        new_ref_txt += "    <link href=\"../Styles/fet_styles_v02_04.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
+        new_ref_txt += "    <link href=\"../Styles/pw_table_style_v02_06.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
+        new_ref_txt += "    <script src=\"../Misc/validation_fr_jo_v02_02.js\" type=\"text/javascript\"></script>\n"
         for root, dirs, files in os.walk(self.text_path_name):
             # pour tous les fichiers js et css à jour
             for text_file in files:
                 with open(self.text_path_name + text_file, "r", encoding="utf-8") as xhtml_r_file:
                     xhtml_data = xhtml_r_file.readlines()
+                # supprimer les références existante dans le head des fichiers xhtml
+                begin_head_found = False
+                end_head_found = False
+                i = 0
+                to_remove_list = []
+                for l in xhtml_data:
+                    if "<head>" in l:
+                        begin_head_found = True
+                    if begin_head_found and not end_head_found:
+                        if "<link" in l and ".css" in l :
+                            to_remove_list.append(i)
+                        if "<script" in l and ".js" in l:
+                            to_remove_list.append(i)
+                            end_tag_found = False
+                            j = i + 1
+                            if not "</script>" in l and not "/>" in l:
+                                while not end_tag_found:
+                                    if "</script>" in xhtml_data[j] or "/>" in xhtml_data[j]:
+                                        end_tag_found = True
+                                    to_remove_list.append(j)
+                                    j += 1
+                        if"</head>" in l:
+                            end_head_found = True
+                    i += 1
+                for i in reversed(to_remove_list):
+                    # print(xhtml_data[i])
+                    del xhtml_data[i]
+                # insérer les nouvelles références
                 i = 0
                 head_found = False
                 for l in xhtml_data:
@@ -1206,16 +1267,16 @@ class ClasseFet:
         # CHANGE #12
         # ===================
         # delete line in content.opf <spine>
-        change_no += 1
-        change_str = "   #" + str(change_no) + ": "
-        msg = "".join([change_str, "... deleting line with '<itemref idref=\"nav\"/>'in content.opf"])
-        line2delete = "<itemref idref=\"nav\"/>"
-        self.manage_info(msg, self.DISPLAY_AND_LOG)
-        v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, line2delete)
-        if v_return != "":
-            self.manage_info((v_return, self.DISPLAY_AND_LOG))
-        n_content_changes += n_changes
-        tot_changes += n_changes
+        # change_no += 1
+        # change_str = "   #" + str(change_no) + ": "
+        # msg = "".join([change_str, "... deleting line with '<itemref idref=\"nav\"/>'in content.opf"])
+        # line2delete = "<itemref idref=\"nav\"/>"
+        # self.manage_info(msg, self.DISPLAY_AND_LOG)
+        # v_return, n_changes = self.del_line_in_content_opf(self.content_path_file_name, line2delete)
+        # if v_return != "":
+        #     self.manage_info((v_return, self.DISPLAY_AND_LOG))
+        # n_content_changes += n_changes
+        # tot_changes += n_changes
 
         # CHANGE #13
         # ===================
@@ -1357,6 +1418,10 @@ class ClasseFet:
                                 l_new = l.replace("nav.html", "nav.xhtml")
                                 n_content_changes += 1
                                 tot_changes += 1
+                            elif "idref=\"nav\"" in l:
+                                l_new = l.replace("idref=\"nav\"", "idref=\"nav.xhtml\"")
+                                n_content_changes += 1
+                                tot_changes += 1
 
                         if "<spine" in l:
                             spine_found = True
@@ -1378,6 +1443,7 @@ class ClasseFet:
         change_str = "   #" + str(change_no) + ": "
         txt2add = "<item id=\"nav.xhtml\" href=\"Text/nav.xhtml\" media-type=\"application/xhtml+xml\" properties=\"nav\"/>\n"
         to_add = True
+        del_txt = "id=\"nav\""
         # check if text allready exist
         with open(self.content_path_file_name, "r", encoding="utf-8") as opf_file:
             xml_opf_lines = [x.strip() for x in opf_file.readlines()]
@@ -1386,6 +1452,14 @@ class ClasseFet:
             if line == txt2add:
                 to_add = False
                 break
+        new_xml = []
+        for line in xml_opf_lines:
+            if not del_txt in line:
+                new_xml.append(line + "\n")
+        with open(self.content_path_file_name, "w", encoding="utf-8") as opf_file:
+            opf_file.writelines(new_xml)
+
+
 
         if to_add:
             v_return, n_changes = self.add_line(self.content_path_file_name, "manifest", txt2add)
@@ -3243,12 +3317,21 @@ class ClasseFet:
                 f.write(xml_data_new)
 
         # prepare the toc xml
+        new_ref_txt = "    <link href=\"../Styles/exercises_v02_02.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
+        new_ref_txt += "    <link href=\"../Styles/fet_styles_v02_04.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
+        new_ref_txt += "    <link href=\"../Styles/pw_table_style_v02_06.css\" rel=\"stylesheet\" type=\"text/css\"/>\n"
+        new_ref_txt += "    <script src=\"../Misc/validation_fr_jo_v02_02.js\" type=\"text/javascript\"></script>\n"
+
         toc_beg = "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"no\" ?>\n" \
                     "<!DOCTYPE html>\n" \
                     "<html xmlns=\"http://www.w3.org/1999/xhtml\" xmlns:epub=\"http://www.idpf.org/2007/ops\">\n" \
                     "<head>\n" \
                     "	<title>Table des matieres</title>\n" \
                     "    <meta charset=\"utf-8\"/>\n" \
+                    "    <link href=\"../Styles/exercises_v02_02.css\" rel=\"stylesheet\" type=\"text/css\"/>\n" \
+                    "    <link href=\"../Styles/fet_styles_v02_04.css\" rel=\"stylesheet\" type=\"text/css\"/>\n" \
+                    "    <link href=\"../Styles/pw_table_style_v02_06.css\" rel=\"stylesheet\" type=\"text/css\"/>\n" \
+                    "    <script src=\"../Misc/validation_fr_jo_v02_02.js\" type=\"text/javascript\"></script>\n" \
                     "</head>\n" \
                     "<body>\n" \
                     "    <nav epub:type=\"toc\" id=\"toc\">\n" \
