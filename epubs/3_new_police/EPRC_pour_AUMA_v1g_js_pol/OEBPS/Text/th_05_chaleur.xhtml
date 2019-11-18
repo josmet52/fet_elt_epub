@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Effets_thermiques_sur_R
+    </title>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="FET_toc_id_012"><span>Section 3 : Effets thermiques du courant électrique</span></h1>
+        <h2 id="sigil_toc_id_3"><span>5.5 Effets thermiques sur les résistances<br/></span></h2>
+        <p>
+            La résistance de la plupart des matériaux conducteurs (cuivre, aluminium, argent) augmente avec la température en raison de l’agitation accrue des atomes.
+        </p>
+        <p>
+            Par contre, la résistance du carbone et des matériaux semi-conducteurs employés dans la fabrication de certaines résistances, diodes, transistors, etc. diminue lorsque la température augmente.
+        </p>
+        <p>
+            Des alliages, comme le constantan et le chrome-nickel ont une résistance presque constante lorsque la température varie.
+        </p>
+        <h3 id="FET_toc_id_013" class="sigil_not_in_toc">
+            5.5.1 Coefficient de température des résistances
+        </h3>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Définition de la grandeur
+            </b>
+        </h4>
+        <p>
+            Le coefficient de température représente la variation de résistance de différentes matières pour une même élévation de température à partir de 20º C.
+        </p>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Définition de l’unité
+            </b>
+        </h4>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+                    <p>
+                        Le coefficient de température indique la variation de résistance en ohms, pour une résistance de un ohm lorsque sa température varie de un degré Celsius.
+                    </p>
+                    <p>
+                        Si le coefficient est positif, la résistance augmente avec la température.
+                    </p>
+                    <p>
+                        Si le coefficient est négatif, la résistance diminue avec la température.
+                    </p>
+                    <p>
+                        Si le coefficient est nul, la résistance ne varie pas avec la température.
+                    </p>
+                </div>
+                <div class="fet_cellule_w35">
+                    <img src="../Images/6cfb446c19a54c8cafd0721e1f55fa5e.png" alt="image manquante"/>
+                </div>
+            </div>
+        </div>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Constantes physiques
+            </b>
+        </h4>
+        <div class="fet_tableau" style="table-layout:auto; width:40%; margin-left:30px;">
+            <div class="fet_ligne">
+                <div class="fet_cellule_cadre_entete">
+                    Matières
+                </div>
+                <div class="fet_cellule_cadre_entete">
+                    Coefficiant de température α
+                    <br/>
+                    à 20 °C en [1/°C]
+                </div>
+            </div>
+            <div class="fet_ligne">
+                <div class="fet_cellule_cadre_ligne">
+                    Cuivre
+                </div>
+                <div class="fet_cellule_cadre_ligne">
+                    0.004
+                </div>
+            </div>
+            <div class="fet_ligne">
+                <div class="fet_cellule_cadre_ligne">
+                    Tungstène
+                </div>
+                <div class="fet_cellule_cadre_ligne">
+                    0.005
+                </div>
+            </div>
+            <div class="fet_ligne">
+                <div class="fet_cellule_cadre_ligne">
+                    Chrome-nickel
+                </div>
+                <div class="fet_cellule_cadre_ligne">
+                    0.0002
+                </div>
+            </div>
+            <div class="fet_ligne">
+                <div class="fet_cellule_cadre_ligne">
+                    Constantan
+                </div>
+                <div class="fet_cellule_cadre_ligne">
+                    0.00004
+                </div>
+            </div>
+            <div class="fet_ligne">
+                <div class="fet_cellule_cadre_ligne">
+                    Charbon
+                </div>
+                <div class="fet_cellule_cadre_ligne">
+                    -0.0003
+                </div>
+            </div>
+        </div>
+        <p>
+            Pour d’autres matières, on consultera un formulaire technique sous la rubrique « constantes physiques ».
+        </p>
+        <h3 id="FET_toc_id_014" class="sigil_not_in_toc">
+            5.5.2 Variation de la résistance avec la température
+        </h3>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+                    <p>
+                        La variation de résistance est proportionnelle à la variation de température ainsi qu’à la valeur de la résistance à 20 °C.
+                    </p>
+                </div>
+                <div class="fet_cellule_w35">
+                    <img src="../Images/6e597f7f05114919b07e06180b624592.png" alt="image manquante"/>
+                </div>
+            </div>
+        </div>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Formules
+            </b>
+        </h4>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+                    <br/>
+                    <p style="text-align: justify;">
+                        ΔR : variation de la résistance en ohms [Ω]
+                    </p>
+                    <p style="text-align: justify;">
+                        R
+                        <sub>
+                            20°
+                        </sub>
+                        : résistance à 20° en ohms[Ω]
+                    </p>
+                    <p style="text-align: justify;">
+                        α : coefficiant de température [1/°C]
+                    </p>
+                    <p style="text-align: justify;">
+                        R
+                        <sub>
+                            θ
+                        </sub>
+                        : résistance à la température donnée en ohms [Ω]
+                    </p>
+                    <p style="text-align: justify;">
+                        θ : température donnée [°C]
+                    </p>
+                </div>
+                <div class="fet_cellule_w35">
+                    <p class="fet_formula">
+                        Δ
+                        <i>
+                            R
+                        </i>
+                        =
+                        <i>
+                            R
+                        </i>
+                        <sub>
+                            20
+                        </sub>
+                        °·α · (θ - 20)
+                    </p>
+                    <br/>
+                    <br/>
+                    <p class="fet_formula">
+                        <span>
+                            <i>
+                                R
+                            </i>
+                        </span>
+                        <span style="vertical-align: sub;">
+                            θ
+                        </span>
+                        <span>
+                            =
+                            <i>
+                                R
+                            </i>
+                            <sub>
+                                20
+                            </sub>
+                        </span>
+                        °
+                        <span>
+                            +
+                        </span>
+                        Δ
+                        <span>
+                            <i>
+                                R
+                            </i>
+                        </span>
+                    </p>
+                    <br/>
+                    <p>
+                        <span>
+                            d’où:
+                        </span>
+                    </p>
+                    <p class="fet_formula">
+                        <i>
+                            R
+                        </i>
+                        <span style="vertical-align: sub;">
+                            θ
+                        </span>
+                        =
+                        <i>
+                            R
+                        </i>
+                        <sub>
+                            20
+                        </sub>
+                        °(1+α·(θ - 20))
+                    </p>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Remarques
+            </b>
+        </h4>
+        <p>
+            Le coefficient de température est donné pour une température de 20°C.
+        </p>
+        <p>
+            <i>
+                R
+            </i>
+            <sub>
+                20º
+            </sub>
+            est donc toujours la résistance pour une température de 20°C (température de référence).
+        </p>
+        <h4 class="sigil_not_in_toc">
+            <b>
+                Exemple
+            </b>
+        </h4>
+        <p>
+            Quelle est la résistance d’un fil de cuivre à 56°C, si sa résistance à 20°C est de 9,8 Ω ?
+        </p>
+        <p>
+            Résistance à chaud:
+            <br/>
+            <i>
+                R
+            </i>
+            θ=
+            <i>
+                R
+            </i>
+            <sub>
+                20º
+            </sub>
+            <i>
+                ·
+            </i>
+            (1 + α
+            <span>
+            </span>
+            <i>
+                ·
+            </i>
+            (θ
+            <span>
+            </span>
+            - 20)) = 9,8
+            <i>
+                ·
+            </i>
+            (1 + 0,004
+            <i>
+                ·
+            </i>
+            (56 - 20))
+            <b>
+                =
+            </b>
+            <b>
+                11,2
+            </b>
+            Ω
+        </p>
+    </div>
+
+<br/></body>
+</html>
+

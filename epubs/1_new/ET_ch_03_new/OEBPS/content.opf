@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="pubId" version="3.0">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:title id="title">ET ch 03</dc:title>
+<dc:identifier id="pubId">9ad1ba95c7d740eb8d2f01eb9770dc86</dc:identifier>
+<dc:language>fr</dc:language>
+<meta property="dcterms:modified">2018-04-16T08:06:03Z</meta>
+<meta content="cover" name="cover"/>
+<meta content="0.9.8" name="Sigil version"/>
+</metadata>
+<manifest>
+<item href="Text/th_01.xhtml" id="th_01.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+<item href="Text/cover.xhtml" id="cover.xhtml" media-type="application/xhtml+xml" properties="svg scripted"/>
+<item href="Text/page_reference.xhtml" id="page_reference.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+<item href="Text/page_copyright.xhtml" id="page_copyright.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+<item href="Fonts/times.ttf" id="font_1" media-type="application/x-font-truetype"/>
+<item href="Fonts/timesbd.ttf" id="font_2" media-type="application/x-font-truetype"/>
+<item href="Fonts/timesi.ttf" id="font_3" media-type="application/x-font-truetype"/>
+<item href="Fonts/timesbi.ttf" id="font_4" media-type="application/x-font-truetype"/>
+<item href="Images/cover_Electrotechnique.png" id="cover" media-type="image/png" properties="cover-image"/>
+<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+<item href="Text/th_02.xhtml" id="th_02.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+<item href="Text/th_03.xhtml" id="th_03.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+<item href="Text/th_05.xhtml" id="th_05.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+<item id="x40.jpg" href="Images/40.jpg" media-type="image/jpg"/>
+<item id="x41.jpg" href="Images/41.jpg" media-type="image/jpg"/>
+<item id="x115_38_0.jpg" href="Images/115_38_0.jpg" media-type="image/jpg"/>
+<item id="x116_39_0.jpg" href="Images/116_39_0.jpg" media-type="image/jpg"/>
+<item id="x117_39_1.jpg" href="Images/117_39_1.jpg" media-type="image/jpg"/>
+<item id="x118_40_0.jpg" href="Images/118_40_0.jpg" media-type="image/jpg"/>
+<item id="x119_40_1.jpg" href="Images/119_40_1.jpg" media-type="image/jpg"/>
+<item id="x123_42_0.jpg" href="Images/123_42_0.jpg" media-type="image/jpg"/>
+<item id="x124_42_1.jpg" href="Images/124_42_1.jpg" media-type="image/jpg"/>
+<item id="x125_42_2.jpg" href="Images/125_42_2.jpg" media-type="image/jpg"/>
+<item id="x200_36_0.png" href="Images/200_36_0.png" media-type="image/png"/>
+<item id='validation_fr_jo_v02_02.js' href='Misc/validation_fr_jo_v02_02.js' media-type='application/javascript'/>
+<item id='exercises_v02_02.css' href='Styles/exercises_v02_02.css' media-type='text/css'/>
+<item id='fet_styles_v02_04.css' href='Styles/fet_styles_v02_04.css' media-type='text/css'/>
+<item id='pw_table_style_v02_06.css' href='Styles/pw_table_style_v02_06.css' media-type='text/css'/>
+<item id="nav.xhtml" href="Text/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+<item id="x7e757d1abb52485aab22c936ea0c3858.png" href="Images/7e757d1abb52485aab22c936ea0c3858.png" media-type="image/png"/>
+<item id="x07937d6c8a8e4870b9c46c2cf4afb4e9.png" href="Images/07937d6c8a8e4870b9c46c2cf4afb4e9.png" media-type="image/png"/>
+<item id="f5664c6bc4c1461498ef7a0f4de096d5.png" href="Images/f5664c6bc4c1461498ef7a0f4de096d5.png" media-type="image/png"/>
+<item id="ab50ac2b0ad545ed9ebe30af24448f38.jpg" href="Images/ab50ac2b0ad545ed9ebe30af24448f38.jpg" media-type="image/jpeg"/>
+<item id="x090800bd5fc64c0998a7016652800e6e.jpg" href="Images/090800bd5fc64c0998a7016652800e6e.jpg" media-type="image/jpeg"/>
+<item id="b504babc6af6466b9fbca5bb671bcf25.jpg" href="Images/b504babc6af6466b9fbca5bb671bcf25.jpg" media-type="image/jpeg"/>
+<item id="x5afa6ebc1e5e49a88a02f8322f30ee76.jpg" href="Images/5afa6ebc1e5e49a88a02f8322f30ee76.jpg" media-type="image/jpeg"/>
+<item id="x6385b25c679a439abe98d2ca9d47899d.png" href="Images/6385b25c679a439abe98d2ca9d47899d.png" media-type="image/png"/>
+<item id="cdce78f497e74021bb715c42dabd62de.jpg" href="Images/cdce78f497e74021bb715c42dabd62de.jpg" media-type="image/jpeg"/>
+<item id="deb77fb5ff934bf9afe83cee569a9fae.jpg" href="Images/deb77fb5ff934bf9afe83cee569a9fae.jpg" media-type="image/jpeg"/>
+<item id="x041d989bf59745bfb0fc29133cc56f7d.jpg" href="Images/041d989bf59745bfb0fc29133cc56f7d.jpg" media-type="image/jpeg"/>
+<item id="de3a801b8645444bac206351d2f554c8.jpg" href="Images/de3a801b8645444bac206351d2f554c8.jpg" media-type="image/jpeg"/>
+<item id="x5aa4de5bf9ae476493eb669304362589.jpg" href="Images/5aa4de5bf9ae476493eb669304362589.jpg" media-type="image/jpeg"/>
+<item id="x60a52285c04346db9bab71ff84bd14f2.jpg" href="Images/60a52285c04346db9bab71ff84bd14f2.jpg" media-type="image/jpeg"/>
+<item id="x254d17bb85f14547bfdea97356981a24.jpg" href="Images/254d17bb85f14547bfdea97356981a24.jpg" media-type="image/jpeg"/>
+<item id="x24d63167016f4ebabc77c603e7c18e53.jpg" href="Images/24d63167016f4ebabc77c603e7c18e53.jpg" media-type="image/jpeg"/>
+<item id="x5a062a1b3de44fceac4f3803281aa624.jpg" href="Images/5a062a1b3de44fceac4f3803281aa624.jpg" media-type="image/jpeg"/>
+<item id="da65b86c131a484d97ee14d845f9e6e3.jpg" href="Images/da65b86c131a484d97ee14d845f9e6e3.jpg" media-type="image/jpeg"/>
+<item id="x8c5898b6db81479da125c7b74d7b4c81.jpg" href="Images/8c5898b6db81479da125c7b74d7b4c81.jpg" media-type="image/jpeg"/>
+<item id="f83f96a22d4d4340a56c56f98700837c.jpg" href="Images/f83f96a22d4d4340a56c56f98700837c.jpg" media-type="image/jpeg"/>
+<item id="x71463b70c8b8482db1c1eadeb48b357c.jpg" href="Images/71463b70c8b8482db1c1eadeb48b357c.jpg" media-type="image/jpeg"/>
+<item id="x183c85610abf441d8166730ae72257b9.jpg" href="Images/183c85610abf441d8166730ae72257b9.jpg" media-type="image/jpeg"/>
+<item id="x22a34dc4617b44dd8d4bb445836aa5f5.jpg" href="Images/22a34dc4617b44dd8d4bb445836aa5f5.jpg" media-type="image/jpeg"/>
+<item id="e6de582bb77b48b9a23d64b4958f9fb4.jpg" href="Images/e6de582bb77b48b9a23d64b4958f9fb4.jpg" media-type="image/jpeg"/>
+<item id="f70cc377314d499aab7d5b91bab4cb0f.jpg" href="Images/f70cc377314d499aab7d5b91bab4cb0f.jpg" media-type="image/jpeg"/>
+<item id="x9c8ed57a0f844c16a9cbf5180d92e085.jpg" href="Images/9c8ed57a0f844c16a9cbf5180d92e085.jpg" media-type="image/jpeg"/>
+<item id="df9c38d5e2fc4096bad6e7fcaf715baa.jpg" href="Images/df9c38d5e2fc4096bad6e7fcaf715baa.jpg" media-type="image/jpeg"/>
+<item id="x7a1c0d28cecf486b9b379dceec7eb8a0.jpg" href="Images/7a1c0d28cecf486b9b379dceec7eb8a0.jpg" media-type="image/jpeg"/>
+<item id="x000d8b0ef4b04502bb40231fe9ac5426.jpg" href="Images/000d8b0ef4b04502bb40231fe9ac5426.jpg" media-type="image/jpeg"/>
+<item id="fda06a61068a4b66acf768fa502e9bba.jpg" href="Images/fda06a61068a4b66acf768fa502e9bba.jpg" media-type="image/jpeg"/>
+<item id="b16e62cb72474d1daa791762f636f283.jpg" href="Images/b16e62cb72474d1daa791762f636f283.jpg" media-type="image/jpeg"/>
+<item id="ca8f7d1de03c4ab2ae5e82e3d3c08b1f.jpg" href="Images/ca8f7d1de03c4ab2ae5e82e3d3c08b1f.jpg" media-type="image/jpeg"/>
+<item id="a0a8b271e589490cb7efdeeb24f1e43f.jpg" href="Images/a0a8b271e589490cb7efdeeb24f1e43f.jpg" media-type="image/jpeg"/>
+<item id="x21b1b1f830b0457badede9cfc00569e6.jpg" href="Images/21b1b1f830b0457badede9cfc00569e6.jpg" media-type="image/jpeg"/>
+<item id="x329cade17f7746edb37f935cdd9828c3.jpg" href="Images/329cade17f7746edb37f935cdd9828c3.jpg" media-type="image/jpeg"/>
+<item id="x396e4a90334b411a906bc8de8ff83aff.jpg" href="Images/396e4a90334b411a906bc8de8ff83aff.jpg" media-type="image/jpeg"/>
+<item id="x06078546d16941e38430460e87450848.jpg" href="Images/06078546d16941e38430460e87450848.jpg" media-type="image/jpeg"/>
+<item id="x8d1e3d28b1e349119567a2fe9ee83ece.jpg" href="Images/8d1e3d28b1e349119567a2fe9ee83ece.jpg" media-type="image/jpeg"/>
+<item id="x523edcf77b4c4af89b6778f147b6757f.jpg" href="Images/523edcf77b4c4af89b6778f147b6757f.jpg" media-type="image/jpeg"/>
+<item id="x0895f9ccd5bd4089812b16d83069a289.jpg" href="Images/0895f9ccd5bd4089812b16d83069a289.jpg" media-type="image/jpeg"/>
+<item id="def2b50213d44bf29c0f3e95b95ed698.jpg" href="Images/def2b50213d44bf29c0f3e95b95ed698.jpg" media-type="image/jpeg"/>
+<item id="x19954f092e544716874db5fa8ba55f54.jpg" href="Images/19954f092e544716874db5fa8ba55f54.jpg" media-type="image/jpeg"/>
+<item id="x30bb9ab3575e46ca918b261ebd24773d.jpg" href="Images/30bb9ab3575e46ca918b261ebd24773d.jpg" media-type="image/jpeg"/>
+</manifest>
+<spine toc="ncx">
+<itemref idref="cover.xhtml" linear="yes"/>
+<itemref idref="page_copyright.xhtml" linear="yes"/>
+<itemref idref="th_01.xhtml" linear="yes"/>
+<itemref idref="th_02.xhtml"/>
+<itemref idref="th_03.xhtml"/>
+<itemref idref="th_05.xhtml"/>
+<itemref idref="page_reference.xhtml" linear="yes"/>
+<itemref idref="nav.xhtml"/>
+</spine>
+</package>

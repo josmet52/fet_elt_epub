@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="9ad1ba95c7d740eb8d2f01eb9770dc86"/>
+    <meta name="dtb:depth" content="2" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+<docTitle>
+  <text>ET_ch_04_new</text>
+</docTitle>
+<navMap>
+<navPoint id="navPoint01">
+<navLabel>
+<text>  Masse (4.1)</text>
+</navLabel>
+<content src="Text/th_01.xhtml#FET_toc_id_001"/>
+</navPoint>
+<navPoint id="navPoint02">
+<navLabel>
+<text>  Force (4.2)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_002"/>
+</navPoint>
+<navPoint id="navPoint03">
+<navLabel>
+<text>  Force de pesanteur (4.3)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_003"/>
+</navPoint>
+<navPoint id="navPoint04">
+<navLabel>
+<text>  Energie (4.4)</text>
+</navLabel>
+<content src="Text/th_04.xhtml#FET_toc_id_004"/>
+</navPoint>
+<navPoint id="navPoint05">
+<navLabel>
+<text>  Energie mécanique ou travail (4.5)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_005"/>
+</navPoint>
+<navPoint id="navPoint06">
+<navLabel>
+<text> En savoir plus…</text>
+</navLabel>
+<content src="Text/th_06.xhtml#FET_toc_id_006"/>
+</navPoint>
+<navPoint id="navPoint07">
+<navLabel>
+<text>  Puissance mécanique (4.6)</text>
+</navLabel>
+<content src="Text/th_07.xhtml#FET_toc_id_007"/>
+</navPoint>
+<navPoint id="navPoint08">
+<navLabel>
+<text>  Energie électrique (4.7)</text>
+</navLabel>
+<content src="Text/th_08.xhtml#FET_toc_id_008"/>
+</navPoint>
+<navPoint id="navPoint09">
+<navLabel>
+<text>  Mesure de l’énergie (4.7.1)</text>
+</navLabel>
+<content src="Text/th_08.xhtml#FET_toc_id_009"/>
+</navPoint>
+<navPoint id="navPoint10">
+<navLabel>
+<text>  Puissance électrique (4.8)</text>
+</navLabel>
+<content src="Text/th_09.xhtml#FET_toc_id_010"/>
+</navPoint>
+<navPoint id="navPoint11">
+<navLabel>
+<text>  Mesure de la puissance (4.8.1)</text>
+</navLabel>
+<content src="Text/th_09.xhtml#FET_toc_id_011"/>
+</navPoint>
+<navPoint id="navPoint12">
+<navLabel>
+<text>  Rendement (4.9)</text>
+</navLabel>
+<content src="Text/th_10.xhtml#FET_toc_id_012"/>
+</navPoint>
+<navPoint id="navPoint13">
+<navLabel>
+<text>  Rendement d’un groupe de machines (4.9.1)</text>
+</navLabel>
+<content src="Text/th_10.xhtml#FET_toc_id_013"/>
+</navPoint>
+<navPoint id="navPoint14">
+<navLabel>
+<text>  Exercices (4.10)</text>
+</navLabel>
+<content src="Text/th_11.xhtml#FET_toc_id_014"/>
+</navPoint>
+</navMap></ncx>

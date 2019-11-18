@@ -1,0 +1,389 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        myTableStyle
+    </title>
+    <link href="../Styles/exercises_v02_02.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="FET_toc_id_038"><span><b>12.8 Moteurs asynchrones monophasés</b></span></h1>
+        <h2 id="FET_toc_id_039"><b>12.8.1 Moteur monophasé à induction (enroulement auxiliaire)</b></h2>
+        <p>
+            Si le moteur est constitué dʼun seul enroulement (E
+            <sub>
+                p
+            </sub>
+            ), le champ magnétique créé par lʼenroulement est pulsant et non tournant. Le moteur ne tourne pas de lui-même, il faut le «lancer» manuellement.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/bf10388c64e5468c99204ed97e391ad9.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Symbole
+        </p>
+        <p>
+            Au moyen dʼun deuxième enroulement raccordé en parallèle, appelé enroulement auxiliaire (E
+            <sub>
+                a
+            </sub>
+            ), associé avec un condensateur de service (
+            <i>
+                C
+            </i>
+            <sub>
+                A
+            </sub>
+            ) en série, on crée un deuxième champ magnétique pulsant déphasé du champ magnétique principal. La résultante de ces deux champs est un champ magnétique tournant provoquant la rotation du rotor.
+        </p>
+        <p>
+            Pour augmenter le couple de démarrage, un condensateur de démarrage (
+            <i>
+                C
+            </i>
+            <sub>
+                B
+            </sub>
+            ) peut être branché en parallèle avec le condensateur de service (
+            <i>
+                C
+            </i>
+            <sub>
+                A
+            </sub>
+            ), puis déconnecté au moyen dʼun contact centrifuge lorsque le moteur a atteint environ 70 % de la fréquence de rotation nominale.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/85cfe8707d4a456284871f29dcd4303e.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Représentation temporelle du champ tournant
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/b89c7ad1d8724819bf2485766e4732d0.jpg" alt="image manquante"/>
+            </div>
+        </div>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/a00387b782e549abacef49e4d0776962.jpg" alt="image manquante"/>
+            </div>
+        </div>
+        <h5>
+            <b>
+                Changement du sens de rotation
+            </b>
+        </h5>
+        <p>
+            Pour changer le sens de rotation du moteur, on inverse le sens du courant dans lʼenroulement auxiliaire par rapport au courant dans lʼenroulement principal (croiser le raccordement sur les bornes Z1 et Z2).
+        </p>
+        <h5>
+            <b>
+                Caractéristiques
+            </b>
+        </h5>
+        <ul>
+            <li>
+                bon couple de démarrage;
+            </li>
+            <li>
+                jusquʼà une puissance dʼenviron 1,1 kW.
+            </li>
+        </ul>
+        <h5>
+            <b>
+                Plaque signalétique
+            </b>
+        </h5>
+        <p>
+            Le moteur asynchrone monophasé porte une plaque signalétique de ce type:
+        </p>
+        <h5>
+            <b>
+                Applications
+            </b>
+        </h5>
+        <ul>
+            <li>
+                compresseurs de réfrigérateurs;
+            </li>
+            <li>
+                pompes de piscines.
+            </li>
+        </ul>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/70906b351bfe49f9883b40e0c2d876ec.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h2 id="FET_toc_id_040"><b>12.8.2 Moteur asynchrone triphasé fonctionnant en monophasé</b></h2>
+        <p>
+            Les moteurs triphasés, dont la puissance est inférieure à environ 1 kW, peuvent être raccordés en monophasé. Il faut créer, au moyen dʼun condensateur (
+            <i>
+                C
+            </i>
+            <sub>
+                A
+            </sub>
+            ), un champ tournant pour que le moteur puisse démarrer de lui-même (selon le même principe que le moteur monophasé avec enroulement auxiliaire).
+        </p>
+        <p>
+            Le moteur triphasé raccordé en monophasé doit avoir, dans ce cas, des enroulements prévus pour la tension de 230 V.
+            <br/>
+            La puissance réactive du condensateur peut être calculée au moyen de la règle empirique suivante:
+        </p>
+        <p>
+            <i>
+                Q
+            </i>
+            <sub>
+                C
+            </sub>
+            <i>
+                ≈
+            </i>
+            1 kvar par 0,736 kW de puissance utile
+            <i>
+                P
+            </i>
+            <sub>
+                2
+            </sub>
+            .
+        </p>
+        <p>
+            Avec des enroulements prévus en 230 V et une tension dʼalimentation de 230 V:
+            <i>
+                C
+            </i>
+            <sub>
+                A
+            </sub>
+            <i>
+                ≈
+            </i>
+            82
+            <i>
+                µ
+            </i>
+            F pour 1 kW de puissance utile
+            <i>
+                P
+            </i>
+            <sub>
+                2
+            </sub>
+            .
+        </p>
+        <p>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/bb7d3c2434f145ae9d32773426122428.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Dans chaque cas, la grandeur du condensateur doit être vérifiée par un essai. Les courants dans les enroulements doivent être à peu près égaux et il faut les mesurer.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/bdf9da08574d490598720c7223eccf93.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Plaque à bornes
+        </p>
+        <h5>
+            <b>
+                Changement du sens de rotation
+            </b>
+        </h5>
+        <p>
+            Pour inverser le sens de rotation du moteur, on modifie le raccordement du condensateur.
+        </p>
+        <h5>
+            <b>
+                Caractéristiques
+            </b>
+        </h5>
+        <p>
+            Les caractéristiques du moteur vont subir des modifications par rapport au raccordement en triphasé. La puissance en monophasé représente le 60 % de la puissance nominale et le couple de démarrage le 30 % du couple nominal.
+        </p>
+        <h5>
+            <b>
+                Remarque
+            </b>
+        </h5>
+        <p>
+            Des convertisseurs électroniques permettent également de raccorder des moteurs triphasés sur une ligne monophasée Lʼentrée du convertisseur se fait en 230 V et la. sortie en 3 x 230 V.
+        </p>
+        <p>
+            Ce système nécessite des moteurs à enroulements prévus pour 230 V. De plus, il est limité aux faibles puissances.
+        </p>
+        <h5>
+            <b>
+                Plaque signalétique
+            </b>
+        </h5>
+        <p>
+            Un moteur triphasé pouvant fonctionner en monophasé porte une plaque signalétique de ce type:
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/dcff2c7edcdc496e809fb93ae3609bf3.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h5>
+            <b>
+                Applications
+            </b>
+        </h5>
+        <p>
+            Partout où une amenée de courant triphasée nʼest pas possible, sans avoir besoin dʼun grand couple au démarrage.
+        </p>
+        <h2 id="FET_toc_id_041"><b>12.8.3 Moteur à pôles bagués</b></h2>
+        <p>
+            Ce moteur, de construction robuste et simple, est un moteur monophasé asynchrone qui utilise des bagues en court-circuit pour créer le champ magnétique tournant. La bobine statorique, soumise à une tension alternative, engendre un flux magnétique principal pulsant. Ce flux magnétique induit des courants dans le rotor et les bagues en court-circuit. Dans les bagues, les courants induits produisent un champ magnétique décalé par rapport au champ principal.
+        </p>
+        <p>
+            La résultante de ces deux champs est un champ magnétique tournant provoquant la rotation du rotor.
+        </p>
+        <p>
+            Le sens de rotation est donné, lorsquʼon regarde un pôle, de la partie non baguée à la partie baguée. Il est indépendant du raccordement de la bobine du stator et il nʼest pas possible de changer électriquement le sens de rotation.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/f27ffb91775949eead6059eb5789beb4.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h5>
+            <b>
+                Caractéristiques
+            </b>
+        </h5>
+        <ul>
+            <li>
+                le couple de démarrage est dʼenviron 50 % du couple nominal;
+            </li>
+            <li>
+                on lʼutilise pour les petites puissances (jusquʼà environ 100 W);
+            </li>
+            <li>
+                son facteur de puissance et son rendement (20 %) sont mauvais.
+            </li>
+        </ul>
+        <h5>
+            <b>
+                Applications
+            </b>
+        </h5>
+        <ul>
+            <li>
+                petits ventilateurs;
+            </li>
+            <li>
+                pompes de machines à laver.
+            </li>
+        </ul>
+        <h2 id="FET_toc_id_042"><b>12.8.4 Moteur universel</b></h2>
+        <p>
+            Le moteur universel est un petit moteur série qui fonctionne aussi bien en courant alternatif quʼen courant continu, à condition de respecter la tension appliquée, dʼoù son nom de moteur universel.
+        </p>
+        <p>
+            La théorie sur le fonctionnement de ce moteur sera décrite dans le chapitre 13 «Moteurs à courant continu» (voir paragraphe 13.2.2).
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/8385dba8b57d45d183a546c0280c0881.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Symbole
+        </p>
+        <p>
+            Contrairement au moteur monophasé à cage dʼécureuil, la fréquence de rotation, qui peut atteindre 30 000 tr/min, nʼest pas proportionnelle au nombre de pôles et à la fréquence dʼalimentation.
+        </p>
+        <p>
+            A vide, il sʼemballe et peut atteindre une vitesse dangereuse.
+        </p>
+        <p>
+            La fréquence de rotation est proportionnelle à la tension dʼalimentation et inversement proportionnelle au flux magnétique à travers lʼinduit (rotor). Ceci permet un réglage de la fréquence de rotation par résistance, auto-transformateur ou par suppression dʼune alternance (diodes).
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/4028b36c2e8c407a8930ae8e669624e4.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Caractéristique mécanique
+        </p>
+        <h5>
+            <b>
+                Changement du sens de rotation
+            </b>
+        </h5>
+        <p>
+            Lʼinversion du sens de rotation sʼobtient par changement du sens du courant dans lʼinduit par rapport à lʼinducteur (croiser le raccordement sur les bornes A1 et A2).
+        </p>
+        <h5>
+            <b>
+                Caractéristiques
+            </b>
+        </h5>
+        <ul>
+            <li>
+                couple de démarrage élevé;
+            </li>
+            <li>
+                dimension réduite du moteur;
+            </li>
+            <li>
+                peut être utilisé jusquʼà une puissance absorbée dʼenviron 1500 W.
+            </li>
+        </ul>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/fe46d5124d4e49f9af04332de51fcdf0.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h5>
+            <b>
+                Raccordement en alternatif et continu
+            </b>
+        </h5>
+        <p>
+            Dans le but dʼobtenir des caractéristiques équivalentes en continu et en alternatif, tout en appliquant la même tension, la plupart des constructeurs ont adopté la solution ci-contre.
+        </p>
+        <h5>
+            <b>
+                Applications
+            </b>
+        </h5>
+        <ul>
+            <li>
+                appareils électroménagers;
+            </li>
+            <li>
+                outils électriques.
+            </li>
+        </ul>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/e3e6543ff3de49e98ccd8ff209eaffbc.jpg" alt="image manquante"/>
+            </div>
+        </div>
+    </div>
+
+<br/></body>
+</html>
+

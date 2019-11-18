@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="9ad1ba95c7d740eb8d2f01eb9770dc86" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>ch06_FET_ELT_exercices_new</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint01">
+      <navLabel>
+        <text>Exercices 6.1 : Piles et accumulateurs : définitions</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_001"/>
+    </navPoint>
+    <navPoint id="navPoint02">
+      <navLabel>
+        <text>Exercice 6.1.7a - Piles</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_002"/>
+    </navPoint>
+    <navPoint id="navPoint03">
+      <navLabel>
+        <text>Exercice 6.1.7b - Piles</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_003"/>
+    </navPoint>
+    <navPoint id="navPoint04">
+      <navLabel>
+        <text>Exercice 6.1.7c - Force électromotrice</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_004"/>
+    </navPoint>
+    <navPoint id="navPoint05">
+      <navLabel>
+        <text>Exercice 6.1.8a - Quantité d'électricité</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_005"/>
+    </navPoint>
+    <navPoint id="navPoint06">
+      <navLabel>
+        <text>Exercice 6.1a Symbole et unité FEM</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_006"/>
+    </navPoint>
+    <navPoint id="navPoint07">
+      <navLabel>
+        <text>Exercice 6.1b Piles</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_007"/>
+    </navPoint>
+    <navPoint id="navPoint08">
+      <navLabel>
+        <text>Exercice 6.1c Pile</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_008"/>
+    </navPoint>
+    <navPoint id="navPoint09">
+      <navLabel>
+        <text>Exercice 6.1d Symbole et unité quantité d'électricité</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_009"/>
+    </navPoint>
+    <navPoint id="navPoint10">
+      <navLabel>
+        <text>Exercice 6.1e Piles - application</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_010"/>
+    </navPoint>
+    <navPoint id="navPoint11">
+      <navLabel>
+        <text>Exercice 6.1f Piles - application</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_011"/>
+    </navPoint>
+    <navPoint id="navPoint12">
+      <navLabel>
+        <text>Exercice 6.1g Piles - application</text>
+      </navLabel>
+      <content src="Text/ex_03.xhtml#FET_toc_id_012"/>
+    </navPoint>
+    <navPoint id="navPoint13">
+      <navLabel>
+        <text>Exercices 6.2 : Piles</text>
+      </navLabel>
+      <content src="Text/ex_04.xhtml#FET_toc_id_013"/>
+    </navPoint>
+    <navPoint id="navPoint14">
+      <navLabel>
+        <text>Exercice 6.2b - Piles</text>
+      </navLabel>
+      <content src="Text/ex_04.xhtml#FET_toc_id_014"/>
+    </navPoint>
+    <navPoint id="navPoint15">
+      <navLabel>
+        <text>Exercice 6.2c - Piles</text>
+      </navLabel>
+      <content src="Text/ex_04.xhtml#FET_toc_id_015"/>
+    </navPoint>
+    <navPoint id="navPoint16">
+      <navLabel>
+        <text>Exercice 6.2d Piles</text>
+      </navLabel>
+      <content src="Text/ex_04.xhtml#FET_toc_id_016"/>
+    </navPoint>
+    <navPoint id="navPoint17">
+      <navLabel>
+        <text>Exercice 6.2e - Piles</text>
+      </navLabel>
+      <content src="Text/ex_04.xhtml#FET_toc_id_017"/>
+    </navPoint>
+    <navPoint id="navPoint18">
+      <navLabel>
+        <text>Exercice 6.2f - Piles</text>
+      </navLabel>
+      <content src="Text/ex_04.xhtml#FET_toc_id_018"/>
+    </navPoint>
+    <navPoint id="navPoint19">
+      <navLabel>
+        <text>Exercice 6.2g Pile</text>
+      </navLabel>
+      <content src="Text/ex_04.xhtml#FET_toc_id_019"/>
+    </navPoint>
+    <navPoint id="navPoint20">
+      <navLabel>
+        <text>Exercice 6.2h Pile</text>
+      </navLabel>
+      <content src="Text/ex_04.xhtml#FET_toc_id_020"/>
+    </navPoint>
+    <navPoint id="navPoint21">
+      <navLabel>
+        <text>Exercices 6.3 : Accumulateurs</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#FET_toc_id_021"/>
+    </navPoint>
+    <navPoint id="navPoint22">
+      <navLabel>
+        <text>Exercice 6.3.10a - Accumulateurs - Charge décharge des accumulateurs Ni-Cd</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#FET_toc_id_022"/>
+    </navPoint>
+    <navPoint id="navPoint23">
+      <navLabel>
+        <text>Exercice 6.3.10b Accumulateurs - charge et décharge des accumulateurs Ni-Cd</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#FET_toc_id_023"/>
+    </navPoint>
+    <navPoint id="navPoint24">
+      <navLabel>
+        <text>Exercice 6.3.2a - Accumulateur au plomb</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#FET_toc_id_024"/>
+    </navPoint>
+    <navPoint id="navPoint25">
+      <navLabel>
+        <text>Exercice 6.3a Accumulateurs définition</text>
+      </navLabel>
+      <content src="Text/ex_05.xhtml#FET_toc_id_025"/>
+    </navPoint>
+    <navPoint id="navPoint26">
+      <navLabel>
+        <text>Exercices 6.4 : Couplage des générateurs chimiques</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_026"/>
+    </navPoint>
+    <navPoint id="navPoint27">
+      <navLabel>
+        <text>Exercice 6.4a - Piles - couplage de générateurs chimiques</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_027"/>
+    </navPoint>
+    <navPoint id="navPoint28">
+      <navLabel>
+        <text>Exercice 6.4b - Piles - couplage de générateurs chimiques</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_028"/>
+    </navPoint>
+    <navPoint id="navPoint29">
+      <navLabel>
+        <text>Exercice 6.4c - Piles - couplage de générateurs chimiques</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_029"/>
+    </navPoint>
+    <navPoint id="navPoint30">
+      <navLabel>
+        <text>Exercice 6.4d - Piles - couplage de générateurs chimiques</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_030"/>
+    </navPoint>
+    <navPoint id="navPoint31">
+      <navLabel>
+        <text>Exercice 6.4e - Piles - couplage de générateurs chimiques</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_031"/>
+    </navPoint>
+    <navPoint id="navPoint32">
+      <navLabel>
+        <text>Exercice 6.4f - Piles - couplage de générateurs chimiques</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_032"/>
+    </navPoint>
+    <navPoint id="navPoint33">
+      <navLabel>
+        <text>Exercice 6.4g Accumulateurs</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_033"/>
+    </navPoint>
+    <navPoint id="navPoint34">
+      <navLabel>
+        <text>Exercice 6.4h Accumulateurs</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_034"/>
+    </navPoint>
+    <navPoint id="navPoint35">
+      <navLabel>
+        <text>Exercice 6.4i Batteries - application</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_035"/>
+    </navPoint>
+    <navPoint id="navPoint36">
+      <navLabel>
+        <text>Exercice 6.4j Batteries - application</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_036"/>
+    </navPoint>
+    <navPoint id="navPoint37">
+      <navLabel>
+        <text>Exercice 6.4k Batteries - application</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_037"/>
+    </navPoint>
+    <navPoint id="navPoint38">
+      <navLabel>
+        <text>Exercice 6.4l Batteries - application</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_038"/>
+    </navPoint>
+    <navPoint id="navPoint39">
+      <navLabel>
+        <text>Exercice 6.4m Batteries - application</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_039"/>
+    </navPoint>
+    <navPoint id="navPoint40">
+      <navLabel>
+        <text>Exercice 6.4n Batteries - application</text>
+      </navLabel>
+      <content src="Text/ex_06.xhtml#FET_toc_id_040"/>
+    </navPoint>
+    <navPoint id="navPoint41">
+      <navLabel>
+        <text>Exercices chapitre 6 : global</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_041"/>
+    </navPoint>
+    <navPoint id="navPoint42">
+      <navLabel>
+        <text>Exercice 6m - Piles et accumulateurs</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_042"/>
+    </navPoint>
+    <navPoint id="navPoint43">
+      <navLabel>
+        <text>Exercice 6l - Piles et accumulateurs</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_043"/>
+    </navPoint>
+    <navPoint id="navPoint44">
+      <navLabel>
+        <text>Exercice 6k - Piles et accumulateurs</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_044"/>
+    </navPoint>
+    <navPoint id="navPoint45">
+      <navLabel>
+        <text>Exercice 6j - Piles et accumulateurs - application</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_045"/>
+    </navPoint>
+    <navPoint id="navPoint46">
+      <navLabel>
+        <text>Exercice 6i - Piles et accumulateurs</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_046"/>
+    </navPoint>
+    <navPoint id="navPoint47">
+      <navLabel>
+        <text>Exercice 6h - Piles et accumulateurs</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_047"/>
+    </navPoint>
+    <navPoint id="navPoint48">
+      <navLabel>
+        <text>Exercice 6g - Piles et accumulateurs</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_048"/>
+    </navPoint>
+    <navPoint id="navPoint49">
+      <navLabel>
+        <text>Exercice 6e - Piles et accumulateurs - application</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_049"/>
+    </navPoint>
+    <navPoint id="navPoint50">
+      <navLabel>
+        <text>Exercice 6d - Piles et accumulateurs - application</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_050"/>
+    </navPoint>
+    <navPoint id="navPoint51">
+      <navLabel>
+        <text>Exercice 6c - Piles et accumulateurs - application</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_051"/>
+    </navPoint>
+    <navPoint id="navPoint52">
+      <navLabel>
+        <text>Exercice 6b - Piles et accumulateurs - application</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_052"/>
+    </navPoint>
+    <navPoint id="navPoint53">
+      <navLabel>
+        <text>Exercice 6a - piles et accumulateurs - application</text>
+      </navLabel>
+      <content src="Text/ex_07.xhtml#FET_toc_id_053"/>
+    </navPoint>
+  </navMap>
+</ncx>

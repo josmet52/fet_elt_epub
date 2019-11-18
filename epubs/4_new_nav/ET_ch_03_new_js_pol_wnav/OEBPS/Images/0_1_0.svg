@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="../Styles/sugarcube_EPUB_calculated_style.css" ?>
+<?xml-stylesheet type="text/css" href="../Styles/stylesheet.css" ?>
+<?xml-stylesheet type="text/css" href="../Styles/modal.css" ?>
+<?xml-stylesheet type="text/css" href="../Styles/portrait.css" ?>
+<?xml-stylesheet type="text/css" href="../Styles/landscape.css" ?>
+<?xml-stylesheet type="text/css" href="../Styles/mobiles.css" ?>
+<?xml-stylesheet type="text/css" href="../Styles/video.css" ?>
+<svg width="100%" height="100%" viewBox="73.0 675.0 212.0 36.0" preserveAspectRatio="xMinYMin meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <g style="font-size:10.5px;">
+        <g>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 79.3698, 696.1221)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;font-weight:bold;" font-family="Helvetica_Bold_383">Conversion</text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 137.1093, 696.1221)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;font-weight:bold;" font-family="Helvetica_Bold_383">: </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 143.52165, 696.1221)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">1 </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 154.93726, 696.1656)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">[ </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 162.4353, 688.1661)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">Ω </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 157.8594, 696.1656)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_Light_399">———— </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 173.41725, 688.1661)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">mm</text>
+            <text transform="matrix (6.825, 0.0, 0.0, 6.825, 191.4899, 684.3854)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">2 </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 199.86008, 696.1656)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">] </text>
+            <text transform="matrix (7.0, 0.0, 0.0, 7.0, 207.415, 692.1465)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">^ </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 204.7858, 696.1221)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="MathematicalPi_One_386_388">= </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 216.1552, 696.1221)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">1 </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 224.90904, 696.1221)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">· </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 230.74284, 696.1221)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">10 </text>
+            <text transform="matrix (5.85, 0.0, 0.0, 5.85, 243.59274, 692.8824)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">- </text>
+            <text transform="matrix (5.85, 0.0, 0.0, 5.85, 246.18956, 692.8824)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">6 </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 251.06729, 696.1224)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">[</text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 253.98419, 696.1224)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">Ω </text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 264.96616, 696.1224)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">m</text>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 273.71057, 696.1224)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">]</text>
+        </g>
+        <g>
+            <text transform="matrix (10.5, 0.0, 0.0, 10.5, 174.4876, 703.1659)" x="0" y="0" style="stroke:none;fill:rgb(0,0,0);fill-opacity:1.0;font-size:1.0px;" font-family="Helvetica_375">m</text>
+        </g>
+    </g>
+</svg>

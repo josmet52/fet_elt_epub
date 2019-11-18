@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="fr" lang="fr">
+
+<head>
+    <title>
+        Animation_frequence-amplitude_v1d
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/anim_styles_v02_03.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/anim_freq_ampl_oscillo_v02_02.js" type="text/javascript">
+        none
+    </script>
+</head>
+<body>
+    <h2>6.3.1 Animation et exercices : fréquence, amplitude, oscilloscope</h2>
+    <h4 class="sigil_not_in_toc">
+        <span style="font-weight: bold;">
+            Exercices
+        </span>
+    </h4>
+    <div>
+        <ol>
+            <li>
+                A l'aide de l'animation ci-dessous, déterminez la fréquence pour chacune des périodes suivantes :
+                <ol type="a">
+                    <li>
+                        1 s
+                    </li>
+                    <li>
+                        0.2 s
+                    </li>
+                    <li>
+                        50 ms
+                    </li>
+                    <li>
+                        1 ms
+                    </li>
+                </ol>
+            </li>
+            <li>
+                A l'aide de l'animation ci-dessous, déterminez la période paour chacune des fréquences ci-après :
+                <ol type="a">
+                    <li>
+                        1 Hz
+                    </li>
+                    <li>
+                        1 kHz
+                    </li>
+                    <li>
+                        50 Hz
+                    </li>
+                    <li>
+                        500 Hz
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Une onde simusoödale a une fréquence de 500 Hz. Utilisez l'animation ci-dessous pour déterminer combien de cycles elle fait en :
+                <ol type="a">
+                    <li>
+                        10 ms
+                    </li>
+                    <li>
+                        5 ms
+                    </li>
+                    <li>
+                        2.5 ms
+                    </li>
+                    <li>
+                        1 ms
+                    </li>
+                </ol>
+            </li>
+        </ol>
+    </div>
+    <div class="fet_tableau" id="tableau_id">
+        <div class="fet_ligne">
+            <div class="fet_cellule_canvas" id="cellule_canvas_id">
+                <canvas id="canvas_display_id" height="528" width="633">
+                    Holala !! ce browser ne supporte pas les animations
+                    <br/>
+                </canvas>
+            </div>
+            <div class="fet_cellule_cdes" id="cellule_cde_oscillo_id" style="display: table-cell;">
+                <div class="fet_ligne">
+                    <div class="fet_cellule_oscillo" id="cell_oscillo_cde_vdiv_id" style="padding-top: 5px;">
+                        <div class="info-container-in" id="cde_volt_div_id">
+                            <p id="txt_volt_div_id">
+                                100 V/div
+                            </p>
+                            <button class="button_plus_minus" type="button" onclick="btnVoltMoins()">
+                                -
+                            </button>
+                            <button class="button_plus_minus" type="button" onclick="btnVoltPlus()">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="fet_ligne">
+                    <div class="fet_cellule_oscillo" id="cell_oscillo_cde_msdiv_id" style="padding-top: 10px;">
+                        <div class="info-container-in" id="cde_ms_div_id">
+                            <p id="txt_ms_div_id">
+                                100 us/div
+                            </p>
+                            <button class="button_plus_minus" type="button" onclick="btnDivMoinsNew()">
+                                -
+                            </button>
+                            <button class="button_plus_minus" type="button" onclick="btnDivPlusNew()">
+                                +
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="fet_cellule_fap">
+                <div class="fet_ligne" id="cellule_tension_id" style="display: table-cell;">
+                    <div class="slide-container">
+                        <label>
+                            <input class="slider" id="slide_ampl_id" type="range" min="0" max="600" value="340" onchange="displayValueOscillo()"/>
+                        </label>
+                        <p class="lbl-slider" id="txt_ampl_id">
+                            Amplitude
+                        </p>
+                    </div>
+                    <br/>
+                    <div class="info-txt-container" id="txt_amplval_id">
+                        U
+                        <sub>
+                            efficace
+                        </sub>
+                        = 240V
+                        <br/>
+                        U
+                        <sub>
+                            crête
+                        </sub>
+                        = 340V
+                        <br/>
+                        U
+                        <sub>
+                            pp
+                        </sub>
+                        = 680V
+                    </div>
+                </div>
+                <br/>
+                <div class="fet_ligne" id="cellule_frequence_id" style="display: table-cell;">
+                    <div class="slide-container">
+                        <label>
+                            <input class="slider" id="slide_freq_id" type="range" min="1" max="1000" value="50" onchange="displayValueOscillo()"/>
+                        </label>
+                        <p class="lbl-slider" id="txt_freq_id">
+                            Fréquence
+                        </p>
+                    </div>
+                    <br/>
+                    <div class="info-txt-container" id="txt_freqval_id">
+                        Fréquence = 50 Hz
+                        <br/>
+                        Période = 20.00 ms
+                    </div>
+                    <br/>
+                </div>
+                <br/>
+                <div class="fet_ligne" id="cellule_phase_id" style="display: table-cell;">
+                    <div class="slide-container">
+                        <label>
+                            <input class="slider" id="slide_phase_id" type="range" min="0" max="360" value="0" onchange="displayValueOscillo()"/>
+                        </label>
+                        <p class="lbl-slider" id="txt_phase_id">
+                            Phase
+                            <br/>
+                            [36 °/div]
+                        </p>
+                    </div>
+                    <br/>
+                    <div class="info-txt-container" id="txt_phaseval_id">
+                        Phase = 0 °
+                        <br/>
+                        Phase = 0.00 rad
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Variables globales
+
+         // affichage des éléments
+        const show_tension = true;
+        const show_frequence = true;
+        const show_phase = true;
+        const show_oscillo = true;
+
+         // ******************************************************************
+        const color_fond_ecran = "#d9e8d9";
+        const color_divison_ecran = "#3a613a";
+        const color_border_ecran = "#243c24";
+
+        const color_courbe_1 = "#ff4500";
+        const color_courbe_2 = "#00baff";
+        const sinus_ref_color = "#90bae4"; //"#b0ceec"; //"#32cd32"; // LimeGreen
+        const color_curseur = "#00ff45";
+
+         // dimensions de reference
+        var xy_margin;
+        var line_width;
+        var resizing_ok = false;
+
+         // dimension des éléments
+        var r_display_x;
+        var x_0;
+        var x_min;
+        var x_max;
+
+        var r_display_y;
+        var y_0;
+        var y_min;
+        var y_max;
+
+        var r_base_x;
+        var r_base_y;
+
+         // reglages oscillosope
+        var nbre_grid = 10;
+        var volt_div = 100;
+        var ms_div = 2;
+        var amp_max = volt_div * 8;
+        var t_max = ms_div * nbre_grid;
+
+         // valeurs courbes
+        var freq;
+        var amp;
+        var phase;
+
+         // Initialisations
+
+         <!-- document.getElementsByTagName("body")[0].onresize = function() { -->
+         <!-- onResizeActionOscillo() -->
+         <!-- }; -->
+
+        const sleep_time = 100;
+        const id_display_values = setInterval(onResizeActionOscillo, sleep_time);
+
+        const tab_main = document.getElementById("tableau_id");
+        const canvas_element = document.getElementById("canvas_display_id");
+        const ctx = canvas_element.getContext("2d");
+
+        const lbl_amplval = document.getElementById("txt_amplval_id");
+        const lbl_ampl = document.getElementById("txt_ampl_id");
+        const slide_ampl = document.getElementById("slide_ampl_id");
+
+        const lbl_freqval = document.getElementById("txt_freqval_id");
+        const lbl_freq = document.getElementById("txt_freq_id");
+        const slide_freq = document.getElementById("slide_freq_id");
+
+
+        const lbl_phaseval = document.getElementById("txt_phaseval_id");
+        const lbl_phase = document.getElementById("txt_phase_id");
+        const slide_phase = document.getElementById("slide_phase_id");
+
+        const lbl_volt = document.getElementById("txt_volt_div_id");
+        const lbl_div = document.getElementById("txt_ms_div_id");
+
+        const cel_canvas = document.getElementById("cellule_canvas_id");
+        const cel_cde_osc = document.getElementById("cellule_cde_oscillo_id");
+
+        const cel_cde_osc_vdiv = document.getElementById("cell_oscillo_cde_vdiv_id");
+        const cel_cde_osc_msdiv = document.getElementById("cell_oscillo_cde_msdiv_id");
+
+        const cel_tension = document.getElementById("cellule_tension_id");
+        const cel_frequence = document.getElementById("cellule_frequence_id");
+        const cel_phase = document.getElementById("cellule_phase_id");
+
+        const cde_volt_div = document.getElementById("cde_volt_div_id");
+        const cde_ms_div = document.getElementById("cde_volt_div_id");
+
+        // var ms_div_list = new Array(1000, 500, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1, 0.05, 0.02, 0.01, 0.005, 0.002, 0.001)
+        var ms_div_list = new Array(1000, 500, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.2, 0.1)
+
+        onResizeActionOscillo();
+    </script>
+
+<br/></body>
+</html>
+

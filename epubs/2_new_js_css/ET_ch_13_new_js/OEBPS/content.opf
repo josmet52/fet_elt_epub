@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="pubId" version="3.0">
+<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+<dc:title id="title">ET ch 13</dc:title>
+<dc:identifier id="pubId">9ad1ba95c7d740eb8d2f01eb9770dc86</dc:identifier>
+<dc:language>fr</dc:language>
+<meta property="dcterms:modified">2018-03-18T08:27:11Z</meta>
+<meta content="cover" name="cover"/>
+<meta content="0.9.8" name="Sigil version"/>
+</metadata>
+<manifest>
+<item href="Text/th_01.xhtml" id="th_01.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+<item href="Text/cover.xhtml" id="cover.xhtml" media-type="application/xhtml+xml" properties="svg scripted"/>
+<item href="Text/page_reference.xhtml" id="page_reference.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+<item href="Text/page_copyright.xhtml" id="page_copyright.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+<item href="Fonts/times.ttf" id="font_1" media-type="application/x-font-truetype"/>
+<item href="Fonts/timesbd.ttf" id="font_2" media-type="application/x-font-truetype"/>
+<item href="Fonts/timesi.ttf" id="font_3" media-type="application/x-font-truetype"/>
+<item href="Fonts/timesbi.ttf" id="font_4" media-type="application/x-font-truetype"/>
+<item href="Images/cover_Electrotechnique.png" id="cover" media-type="image/png" properties="cover-image"/>
+<item href="toc.ncx" id="ncx" media-type="application/x-dtbncx+xml"/>
+<item href="Text/th_02.xhtml" id="th_02.xhtml" media-type="application/xhtml+xml" properties="mathml scripted"/>
+<item href="Text/th_03.xhtml" id="th_03.xhtml" media-type="application/xhtml+xml" properties="scripted" />
+<item id='validation_fr_jo_v02_02.js' href='Misc/validation_fr_jo_v02_02.js' media-type='application/javascript'/>
+<item id='exercises_v02_02.css' href='Styles/exercises_v02_02.css' media-type='text/css'/>
+<item id='fet_styles_v02_04.css' href='Styles/fet_styles_v02_04.css' media-type='text/css'/>
+<item id='pw_table_style_v02_06.css' href='Styles/pw_table_style_v02_06.css' media-type='text/css'/>
+<item id="nav.xhtml" href="Text/nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+<item id="d451afab35fe44129704013cc673a05d.png" href="Images/d451afab35fe44129704013cc673a05d.png" media-type="image/png"/>
+<item id="af7f1c4ac6db4d168392454749047912.png" href="Images/af7f1c4ac6db4d168392454749047912.png" media-type="image/png"/>
+<item id="b1b7b6e8b2884fe99c960fdfa53f9059.jpg" href="Images/b1b7b6e8b2884fe99c960fdfa53f9059.jpg" media-type="image/jpeg"/>
+<item id="x011170b246784343ae56c04f41af7f09.png" href="Images/011170b246784343ae56c04f41af7f09.png" media-type="image/png"/>
+<item id="e61a8b9e0cc6449c9b389968d46e4d2a.png" href="Images/e61a8b9e0cc6449c9b389968d46e4d2a.png" media-type="image/png"/>
+<item id="bfe9b87ec6614911be6cb6a40bb678fb.jpg" href="Images/bfe9b87ec6614911be6cb6a40bb678fb.jpg" media-type="image/jpeg"/>
+<item id="ec8eb07e9711453f9098fc8cba25ad85.png" href="Images/ec8eb07e9711453f9098fc8cba25ad85.png" media-type="image/png"/>
+<item id="cc41252718304ad9a35a89f70e28e6aa.png" href="Images/cc41252718304ad9a35a89f70e28e6aa.png" media-type="image/png"/>
+<item id="a052563554574cd3a570b93dd4be41f6.png" href="Images/a052563554574cd3a570b93dd4be41f6.png" media-type="image/png"/>
+<item id="a8872ff14a784d74b63733442129558a.png" href="Images/a8872ff14a784d74b63733442129558a.png" media-type="image/png"/>
+<item id="x00cb96fc78d94b13ada6fb9d8c24fd8e.png" href="Images/00cb96fc78d94b13ada6fb9d8c24fd8e.png" media-type="image/png"/>
+<item id="x255cc02a4f1c4a92b5254180b59fea44.png" href="Images/255cc02a4f1c4a92b5254180b59fea44.png" media-type="image/png"/>
+<item id="x3f4a5a6914314077841168e25fc957ce.png" href="Images/3f4a5a6914314077841168e25fc957ce.png" media-type="image/png"/>
+<item id="x0092aa5ed5be4aa4b0a8640871314f9b.png" href="Images/0092aa5ed5be4aa4b0a8640871314f9b.png" media-type="image/png"/>
+<item id="x39c250d9ba78473b82931d692eee96fd.png" href="Images/39c250d9ba78473b82931d692eee96fd.png" media-type="image/png"/>
+<item id="x8acaacd34b1841499c53f20ec580ca1f.png" href="Images/8acaacd34b1841499c53f20ec580ca1f.png" media-type="image/png"/>
+<item id="x40c2a18fb639405db90ff507247a7f0e.png" href="Images/40c2a18fb639405db90ff507247a7f0e.png" media-type="image/png"/>
+<item id="x6daef23cc7c64700b035c8bd68bf6e03.png" href="Images/6daef23cc7c64700b035c8bd68bf6e03.png" media-type="image/png"/>
+<item id="d14e0b85fa224c70835c0b7c9d654990.png" href="Images/d14e0b85fa224c70835c0b7c9d654990.png" media-type="image/png"/>
+<item id="x5b1dc4f4f91b48679275c0cd34c0e2df.png" href="Images/5b1dc4f4f91b48679275c0cd34c0e2df.png" media-type="image/png"/>
+<item id="ee21039c8754444eacb41eda5e34c5cb.png" href="Images/ee21039c8754444eacb41eda5e34c5cb.png" media-type="image/png"/>
+<item id="dab0fd81c25a4819b5c421548d329eb5.png" href="Images/dab0fd81c25a4819b5c421548d329eb5.png" media-type="image/png"/>
+<item id="x0692393a144242b7a9a430ba998f3f20.png" href="Images/0692393a144242b7a9a430ba998f3f20.png" media-type="image/png"/>
+<item id="x7d0519fa58c0489e865c77630340ba3d.png" href="Images/7d0519fa58c0489e865c77630340ba3d.png" media-type="image/png"/>
+<item id="x2b702ed8019743b88f2b942458e02088.png" href="Images/2b702ed8019743b88f2b942458e02088.png" media-type="image/png"/>
+<item id="x846eae3bf3be4527b1065a8397f7ff8e.png" href="Images/846eae3bf3be4527b1065a8397f7ff8e.png" media-type="image/png"/>
+<item id="b94e9e370ea64fadab936c554900973b.png" href="Images/b94e9e370ea64fadab936c554900973b.png" media-type="image/png"/>
+<item id="f43095c6c65e49c89ca54b8958c4d330.png" href="Images/f43095c6c65e49c89ca54b8958c4d330.png" media-type="image/png"/>
+<item id="b222009cd2a64485a4edd857fd96c7be.png" href="Images/b222009cd2a64485a4edd857fd96c7be.png" media-type="image/png"/>
+<item id="x25788ea3c8c443f9ae884aa56daf4877.png" href="Images/25788ea3c8c443f9ae884aa56daf4877.png" media-type="image/png"/>
+<item id="x24f3995697d64f10b755e6b468949a92.png" href="Images/24f3995697d64f10b755e6b468949a92.png" media-type="image/png"/>
+<item id="daa4b18ac05d456e9e64e4336366faa7.png" href="Images/daa4b18ac05d456e9e64e4336366faa7.png" media-type="image/png"/>
+<item id="fbb93ba948c34f1f9ff619aef24d1a3f.png" href="Images/fbb93ba948c34f1f9ff619aef24d1a3f.png" media-type="image/png"/>
+<item id="x19462774c72e4a5abaad7785471bb397.png" href="Images/19462774c72e4a5abaad7785471bb397.png" media-type="image/png"/>
+<item id="x060a49c0d746430ab5f29a6383a95c39.png" href="Images/060a49c0d746430ab5f29a6383a95c39.png" media-type="image/png"/>
+<item id="d057d34a86824a10b696e757434a2b56.png" href="Images/d057d34a86824a10b696e757434a2b56.png" media-type="image/png"/>
+<item id="c4b82b8b117b438a9b8a79a1fcdd2f70.png" href="Images/c4b82b8b117b438a9b8a79a1fcdd2f70.png" media-type="image/png"/>
+<item id="b4c710ca8f094c738a5a3610690b8fe4.png" href="Images/b4c710ca8f094c738a5a3610690b8fe4.png" media-type="image/png"/>
+<item id="c59cd9cee45b4765bd32520ea984b9ab.png" href="Images/c59cd9cee45b4765bd32520ea984b9ab.png" media-type="image/png"/>
+<item id="x29e9264d9b994eee88c5b97302be0ad8.png" href="Images/29e9264d9b994eee88c5b97302be0ad8.png" media-type="image/png"/>
+<item id="x1c3a321d7dec4d70af06408a87de5327.png" href="Images/1c3a321d7dec4d70af06408a87de5327.png" media-type="image/png"/>
+<item id="x3cf94ccdbee843c3954c74323f0d562b.png" href="Images/3cf94ccdbee843c3954c74323f0d562b.png" media-type="image/png"/>
+<item id="c938713203954a0e8aecf7eb37210785.png" href="Images/c938713203954a0e8aecf7eb37210785.png" media-type="image/png"/>
+<item id="x0bc6e767bf654489bb487410e9dcc917.png" href="Images/0bc6e767bf654489bb487410e9dcc917.png" media-type="image/png"/>
+<item id="x52c8c1efe532439397f291556ebe47b6.png" href="Images/52c8c1efe532439397f291556ebe47b6.png" media-type="image/png"/>
+<item id="x2e7f28c2516e42a8bbcd30ff6a09c72f.png" href="Images/2e7f28c2516e42a8bbcd30ff6a09c72f.png" media-type="image/png"/>
+</manifest>
+<spine toc="ncx">
+<itemref idref="cover.xhtml" linear="yes"/>
+<itemref idref="page_copyright.xhtml" linear="yes"/>
+<itemref idref="th_01.xhtml" linear="yes"/>
+<itemref idref="th_02.xhtml"/>
+<itemref idref="th_03.xhtml"/>
+<itemref idref="page_reference.xhtml" linear="yes"/>
+<itemref idref="nav.xhtml"/>
+</spine>
+</package>

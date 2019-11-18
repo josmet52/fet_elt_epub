@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Exercices
+    </title>
+    <meta charset="utf-8"/>
+    <link href="../Styles/exercises_v02_03.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_06.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_09.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+    <link href="../Styles/nav_bar_v02_00.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/nav_bar_v02_01.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div class="navbar-ul-bottom w3-bar w3-dark-gray" id="topMoodleNavBarId">
+        <a onclick="GoToMoodleHomePage()" href="javascript:void(0)"  class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Moodle
+        </a>
+        <a href="nav.xhtml" class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Menu
+        </a>
+        <a href="ex_03.xhtml" class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Précédente
+        </a>
+        <a href="ex_05.xhtml" class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Suivante
+        </a>
+        <br/>
+    </div>
+    <h1 id="FET_toc_id_005">Exercices 5.2 : Energie calorifique fournie à un corps</h1>
+    <div>
+        <br/>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.1a Chaleur massique - définition, grandeur et unité</h2>
+        <div class="exercise_question">
+            Sélectionnez les affirmations vraies dans la liste ci-après.
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr0301a'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La chaleur massique est la quantité de chaleur nécessaire pour élever la température de différents corps (eau, huile, ...) pour une même différence de température et une même quantité de matière.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr7301a'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La chaleur massique dépend de la température de fusion de la matière.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr1301a'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La chaleur massique d'un corps est la quantité de chaleur nécessaire en joules, pour élever de un degré Celsius une masse de 1 kilogramme de ce corps.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr6301a'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La chaleur massique dépend du poids de la matière considérée.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr2301a'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La chaleur massique s'exprime en joules par kilogramme et pas degré.
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton301a" type="button" onclick="validateCheckBox(['iscorrectr2301a','iscorrectr7301a','iscorrectr6301a','iscorrectr1301a','iscorrectr0301a'],['true','false','false','true','true'],'301a');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton301a" type="button" onclick="showHint('301a');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint301a' style='display:none;'>
+            Voir section 5.2.1
+        </div>
+        <div class="exercise_explanation" id='explanation301a' style='display:none;'>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.1c Chaleur massique</h2>
+        <div class="exercise_question">
+            Qu'est-ce que la chaleur massique ?
+        </div>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === true,'5095');">
+            La chaleur massique d’un corps est la quantité de chaleur nécessaire en joules, pour élever une masse de un kilogramme de ce corps à la température ambiante.
+        </button>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === false,'5095');">
+            <div>
+                La chaleur massique d’un corps est la quantité de chaleur nécessaire en joules, pour élever de un degré Celsius une masse de un kilogramme de ce corps.
+            </div>
+        </button>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton5095" type="button" onclick="showHint('5095');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint5095' style='display:none;'>
+            Voir section 5.2.1
+        </div>
+        <div class="exercise_explanation" id='explanation5095' style='display:none;'>
+            <div>
+                Définition de la grandeur
+            </div>
+            <div>
+                La chaleur massique est la quantité de chaleur nécessaire pour élever la température de différents corps (eau, huile, cuivre) pour une même différence de température et une même quantité de matière.
+            </div>
+            <div>
+                <br/>
+            </div>
+            <div>
+                Définition de l’unité
+            </div>
+            <div>
+                La chaleur massique d’un corps est la quantité de chaleur nécessaire en joules, pour élever de un degré Celsius une masse de un kilogramme de ce corps.
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.1d Différence de température</h2>
+        <div class="exercise_question">
+            Quels sont les symboles de grandeur et d'unité de la différence de température ? Cochez toutes les réponses correctes ci-après.
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr10289'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La différence de température est représentée par le symbole&#160;Θ
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr00289'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La différence de température est représentée par&#160;symbole&#160;ΔΘ
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr20289'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La différence de température est représentée par&#160;symbole&#160;Δ
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr40289'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La différence de température s'exprime en Watts [W]
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr50289'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La différence de température s'exprime en Joules [J]
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr30289'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La différence de température s'exprime en degrés Celsius [°C]
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton0289" type="button" onclick="validateCheckBox(['iscorrectr30289','iscorrectr20289','iscorrectr50289','iscorrectr40289','iscorrectr10289','iscorrectr00289'],['true','false','false','false','false','true'],'0289');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton0289" type="button" onclick="showHint('0289');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint0289' style='display:none;'>
+            Voir section 5.2.1
+        </div>
+        <div class="exercise_explanation" id='explanation0289' style='display:none;'>
+            <img src="../Images/7f9081d451b34ea890787747faf65204.png"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.3a Quantité de chaleur utile</h2>
+        <div class="exercise_question">
+            Sélectionnez les affirmations vraies dans la liste ci-après.
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr015c7'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L’énergie calorifique transmise à un corps est égale au produit de la masse de ce corps par sa chaleur massique et par la différence de température qu’il a subie.
+                <br/>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr115c7'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La quantité de chaleur utile Q s’exprime en joules J.
+                <br/>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr215c7'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L’énergie calorifique transmise à un corps est égale au produit de la tension par la résistance du corps de chauffe.
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton15c7" type="button" onclick="validateCheckBox(['iscorrectr215c7','iscorrectr115c7','iscorrectr015c7'],['false','true','true'],'15c7');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton15c7" type="button" onclick="showHint('15c7');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint15c7' style='display:none;'>
+            Voir section 5.2.3
+        </div>
+        <div class="exercise_explanation" id='explanation15c7' style='display:none;'>
+            L’énergie calorifique transmise à un corps est égale au produit de la masse de ce corps par sa chaleur massique et par la différence de température qu’il a subie.
+            <div>
+                La quantité de chaleur utile Q s’exprime en joules J.
+                <br/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.3b Quantité de chaleur - application</h2>
+        <div class="exercise_question">
+            <div>
+                Le corps de chauffe d'une plaque de cuisinière est alimenté sous 380 V. Un courant de 5 A les parcourt durant 60 minutes.
+            </div>
+            <div>
+                Calculez la quantité de chaleur fournie par ce corps de chauffe en MJ.
+            </div>
+        </div>
+        <br/>
+        <input id="answera03e" type="number" step="any" value="0"/>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="submitButtona03e" type="button" onclick="checkValueInRange(6.84,6.84, 'answera03e','a03e');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButtona03e" type="button" onclick="showHint('a03e');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hinta03e' style='display:none;'>
+            Voir section 5.1
+        </div>
+        <div class="exercise_explanation" id='explanationa03e' style='display:none;'>
+            <img src="../Images/893a67027bf6428b91bd021206f2c2bf.png"/>
+            <br/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.3c Quantité de chaleur - application</h2>
+        <div class="exercise_question">
+            <div>
+                Une certaine quantité d'eau emmagasine 314 kJ et sa température s'élève de 5 degrés Celcius.
+            </div>
+            <div>
+                Calculez la quantité d'eau concernée en litres.
+            </div>
+        </div>
+        <br/>
+        <input id="answer5894" type="number" step="any" value="0"/>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton5894" type="button" onclick="checkValueInRange(14.9,15.1, 'answer5894','5894');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton5894" type="button" onclick="showHint('5894');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint5894' style='display:none;'>
+            Voir section 5.2.3
+        </div>
+        <div class="exercise_explanation" id='explanation5894' style='display:none;'>
+            <img src="../Images/acbc5330ec27483aaef6f2528af23913.png"/>
+            <br/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.3d Quantité de chaleur - application</h2>
+        <div class="exercise_question">
+            <div>
+                On apporte 5 MJ de quantité de chaleur utile à 100 l d'huile comestible, actuellement à 20 degrés Celsius. La densité de l'huile est de 0,9.
+            </div>
+            <div>
+                Déterminez la température de l'huile en degrés Celsius après cet apport.
+            </div>
+        </div>
+        <br/>
+        <input id="answerfae9" type="number" step="any" value="0"/>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="submitButtonfae9" type="button" onclick="checkValueInRange(47.7,47.9, 'answerfae9','fae9');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButtonfae9" type="button" onclick="showHint('fae9');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hintfae9' style='display:none;'>
+            Voir section 5.2
+        </div>
+        <div class="exercise_explanation" id='explanationfae9' style='display:none;'>
+            <img src="../Images/140ebed65e0d49a2b6f9db707fc2e7a3.png"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.3e Quantité de chaleur - application</h2>
+        <div class="exercise_question">
+            <div>
+                Par grand froid, pour chauffer un local, vous devez fournir 50 MJ. Vous disposez d'un radiateur alimenté sous 230 V et consommant 6 A.
+            </div>
+            <div>
+                Calculez le temps, en heures décimales, pendant lequel vous devez faire fonctionner ce radiateur.
+            </div>
+        </div>
+        <br/>
+        <input id="answer5fbe" type="number" step="any" value="0"/>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton5fbe" type="button" onclick="checkValueInRange(10.06,10.07, 'answer5fbe','5fbe');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton5fbe" type="button" onclick="showHint('5fbe');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint5fbe' style='display:none;'>
+            Voir section 5.2
+        </div>
+        <div class="exercise_explanation" id='explanation5fbe' style='display:none;'>
+            <img src="../Images/00292a28f45b46f3bc54d42bea342f94.png"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.3f - Quantité de chaleur - application</h2>
+        <div class="exercise_question">
+            <div>
+                Un corps de chauffe d'une plaque de cuisinière est alimenté sous 380 V. Pendant 5 h, il a fourni une quantité de chaleur totale de 20 MJ.
+            </div>
+            <div>
+                Calculez la résistance de ce corps de chauffe.
+            </div>
+        </div>
+        <br/>
+        <input id="answer8284" type="number" step="any" value="0"/>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton8284" type="button" onclick="checkValueInRange(129,131, 'answer8284','8284');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton8284" type="button" onclick="showHint('8284');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint8284' style='display:none;'>
+            <div>
+                Voir section 5.2
+            </div>
+            <div>
+                <br/>
+            </div>
+        </div>
+        <div class="exercise_explanation" id='explanation8284' style='display:none;'>
+            <img src="../Images/8c6bf3248fab49ada58dbca589f209a4.png"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.3g Quantité de chaleur - application</h2>
+        <div class="exercise_question">
+            <div>
+                On désire chauffer 10 l d'eau de 20 à 100 degrés Celsius.
+            </div>
+            <div>
+                Calculez la quantité de chaleur utile emmagasinée par ce liquide en MJ.
+            </div>
+        </div>
+        <br/>
+        <input id="answer724d" type="number" step="any" value="0"/>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton724d" type="button" onclick="checkValueInRange(3.34,3.36, 'answer724d','724d');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton724d" type="button" onclick="showHint('724d');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint724d' style='display:none;'>
+            Voir section 5.2
+        </div>
+        <div class="exercise_explanation" id='explanation724d' style='display:none;'>
+            <img src="../Images/77398a0beed04f8d9f0cd2ebb018e55e.png"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.3h Quantité de chaleur utile</h2>
+        <div class="exercise_question">
+            Calculer l'énergie nécessaire pour chauffer 300 litres d'eau de 12 à 85&#160;°C. Donnez votre réponse en MJ
+        </div>
+        <br/>
+        <input id="answerecb7" type="number" step="any" value="0"/>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="submitButtonecb7" type="button" onclick="checkValueInRange(91.6,91.8, 'answerecb7','ecb7');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButtonecb7" type="button" onclick="showHint('ecb7');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hintecb7' style='display:none;'>
+            Voir section 5.2.3
+        </div>
+        <div class="exercise_explanation" id='explanationecb7' style='display:none;'>
+            <img src="../Images/d690070ec5134a36bb0c70f77b72a220.png"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 5.2.3i Quantité de chaleur utile</h2>
+        <div class="exercise_question">
+            De quoi dépend l'énergie calorifique utile ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group131f8' type="radio" id='iscorrectr131f8'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L'énergie calorifique dépend du volume du corps, de la chaleur massique du matériau et de la température à atteindre.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group131f8' type="radio" id='iscorrectr031f8'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <div>
+                    L’énergie calorifique transmise dépend de la masse de ce corps, de sa chaleur massique et de la différence de température qu’il a subie.
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group131f8' type="radio" id='iscorrectr231f8'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L'énergie calorifique dépend de la température ambiante, de la chaleur massique du matériau et de la forme de l'objet à chauffer.
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton31f8" type="button" onclick="validateRadioButton(['iscorrectr231f8','iscorrectr131f8','iscorrectr031f8'],['false','false','true'],'31f8');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton31f8" type="button" onclick="showHint('31f8');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint31f8' style='display:none;'>
+            Voir section 5.2.3
+        </div>
+        <div class="exercise_explanation" id='explanation31f8' style='display:none;'>
+            <div>
+                L’énergie calorifique transmise à un corps est égale au produit de la masse de ce corps par sa chaleur massique et par la différence de température qu’il a subie.
+            </div>
+            <div>
+                <img src="../Images/34d00ff33b7c4ef7a81f9ecd40b8b314.png"/>
+                <br/>
+            </div>
+            <div>
+                <img src="../Images/2d0cfb6e364242cf931e5183d73a98ea.png"/>
+                <br/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <br/>
+
+<br/></body>
+</html>
+

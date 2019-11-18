@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Exercices_5_5
+    </title>
+    <meta charset="utf-8"/>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/exercises_v02_02.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <h2>Exercices 5.5</h2>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.1a Définition du coefficient de température
+        </h4>
+        <div class="exercise_question">
+            Qu'est-ce que le coefficient de température ?
+        </div>
+        <br/>
+        <button type="button" onclick="checkBoolean(true === true,'578b');">
+            Le coefficient de température représente la variation de résistance en fonction de la variation température.
+        </button>
+        <br/>
+        <button type="button" onclick="checkBoolean(true === false,'578b');">
+            Le coefficient de température représente la variation de température en fonction de la variation de tension.
+        </button>
+        <br/>
+        <button style="margin-top:15px" id="hintButton578b" type="button" onclick="showHint('578b');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint578b' style='display:none;'>
+            Voir section 5.5.1
+        </div>
+        <div class="exercise_explanation" id='explanation578b' style='display:none;'>
+            <div>
+                Le coefficient de température représente la variation de résistance de différentes matières pour une même élévation de température à partir de 20º C.
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.1b Symbole et unité du coefficient de température
+        </h4>
+        <div class="exercise_question">
+            Quels sont les symboles de grandeur et d'unité du coefficient de température ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr061b1'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le coefficient de température est représenté par la lettre δ (delta)
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr161b1'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le coefficient de température des résistances est représenté par la lettre β Beta)
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr261b1'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le coefficient de température des résistances est représenté par la lettre α (alpha)
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr361b1'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le coefficient de température des résistances s'exprime en 1 / °C
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr461b1'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le coefficient de température des résistances s'exprime en °C / Ω
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr561b1'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le coefficient de température des résistances s'exprime en Ω / °C
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton61b1" type="button" onclick="validateCheckBox(['iscorrectr361b1','iscorrectr261b1','iscorrectr561b1','iscorrectr461b1','iscorrectr161b1','iscorrectr061b1'],['true','true','false','false','false','false'],'61b1');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton61b1" type="button" onclick="showHint('61b1');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint61b1' style='display:none;'>
+            Voir section 5.5.1
+        </div>
+        <div class="exercise_explanation" id='explanation61b1' style='display:none;'>
+            <img src="../Images/0745083083bf4335ab2fbd7e5d671152.png" style="width:368px"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.1c Variation de résistance d'un conducteur
+        </h4>
+        <div class="exercise_question">
+            Comment se comporte la résistance d'un conducteur en cuivre que l'on chauffe ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group191f2' type="radio" id='iscorrectr091f2'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La résistance  d'un conducteur en cuivre que l'on chauffe ne varie pas.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group191f2' type="radio" id='iscorrectr191f2'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La résistance  d'un conducteur en cuivre que l'on chauffe augmente.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group191f2' type="radio" id='iscorrectr291f2'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La résistance  d'un conducteur en cuivre que l'on chauffe diminue.
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton91f2" type="button" onclick="validateRadioButton(['iscorrectr291f2','iscorrectr191f2','iscorrectr091f2'],['false','true','false'],'91f2');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton91f2" type="button" onclick="showHint('91f2');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint91f2' style='display:none;'>
+            Voir section 5.5.1
+        </div>
+        <div class="exercise_explanation" id='explanation91f2' style='display:none;'>
+            <div>
+                Comme le coefficient de température du cuivre est positif, la résistance augmente avec la température.
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.1d Matériau avec coefficient de température négatif
+        </h4>
+        <div class="exercise_question">
+            Sélectionnez le ou les matériaux dont la résistance diminue lorsque la température augmente.
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr06674'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Cuivre
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr16674'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Tungstène
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr26674'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Chrome-nickel
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr36674'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Constantan
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr46674'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Charbon
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton6674" type="button" onclick="validateCheckBox(['iscorrectr36674','iscorrectr26674','iscorrectr46674','iscorrectr16674','iscorrectr06674'],['false','false','true','false','false'],'6674');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton6674" type="button" onclick="showHint('6674');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint6674' style='display:none;'>
+            Voir section 5.5.1
+        </div>
+        <div class="exercise_explanation" id='explanation6674' style='display:none;'>
+            <div>
+                <div>
+                    <img src="../Images/c4b5a0bee9904b25a7592b0e1b76ff21.png" style="width:445px"/>
+                </div>
+                <br/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.2a Variation de résistance en fonction de la température : application
+        </h4>
+        <div class="exercise_question">
+            <div>
+                La résistance d’une bobine de fil de cuivre est de 4,6 Ω à 20°C.
+            </div>
+            <div>
+                Quelle sera sa résistance lorsque la bobine aura atteint une température de 55°C?
+            </div>
+        </div>
+        <br/>
+        <input id="answer1184" type="number" step="any" value="0"/>
+        <br/>
+        <button style="margin-top:15px" id="submitButton1184" type="button" onclick="checkValueInRange(5.2,5.3, 'answer1184','1184');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton1184" type="button" onclick="showHint('1184');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint1184' style='display:none;'>
+            Voir section 5.5.2
+        </div>
+        <div class="exercise_explanation" id='explanation1184' style='display:none;'>
+            <img src="../Images/2d90360e02c24f5ab07fcd54ede4ee24.png" style="width:449px"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.2b Variation de résistance en fonction de la température : application
+        </h4>
+        <div class="exercise_question">
+            <div>
+                Le filament d’une lampe à incandescence a une résistance de 35,5 Ω à 20 °C. En service normal, cette lampe est parcourue par un courant de 450 mA sous une tension de 230 V. Calculer la température du filament en fonctionnement.
+            </div>
+        </div>
+        <br/>
+        <input id="answerc41e" type="number" step="any" value="0"/>
+        <br/>
+        <button style="margin-top:15px" id="submitButtonc41e" type="button" onclick="checkValueInRange(2698,2700, 'answerc41e','c41e');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButtonc41e" type="button" onclick="showHint('c41e');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hintc41e' style='display:none;'>
+            Voir section 5.5.2
+        </div>
+        <div class="exercise_explanation" id='explanationc41e' style='display:none;'>
+            <img src="../Images/4103a80bf6104451ad69fa92e147d97a.png" style="width:426px"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.2c Variation de résistance en fonction de la température : application
+        </h4>
+        <div class="exercise_question">
+            <div>
+                Un appareil thermique dissipe une puissance de 1200 W sous 230 V. Son corps de chauffe est constitué d’un fil de chrome-nickel de section 0,48 mm² et atteint en service 640°C.
+            </div>
+            <div>
+                Calculer: la longueur du fil utilisé.
+            </div>
+        </div>
+        <br/>
+        <input id="answerab2a" type="number" step="any" value="0"/>
+        <br/>
+        <button style="margin-top:15px" id="submitButtonab2a" type="button" onclick="checkValueInRange(17,17.2, 'answerab2a','ab2a');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButtonab2a" type="button" onclick="showHint('ab2a');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hintab2a' style='display:none;'>
+            Voir section 5.5.2
+        </div>
+        <div class="exercise_explanation" id='explanationab2a' style='display:none;'>
+            <img src="../Images/ffd4998e7a8841cfbba994e4dcd5fd10.png" style="width:605px"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.2d Variation de résistance en fonction de la température : application
+        </h4>
+        <div class="exercise_question">
+            <div>
+                Un appareil thermique dissipe une puissance de 1200 W sous 230 V. Son corps de chauffe est constitué d’un fil de chrome-nickel de 17.1 m de long et d'une section 0,48 mm². Il atteint en service une température de 640°C.
+            </div>
+            <div>
+                Calculer: la nouvelle puissance si on a enlevé 15% de la longueur du fil et que la tension a chuté à 215 V .
+            </div>
+        </div>
+        <br/>
+        <input id="answer338d" type="number" step="any" value="0"/>
+        <br/>
+        <button style="margin-top:15px" id="submitButton338d" type="button" onclick="checkValueInRange(1230,1240, 'answer338d','338d');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton338d" type="button" onclick="showHint('338d');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint338d' style='display:none;'>
+            <div>
+                Voir section 5.5.2
+            </div>
+        </div>
+        <div class="exercise_explanation" id='explanation338d' style='display:none;'>
+            <div>
+                <img src="../Images/81e96b87f3a341808b1b5da37ab5f01c.png" style="width:616px"/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.2e Variation de résistance en fonction de la température : application
+        </h4>
+        <div class="exercise_question">
+            <div>
+                Une résistance a une valeur de 12,4 Ω à 85°C.
+            </div>
+            <div>
+                Calculer sa valeur à 210°C, sachant que son coefficient de température est de 0,0035 à 20°C.
+            </div>
+        </div>
+        <br/>
+        <input id="answer71e1" type="number" step="any" value="0"/>
+        <br/>
+        <button style="margin-top:15px" id="submitButton71e1" type="button" onclick="checkValueInRange(16.75,16.85, 'answer71e1','71e1');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton71e1" type="button" onclick="showHint('71e1');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint71e1' style='display:none;'>
+            Voir section 5.5
+        </div>
+        <div class="exercise_explanation" id='explanation71e1' style='display:none;'>
+            <div>
+                <img src="../Images/e245059419c44fc0a0e155fec17d1fd0.png" style="width:602px"/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.2f Variation de résistance en fonction de la température : application
+        </h4>
+        <div class="exercise_question">
+            <div>
+                Une résistance a une valeur de 12,4 Ω à 5°C. Calculer sa valeur à 210°C, sachant que son coefficient de température est de 0,0035 à 20°C.
+            </div>
+        </div>
+        <br/>
+        <input id="answerdfbe" type="number" step="any" value="0"/>
+        <br/>
+        <button style="margin-top:15px" id="submitButtondfbe" type="button" onclick="checkValueInRange(21.7,21.9, 'answerdfbe','dfbe');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButtondfbe" type="button" onclick="showHint('dfbe');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hintdfbe' style='display:none;'>
+            Voir section 5.5.2
+        </div>
+        <div class="exercise_explanation" id='explanationdfbe' style='display:none;'>
+            <img src="../Images/84beed9cc6a6490b807c0d08532a60b0.png" style="width:724px"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5.2g Variation de résistance en fonction de la température : application
+        </h4>
+        <div class="exercise_question">
+            <div>
+                Une résistance a une valeur de 12,4 Ω à -5°C. Calculer sa valeur à 210°C, sachant que son coefficient de température est de 0,0035 à 20°C.
+            </div>
+        </div>
+        <br/>
+        <input id="answer83c0" type="number" step="any" value="0"/>
+        <br/>
+        <button style="margin-top:15px" id="submitButton83c0" type="button" onclick="checkValueInRange(22.5,22.7, 'answer83c0','83c0');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton83c0" type="button" onclick="showHint('83c0');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint83c0' style='display:none;'>
+            Voir section 5.5.2
+        </div>
+        <div class="exercise_explanation" id='explanation83c0' style='display:none;'>
+            <img src="../Images/720182ff590c4d3da6a527c8ab49781f.png" style="width:595px"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5a Effet thermique sur les résistances - définition, grandeur et unité
+        </h4>
+        <div class="exercise_question">
+            Sélectionnez les affirmations vraies dans la liste ci-après.
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr0565c'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La résistance de la plupart des matériaux conducteurs (cuivre, aluminium, argent) augmente avec la température.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr1565c'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La résistance du carbone et des matériaux semi-conducteurs employés dans la fabrication de certaines résistances, diodes, transistors, etc. diminue lorsque la température augmente.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr2565c'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Des alliages, comme le constantan et le chrome-nickel ont une résistance presque constante lorsque la température varie.
+                <br/>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr4565c'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le coefficient de température α (alpha) s’exprime en ohms par ohm
+                <br/>
+                et par degré
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr5565c'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le coefficient de température indique la variation de résistance en ohms, pour une résistance de un ohm lorsque sa température varie de un degré Celsius.
+                <br/>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr6565c'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Si le coefficient est positif, la résistance augmente avec la température.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr7565c'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Si le coefficient est négatif, la résistance diminue avec la température.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr16565c'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Si le coefficient de température est nul, la résistance ne varie pas avec la température.
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton565c" type="button" onclick="validateCheckBox(['iscorrectr2565c','iscorrectr5565c','iscorrectr4565c','iscorrectr7565c','iscorrectr6565c','iscorrectr16565c','iscorrectr1565c','iscorrectr0565c'],['true','true','true','true','true','true','true','true'],'565c');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton565c" type="button" onclick="showHint('565c');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint565c' style='display:none;'>
+            Voir section 5.5
+        </div>
+        <div class="exercise_explanation" id='explanation565c' style='display:none;'>
+            Toutes les affirmations sont vraies.
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5c - Effet thermique sur les résistance - application
+        </h4>
+        <div class="exercise_question">
+            <div>
+                La résistance d'une bobine de cuivre est de 120 Ω à 20 °C.
+            </div>
+            <div>
+                Calculez la résistance de cette même bobine à 60 °C.
+            </div>
+        </div>
+        <br/>
+        <input id="answerb306" type="number" step="any" value="0"/>
+        <br/>
+        <button style="margin-top:15px" id="submitButtonb306" type="button" onclick="checkValueInRange(139.2,139.2, 'answerb306','b306');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButtonb306" type="button" onclick="showHint('b306');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hintb306' style='display:none;'>
+            Voir section 5.5
+        </div>
+        <div class="exercise_explanation" id='explanationb306' style='display:none;'>
+            <img src="../Images/b70f7f1cab89488893d300e97e97a667.png" style="width:589px"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h4 class="exercise_title sigil_not_in_toc">
+            Exercice 5.5d Effet thermique sur les résistance - application
+        </h4>
+        <div class="exercise_question">
+            <div>
+                Le filament en tungstène d'une lampe à incandescence a une résistance de 35 Ω à 20 °C. En service normal, cette résistance est parcourue par un courant de 550 mA sous une tension de 230 V.
+            </div>
+            <div>
+                Calculez la température du filament en fonctionnement.
+            </div>
+        </div>
+        <br/>
+        <input id="answer1882" type="number" step="any" value="0"/>
+        <br/>
+        <button style="margin-top:15px" id="submitButton1882" type="button" onclick="checkValueInRange(2208,2210, 'answer1882','1882');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton1882" type="button" onclick="showHint('1882');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint1882' style='display:none;'>
+            Voir section 5.5
+        </div>
+        <div class="exercise_explanation" id='explanation1882' style='display:none;'>
+            <img src="../Images/597c8d53be6c4154af94d0b30129b066.png" style="width:535px"/>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+
+<br/></body>
+</html>
+

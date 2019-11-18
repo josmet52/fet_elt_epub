@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="9ad1ba95c7d740eb8d2f01eb9770dc86" name="dtb:uid"/>
+    <meta content="2" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>ET_ch_02_new</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint01">
+      <navLabel>
+        <text>Courant (2.1)</text>
+      </navLabel>
+      <content src="Text/th_01.xhtml#FET_toc_id_001"/>
+    </navPoint>
+    <navPoint id="navPoint02">
+      <navLabel>
+        <text>Tension (2.2)</text>
+      </navLabel>
+      <content src="Text/th_02.xhtml#FET_toc_id_002"/>
+    </navPoint>
+    <navPoint id="navPoint03">
+      <navLabel>
+        <text>Résistance (2.3)</text>
+      </navLabel>
+      <content src="Text/th_03.xhtml#FET_toc_id_003"/>
+    </navPoint>
+    <navPoint id="navPoint04">
+      <navLabel>
+        <text>Loi d’Ohm (2.4)</text>
+      </navLabel>
+      <content src="Text/th_04.xhtml#FET_toc_id_004"/>
+    </navPoint>
+    <navPoint id="navPoint05">
+      <navLabel>
+        <text>Exercices (2.5)</text>
+      </navLabel>
+      <content src="Text/th_05.xhtml#FET_toc_id_005"/>
+    </navPoint>
+  </navMap>
+</ncx>

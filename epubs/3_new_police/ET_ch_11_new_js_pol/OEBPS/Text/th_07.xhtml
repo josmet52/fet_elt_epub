@@ -1,0 +1,604 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        myTableStyle
+    </title>
+    <link href="../Styles/exercises_v02_02.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="FET_toc_id_009"><span><b>11.7 Récepteur triphasé équilibré monté en triangle</b></span></h1>
+        <p>
+            Ce couplage consiste à raccorder chaque élément (résistances bobines ou condensateurs), selon le schéma ci-dessous, sous la tension réseau. Si les éléments sont identiques et de même valeur, le couplage est équilibré.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/a932d39d36c940efaa859c9faa57c9a4.png" alt="image manquante"/>
+            </div>
+        </div>
+        Symbole du couplage triangle
+        <p>
+            Ce couplage forme un circuit fermé sur lui-même. Le conducteur neutre N nʼest pas nécessaire.
+        </p>
+        <p>
+            Le conducteur de protection PE ne participe pas au fonctionnement de lʼappareil. Sa fonction est de relier les parties métalliques des récepteurs à la terre.
+        </p>
+        <p>
+            La tension de phase
+            <i>
+                U
+            </i>
+            <sub>
+                ph
+            </sub>
+            nʼintervient pas dans le couplage triangle. On ne tient compte que de la tension réseau
+            <i>
+                U.
+            </i>
+        </p>
+        <p>
+            La tension au
+            <i>
+                x
+            </i>
+            bornes de lʼélément
+            <i>
+                U
+            </i>
+            <sub>
+                ph
+            </sub>
+            est égale à la tension réseau
+            <i>
+                U.
+            </i>
+        </p>
+        <p>
+            Les courants de ligne
+            <i>
+                I
+            </i>
+            nʼont pas la même intensité que les courants dans le récepteur
+            <i>
+                I
+            </i>
+            <sub>
+                ph
+            </sub>
+            .
+        </p>
+        <p>
+            La puissance absorbée par le récepteur est la même dans chacune des trois phases.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/94124a8ae10c4cbfa6d90be0d2ab1f55.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h5>
+            <b>
+                Raccordements
+            </b>
+        </h5>
+        <p>
+            La phase L1 se raccorde sur les bornes U1 et W2 du récepteur.
+        </p>
+        <p>
+            La phase L2 se raccorde sur les bornes V1 et U2 du récepteur.
+        </p>
+        <p>
+            La phase L3 se raccorde sur les bornes W1 et V2 du récepteur.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/ae1ed256bd874e3c8113cf83df65f3d9.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h5>
+            <b>
+                Relation entre le courant dans l’élément du récepteur et le courant de ligne
+            </b>
+        </h5>
+        <p>
+            Calculons lʼintensité du courant de ligne
+            <i>
+                I
+            </i>
+            par rapport au courant dans un élément.
+        </p>
+        <p>
+            Les impédances sont égales et sont parcourues par des courants égau
+            <i>
+                x
+            </i>
+            et déphasés de 120 °.
+        </p>
+        <p>
+            E
+            <i>
+                x
+            </i>
+            aminons le point A du schéma à la page précédente et appliquons la loi de Kirchhoff.
+        </p>
+        <p>
+            On obtient la somme vectorielle suivante:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mover><msub><mi>I</mi><mn>1</mn></msub><mo>→</mo></mover><mo>+</mo><mover><msub><mi>I</mi><mrow><mi>ph</mi><mn>3</mn></mrow></msub><mo>→</mo></mover><mo>-</mo><mover><msub><mi>I</mi><mrow><mi>ph</mi><mn>1</mn></mrow></msub><mo>→</mo></mover><mo>=</mo><mn>0</mn></mstyle></math>
+        </p>
+        <p>
+            d’où :
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mover><msub><mi>I</mi><mn>1</mn></msub><mo>→</mo></mover><mo>=</mo><mover><msub><mi>I</mi><mrow><mi>ph</mi><mn>1</mn></mrow></msub><mo>→</mo></mover><mo>-</mo><mover><msub><mi>I</mi><mrow><mi>ph</mi><mn>3</mn></mrow></msub><mo>→</mo></mover></mstyle></math>
+        </p>
+        <p>
+            Dans le triangle isocèle
+            <i>
+                <i>
+                    I
+                </i>
+            </i>
+            <sub>
+                1
+            </sub>
+            –
+            <i>
+                <i>
+                    I
+                </i>
+            </i>
+            <sub>
+                ph1
+            </sub>
+            –
+            <i>
+                <i>
+                    I
+                </i>
+            </i>
+            <sub>
+                ph3
+            </sub>
+            , la hauteur
+            <i>
+                h
+            </i>
+            partage la base
+            <i>
+                I
+            </i>
+            <sub>
+                1
+            </sub>
+            en deu
+            <i>
+                x
+            </i>
+            parties égales
+            <i>
+                I
+            </i>
+            <sub>
+                1
+            </sub>
+            /2.
+        </p>
+        <p>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/9adf843d067d44cd9f57d484706be406.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            On obtient ainsi:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mfrac><mfrac><msub><mi>I</mi><mn>1</mn></msub><mn>2</mn></mfrac><msub><mi>I</mi><mrow><mi>ph</mi><mn>1</mn></mrow></msub></mfrac><mo>=</mo><mi>cos</mi><mo>⁡</mo><msup><mn>30</mn><mo>∘</mo></msup></mstyle></math>
+        </p>
+        <p>
+            d’où:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mo>·</mo><msub><mi>I</mi><mrow><mi>ph</mi><mn>1</mn></mrow></msub><mo>·</mo><mi>cos</mi><mo>⁡</mo><msup><mn>30</mn><mo>∘</mo></msup></mstyle></math>
+        </p>
+        <p>
+            on sait que:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>cos</mi><mo>⁡</mo><msup><mn>30</mn><mo>∘</mo></msup><mo>=</mo><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac></mstyle></math>
+        </p>
+        <p>
+            d’où:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>I</mi><mn>1</mn></msub><mo>=</mo><mn>2</mn><mo>·</mo><msub><mi>I</mi><mrow><mi>ph</mi><mn>1</mn></mrow></msub><mo>·</mo><mfrac><msqrt><mn>3</mn></msqrt><mn>2</mn></mfrac><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>·</mo><msub><mi>I</mi><mrow><mi>ph</mi><mn>1</mn></mrow></msub></mstyle></math>
+        </p>
+        <p>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/7f88e118ee8a48c58c861e5bfc56e75d.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h5>
+            <b>
+                Formules
+            </b>
+        </h5>
+        <p class="fet_formula">
+            <span>
+                <b>
+                    <i>
+                        U
+                    </i>
+                    <sub>
+                        ph
+                    </sub>
+                    = U
+                </b>
+            </span>
+        </p>
+        <br/>
+        <p class="fet_formula">
+            <span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>I</mi><mo>=</mo><msub><mi>I</mi><mi>ph</mi></msub><mo>·</mo><msqrt><mn>3</mn></msqrt></mstyle></math>
+            </span>
+        </p>
+        <br/>
+        <h5>
+            <b>
+                Puissances du récepteur en triphasé
+            </b>
+        </h5>
+        <p>
+            La puissance absorbée par phase dépend de la tension au
+            <i>
+                x
+            </i>
+            bornes de lʼimpédance, du courant dans lʼimpédance et du facteur de puissance (cos φ) résultant du déphasage entre le courant et la tension.
+        </p>
+        <p>
+            On trouve pour la puissance active totale:
+            <i>
+                P
+            </i>
+            = 3 ·
+            <i>
+                P
+            </i>
+            <sub>
+                R
+            </sub>
+        </p>
+        <p>
+            pour une phase:
+            <i>
+                P
+            </i>
+            <sub>
+                1
+            </sub>
+            =
+            <i>
+                U
+            </i>
+            <sub>
+                ph
+            </sub>
+            ·
+            <i>
+                I
+            </i>
+            <sub>
+                ph
+            </sub>
+            · cos φ
+        </p>
+        <p>
+            pour trois phases:
+            <i>
+                P
+            </i>
+            = 3 ·
+            <i>
+                U
+            </i>
+            <sub>
+                ph
+            </sub>
+            ·
+            <i>
+                I
+            </i>
+            <sub>
+                ph
+            </sub>
+            · cos φ
+        </p>
+        <p>
+            on sait que:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>I</mi><mi>ph</mi></msub><mo>=</mo><mfrac><mi>I</mi><msqrt><mn>3</mn></msqrt></mfrac><mtext>et</mtext><mi>U</mi><mo>=</mo><msub><mi>U</mi><mrow><mtext>ph</mtext></mrow></msub></mstyle></math>
+        </p>
+        <p>
+            d’où:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>P</mi><mo>=</mo><mn>3</mn><mo>·</mo><mi>U</mi><mo>·</mo><mfrac><mi>I</mi><msqrt><mn>3</mn></msqrt></mfrac><mo>·</mo><mi>cosφ</mi></mstyle></math>
+        </p>
+        <p>
+            et en simplifiant :
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>P</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>·</mo><mi>U</mi><mo>·</mo><mi>I</mi><mo>·</mo><mi>cosφ</mi></mstyle></math>
+        </p>
+        <p>
+            Le raisonnement est le même pour les puissances réactive et apparente.
+        </p>
+        <h5>
+            <b>
+                Formules
+            </b>
+        </h5>
+        <p class="fet_formula">
+            <span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>P</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>·</mo><mi>U</mi><mo>·</mo><mi>I</mi><mo>·</mo><mi>cos</mi><mi>φ</mi></mstyle></math>
+            </span>
+        </p>
+        <br/>
+        <p class="fet_formula">
+            <span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>Q</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>·</mo><mi>U</mi><mo>·</mo><mi>I</mi><mo>·</mo><mi>sin</mi><mi>φ</mi></mstyle></math>
+            </span>
+        </p>
+        <br/>
+        <p class="fet_formula">
+            <span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>S</mi><mo>=</mo><msqrt><mn>3</mn></msqrt><mo>·</mo><mi>U</mi><mo>·</mo><mi>I</mi></mstyle></math>
+            </span>
+        </p>
+        <br/>
+        <h5>
+            <b>
+                Remarque 1
+            </b>
+        </h5>
+        <p>
+            En triangle, chaque élément est sous la tension réseau
+            <i>
+                U
+            </i>
+            , alors quʼen étoile, il est sous la tension de phase (
+            <i>
+                U
+            </i>
+            /
+            <i>
+                √
+            </i>
+            3 ). A impédance égale, la puissance en triangle est trois fois plus grande quʼen étoile.
+        </p>
+        <p>
+            On ne peut pas, sans autre, coupler un récepteur en triangle. Il faut respecter la tension de lʼélément. Il est impératif de lire la plaque signalétique qui doit mentionner lʼune des inscriptions suivantes:
+        </p>
+        <p>
+            V 400   ou   V 400 ∆   ou   V 400 ∆ / 690 Y.
+        </p>
+        <p>
+            La tension la plus faible est la tension de construction de lʼélément.
+        </p>
+        <h5>
+            <b>
+                Applications
+            </b>
+        </h5>
+        <ul>
+            <li>
+                moteurs;
+            </li>
+            <li>
+                radiateurs de grande puissance;
+            </li>
+            <li>
+                chauffe-eau;
+            </li>
+            <li>
+                fours industriels.
+            </li>
+        </ul>
+        <h5>
+            <b>
+                Exemple 1
+            </b>
+        </h5>
+        <p>
+            Un chauffe-eau triphasé de puissance 9 kW, couplage triangle, est raccordé sous 3
+            <i>
+                x
+            </i>
+            400 V - 50 Hz.
+        </p>
+        <p>
+            Calculer:
+        </p>
+        <ol>
+            <li>
+                lʼintensité du courant de ligne;
+            </li>
+            <li>
+                lʼintensité du courant dans un élément du corps de chauffe;
+            </li>
+            <li>
+                la résistance dʼun élément.
+            </li>
+        </ol>
+        <ol>
+            <li>
+                Intensité du courant de ligne:
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>I</mi><mo>=</mo><mfrac><mi>P</mi><mrow><msqrt><mn>3</mn></msqrt><mo>·</mo><mi>U</mi><mo>·</mo><mi>cos</mi><mi>φ</mi></mrow></mfrac><mo>=</mo><mfrac><mn>9000</mn><mrow><msqrt><mn>3</mn></msqrt><mo>·</mo><mn>400</mn><mo>·</mo><mn>1</mn></mrow></mfrac><mo>=</mo><mn>13</mn><mtext></mtext><mi>A</mi></mstyle></math>
+                </p>
+            </li>
+            <li>
+                Intensité du courant dans un élément :
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>I</mi><mi>R</mi></msub><mo>=</mo><mfrac><mi>I</mi><msqrt><mn>3</mn></msqrt></mfrac><mo>=</mo><mfrac><mn>13</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>=</mo><mn>7,51</mn><mtext>A</mtext></mstyle></math>
+                </p>
+            </li>
+            <li>
+                Puissance par élément:
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>P</mi><mi>R</mi></msub><mo>=</mo><mfrac><mi>P</mi><mn>3</mn></mfrac><mo>=</mo><mfrac><mn>9000</mn><mn>3</mn></mfrac><mo>=</mo><mn>3000</mn><mtext>W</mtext></mstyle></math>
+                </p>
+                <br/>
+                Résistance dʼun élément:
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>R</mi><mn>1</mn></msub><mo>=</mo><mfrac><msup><mi>U</mi><mn>2</mn></msup><msub><mi>P</mi><mi>R</mi></msub></mfrac><mo>=</mo><mfrac><msup><mn>400</mn><mn>2</mn></msup><mn>3000</mn></mfrac><mo>=</mo><mn>53</mn><mo>,</mo><mn>3</mn><mtext>Ω</mtext></mstyle></math>
+                </p>
+            </li>
+        </ol>
+        <h5>
+            <b>
+                Exemple 2
+            </b>
+        </h5>
+        <p>
+            Un ampèremètre raccordé sur la ligne dʼalimentation dʼun moteur indique
+            <i>
+                I
+            </i>
+            = 5,1 A. Sachant que le moteur est alimenté sous 3
+            <i>
+                x
+            </i>
+            400 V-∆, que son facteur de puissance est de 0,8, calculer la puissance absorbée et lʼintensité du courant dans un enroulement.
+        </p>
+        <p>
+            Puissance absorbée:
+        </p>
+        <p>
+            <i>
+                P
+            </i>
+            =
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msqrt><mn>3</mn></msqrt></mstyle></math>
+            ·
+            <i>
+                U
+            </i>
+            ·
+            <i>
+                I
+            </i>
+            · cosφ =
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msqrt><mn>3</mn></msqrt></mstyle></math>
+            · 400 · 5,1 · 0,8 =
+            <b>
+                2830 W
+            </b>
+        </p>
+        <p>
+            Intensité du courant dans un enroulement:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>I</mi><mi>ph</mi></msub><mo>=</mo><mfrac><mn>1</mn><msqrt><mn>3</mn></msqrt></mfrac><mo>=</mo><mfrac><mrow><mn>5</mn><mo>,</mo><mn>1</mn></mrow><msqrt><mn>3</mn></msqrt></mfrac><mo>=</mo><mn>2</mn><mo>,</mo><mn>94</mn><mtext></mtext><mi>A</mi></mstyle></math>
+        </p>
+        <h5>
+            <b>
+                Remarque 2
+            </b>
+        </h5>
+        <p>
+            Les formules du calcul de la puissance en couplage triangle sont identiques à celles établies pour un couplage étoile. Cette identité signifie quʼil nʼy a pas lieu de se préoccuper du mode de couplage dʼun récepteur triphasé équilibré quand on connaît la tension réseau
+            <i>
+                U
+            </i>
+            , lʼintensité du courant de ligne
+            <i>
+                I
+            </i>
+            et le facteur de puissance (cos φ.)
+        </p>
+        <h5>
+            <b>
+                Exemple 3
+            </b>
+        </h5>
+        <p>
+            Calculer la puissance active dʼun récepteur triphasé alimenté sous la tension réseau, si lʼintensité du courant de ligne est de 24,5 A et le facteur de puissance de 0,92.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/8ba4a5f751924b6798b33b2fc9b79615.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Puissance active:
+        </p>
+        <p>
+            <i>
+                P
+            </i>
+            =
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msqrt><mn>3</mn></msqrt></mstyle></math>
+            ·
+            <i>
+                U
+            </i>
+            ·
+            <i>
+                I
+            </i>
+            · cosφ =
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msqrt><mn>3</mn></msqrt></mstyle></math>
+            · 400 · 24,5 · 0,92 = 15600 W
+            <b>
+                = 15,6 kW
+            </b>
+        </p>
+        <h5>
+            <b>
+                Remarque 3
+            </b>
+        </h5>
+        <p>
+            Lors du contrôle de lʼétat des résistances dʼun corps de chauffe ou dʼun moteur, couplés en triangle, on mesure la résistance entre les bornes U1-V1, V1-W1 ou U1-W1. Cette mesure ne donne pas la valeur de la résistance dʼun élément, mais la résistance équivalente dʼun couplage mi
+            <i>
+                x
+            </i>
+            te:
+            <i>
+                R
+            </i>
+            <sub>
+                1
+            </sub>
+            en parallèle avec 2 ·
+            <i>
+                R
+            </i>
+            <sub>
+                1
+            </sub>
+            , ce qui donne:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>R</mi><mo>=</mo><mfrac><mn>2</mn><mn>3</mn></mfrac><mo>·</mo><msub><mi>R</mi><mn>1</mn></msub><mtext></mtext><mi>ou</mi><mtext></mtext><msub><mi>R</mi><mn>1</mn></msub><mo>=</mo><mfrac><mn>3</mn><mn>2</mn></mfrac><mo>·</mo><mi>R</mi></mstyle></math>
+        </p>
+        <p>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/609aa11313724b6b9ce967fb7332409e.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Si lʼon veut mesurer la valeur dʼune résistance, il faut enlever les barrettes sur la plaque à bornes.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/a9934e8a8b924fa297afe00eb0a49baa.jpg" alt="image manquante"/>
+            </div>
+        </div>
+    </div>
+
+<br/></body>
+</html>
+

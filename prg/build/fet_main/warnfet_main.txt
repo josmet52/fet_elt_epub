@@ -26,8 +26,8 @@ missing module named genshi - imported by html5lib.treewalkers.genshi
 missing module named datrie - imported by html5lib._trie.datrie
 missing module named cffi - imported by PIL.Image, PIL.PyAccess, PIL.ImageTk
 missing module named Tkinter - imported by PIL.ImageTk
-missing module named olefile - imported by PIL.MicImagePlugin, PIL.FpxImagePlugin
 missing module named UserDict - imported by PIL.PdfParser
+missing module named olefile - imported by PIL.MicImagePlugin, PIL.FpxImagePlugin
 missing module named 'PySide.QtCore' - imported by PIL.ImageQt
 missing module named 'PyQt4.QtCore' - imported by PIL.ImageQt
 missing module named 'PyQt5.QtCore' - imported by PIL.ImageQt

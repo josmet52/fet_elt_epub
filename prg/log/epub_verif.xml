@@ -5,64 +5,72 @@
        name="epubcheck"
        release="4.2.0"
        xsi:schemaLocation="http://hul.harvard.edu/ois/xml/ns/jhove http://hul.harvard.edu/ois/xml/xsd/jhove/jhove.xsd">
-   <date>2019-11-11T12:13:38+01:00</date>
-   <repInfo uri="C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/2_new_js_css/AC pour ELMO_v1y_js.epub">
-      <created>2019-11-11T12:09:28Z</created>
-      <lastModified>2019-11-02T11:15:25Z</lastModified>
+   <date>2019-11-18T13:35:02+01:00</date>
+   <repInfo uri="C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/1_new/ch01_FET_ELT_exercices.epub">
+      <created>2018-04-23T16:30:12Z</created>
+      <lastModified>2018-04-23T16:30:12Z</lastModified>
       <format>application/epub+zip</format>
       <version>3.2</version>
       <status>Not well-formed</status>
       <messages>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_04.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_06.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03_a.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_03_b.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_05.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_08_new.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_09_new.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_13_new.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/th_14_new.xhtml (11-130)</message>
-         <message severity="error" subMessage="RSC-006">RSC-006, ERROR, [Référence à une ressource externe non-autorisée ; La ressource doit être placée dans l'OCF.], OEBPS/Text/val_inst_anim_cercle_trigo_val_inst_v1d.xhtml (14-130)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_04.xhtml (236-236)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (73-73)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (167-167)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_06.xhtml (299-299)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (35-35)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (52-52)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (67-67)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (84-84)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (87-87)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (91-91)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03.xhtml (106-106)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (72-72)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (107-107)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (134-134)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (137-137)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (202-202)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_a.xhtml (224-224)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (157-157)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (160-160)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (164-164)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (176-176)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (179-179)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_03_b.xhtml (183-183)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_05.xhtml (29-29)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], OEBPS/Text/th_05.xhtml (76-76)</message>
-         <message severity="error" subMessage="OPF-018">OPF-018, WARN, [La propriété 'remote-resources' a été déclarée dans le Document de Package, mais aucune référence aux ressources distantes n'a été trouvée.], There are 31 additional locations for this message.</message>
+         <message severity="error" subMessage="RSC-001">RSC-001, ERROR, [Le fichier 'OEBPS/PW_add_cont/036cc921892843499ee8877d8d570f4d/Images/46f3f0d8b0874b0cbd5f53042a99451d.jpg' est introuvable.], ch01_FET_ELT_exercices.epub</message>
+         <message severity="error" subMessage="RSC-001">RSC-001, ERROR, [Le fichier 'OEBPS/PW_add_cont/c6e62a47cdce47908a6ff621af51de8d/Images/7d3f499fa79b4b5881db06fef1f608e9.png' est introuvable.], ch01_FET_ELT_exercices.epub</message>
+         <message severity="error" subMessage="RSC-005">RSC-005, ERROR, [Erreur lors de l'analyse du fichier: l'élément "div" n'est pas autorisé ici ; la balise fermante de l'élément, du texte, l'élément "a", "abbr", "area", "audio", "b", "bdi", "bdo", "br", "button", "canvas", "cite", "code", "data", "datalist", "del", "dfn", "em", "embed", "i", "iframe", "img", "input", "ins", "kbd", "label", "link", "map", "mark", "meta", "meter", "ns1:switch", "ns2:math", "ns3:svg", "object", "output", "picture", "progress", "q", "ruby", "s", "samp", "script", "select", "small", "span", "strong", "sub", "sup", "template", "textarea", "time", "u", "var", "video" ou "wbr" (avec xmlns:ns1="http://www.idpf.org/2007/ops" xmlns:ns2="http://www.w3.org/1998/Math/MathML" xmlns:ns3="http://www.w3.org/2000/svg") ou un élément dans un autre namespace est attendu], OEBPS/Text/ex_03.xhtml (320-79)</message>
+         <message severity="error" subMessage="RSC-005">RSC-005, ERROR, [Erreur lors de l'analyse du fichier: l'élément "div" n'est pas autorisé ici ; la balise fermante de l'élément, du texte, l'élément "a", "abbr", "area", "audio", "b", "bdi", "bdo", "br", "button", "canvas", "cite", "code", "data", "datalist", "del", "dfn", "em", "embed", "i", "iframe", "img", "input", "ins", "kbd", "label", "link", "map", "mark", "meta", "meter", "ns1:switch", "ns2:math", "ns3:svg", "object", "output", "picture", "progress", "q", "ruby", "s", "samp", "script", "select", "small", "span", "strong", "sub", "sup", "template", "textarea", "time", "u", "var", "video" ou "wbr" (avec xmlns:ns1="http://www.idpf.org/2007/ops" xmlns:ns2="http://www.w3.org/1998/Math/MathML" xmlns:ns3="http://www.w3.org/2000/svg") ou un élément dans un autre namespace est attendu], OEBPS/Text/ex_03.xhtml (321-95)</message>
+         <message severity="error" subMessage="RSC-005">RSC-005, ERROR, [Erreur lors de l'analyse du fichier: l'élément "div" n'est pas autorisé ici ; la balise fermante de l'élément, du texte, l'élément "a", "abbr", "area", "audio", "b", "bdi", "bdo", "br", "button", "canvas", "cite", "code", "data", "datalist", "del", "dfn", "em", "embed", "i", "iframe", "img", "input", "ins", "kbd", "label", "link", "map", "mark", "meta", "meter", "ns1:switch", "ns2:math", "ns3:svg", "object", "output", "picture", "progress", "q", "ruby", "s", "samp", "script", "select", "small", "span", "strong", "sub", "sup", "template", "textarea", "time", "u", "var", "video" ou "wbr" (avec xmlns:ns1="http://www.idpf.org/2007/ops" xmlns:ns2="http://www.w3.org/1998/Math/MathML" xmlns:ns3="http://www.w3.org/2000/svg") ou un élément dans un autre namespace est attendu], OEBPS/Text/ex_04.xhtml (186-80)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/9731c105379b4e47bd81803072ec68e5.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_03.xhtml (181-85)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/9731c105379b4e47bd81803072ec68e5.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_03.xhtml (198-85)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/dbc535ba42f04893a422df5d001d8227.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_03.xhtml (242-186)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/dbc535ba42f04893a422df5d001d8227.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_03.xhtml (255-186)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/dbc535ba42f04893a422df5d001d8227.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_03.xhtml (268-186)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/72f0d7d2753845b4baa31eb3967434bd.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (53-85)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/1bf86f83bb8b4e9eae529e0c182d891c.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (178-85)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/fa8038464f99480282f3c8a6beb2ccdd.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (206-85)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/deb91baa98b74bf6b5b1685f967942ed.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (277-85)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/deb91baa98b74bf6b5b1685f967942ed.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (322-85)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/d2689dd333294d13a8451f240238c71a.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (298-85)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/888a054f63124ca6bf6b650988f4f39a.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (377-282)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/260e21eaa6ae44f884087a08ce03d95e.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (379-277)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/aecf17e2570240e3950f4f371c904e31.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (381-277)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/765acb704f914fdea51dacfd2e8045c8.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (383-277)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/f4ff6a258dc54bf4a2949dca503cabd4.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (385-277)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/0effa1bcb50848e891f0ebf189f79f66.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (457-297)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/defe68c954e44792ab904fba357e78ac.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (459-292)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/69d51284b5df48b69dc14ce1c41897bd.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (461-292)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/037f24ddad5341a89010e2effef1af78.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (512-186)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/037f24ddad5341a89010e2effef1af78.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (544-186)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/037f24ddad5341a89010e2effef1af78.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_04.xhtml (576-186)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/f33593da94ea4550a9159f1be2f42ba9.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (85-301)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/f33593da94ea4550a9159f1be2f42ba9.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (210-301)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/bdbdf824eb224f77b4466f460a79c516.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (88-298)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/bdbdf824eb224f77b4466f460a79c516.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (213-298)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/786e416dde8348eb84a15414c67cfff8.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (91-296)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/786e416dde8348eb84a15414c67cfff8.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (216-296)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/fb02412853934c83979481f04914c0f8.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (94-296)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/fb02412853934c83979481f04914c0f8.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (219-296)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/931a308b28144df5a162b549aa34d4f5.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (97-296)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/931a308b28144df5a162b549aa34d4f5.png' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_06.xhtml (222-296)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/2b1bd17135a04cdcb373b5a77c20cf09.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_07.xhtml (79-284)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/3ee3d1dc88014c968337d6c337b8d9ef.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_07.xhtml (81-277)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/5c6fbea6105f4c6f9c59ae8ef8d108a1.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_07.xhtml (83-277)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/2ff6a462bb8b4adc996fce6ae19f4c14.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_07.xhtml (85-277)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/902dbce4b1f646ec92e43b1c0d65a686.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_07.xhtml (87-277)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/2db62c59c103458db3056f3e24928179.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_07.xhtml (89-277)</message>
+         <message severity="error" subMessage="RSC-007">RSC-007, ERROR, [La ressource référencée 'OEBPS/images/a2ba9a8788b74bf3a01aa25da25f46f3.jpg' n'est pas présente dans l'EPUB.], OEBPS/Text/ex_07.xhtml (91-277)</message>
+         <message severity="error" subMessage="HTM-014a">HTM-014a, WARN, [Le nom de fichier du XHTML Content Document 'OEBPS/Text/nav.html' devrait avoir l'extension '.xhtml'.], OEBPS/content.opf (37-94)</message>
       </messages>
       <mimeType>application/epub+zip</mimeType>
       <properties>
          <property>
             <name>FileName</name>
             <values arity="Scalar" type="String">
-               <value>AC pour ELMO_v1y_js.epub</value>
+               <value>ch01_FET_ELT_exercices.epub</value>
             </values>
          </property>
          <property>
             <name>CharacterCount</name>
             <values arity="Scalar" type="Long">
-               <value>155870</value>
+               <value>62634</value>
             </values>
          </property>
          <property>
@@ -83,19 +91,92 @@
                <property>
                   <name>CreationDate</name>
                   <values arity="Scalar" type="Date">
-                     <value>2019-11-11T12:09:28Z</value>
+                     <value>2018-04-23T16:30:12Z</value>
                   </values>
                </property>
                <property>
                   <name>ModDate</name>
                   <values arity="Scalar" type="Date">
-                     <value>2019-11-02T11:15:25Z</value>
+                     <value>2018-04-23T16:30:12Z</value>
                   </values>
                </property>
                <property>
                   <name>Title</name>
                   <values arity="Scalar" type="String">
-                     <value>AC pour ELMO v1x</value>
+                     <value>modele_jmetra</value>
+                  </values>
+               </property>
+            </values>
+         </property>
+         <property>
+            <name>Fonts</name>
+            <values arity="List" type="Property">
+               <property>
+                  <name>Font</name>
+                  <values arity="List" type="Property">
+                     <property>
+                        <name>FontName</name>
+                        <values arity="Scalar" type="String">
+                           <value>Times</value>
+                        </values>
+                     </property>
+                     <property>
+                        <name>FontFile</name>
+                        <values arity="Scalar" type="Boolean">
+                           <value>true</value>
+                        </values>
+                     </property>
+                  </values>
+               </property>
+               <property>
+                  <name>Font</name>
+                  <values arity="List" type="Property">
+                     <property>
+                        <name>FontName</name>
+                        <values arity="Scalar" type="String">
+                           <value>Times-Bold</value>
+                        </values>
+                     </property>
+                     <property>
+                        <name>FontFile</name>
+                        <values arity="Scalar" type="Boolean">
+                           <value>true</value>
+                        </values>
+                     </property>
+                  </values>
+               </property>
+               <property>
+                  <name>Font</name>
+                  <values arity="List" type="Property">
+                     <property>
+                        <name>FontName</name>
+                        <values arity="Scalar" type="String">
+                           <value>Times-Italic</value>
+                        </values>
+                     </property>
+                     <property>
+                        <name>FontFile</name>
+                        <values arity="Scalar" type="Boolean">
+                           <value>true</value>
+                        </values>
+                     </property>
+                  </values>
+               </property>
+               <property>
+                  <name>Font</name>
+                  <values arity="List" type="Property">
+                     <property>
+                        <name>FontName</name>
+                        <values arity="Scalar" type="String">
+                           <value>Times-BoldItalic</value>
+                        </values>
+                     </property>
+                     <property>
+                        <name>FontFile</name>
+                        <values arity="Scalar" type="Boolean">
+                           <value>true</value>
+                        </values>
+                     </property>
                   </values>
                </property>
             </values>
@@ -104,11 +185,12 @@
             <name>MediaTypes</name>
             <values arity="Array" type="String">
                <value>application/xhtml+xml</value>
-               <value>application/x-dtbncx+xml</value>
-               <value>image/png</value>
-               <value>image/jpeg</value>
                <value>text/css</value>
-               <value>application/javascript</value>
+               <value>application/x-font-truetype</value>
+               <value>text/javascript</value>
+               <value>image/jpeg</value>
+               <value>image/png</value>
+               <value>application/x-dtbncx+xml</value>
             </values>
          </property>
          <property>

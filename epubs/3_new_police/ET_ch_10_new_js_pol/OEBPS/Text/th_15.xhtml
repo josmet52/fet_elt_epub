@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        myTableStyle
+    </title>
+    <link href="../Styles/exercises_v02_02.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="FET_toc_id_027"><b>10.14 Cas général</b></h1>
+        <h2 id="FET_toc_id_028"><b>10.14.1 Raccordement dʼun récepteur quelconque</b></h2>
+        <p>
+            Si lʼon examine un récepteur dont les éléments qui le composent sont inconnus (
+            <i>
+                R, L et C
+            </i>
+            ), on constate que sʼil est alimenté en alternatif, parcouru par un courant
+            <i>
+                I
+            </i>
+            déphasé dʼun angle
+            <i>
+                φ
+            </i>
+            par rapport à sa tension appliquée
+            <i>
+                U
+            </i>
+            , on obtient toujours un des diagrammes suivants:
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/83841698479243a38683b7c72587a1c9.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            <i>
+                Iʼ
+            </i>
+            =
+            <i>
+                I
+            </i>
+            · cos
+            <i>
+                φ
+            </i>
+            <br/>
+            <i>
+                Iʼʼ
+            </i>
+            =
+            <i>
+                I
+            </i>
+            · sin
+            <i>
+                φ
+            </i>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/6501cc1b060548e282708ebe5c2b9fd3.png" alt="image manquante"/>
+            </div>
+        </div>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/e58b587abe3a404dba8d033c64e845da.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            <i>
+                U′
+            </i>
+            =
+            <i>
+                U
+            </i>
+            · cos
+            <i>
+                φ
+            </i>
+            <br/>
+            <i>
+                U′′
+            </i>
+            =
+            <i>
+                U
+            </i>
+            · sin
+            <i>
+                φ
+            </i>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/7a7ee69071eb4bdf9feb2c842dca7384.png" alt="image manquante"/>
+            </div>
+        </div>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/ab5f8178d36a4a45acaf492ae591b083.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Par exemple: moteur, armature TL.
+        </p>
+        <p>
+            Il est donc possible de résoudre de nombreuses applications en nʼutilisant que les formules des puissances.
+        </p>
+        <h4>
+            <b>
+                Formules
+            </b>
+        </h4>
+        <p>
+        </p>
+        <p class="fet_formula">
+            <span>
+                <i>
+                    <b>
+                        S = U · I
+                    </b>
+                </i>
+            </span>
+        </p>
+        <br/>
+        <p>
+        </p>
+        <p class="fet_formula">
+            <span>
+                <i>
+                    <b>
+                        P = U · I · cos φ
+                    </b>
+                </i>
+            </span>
+        </p>
+        <br/>
+        <p>
+        </p>
+        <p class="fet_formula">
+            <span>
+                <i>
+                    <b>
+                        Q = U · I · sin φ
+                    </b>
+                </i>
+            </span>
+        </p>
+        <br/>
+        <h4>
+            <b>
+                Exemple
+            </b>
+        </h4>
+        <p>
+            Un récepteur alimenté sur le réseau 230 V est parcouru par un courant de 7 A avec un facteur de puissance de 0,91.
+        </p>
+        <p>
+            Calculer la puissance apparente, active et réactive.
+        </p>
+        <p>
+            Puissance apparente:
+        </p>
+        <p>
+            S =
+            <i>
+                U
+            </i>
+            ·
+            <i>
+                I
+            </i>
+            = 230 · 7 = 1610 VA =
+            <b>
+                1,61 kVA
+            </b>
+        </p>
+        <p>
+            Puissance active:
+        </p>
+        <p>
+            <i>
+                P
+            </i>
+            =
+            <i>
+                U
+            </i>
+            ·
+            <i>
+                I
+            </i>
+            · cos
+            <i>
+                φ
+            </i>
+            = 230 · 7 · 0,91 = 1470 W =
+            <b>
+                1,47 kW
+            </b>
+        </p>
+        <p>
+            Puissance réactive:
+        </p>
+        <p>
+            cos
+            <i>
+                φ
+            </i>
+            = 0, 91 ⇒
+            <i>
+                φ
+            </i>
+            = 24,5° ⇒ sin
+            <i>
+                φ
+            </i>
+            = 0, 415
+        </p>
+        <p>
+            <i>
+                Q
+            </i>
+            =
+            <i>
+                U
+            </i>
+            ·
+            <i>
+                I
+            </i>
+            · sin
+            <i>
+                φ
+            </i>
+            = 230 · 7 · 0,415 =
+            <b>
+                668 var
+            </b>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/62886a52156a4e078f01f8d0778b570a.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h2 id="FET_toc_id_029"><b>10.14.2 Raccordement dʼun ensemble de récepteurs</b></h2>
+        <p>
+            Sans connaître les éléments (R-L-C) qui composent les récepteurs, on peut déterminer les trois puissances de lʼensemble, le facteur de puissance de lʼinstallation et le courant de ligne résultant.
+        </p>
+        <p>
+            La puissance active totale est égale à la somme arithmétique des puissances actives de chacun des récepteurs :
+        </p>
+        <p>
+            <i>
+                P = P
+                <sub>
+                    R
+                </sub>
+                + P
+                <sub>
+                    M
+                </sub>
+                + P
+                <sub>
+                    TL
+                </sub>
+                + …
+            </i>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/6a88ceab5cb044339c8c1d536571033a.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            La puissance réactive résultante est égale à la somme des puissances réactives inductives moins la somme des puissances réactives capacitives de chacun des récepteurs (somme algébrique):
+        </p>
+        <p>
+            <i>
+                Q
+            </i>
+            = (
+            <i>
+                Q
+            </i>
+            <sub>
+                L1
+            </sub>
+            +
+            <i>
+                Q
+            </i>
+            <sub>
+                L2
+            </sub>
+            +
+            <i>
+                Q
+            </i>
+            <sub>
+                L3
+            </sub>
+            + …) - (
+            <i>
+                Q
+            </i>
+            <sub>
+                C1
+            </sub>
+            +
+            <i>
+                Q
+            </i>
+            <sub>
+                C2
+            </sub>
+            +
+            <i>
+                Q
+            </i>
+            <sub>
+                C3
+            </sub>
+            + ...)
+        </p>
+        <p>
+            La puissance apparente résultante est égale à la somme vectorielle (ou géométrique) des puissances apparentes de chacun des récepteurs:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>S</mi><mo>=</mo><msqrt><msup><mi>P</mi><mn>2</mn></msup><mo>+</mo><msup><mi>Q</mi><mn>2</mn></msup></msqrt></mstyle></math>
+        </p>
+        <p>
+            Le facteur de puissance de lʼensemble est le rapport de la puissance active totale sur la puissance apparente totale:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>cos</mi><mi>φ</mi><mo>=</mo><mfrac><mi>P</mi><mi>S</mi></mfrac></mstyle></math>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/d04ca91f07d24d7e89b314f70cdd1072.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Lʼintensité du courant dans la ligne est donnée par:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>I</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mi>U</mi><mo>·</mo><mi>cos</mi><mo>⁡</mo><mi>φ</mi></mrow></mfrac><mo>=</mo><mfrac><mi>S</mi><mi>U</mi></mfrac></mstyle></math>
+        </p>
+        <h4>
+            <b>
+                Exemple
+            </b>
+        </h4>
+        <p>
+            On raccorde sur le réseau 230 V un récepteur purement ohmique de
+            <i>
+                P
+            </i>
+            <sub>
+                R
+            </sub>
+            = 1200 W, un moteur monophasé
+            <i>
+                P
+            </i>
+            <sub>
+                M
+            </sub>
+            = 800 W – cos
+            <i>
+                φ
+            </i>
+            <sub>
+                M
+            </sub>
+            = 0,7, un ensemble dʼarmatures TL de
+            <i>
+                P
+            </i>
+            <sub>
+                TL
+            </sub>
+            = 500 W – cos
+            <i>
+                φ
+            </i>
+            <sub>
+                TL
+            </sub>
+            = 0,5 et un condensateur de
+            <i>
+                Q
+            </i>
+            <sub>
+                C4
+            </sub>
+            = 900 var – cos
+            <i>
+                φ
+            </i>
+            <sub>
+                4
+            </sub>
+            = 0.
+        </p>
+        <p>
+            Calculer:
+        </p>
+        <ol>
+            <li>
+                la puissance active totale;
+            </li>
+            <li>
+                la puissance réactive totale;
+            </li>
+            <li>
+                la puissance apparente totale;
+            </li>
+            <li>
+                le facteur de puissance de lʼensemble;
+            </li>
+            <li>
+                lʼintensité du courant total.
+            </li>
+        </ol>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/55b4a54d8868406cbae6b66ea96e6765.png" alt="image manquante"/>
+            </div>
+        </div>
+        <ol>
+            <li>
+                Puissance active totale:
+                <br/>
+                <p>
+                    condensateur parfait ⇒
+                    <i>
+                        P
+                    </i>
+                    <sub>
+                        C
+                    </sub>
+                    = 0 W
+                    <br/>
+                    <i>
+                        P
+                    </i>
+                    =
+                    <i>
+                        P
+                    </i>
+                    <sub>
+                        R
+                    </sub>
+                    +
+                    <i>
+                        P
+                    </i>
+                    <sub>
+                        M
+                    </sub>
+                    +
+                    <i>
+                        P
+                    </i>
+                    <sub>
+                        TL
+                    </sub>
+                    = 1200 + 800 + 500
+                    <b>
+                        = 2500 W
+                    </b>
+                </p>
+            </li>
+            <li>
+                Puissance réactive
+                <i>
+                    Q
+                </i>
+                <sub>
+                    1
+                </sub>
+                :
+                <p>
+                    résistance parfaite ⇒
+                    <i>
+                        Q
+                    </i>
+                    <sub>
+                        1
+                    </sub>
+                    = 0 var
+                </p>
+                <p>
+                    Puissance réactive
+                    <i>
+                        Q
+                    </i>
+                    <sub>
+                        L2
+                    </sub>
+                    :
+                </p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>S</mi><mi>M</mi></msub><mo>=</mo><mfrac><msub><mi>P</mi><mi>M</mi></msub><mrow><mi>cos</mi><msub><mi>φ</mi><mi>M</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mn>800</mn><mrow><mn>0</mn><mo>,</mo><mn>7</mn></mrow></mfrac><mo>=</mo><mn>1143</mn><mtext></mtext><mi>VA</mi></mstyle></math>
+                </p>
+                <p>
+                    cos
+                    <i>
+                        φ
+                    </i>
+                    <sub>
+                        M
+                    </sub>
+                    = 0,7 ⇒
+                    <i>
+                        φ
+                    </i>
+                    <sub>
+                        M
+                    </sub>
+                    = 45,6° ⇒ sin
+                    <i>
+                        φ
+                    </i>
+                    <sub>
+                        M
+                    </sub>
+                    = 0,714
+                    <br/>
+                    <i>
+                        Q
+                    </i>
+                    <sub>
+                        L2
+                    </sub>
+                    =
+                    <i>
+                        S
+                    </i>
+                    <sub>
+                        M
+                    </sub>
+                    · sin
+                    <i>
+                        φ
+                    </i>
+                    <sub>
+                        M
+                    </sub>
+                    = 1143 ⋅ 0,714 = 816 var
+                </p>
+                <p>
+                    Puissance réactive
+                    <i>
+                        Q
+                    </i>
+                    <sub>
+                        L3
+                    </sub>
+                    :
+                </p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>S</mi><mi>TL</mi></msub><mo>=</mo><mfrac><msub><mi>P</mi><mi>TL</mi></msub><mrow><mi>cos</mi><msub><mi>φ</mi><mi>TL</mi></msub></mrow></mfrac><mo>=</mo><mfrac><mn>500</mn><mrow><mn>0</mn><mo>,</mo><mn>5</mn></mrow></mfrac><mo>=</mo><mn>1000</mn><mtext></mtext><mi>VA</mi></mstyle></math>
+                </p>
+                <p>
+                    <i>
+                        Q
+                    </i>
+                    <sub>
+                        L3
+                    </sub>
+                    =
+                    <i>
+                        S
+                    </i>
+                    <sub>
+                        TL
+                    </sub>
+                    · sin
+                    <i>
+                        φ
+                    </i>
+                    <sub>
+                        TL
+                    </sub>
+                    = 1000 ⋅ 0, 866 = 866 var
+                </p>
+                <p>
+                    Puissance réactive totale:
+                </p>
+                <p>
+                    <i>
+                        Q
+                    </i>
+                    =
+                    <i>
+                        Q
+                    </i>
+                    <sub>
+                        L2
+                    </sub>
+                    +
+                    <i>
+                        Q
+                    </i>
+                    <sub>
+                        L3
+                    </sub>
+                    –
+                    <i>
+                        Q
+                    </i>
+                    <sub>
+                        C
+                    </sub>
+                    = 816 + 866 − 900 =
+                    <b>
+                        782 var
+                    </b>
+                </p>
+            </li>
+            <li>
+                Puissance apparente:
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>S</mi><mo>=</mo><msqrt><msup><mi>P</mi><mn>2</mn></msup><mo>+</mo><msup><mi>Q</mi><mn>2</mn></msup></msqrt><mo>=</mo><msqrt><msup><mn>2500</mn><mn>2</mn></msup><mo>+</mo><msup><mn>782</mn><mn>2</mn></msup></msqrt><mo>=</mo><mn>2620</mn><mtext></mtext><mi>VA</mi></mstyle></math>
+                </p>
+            </li>
+            <li>
+                Facteur de puissance:
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>cos</mi><mi>φ</mi><mo>=</mo><mfrac><mi>P</mi><mi>S</mi></mfrac><mo>=</mo><mfrac><mn>2500</mn><mn>2620</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>954</mn></mstyle></math>
+                </p>
+            </li>
+            <li>
+                Intensité du courant:
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>I</mi><mo>=</mo><mfrac><mi>P</mi><mrow><mi>U</mi><mo>·</mo><mi>cos</mi><mi>φ</mi></mrow></mfrac><mo>=</mo><mfrac><mn>2500</mn><mrow><mn>230</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>954</mn></mrow></mfrac><mo>=</mo><mn>11</mn><mo>,</mo><mn>4</mn><mtext></mtext><mi>A</mi></mstyle></math>
+                </p>
+            </li>
+        </ol>
+        <p>
+            Résolution de lʼexercice sous forme de tableau
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/10c3e6bad3c24e05995f9080e7a653ee.png" alt="image manquante"/>
+            </div>
+        </div>
+    </div>
+
+<br/></body>
+</html>
+

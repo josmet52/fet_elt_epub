@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="9ad1ba95c7d740eb8d2f01eb9770dc86"/>
+    <meta name="dtb:depth" content="2" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+<docTitle>
+  <text>ET_ch_09_new</text>
+</docTitle>
+<navMap>
+<navPoint id="navPoint01">
+<navLabel>
+<text>  Introduction (9.1)</text>
+</navLabel>
+<content src="Text/th_01.xhtml#FET_toc_id_001"/>
+</navPoint>
+<navPoint id="navPoint02">
+<navLabel>
+<text>  Instruments analogiques (9.2)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_002"/>
+</navPoint>
+<navPoint id="navPoint03">
+<navLabel>
+<text>  Dispositifs de mesure (9.2.1)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_003"/>
+</navPoint>
+<navPoint id="navPoint04">
+<navLabel>
+<text>  Principaux symboles pour la désignation des instruments de mesure analogiques (9.2.2)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_004"/>
+</navPoint>
+<navPoint id="navPoint05">
+<navLabel>
+<text>  Etendue de la mesure (9.2.3)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_005"/>
+</navPoint>
+<navPoint id="navPoint06">
+<navLabel>
+<text>  Classe de précision (9.2.4)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_006"/>
+</navPoint>
+<navPoint id="navPoint07">
+<navLabel>
+<text>  Inconvénients (9.2.5)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_007"/>
+</navPoint>
+<navPoint id="navPoint08">
+<navLabel>
+<text>  Avantages (9.2.6)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_008"/>
+</navPoint>
+<navPoint id="navPoint09">
+<navLabel>
+<text>  Instruments numériques (9.3)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_009"/>
+</navPoint>
+<navPoint id="navPoint10">
+<navLabel>
+<text>  Description (9.3.1)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_010"/>
+</navPoint>
+<navPoint id="navPoint11">
+<navLabel>
+<text>  Affichage (9.3.2)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_011"/>
+</navPoint>
+<navPoint id="navPoint12">
+<navLabel>
+<text>  Caractéristiques (9.3.3)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_012"/>
+</navPoint>
+<navPoint id="navPoint13">
+<navLabel>
+<text>  Résolution (9.3.4)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_013"/>
+</navPoint>
+<navPoint id="navPoint14">
+<navLabel>
+<text>  Précision (9.3.5)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_014"/>
+</navPoint>
+<navPoint id="navPoint15">
+<navLabel>
+<text>  Inconvénients (9.3.6)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_015"/>
+</navPoint>
+<navPoint id="navPoint16">
+<navLabel>
+<text>  Oscilloscope et enregistreurs (9.4)</text>
+</navLabel>
+<content src="Text/th_04.xhtml#FET_toc_id_016"/>
+</navPoint>
+<navPoint id="navPoint17">
+<navLabel>
+<text>  Lʼoscilloscope (9.4.1)</text>
+</navLabel>
+<content src="Text/th_04.xhtml#FET_toc_id_017"/>
+</navPoint>
+<navPoint id="navPoint18">
+<navLabel>
+<text>  Les enregistreurs (9.4.2)</text>
+</navLabel>
+<content src="Text/th_04.xhtml#FET_toc_id_018"/>
+</navPoint>
+<navPoint id="navPoint19">
+<navLabel>
+<text>  Mesure du courant (9.5)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_019"/>
+</navPoint>
+<navPoint id="navPoint20">
+<navLabel>
+<text>  Extension de mesure de lʼampèremètre par un shunt (9.5.1)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_020"/>
+</navPoint>
+<navPoint id="navPoint21">
+<navLabel>
+<text>  Extension de mesure de lʼampèremètre par un transformateur dʼintensité (TI) (9.5.2)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_021"/>
+</navPoint>
+<navPoint id="navPoint22">
+<navLabel>
+<text>  Pince ampèremétrique (9.5.3)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_022"/>
+</navPoint>
+<navPoint id="navPoint23">
+<navLabel>
+<text>  Mesure de la tension (9.6)</text>
+</navLabel>
+<content src="Text/th_06.xhtml#FET_toc_id_023"/>
+</navPoint>
+<navPoint id="navPoint24">
+<navLabel>
+<text>  Extension de mesure du voltmètre par une résistance additionnelle (9.6.1)</text>
+</navLabel>
+<content src="Text/th_06.xhtml#FET_toc_id_024"/>
+</navPoint>
+<navPoint id="navPoint25">
+<navLabel>
+<text>  Extension de mesure du voltmètre par un transformateur de tension (TP) (9.6.2)</text>
+</navLabel>
+<content src="Text/th_06.xhtml#FET_toc_id_025"/>
+</navPoint>
+<navPoint id="navPoint26">
+<navLabel>
+<text>  Mesure de la résistance (9.7)</text>
+</navLabel>
+<content src="Text/th_07.xhtml#FET_toc_id_026"/>
+</navPoint>
+<navPoint id="navPoint27">
+<navLabel>
+<text>  Par la loi dʼohm (9.7.1)</text>
+</navLabel>
+<content src="Text/th_07.xhtml#FET_toc_id_027"/>
+</navPoint>
+<navPoint id="navPoint28">
+<navLabel>
+<text>  Par un ohmmètre (9.7.2)</text>
+</navLabel>
+<content src="Text/th_07.xhtml#FET_toc_id_028"/>
+</navPoint>
+<navPoint id="navPoint29">
+<navLabel>
+<text>  Par un pont de Wheatstone (9.7.3)</text>
+</navLabel>
+<content src="Text/th_07.xhtml#FET_toc_id_029"/>
+</navPoint>
+<navPoint id="navPoint30">
+<navLabel>
+<text>  Par un contrôleur dʼisolement (9.7.4)</text>
+</navLabel>
+<content src="Text/th_07.xhtml#FET_toc_id_030"/>
+</navPoint>
+<navPoint id="navPoint31">
+<navLabel>
+<text>  Mesure de la puissance (9.8)</text>
+</navLabel>
+<content src="Text/th_08.xhtml#FET_toc_id_031"/>
+</navPoint>
+<navPoint id="navPoint32">
+<navLabel>
+<text>  Extension de mesure du wattmètre (9.8.1)</text>
+</navLabel>
+<content src="Text/th_08.xhtml#FET_toc_id_032"/>
+</navPoint>
+<navPoint id="navPoint33">
+<navLabel>
+<text>  Mesure de lʼénergie (9.9)</text>
+</navLabel>
+<content src="Text/th_09.xhtml#FET_toc_id_033"/>
+</navPoint>
+<navPoint id="navPoint34">
+<navLabel>
+<text>  Extension de mesure du compteur dʼénergie (9.9.1)</text>
+</navLabel>
+<content src="Text/th_09.xhtml#FET_toc_id_034"/>
+</navPoint>
+<navPoint id="navPoint35">
+<navLabel>
+<text>  Mesures dʼautres grandeurs (9.10)</text>
+</navLabel>
+<content src="Text/th_10.xhtml#FET_toc_id_035"/>
+</navPoint>
+<navPoint id="navPoint36">
+<navLabel>
+<text>  Exercices (9.11)</text>
+</navLabel>
+<content src="Text/th_11.xhtml#FET_toc_id_036"/>
+</navPoint>
+</navMap></ncx>

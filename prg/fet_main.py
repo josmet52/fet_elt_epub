@@ -353,7 +353,7 @@ variable.set('USER') # default value
 
 
 
-# GLOBAL EPUB MENU
+# SINGLE EPUB
 singleepubmenu = Menu(menubar, tearoff=0)
 singleepubmenu.add_command(label="0 - Correct PW file", command=lambda: file_improve_pw_epub_go())
 # singleepubmenu.add_separator()
@@ -371,12 +371,12 @@ singleepubmenu.add_separator()
 singleepubmenu.add_command(label="Verify file", command=verify_job_go)
 menubar.add_cascade(label="Single EPUB", menu=singleepubmenu)
 
-# create a pulldown menu, and add it to the menu bar
+# BATCH JOB (DIR)
 direpubmenu = Menu(menubar, tearoff=0)
-direpubmenu.add_command(label="Correct PW (dir)", command=lambda: dir_improve_pw_epub_go())
+# direpubmenu.add_command(label="Correct PW (dir)", command=lambda: dir_improve_pw_epub_go())
 # direpubmenu.add_separator()
 # direpubmenu.add_command(label="Remove nav btn dir", command=lambda: dir_remove_nav_btn_go())
-direpubmenu.add_separator()
+# direpubmenu.add_separator()
 direpubmenu.add_command(label="Update js and css (dir)", command=lambda: dir_update_js_and_css_go())
 direpubmenu.add_command(label="Change police (dir)", command=lambda: dir_change_police_go())
 direpubmenu.add_command(label="Add nav btn (dir)", command=lambda: dir_add_nav_btn_go())

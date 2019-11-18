@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xmlns:xml="http://www.w3.org/XML/1998/namespace" xml:lang="fr" lang="fr">
+
+<head>
+    <title>
+        Anim_cercle_trigo_et_valeur_instatanee_v1d
+    </title>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/anim_styles_v02_03.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/anim_cercle_trigo_val_inst_v02_01.js" type="text/javascript">
+    </script>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <div>
+        <h2 id="FET_toc_id_009">7.8 Valeur instantanée (10.3.5)</h2>
+        <div class="fet_tableau">
+            <div class="fet_ligne">
+                <div class="fet_cellule_w60">
+                    <h4 class="sigil_not_in_toc" style="text-align: left;">
+                        <b>
+                            Définition de la grandeur
+                        </b>
+                    </h4>
+                    <p>
+                        La valeur instantanée dʼun signal alternatif est la valeur du signal (courant ou tension) à un instant donné.
+                    </p>
+                    <p>
+                        Les symboles de la tension instantanée et du courant instantané sʼécrivent en minuscule.
+                    </p>
+                    <p>
+                        Par exemple:
+                        <i>
+                            u, i
+                        </i>
+                        .
+                    </p>
+                    <p>
+                        La valeur instantanée peut être déterminée par la lecture sur un graphique représentant le courant ou la tension. Elle peut aussi être calculée. Il faut alors connaître la position du vecteur au temps
+                        <i>
+                            t
+                        </i>
+                        , cʼest-à-dire lʼangle
+                        <i>
+                            ω t
+                        </i>
+                        .
+                    </p>
+                </div>
+                <div class="fet_cellule_w35">
+                    <img src="../Images/d4f110db32754e939fbb9bd34e1d52a3.png" alt="image manquante"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 id="sigil_toc_id_3">7.8.1 Valeur instantanée d'un signal alternatif : animation et exercices</h2>
+    <h4 class="sigil_not_in_toc">
+        <span style="font-weight: bold;">
+            Exercices
+        </span>
+    </h4>
+    <div>
+        <ol>
+            <li>
+                A l'aide de l'animation ci-dessous, expliquez la notion de valeur instantanée :
+                <span class="Apple-tab-span" style="white-space: pre;">
+                </span>
+                <br/>
+            </li>
+            <li>
+                A l'aide de l'animation ci-dessous, déterminez la la valeur instantanée pour les angles suivants  :
+                <ol type="a">
+                    <li>
+                        45°
+                    </li>
+                    <li>
+                        90°
+                    </li>
+                    <li>
+                        180°
+                        <br/>
+                    </li>
+                    <li>
+                        270°
+                    </li>
+                </ol>
+            </li>
+            <li>
+                Quelles similitudes remarquez-vous dans ces valeurs ?
+            </li>
+        </ol>
+    </div>
+    <canvas id="canvas_id" width="1398" height="505" class="canvas">
+        Ho la la !!
+        <br/>
+        Malheureusement votre lecteur ne supporte pas Canvas ...  l'animation ne peut pas fonctionner.
+        <br/>
+    </canvas>
+    <br/>
+    <form>
+        <div class="textareaangle" id="txt_deg">
+            φ = 0.00˚
+        </div>
+        <div class="textareasin" id="txt_sin">
+            sinφ = 0
+        </div>
+        <div class="textareacos" id="txt_cos" style="display: none;">
+            cosφ = 1.00
+        </div>
+        <div class="textareatension" id="txt_tension" style="">
+            U = 0.00 V
+        </div>
+        <button class="button_plus_minus-space" type="button" onclick="btnStepMoinsMoins()">
+            --
+        </button>
+        <button class="button_plus_minus" type="button" onclick="btnStepMoins()">
+            -
+        </button>
+        <button class="button button-show" type="button" onclick="btnRun()">
+            Go/Stop
+        </button>
+        <button class="button_plus_minus" type="button" onclick="btnStepPlus()">
+            +
+        </button>
+        <button class="button_plus_minus" type="button" onclick="btnStepPlusPlus()">
+            ++
+        </button>
+        <label class="btncheck" id="chk_label_id" style="visibility: hidden;">
+            Etiquettes
+            <input type="checkbox" checked="" id="opt_etiquette_yesno" style="cursor: pointer;"/>
+        </label>
+        <label class="btncheck" id="chk_grid_id" style="visibility: hidden;">
+            Grille
+            <input type="checkbox" checked="" id="opt_grille_yesno" style="cursor: pointer;"/>
+        </label>
+        <label class="btncheck" id="chk_tension_id" style="visibility: hidden;">
+            Tension
+            <input type="checkbox" checked="" id="opt_tension_yesno" style="cursor: pointer;"/>
+        </label>
+    </form>
+        <script>
+		
+//************************** choix des options begin ***********************************
+			
+			var show_label = true;
+            var show_grid = true;
+            var show_line = true;
+            var show_sin = true;
+            var show_cos = false;
+            var show_angle = true;
+            var show_tension = true;
+            var show_btn_check = false;
+//************************** choix des options end ***********************************			
+			
+			// Fonction appellée par le resize
+			document.getElementsByTagName("body")[0].onresize = function() {onResizeAction()};
+			
+			// Fonctions appellées par les options
+			document.getElementById("opt_etiquette_yesno").onchange = function() {optEtiquetteYesNo(this.checked)};
+			document.getElementById("opt_etiquette_yesno").checked = show_label;
+			document.getElementById("opt_grille_yesno").onchange = function() {optGrilleYesNo(this.checked)};
+			document.getElementById("opt_grille_yesno").checked = show_grid;
+			document.getElementById("opt_tension_yesno").onchange = function() {optTensionYesNo(this.checked)};
+			document.getElementById("opt_tension_yesno").checked = show_tension;
+			
+			const chk_grid = document.getElementById("chk_grid_id");
+            const chk_tension = document.getElementById("chk_tension_id");
+            const chk_label = document.getElementById("chk_label_id");
+
+			if (show_btn_check){
+				chk_grid.style.visibility = "visible";
+				chk_tension.style.visibility = "visible";
+				chk_label.style.visibility = "visible";
+			} else {
+				chk_grid.style.visibility = "hidden";
+				chk_tension.style.visibility = "hidden";
+				chk_label.style.visibility = "hidden";
+			}
+
+			
+		
+			// récupérer les informations du canvas
+            const canvas_element = document.getElementById("canvas_id");
+            const ctx = canvas_element.getContext("2d");
+			
+			var w1 = canvas_element.width;
+            var h1 = canvas_element.height;
+
+            var r_width;
+            var r_height;
+            var r_base;
+            var r_margin;
+
+            var f_dim = 3.45; // grandeur de la zone de la courbe
+
+            var anim_running = false;
+            var stop_asked = false;
+            var idVector;
+
+            const axe_line_color = "#707070";
+            const grid_color = "#eaeaea";
+            const curve_line_color = "Black";
+            const fill_circle_color = "AliceBlue";
+            const fill_box_color = "#ffffe6"; //"LightYellow";
+            const label_text_color = "black";
+
+            const ph1_color = "#ff4500"; // OrangeRed
+            const ph2_color = "#87cefa"; // LightSkyBlue
+            const ph3_color = "#32cd32"; // LimeGreen
+
+            const sin_cos_color = "#ff00ba";
+            const cos_color = "#ff4500";
+            const sin_color = "#003bff";
+            const line_color = "#00baff";
+
+			var r_zone ;
+            var r_label;
+            var r_axe;
+            var r_circle;
+            var l_width;
+            var grad_len;
+            var letter_height;
+            var letter_style;
+			
+			// animation
+			ph_deg = 0;
+			ph_inc = 1;
+			sleep_time = 100;
+			
+			// programme principal
+			// ************************************************************************
+			onResizeActionTrigo();
+			RefreshGraph(ctx, r_zone, r_label, r_axe, r_circle, l_width, grad_len, letter_height, letter_style, ph_deg)
+        </script>
+
+<br/></body>
+</html>
+

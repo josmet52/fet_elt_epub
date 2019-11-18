@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="9ad1ba95c7d740eb8d2f01eb9770dc86"/>
+    <meta name="dtb:depth" content="2" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+<docTitle>
+  <text>ET_ch_10_new</text>
+</docTitle>
+<navMap>
+<navPoint id="navPoint01">
+<navLabel>
+<text>  Généralités (10.1)</text>
+</navLabel>
+<content src="Text/th_01.xhtml#FET_toc_id_001"/>
+</navPoint>
+<navPoint id="navPoint02">
+<navLabel>
+<text>  Représentation dʼun courant alternatif sinusoïdal (10.2)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_002"/>
+</navPoint>
+<navPoint id="navPoint03">
+<navLabel>
+<text>  Grandeurs et unités (10.3)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_003"/>
+</navPoint>
+<navPoint id="navPoint04">
+<navLabel>
+<text>  Période et fréquence (10.3.1)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_004"/>
+</navPoint>
+<navPoint id="navPoint05">
+<navLabel>
+<text>  Pulsation ou vitesse angulaire (10.3.2)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_005"/>
+</navPoint>
+<navPoint id="navPoint06">
+<navLabel>
+<text>  Valeur de crête (10.3.3)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_006"/>
+</navPoint>
+<navPoint id="navPoint07">
+<navLabel>
+<text>  Valeur efficace (10.3.4)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_007"/>
+</navPoint>
+<navPoint id="navPoint08">
+<navLabel>
+<text>  Valeur instantanée (10.3.5)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_008"/>
+</navPoint>
+<navPoint id="navPoint09">
+<navLabel>
+<text>  Récepteur purement ohmique (10.4)</text>
+</navLabel>
+<content src="Text/th_04.xhtml#FET_toc_id_009"/>
+</navPoint>
+<navPoint id="navPoint10">
+<navLabel>
+<text>  Résistance (10.4.1)</text>
+</navLabel>
+<content src="Text/th_04.xhtml#FET_toc_id_010"/>
+</navPoint>
+<navPoint id="navPoint11">
+<navLabel>
+<text>  Puissance et énergie actives (10.4.2)</text>
+</navLabel>
+<content src="Text/th_04.xhtml#FET_toc_id_011"/>
+</navPoint>
+<navPoint id="navPoint12">
+<navLabel>
+<text>  Récepteur purement inductif (10.5)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_012"/>
+</navPoint>
+<navPoint id="navPoint13">
+<navLabel>
+<text>  Réactance dʼinduction (10.5.1)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_013"/>
+</navPoint>
+<navPoint id="navPoint14">
+<navLabel>
+<text>  Puissance et énergie réactives (10.5.2)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_014"/>
+</navPoint>
+<navPoint id="navPoint15">
+<navLabel>
+<text>  apparente (10.5.3 Puissance)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_015"/>
+</navPoint>
+<navPoint id="navPoint16">
+<navLabel>
+<text>  Récepteur purement capacitif (10.6)</text>
+</navLabel>
+<content src="Text/th_06.xhtml#FET_toc_id_016"/>
+</navPoint>
+<navPoint id="navPoint17">
+<navLabel>
+<text>  Réactance de capacité (10.6.1)</text>
+</navLabel>
+<content src="Text/th_06.xhtml#FET_toc_id_017"/>
+</navPoint>
+<navPoint id="navPoint18">
+<navLabel>
+<text>  Puissance et énergie réactives (10.6.2)</text>
+</navLabel>
+<content src="Text/th_06.xhtml#FET_toc_id_018"/>
+</navPoint>
+<navPoint id="navPoint19">
+<navLabel>
+<text>  Calcul des tensions, courants et impédances en alternatif (10.7)</text>
+</navLabel>
+<content src="Text/th_07.xhtml#FET_toc_id_019"/>
+</navPoint>
+<navPoint id="navPoint20">
+<navLabel>
+<text>  Récepteur R-L en série (10.8)</text>
+</navLabel>
+<content src="Text/th_08.xhtml#FET_toc_id_020"/>
+</navPoint>
+<navPoint id="navPoint21">
+<navLabel>
+<text>  Récepteur R-C en série (10.9)</text>
+</navLabel>
+<content src="Text/th_09.xhtml#FET_toc_id_021"/>
+</navPoint>
+<navPoint id="navPoint22">
+<navLabel>
+<text>  Récepteur R-L-C en série (10.10)</text>
+</navLabel>
+<content src="Text/th_10.xhtml#FET_toc_id_022"/>
+</navPoint>
+<navPoint id="navPoint23">
+<navLabel>
+<text> En savoir plus : Impédance en fonction de la fréquence circuit R-L R-C; R-L-C série</text>
+</navLabel>
+<content src="Text/th_11.xhtml#FET_toc_id_023"/>
+</navPoint>
+<navPoint id="navPoint24">
+<navLabel>
+<text>  Récepteur R-L en parallèle (10.11)</text>
+</navLabel>
+<content src="Text/th_12.xhtml#FET_toc_id_024"/>
+</navPoint>
+<navPoint id="navPoint25">
+<navLabel>
+<text>  Récepteur R-C en parallèle (10.12)</text>
+</navLabel>
+<content src="Text/th_13.xhtml#FET_toc_id_025"/>
+</navPoint>
+<navPoint id="navPoint26">
+<navLabel>
+<text>  Récepteur R-L-C en parallèle (10.13)</text>
+</navLabel>
+<content src="Text/th_14.xhtml#FET_toc_id_026"/>
+</navPoint>
+<navPoint id="navPoint27">
+<navLabel>
+<text>  Cas général (10.14)</text>
+</navLabel>
+<content src="Text/th_15.xhtml#FET_toc_id_027"/>
+</navPoint>
+<navPoint id="navPoint28">
+<navLabel>
+<text>  Raccordement dʼun récepteur quelconque (10.14.1)</text>
+</navLabel>
+<content src="Text/th_15.xhtml#FET_toc_id_028"/>
+</navPoint>
+<navPoint id="navPoint29">
+<navLabel>
+<text>  Raccordement dʼun ensemble de récepteurs (10.14.2)</text>
+</navLabel>
+<content src="Text/th_15.xhtml#FET_toc_id_029"/>
+</navPoint>
+<navPoint id="navPoint30">
+<navLabel>
+<text>  Amélioration du facteur de puissance (10.15)</text>
+</navLabel>
+<content src="Text/th_16.xhtml#FET_toc_id_030"/>
+</navPoint>
+<navPoint id="navPoint31">
+<navLabel>
+<text>  Généralités (10.15.1)</text>
+</navLabel>
+<content src="Text/th_16.xhtml#FET_toc_id_031"/>
+</navPoint>
+<navPoint id="navPoint32">
+<navLabel>
+<text>  Amélioration du facteur de puissance (10.15.2)</text>
+</navLabel>
+<content src="Text/th_16.xhtml#FET_toc_id_032"/>
+</navPoint>
+<navPoint id="navPoint33">
+<navLabel>
+<text>  Puissance perdue en ligne (10.15.3)</text>
+</navLabel>
+<content src="Text/th_16.xhtml#FET_toc_id_033"/>
+</navPoint>
+<navPoint id="navPoint34">
+<navLabel>
+<text>  Chute de tension en ligne (10.16)</text>
+</navLabel>
+<content src="Text/th_17.xhtml#FET_toc_id_034"/>
+</navPoint>
+<navPoint id="navPoint35">
+<navLabel>
+<text>  Comparaison des effets du courant alternatif et du courant continu (10.17)</text>
+</navLabel>
+<content src="Text/th_18.xhtml#FET_toc_id_035"/>
+</navPoint>
+<navPoint id="navPoint36">
+<navLabel>
+<text>  Effet calorifique (10.17.1)</text>
+</navLabel>
+<content src="Text/th_18.xhtml#FET_toc_id_036"/>
+</navPoint>
+<navPoint id="navPoint37">
+<navLabel>
+<text>  Effet magnétique (10.17.2)</text>
+</navLabel>
+<content src="Text/th_18.xhtml#FET_toc_id_037"/>
+</navPoint>
+<navPoint id="navPoint38">
+<navLabel>
+<text>  Effet chimique (10.17.3)</text>
+</navLabel>
+<content src="Text/th_18.xhtml#FET_toc_id_038"/>
+</navPoint>
+<navPoint id="navPoint39">
+<navLabel>
+<text>  Effet lumineux (10.17.4)</text>
+</navLabel>
+<content src="Text/th_18.xhtml#FET_toc_id_039"/>
+</navPoint>
+<navPoint id="navPoint40">
+<navLabel>
+<text>  Effet piézo-électrique (10.17.5)</text>
+</navLabel>
+<content src="Text/th_18.xhtml#FET_toc_id_040"/>
+</navPoint>
+<navPoint id="navPoint41">
+<navLabel>
+<text>  Effet électrostatique (10.17.6)</text>
+</navLabel>
+<content src="Text/th_18.xhtml#FET_toc_id_041"/>
+</navPoint>
+<navPoint id="navPoint42">
+<navLabel>
+<text>  Effet physiologique (10.17.7)</text>
+</navLabel>
+<content src="Text/th_18.xhtml#FET_toc_id_042"/>
+</navPoint>
+<navPoint id="navPoint43">
+<navLabel>
+<text> Récapitulatif: Les vecteurs (phaseurs) en alternatif</text>
+</navLabel>
+<content src="Text/th_19.xhtml#FET_toc_id_043"/>
+</navPoint>
+<navPoint id="navPoint44">
+<navLabel>
+<text>  Exercices (10.18)</text>
+</navLabel>
+<content src="Text/ex_01.xhtml#FET_toc_id_044"/>
+</navPoint>
+</navMap></ncx>

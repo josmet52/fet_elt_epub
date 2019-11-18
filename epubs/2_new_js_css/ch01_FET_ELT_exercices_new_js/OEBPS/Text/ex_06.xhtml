@@ -1,0 +1,757 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Exercices
+    </title>
+    <meta charset="utf-8"/>
+    <link href="../Styles/exercises_v02_03.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_06.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_09.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <h1 id="FET_toc_id_076">Exercices 1.4 Genre de courant</h1>
+    <div>
+        <br/>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.1a Courant continu</h2>
+        <div class="exercise_question">
+            Si le courant change de valeur sans changer de sens, périodiquement ou non,&#160;il ne s'agit pas&#160;de courant continu.
+        </div>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === true,'839d');">
+            Vrai
+        </button>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === false,'839d');">
+            Faux
+        </button>
+        <br/>
+        <button style="margin-top:15px" id="hintButton839d" type="button" onclick="showHint('839d');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint839d' style='display:none;'>
+            Un courant continu ne change pas de sens.
+            <div>
+                Voir paragraphe 1.4.1
+            </div>
+        </div>
+        <div class="exercise_explanation" id='explanation839d' style='display:none;'>
+            Un courant qui change de valeur sans changer de sens est un courant continu pulsé.
+            <div>
+                Réponse juste : Faux
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.1b Courant continu</h2>
+        <div class="exercise_question">
+            Quelle est l'affirmation correcte ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1043e' type="radio" id='iscorrectr1043e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les sources de tension électrochimiques ne fournissent pas du courant continu.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1043e' type="radio" id='iscorrectr2043e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Si le courant change de sens périodiquement il s'agit d'un courant continu pulsé.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1043e' type="radio" id='iscorrectr3043e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Lorsqu'un courant continu circule, les atomes se déplacent toujours dans le même sens.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1043e' type="radio" id='iscorrectr0043e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                On nomme courant continu, un courant qui dans un conducteur va toujours dans le même sens.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1043e' type="radio" id='iscorrectr4043e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Un courant continu circule toujours soit du pôle + au pôle - d'une pile, soit du pôle - au pôle + d'une pile, mais il ne change pas périodiquement.
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton043e" type="button" onclick="validateRadioButton(['iscorrectr3043e','iscorrectr2043e','iscorrectr4043e','iscorrectr1043e','iscorrectr0043e'],['false','false','false','false','true'],'043e');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton043e" type="button" onclick="showHint('043e');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint043e' style='display:none;'>
+            <div>
+                Voir paragraphe 1.4.1
+            </div>
+        </div>
+        <div class="exercise_explanation" id='explanation043e' style='display:none;'>
+            Par définition, un courant continu est&#160;un courant qui&#160;circule toujours dans le même sens dans un conducteur .
+            <div>
+                <br/>
+            </div>
+            <div>
+                Réponse juste : On nomme courant continu, un courant qui dans un conducteur va toujours dans le même sens.
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.1c Courant continu</h2>
+        <div class="exercise_question">
+            Dans la liste suivante, quels sont les générateurs de courant continu ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr0833e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les piles
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr1833e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les accumulateurs
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr2833e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les cellules photovoltaïques
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr3833e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les dynamos
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr4833e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les centrales électriques
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr5833e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les centrales nucléaires
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr6833e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les alternateurs de voitures
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr7833e'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les prises électriques
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton833e" type="button" onclick="validateCheckBox(['iscorrectr3833e','iscorrectr2833e','iscorrectr5833e','iscorrectr4833e','iscorrectr7833e','iscorrectr6833e','iscorrectr1833e','iscorrectr0833e'],['true','true','false','false','false','false','true','true'],'833e');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton833e" type="button" onclick="showHint('833e');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint833e' style='display:none;'>
+            Le réseau électrique qui alimente les ménage et les usines délivrent du courant alternatif.
+            <div>
+                Voir paragraphe 1.4.1
+            </div>
+        </div>
+        <div class="exercise_explanation" id='explanation833e' style='display:none;'>
+            Les piles, les accumulateurs, les cellules photovoltaïques et les dynamos sont des générateurs de courant continu.
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.1d Courant continu</h2>
+        <div class="exercise_question">
+            Parmi les représentations graphiques de courants ci-dessous, indiquer lesquels sont continus.
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr14c63'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <img src="../Images/f33593da94ea4550a9159f1be2f42ba9.png"/>
+                <br/>
+                <div>
+                    graphique a
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr04c63'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                &#160;&#160;
+                <img src="../Images/bdbdf824eb224f77b4466f460a79c516.png"/>
+                <div>
+                    graphique b
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr24c63'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <img src="../Images/786e416dde8348eb84a15414c67cfff8.png"/>
+                <div>
+                    graphique c
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr64c63'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <img src="../Images/fb02412853934c83979481f04914c0f8.png"/>
+                <div>
+                    graphique d
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr74c63'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <img src="../Images/931a308b28144df5a162b549aa34d4f5.png"/>
+                <div>
+                    graphique e
+                </div>
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton4c63" type="button" onclick="validateCheckBox(['iscorrectr24c63','iscorrectr74c63','iscorrectr64c63','iscorrectr14c63','iscorrectr04c63'],['true','true','true','false','false'],'4c63');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton4c63" type="button" onclick="showHint('4c63');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint4c63' style='display:none;'>
+            Un courant continu ne change pas de sens.
+        </div>
+        <div class="exercise_explanation" id='explanation4c63' style='display:none;'>
+            <div>
+                Les graphiques suivants représentent un courant continu : graphiques c, d et e
+            </div>
+            <div>
+                <br/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.1e Courant continu</h2>
+        <div class="exercise_question">
+            Quelles sont les applications du courant continu ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr53692'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le transport de l'énergie électrique en Suisse.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr13692'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L’électronique.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr23692'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L’électricité dans l’automobile.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr33692'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L’électrochimie.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr43692'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L’électroplastie.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr63692'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les appareils électroménagers.
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton3692" type="button" onclick="validateCheckBox(['iscorrectr33692','iscorrectr23692','iscorrectr53692','iscorrectr43692','iscorrectr63692','iscorrectr13692','iscorrectr03692'],['true','true','false','true','false','true','true'],'3692');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton3692" type="button" onclick="showHint('3692');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint3692' style='display:none;'>
+            Le réseau électrique suisse&#160;délivre du courant alternatif.
+        </div>
+        <div class="exercise_explanation" id='explanation3692' style='display:none;'>
+            Réponses justes :
+            <div>
+                &#160;- L’électronique
+            </div>
+            <div>
+                &#160;- L’électricité dans l’automobile
+            </div>
+            <div>
+                &#160;- L’électrochimie.
+            </div>
+            <div>
+                &#160;- L’électroplastie.
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.1f Symbole DC</h2>
+        <div class="exercise_question">
+            Que désigne le symbole DC ? Sélectionnez les affirmations vraies dans la liste ci-apreès.
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr048b8'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                DC signifie "Direct Current" et est utilisé pour désigner un courant qui va toujours dans le même sens.&#160;
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr148b8'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                DC est utilisé pour désigner un courant continu.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr248b8'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                DC signifie "Download Current" et représente un courant qui remonte le conducteur.
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton48b8" type="button" onclick="validateCheckBox(['iscorrectr248b8','iscorrectr148b8','iscorrectr048b8'],['false','true','true'],'48b8');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton48b8" type="button" onclick="showHint('48b8');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint48b8' style='display:none;'>
+            Voir section 1.4.1
+        </div>
+        <div class="exercise_explanation" id='explanation48b8' style='display:none;'>
+            DC signifie "Direct Current" (en anglais) et est utilisé pour désigner un courant qui va toujours dans le même sens. En français on utilise le terme de Courant continu.
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.2a Courant alternatif</h2>
+        <div class="exercise_question">
+            Si le conducteur change de sens on parle de courant alternatif.
+        </div>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === true,'1e3d');">
+            Vrai
+        </button>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === false,'1e3d');">
+            Faux
+        </button>
+        <br/>
+        <button style="margin-top:15px" id="hintButton1e3d" type="button" onclick="showHint('1e3d');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint1e3d' style='display:none;'>
+            Le conducteur ne circule pas. C'est le courant.
+            <div>
+                Voir paragraphe 1.4.2
+            </div>
+        </div>
+        <div class="exercise_explanation" id='explanation1e3d' style='display:none;'>
+            Si le courant dans le conducteur change de sens on parle de courant alternatif.
+            <div>
+                Réponse : Faux
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.2b Courant alternatif</h2>
+        <div class="exercise_question">
+            Quelle est l'affirmation correcte ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group16991' type="radio" id='iscorrectr16991'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les sources de tension électrochimiques fournissent du courant alternatif.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group16991' type="radio" id='iscorrectr06991'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                On nomme courant alternatif un courant qui change de sens dans un conducteur.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group16991' type="radio" id='iscorrectr26991'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Si le courant change périodiquement d'intensité il s'agit d'un courant alternatif.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group16991' type="radio" id='iscorrectr36991'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Lorsqu'un courant&#160;alternatif circule, les atomes se déplacent alternativement dans des directions opposées.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group16991' type="radio" id='iscorrectr46991'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Un courant alternatif circule alternativement du pôle + d'une pile au pôle -&#160;puis du pôle - au pôle +.
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton6991" type="button" onclick="validateRadioButton(['iscorrectr36991','iscorrectr26991','iscorrectr46991','iscorrectr16991','iscorrectr06991'],['false','false','false','false','true'],'6991');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton6991" type="button" onclick="showHint('6991');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint6991' style='display:none;'>
+            Une seule réponse possible.
+            <div>
+                Voir paragraphe 1.4.2
+            </div>
+        </div>
+        <div class="exercise_explanation" id='explanation6991' style='display:none;'>
+            Par définition, un courant alternatif change de sens dans le conducteur.
+            <div>
+                <br/>
+            </div>
+            <div>
+                Réponse juste : On nomme courant alternatif un courant qui change de sens dans un conducteur.
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.2c Courant alternatif</h2>
+        <div class="exercise_question">
+            Dans la liste suivante, quels sont les générateurs de courant alternatif ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr4a680'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les centrales électriques
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr0a680'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les piles
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr2a680'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les cellules photovoltaïques
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr5a680'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les centrales nucléaires
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr1a680'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les accumulateurs
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr3a680'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les dynamos
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr6a680'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les alternateurs de voitures
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr7a680'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les prises électriques
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButtona680" type="button" onclick="validateCheckBox(['iscorrectr3a680','iscorrectr2a680','iscorrectr5a680','iscorrectr4a680','iscorrectr7a680','iscorrectr6a680','iscorrectr1a680','iscorrectr0a680'],['false','false','true','true','true','true','false','false'],'a680');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButtona680" type="button" onclick="showHint('a680');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hinta680' style='display:none;'>
+            Le réseau électrique qui alimente les ménage et les usines délivre du courant alternatif.
+            <div>
+                Voir paragraphe 1.4.2
+            </div>
+        </div>
+        <div class="exercise_explanation" id='explanationa680' style='display:none;'>
+            Les piles, les accumulateurs, les cellules photovoltaïques et les dynamos ne sont pas des générateurs de courant alternatif.
+            <div>
+                <br/>
+            </div>
+            <div>
+                Réponses justes :
+            </div>
+            <div>
+                &#160;- Les centrales électriques
+            </div>
+            <div>
+                &#160;- Les centrales nucléaires
+            </div>
+            <div>
+                &#160;- Les alternateurs de voitures
+            </div>
+            <div>
+                &#160;- Les prises électriques
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.2d Courant continu</h2>
+        <div class="exercise_question">
+            Parmi les représentations graphiques de courants ci-dessous, indiquer lesquels sont alternatifs.
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr192f0'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <img src="../Images/f33593da94ea4550a9159f1be2f42ba9.png"/>
+                <br/>
+                <div>
+                    graphique a
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr092f0'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                &#160;&#160;
+                <img src="../Images/bdbdf824eb224f77b4466f460a79c516.png"/>
+                <div>
+                    graphique b
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr292f0'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <img src="../Images/786e416dde8348eb84a15414c67cfff8.png"/>
+                <div>
+                    graphique c
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr692f0'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <img src="../Images/fb02412853934c83979481f04914c0f8.png"/>
+                <div>
+                    graphique d
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr792f0'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <img src="../Images/931a308b28144df5a162b549aa34d4f5.png"/>
+                <div>
+                    graphique e
+                </div>
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton92f0" type="button" onclick="validateCheckBox(['iscorrectr292f0','iscorrectr792f0','iscorrectr692f0','iscorrectr192f0','iscorrectr092f0'],['false','false','false','true','true'],'92f0');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton92f0" type="button" onclick="showHint('92f0');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint92f0' style='display:none;'>
+            Un courant continu ne change pas de sens.
+        </div>
+        <div class="exercise_explanation" id='explanation92f0' style='display:none;'>
+            <div>
+                Les graphiques suivants représentent un courant continu : graphiques a et b
+            </div>
+            <div>
+                <br/>
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.2e Courant alternatif</h2>
+        <div class="exercise_question">
+            Quelles sont les applications du courant alternatif ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr568ab'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Le transport de l'énergie électrique en Suisse
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr168ab'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L’électronique
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr268ab'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les voitures électriques
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr368ab'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les centrales électriques
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr468ab'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                L’électroplastie
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr668ab'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Les appareils électroménagers
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton68ab" type="button" onclick="validateCheckBox(['iscorrectr368ab','iscorrectr268ab','iscorrectr568ab','iscorrectr468ab','iscorrectr668ab','iscorrectr168ab','iscorrectr068ab'],['true','false','true','false','true','false','true'],'68ab');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton68ab" type="button" onclick="showHint('68ab');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint68ab' style='display:none;'>
+            Le réseau électrique suisse&#160;délivre du courant alternatif.
+        </div>
+        <div class="exercise_explanation" id='explanation68ab' style='display:none;'>
+            Les centrales électriques produisent du courant alternatif qui est transporté, puis utilisé, entre autres,&#160;par les appareils électroménagers. Par contre, l'électronique, les voitures électriques, l'électroplastie sont des domaines d'application du courant continu.
+            <div>
+                <br/>
+            </div>
+            <div>
+                Réponses justes :
+            </div>
+            <div>
+                &#160;- Le transport de l'énergie électrique en Suisse
+            </div>
+            <div>
+                &#160;- Les centrales électriques
+            </div>
+            <div>
+                &#160;- Les appareils électroménagers
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 1.4.2f Symbole AC</h2>
+        <div class="exercise_question">
+            Que désigne le symbole AC ? Sélectionnez les affirmations vraies dans la liste ci-ap
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr042ce'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                DC signifie "Alternating Current" et est utilisé pour désigner un courant qui change de sens.&#160;
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr242ce'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                AC signifie "Amplified Current" et représente un courant qui augmente.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id='iscorrectr142ce'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                AC est utilisé pour désigner un courant alternatif.
+            </div>
+        </div>
+        <button style="margin-top:15px" id="submitButton42ce" type="button" onclick="validateCheckBox(['iscorrectr242ce','iscorrectr142ce','iscorrectr042ce'],['false','true','true'],'42ce');">
+            Vérifiez votre réponse
+        </button>
+        <button style="margin-top:15px" id="hintButton42ce" type="button" onclick="showHint('42ce');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint42ce' style='display:none;'>
+            Voir section 1.4.2
+        </div>
+        <div class="exercise_explanation" id='explanation42ce' style='display:none;'>
+            <div>
+                Si le courant dans le conducteur change de sens on parle de courant alternatif (AC). Cette appellation s’applique aussi bien à un courant de forme quelconque que sinusoïdale. On appelle fréquence du courant alternatif, le nombre de périodes par seconde.
+            </div>
+            <div>
+                En Europe, la période du courant alternatif du réseau est de 20 ms, ce qui correspond à une fréquence de 50 Hz. Sa valeur moyenne est nulle.
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div>
+        <br/>
+    </div>
+
+<br/></body>
+</html>
+

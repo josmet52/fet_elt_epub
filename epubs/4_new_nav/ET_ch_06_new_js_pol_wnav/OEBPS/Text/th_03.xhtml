@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        myTableStyle
+    </title>
+    <link href="../Styles/exercises_v02_02.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_06.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_08.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+    <link href="../Styles/nav_bar_v02_00.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/nav_bar_v02_01.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div class="navbar-ul-bottom w3-bar w3-dark-gray" id="topMoodleNavBarId">
+        <a onclick="GoToMoodleHomePage()" href="javascript:void(0)"  class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Moodle
+        </a>
+        <a href="nav.xhtml" class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Menu
+        </a>
+        <a href="th_02.xhtml" class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Précédente
+        </a>
+        <a href="th_04.xhtml" class="w3-bar-item w3-button w3-padding-small" style="font-size:12px">
+            Suivante
+        </a>
+        <br/>
+    </div>
+    <div>
+        <h1 id="FET_toc_id_020"><b>6.3 Accumulateurs</b></h1>
+        <h2 id="FET_toc_id_021"><b>6.3.1 Généralités</b></h2>
+        <p>
+            L’accumulateur est un générateur de tension continue qui permet de stocker l’énergie électrique sous forme électro-chimique.
+        </p>
+        <p>
+            A la charge, l’énergie électrique est accumulée sous forme d’énergie chimique.
+        </p>
+        <p>
+            L’accumulateur fonctionne comme récepteur.
+        </p>
+        <p>
+            A la décharge, l’énergie chimique est restituée sous forme d’énergie électrique. L’accumulateur fonctionne comme générateur.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/e54be911160b4189b6041823989e7e20.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p style="text-align: center">
+            Symbole d’un élément d’accumulateur
+        </p>
+        <h2 id="FET_toc_id_022"><b>6.3.2 Accumulateur au plomb</b></h2>
+        <p>
+            L’accumulateur au plomb est le premier type d’accumulateur qui a été inventé (1859, G. Planté). Ce type d’accumulateur équipe actuellement tous les véhicules à moteur pourvus d’un démarreur électrique.
+        </p>
+        <h3>
+            <b>
+                Constitution
+            </b>
+        </h3>
+        <p>
+            Plaques ou cadres en plomb contenant les matières actives (à l’état chargé):
+        </p>
+        <ul>
+            <li>
+                pôle + : bioxyde de plomb.
+            </li>
+            <li>
+                pôle – : plomb pur spongieux
+            </li>
+            <li>
+                électrolyte : acide sulfurique (? 30%) et eau distillée.
+            </li>
+        </ul>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/c17064679aa5416d9cd6ad38b2af4899.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h3>
+            <b>
+                Fonctionnement
+            </b>
+        </h3>
+        <p>
+            Lors de la décharge, le plomb s’oxyde et le bioxyde de plomb se réduit. Ils se combinent avec l’acide sulfurique et donnent du sulfate de plomb. L’accumulateur est déchargé lorsque les deux plaques sont recouvertes de sulfate de plomb.
+        </p>
+        <p>
+            A l’état déchargé, la concentration d’acide sulfurique dans l’électrolyte est la plus faible.
+        </p>
+        <p>
+            Lors de la charge, le sulfate de plomb se transforme en plomb à l’électrode négative et en bioxyde de plomb à l’électrode positive en libérant de l’acide sulfurique.
+        </p>
+        <p>
+            A l’état chargé, la concentration d’acide sulfurique dans l’électrolyte est la plus élevée.
+        </p>
+        <p>
+            La mesure de la densité de l’électrolyte permet donc de contrôler l’état de charge de l’accumulateur.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/0250fd9698cb4e1e8a15db62e042f33f.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p style="text-align: center">
+            Batterie d’accumulateur au plomb
+        </p>
+        <h3>
+            <b>
+                Charge d’un accumulateur au plomb
+            </b>
+        </h3>
+        <p>
+            Lors de la charge, l’accumulateur est raccordé à une source de tension continue ou pulsée.
+        </p>
+        <p>
+            Les polarités doivent être respectées : + sur +, – sur – . Le courant de charge reforme les matières actives des électrodes.
+        </p>
+        <p>
+            La densité de l’électrolyte et la FEM de l’élément augmentent progressivement.
+        </p>
+        <p>
+            L’accumulateur fonctionne comme récepteur, de force contre-électromotrice
+            <i>
+                E’
+            </i>
+            (FCEM). Le chargeur doit fournir une tension
+            <i>
+                U
+            </i>
+            supérieure à
+            <i>
+                E’
+            </i>
+            .
+        </p>
+        <p>
+            <i>
+                U= E’ + U
+            </i>
+            <sub>
+                i
+            </sub>
+            =
+            <i>
+                E’
+            </i>
+            +
+            <i>
+                R
+            </i>
+            <sub>
+                i
+            </sub>
+            ·
+            <i>
+                I
+            </i>
+        </p>
+        <h3>
+            Exemple
+        </h3>
+        <p>
+            Accumulateur automobile en fin de charge :
+        </p>
+        <ul>
+            <li>
+                plaque positive (+) : bioxyde de plomb ;
+            </li>
+            <li>
+                plaque négative (–) : plomb ;
+            </li>
+            <li>
+                électrolyte : acide sulfurique et eau ;
+            </li>
+            <li>
+                densité :
+                <i>
+                    d
+                </i>
+                = 1,28 (a augmenté) ;
+            </li>
+        </ul>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/761639b34d444d3d91a331f5600593e7.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h3>
+            Exemple de charge
+        </h3>
+        <p>
+            Batterie 12 V - 55&#160;Ah
+            <br/>
+            <i>
+                I
+            </i>
+            <sub>
+                charge
+            </sub>
+            = 5,5&#160;A pendant 11-12 h
+            <br/>
+            (rendement 0,8 - 0,9)
+            <br/>
+            Attention : les gaz dégagés en fin de charge sont explosifs.
+        </p>
+        <h3>
+            <b>
+                Décharge d’un accumulateur au plomb
+            </b>
+        </h3>
+        <p>
+            En fermant le circuit sur le récepteur, un courant de décharge de sens contraire s’établit et transforme les matières actives des plaques.
+        </p>
+        <p>
+            L’acide sulfurique produit le sulfatage de l’accumulateur. La densité de l’électrolyte et la FEM de l’élément diminuent progressivement.
+        </p>
+        <p>
+            L’accumulateur fonctionne comme générateur. La tension
+            <i>
+                U
+            </i>
+            aux bornes est plus faible que la force électromotrice
+            <i>
+                E
+            </i>
+            .
+        </p>
+        <p>
+            <i>
+                U
+            </i>
+            <span>
+                =
+            </span>
+            <i>
+                E
+            </i>
+            <span>
+                –
+            </span>
+            <i>
+                U
+            </i>
+            <sub>
+                i
+            </sub>
+            =
+            <i>
+                E
+            </i>
+            <span>
+                –
+            </span>
+            <i>
+                R
+            </i>
+            <sub>
+                i
+            </sub>
+            ·
+            <i>
+                I
+            </i>
+        </p>
+        <h3>
+            Exemple
+        </h3>
+        <p>
+            Accumulateur automobile en fin de décharge:
+        </p>
+        <ul>
+            <li>
+                plaque positive (+) : sulfate de plomb ;
+            </li>
+            <li>
+                plaque négative (–) : sulfate de plomb ;
+            </li>
+            <li>
+                électrolyte : acide sulfurique et eau ;
+            </li>
+            <li>
+                densité :
+                <i>
+                    d
+                </i>
+                = 1,16 (a diminué) ;
+            </li>
+        </ul>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/5b33cc1851e842f69fa1d33ff1a3b66b.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h3>
+            <b>
+                Entretien et contrôle
+            </b>
+        </h3>
+        <p>
+            Electrolyte liquide:
+        </p>
+        <p>
+            Un accumulateur au plomb ne doit pas être laissé déchargé trop longtemps, sinon la recharge de l’accumulateur n’est plus possible (sulfatage des plaques).
+        </p>
+        <p>
+            Les plaques doivent être recouvertes d’au moins 1 cm d’électrolyte. Le niveau doit être complété uniquement par de l’eau distillée.
+        </p>
+        <p>
+            L’état de charge de l’accumulateur doit être contrôlé à l’aide d’un pèse-acide (contrôle de la masse volumique) ou d’un réfractomètre.
+        </p>
+        <p>
+            Le courant de charge et de décharge est en principe calculé pour une durée de 10 h (1/10 de la capacité de l’accumulateur).
+        </p>
+        <p>
+            Electrolyte solide (gel):
+        </p>
+        <p>
+            La plupart des accumulateurs au plomb actuellement disponibles sur la marché sont scellés et ne nécessitent aucun entretien.
+        </p>
+        <p>
+            Un accumulateur au plomb inutilisé subit une autodé-charge de 3 à 4 % par mois.
+        </p>
+        <h2 id="FET_toc_id_023"><b>6.3.3 Accumulateur alcalin Ni-Cd</b></h2>
+        <p>
+            L’accumulateur au cadmium-nickel (Cd-Ni) est apparu sur le marché aux alentours des années 1950 en même temps que les appareils portables (à transistors). Il tend à être remplacé actuellement par les accumulateurs au nickel – métal – hydrure (Ni-MH), ceci principalement à cause de la grande toxicité du cadmium.
+        </p>
+        <h3>
+            <b>
+                Constitution
+            </b>
+        </h3>
+        <ul>
+            <li>
+                Pôle + : oxyde de nickel hydraté.
+            </li>
+            <li>
+                Pôle – : cadmium métallique spongieux.
+            </li>
+            <li>
+                Electrolyte : hydroxyde de potassium.
+            </li>
+        </ul>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/21cb579ce2694c799618d5fdbbc54377.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h3>
+            <b>
+                Principe de fonctionnement
+            </b>
+        </h3>
+        <p>
+            Lors de la décharge, le cadmium s’oxyde et devient hydroxyde de cadmium et l’oxyde de nickel se réduit en hydroxyde de nickel. L’électrolyte ne participe que peu à la réaction et sa mesure n’est pas une indication de l’état de charge de l’élément.
+        </p>
+        <h3>
+            <b>
+                Entretien
+            </b>
+        </h3>
+        <p>
+            L’accumulateur alcalin (Ni-Cd) ne nécessite pratiquement aucun entretien et a une durée de vie plus grande que l’accumulateur au plomb.
+        </p>
+        <p>
+            L’électrolyte des accumulateurs de grande capacité doit être remplacé tous les 2 à 3 ans.
+        </p>
+        <p>
+            Avant de recharger l’accumulateur, il faut le décharger complètement afin d’éviter le phénomène de « mémoire» (perte de capacité).
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/6224c35292f049c0ad33f6f8ebb81fa3.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h3>
+            <b>
+                Remarques
+            </b>
+        </h3>
+        <p>
+            On réalise de plus en plus d’accumulateurs alcalins étanches. Ils peuvent, dans bien des cas, remplacer les piles ordinaires (attention à la différence de FEM
+            <i>
+                E
+            </i>
+            ).
+        </p>
+        <p>
+            Ils existent aussi sous forme de boutons.
+        </p>
+        <p>
+            Il ne faut pas confondre « piles alcalines » et « accumulateurs alcalins ».
+        </p>
+        <h2 id="FET_toc_id_024"><b>6.3.4 Accumulateurs et directives RoHS</b></h2>
+        <p>
+            La directive RoHS
+            <sup>
+                1
+            </sup>
+            entrée en vigueur le 1
+            <sup>
+                er
+            </sup>
+            juillet 2006 interdit l’usage (entre autres) du plomb et du cadmium pour les appareils électriques et électroniques. Cependant, les piles et les accumulateurs font l’objet d’une réglementation spécifique et n’entrent pas dans le cadre de la directive RoHS.
+        </p>
+        <h2 id="FET_toc_id_025"><b>6.3.5 Accumulateur alcalin Ni - MH</b></h2>
+        <p>
+            Cet accumulateur possède des caractéristiques proches de celles du Ni-Cd. Cependant, il ne contient pas de métaux concernés par la norme RoHS. A capacité égale, comparé à un accumulateur Ni-Cd, il est un peu plus léger mais le courant maximum qu’il peut fournir reste inférieur.
+        </p>
+        <p>
+            En charge rapide (&gt; 1C), cet accumulateur est très sensible à la surcharge et nécessite de ce fait un chargeur «intelligent», capable de détecter avec précision la fin de la charge. Deux principes peuvent être utilisés, séparément ou conjointement:
+        </p>
+        <ol>
+            <li>
+                Détection de l’augmentation de la température des éléments. Lors de la charge, il se produit une réaction exothermique; en fin de charge, on observe un pic de température qui correspond à l’augmentation de la pression interne de l’élément. Cette élévation de pression risque de faire éclater les éléments. On surveille donc la température des éléments au moyen d'un circuit électronique et interrompt la charge dès que cette dernière dépasse un certain seuil.
+            </li>
+            <li>
+                Détection de la variation de tension. En fin de charge, la tension aux bornes de l’élément passe par un maximum puis redescend. Les chargeurs de qualité détectent cette baisse de tension et interrompent la charge. On parle de détection -?
+                <i>
+                    U
+                </i>
+                .
+            </li>
+        </ol>
+        <h2 id="FET_toc_id_026"><b>6.3.6 Accumulateur au lithium</b></h2>
+        <p>
+            Ce type d'accumulateur, apparu sur le marché dès 1993, présente une tension de 3,6 V ou 3.7 V par élément. La valeur précise de la tension dépend de la technologie employée. A capacité égale, il est plus léger que le Ni-Cd ou le Ni-MH. Il est cependant assez coûteux. Cet accumulateur est extrêmement sensible à la surcharge (risque d’explosion). Le chargeur doit donc être «intelligent» afin de contrôler le processus de charge. Cet accumulateur doit être équipé d'un circuit de protection qui entre en fonction lorsque les conditions de charge, décharge, courant maximum ou température sont critiques. Dans certains modèles, sa conception est telle qu’elle permet une certaine dilatation de l’élément en fonction de son état de charge.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/841025fc10ee451fb88edf4eccbdf57a.jpg" alt="image manquante"/>
+            </div>
+        </div>
+        <p style="text-align: center">
+            Accumulateur Li-po avec circuit de protection.
+        </p>
+        <br/>
+        <p>
+            <b>
+                Note:
+            </b>
+            <span>
+                les accumulateurs au lithium peuvent prendre feu lors de mauvaises conditions de charge ou de décharge. Ce type d’accident peut également se produire lors de défaut dans les matériaux (qualité de la technologie). Ceci est dû au fait que le lithium est un métal qui s’enflamme très rapidement en contact avec l’oxygène (air ou eau). L’aspect spectaculaire de l’explosion des accumulateurs au lithium ne doit pas faire oublier que les autres types d’accumulateurs ainsi que les piles peuvent également prendre feu en cas de mauvaise utilisation.
+            </span>
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/5289edeef04046348df4531099f49424.jpg" alt="image manquante"/>
+            </div>
+        </div>
+        <p style="text-align: center">
+            Hélicoptère-jouet après explosion de l’accumulateur Li-po.
+        </p>
+        <br/>
+        <p>
+            Actuellement, on trouve sur le marché trois grandes catégories d’accumulateurs au lithium:
+        </p>
+        <ul>
+            <li>
+                Accumulateurs au lithium-ion (Li-ion). Ce sont historiquement les premiers types d’accumulateurs au lithium. Cet accumulateur est composé d’une anode en carbone et d’une cathode en alliage d’oxyde de cobalt et de lithium plongées dans un électrolyte de chlorure de lithium déposé dans un solvant organique (carbonate de propylène). La tension par élément est de 3,6&#160;V.
+            </li>
+            <li>
+                Accumulateurs au lithium-polymères (Li-po). Ce type d’accumulateur présente une structure identique à celle d’un accumulateur lithium-ion. Seul l’électrolyte est de nature différente et composé d’un polymère (polyvinyle fluorite par exemple). La tension par élément est de 3,7&#160;V.
+            </li>
+            <li>
+                Accumulateurs au lithium-phosphate de fer (Li-Fe ou LiFePo4). Ce type d’accumulateur est identique à l’accumulateur lithium-ion mais avec une cathode en phosphate de fer. Ce type d’accumulateur supporte une charge rapide (80% de la capacité en 2 heures) et des courants de décharge importants. La tension par élément est de 3,3&#160;V.
+            </li>
+        </ul>
+        <p>
+            Le premier type est surtout utilisé dans les appareils mobiles (PC portables). Les deux derniers types s’emploient surtout lorsque les courants de décharge sont importants et lorsque le temps de charge doit être court (téléphones). Ces deux types d’accumulateurs s’imposent actuellement dans l’alimentation des véhicules électriques (vélos, scooters et voitures).
+        </p>
+        <h2 id="FET_toc_id_027"><b>6.3.7 Précautions lors de l'emploi d'accumulateurs</b></h2>
+        <p>
+            Les accumulateurs sont des éléments sensibles dont le fonctionnement et la durée de vie dépendent beaucoup des conditions d'utilisation. Ils sont capables de stocker une énergie importante dans un faible volume mais peuvent présenter des dangers pour l'utilisateur ou pour les appareils en cas de mauvaise manipulation.
+        </p>
+        <p>
+            Les fabricants recommandent de respecter les précautions suivantes:
+        </p>
+        <ul>
+            <li>
+                ne pas charger, utiliser ou stocker les accumulateurs à trop haute température.
+                <br/>
+                (un stockage de 20 jours à 60°C équivaut à un stockage de 1 an à 20&#160;°C)
+                <br/>
+            </li>
+            <li>
+                utiliser si possible un chargeur «intelligent», limitant la surcharge
+            </li>
+            <li>
+                ne pas court-circuiter un accumulateur ou inverser les polarités
+            </li>
+            <li>
+                ne pas mélanger des types d'accumulateurs différents (tension, grandeur ou provenance)
+            </li>
+            <li>
+                éviter la mise en pression, le dégazage (gaz inflammable) et la fuite d'électrolyte (corrosif)
+            </li>
+            <li>
+                ne pas démonter, souder, percer ou déformer un accumulateur
+            </li>
+            <li>
+                ne pas immerger ou exposer à l'humidité
+            </li>
+            <li>
+                recycler les accumulateurs en respectant l'environnement (ne pas les incinérer)
+            </li>
+        </ul>
+        <p>
+            <b>
+                Note:
+            </b>
+            <span>
+                les points ci-dessus (à l’exception faite de ceux qui concernent la charge) sont également valables pour les piles.
+            </span>
+        </p>
+        <h2 id="FET_toc_id_028"><b>6.3.8 Charge et décharge des accumulateurs</b></h2>
+        <h3>
+            <b>
+                Charge
+            </b>
+        </h3>
+        <p>
+            <span>
+                On distingue trois façons de procéder pour charger les accumulateurs:
+            </span>
+        </p>
+        <ul>
+            <li>
+                Charge à tension constante
+            </li>
+            <li>
+                Charge à courant constant
+            </li>
+            <li>
+                Charge à courant constant puis à tension constante
+            </li>
+        </ul>
+        <p>
+            Le choix de l’une ou l’autre de ces façons de procéder dépend du type d’accumulateur.
+        </p>
+        <p>
+            Le courant de charge est exprimé en fonction de la capacité. Par exemple un accumulateur de 500&#160;mAh prévu pour être chargé à C/10 sera chargé à 500&#160;mA/10 = 50&#160;mA pendant 14 h environ. (La lettre C dans ce cas correspond à la valeur de la capacité en Ah).
+        </p>
+        <h3>
+            <b>
+                Décharge
+            </b>
+        </h3>
+        <p>
+            <span>
+                En ce qui concerne la décharge, le fabricant indique le courant maximum admissible en décharge continue ou en valeur crête par un multiple de la capacité. Il indiquera par exemple un courant de décharge de 50 C en crête et de 30&#160;C en moyenne (la lettre C dans ce cas correspond au courant disponible pendant une heure). Dans le cas d’un accumulateur de 2,3&#160;Ah, ceci se traduit par un courant de crête disponible d’au maximum 2,3A ? 50 = 115&#160;A et d’un courant moyen de 2,3A ? 30 = 69&#160;A.
+            </span>
+        </p>
+        <br/>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/c945168f50204545a0dd058712f24287.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h2 id="FET_toc_id_029"><b>6.3.9 Charge et décharge des accumulateurs au plomb</b></h2>
+        <h3>
+            <b>
+                Charge
+            </b>
+        </h3>
+        <p>
+            <span>
+                Ces accumulateurs peuvent être chargés de deux manières:
+            </span>
+        </p>
+        <ul>
+            <li>
+                Charge à tension constante
+            </li>
+            <li>
+                Charge à courant constant puis à tension constante
+            </li>
+        </ul>
+        <p>
+            La charge à tension constante s’effectue en appliquant une tension continue de 2,45 V par élément, ceci pour une température ambiante comprise entre 20°C et 25°C. La charge est terminée lorsque le courant de charge tombe au dessous d’un certain seuil. Attention, il y a risque de surcharge et de détérioration de l’accumulateur si la tension est supérieure à 2,45 V par élément et si le temps de charge dépasse de façon importante la fin de charge.
+        </p>
+        <p>
+            La charge à courant constant puis à tension constante consiste à charger dans un premier temps à 0,4&#160;C, puis lorsque la tension atteint 2,45&#160;V par élément, à tension constante. Dans ce cas, la charge prend 6 à 12 heures selon l’état de décharge.
+        </p>
+        <h3>
+            <b>
+                Décharge
+            </b>
+        </h3>
+        <p>
+            <span>
+                En ce qui concerne la décharge, ces accumulateurs supportent mal une décharge complète. Par exemple, pour un type d’accumulateur, le fabricant garantit 1200 cycles charge-décharge lorsque la décharge n’est que de 30% de la capacité. Cette valeur tombe à 200 cycles charge-décharge lorsque la décharge est de 100%.
+            </span>
+        </p>
+        <br/>
+        <h2 id="FET_toc_id_030"><b>6.3.10 Charge et décharge des accumulateurs Ni-Cd et Ni-MH</b></h2>
+        <h3>
+            <b>
+                Charge
+            </b>
+        </h3>
+        <p>
+            <span>
+                Ces accumulateurs sont chargés à courant constant. Une charge standard s’effectue à C/10 pendant 12 à 14 heures. Dans ce cas, l’élévation de température est faible et il n’est pas nécessaire de détecter une éventuelle augmentation de cette dernière. Le circuit de charge se résume donc à une source de courant constant. Une charge modérée peut être effectuée (durée de 2 à 3 heures) avec un chargeur «intelligent» qui va mesurer l’élévation de température et/ou la variation de tension (dU/dt) en fin de charge. Il est possible de charger des éléments Ni-MH à plus de 1 C, mais ceci diminue fortement leur durée de vie. Les accumulateurs Cd-Ni supportent mieux la charge rapide.
+            </span>
+        </p>
+        <br/>
+        <h3>
+            <b>
+                Décharge
+            </b>
+        </h3>
+        <p>
+            <span>
+                En ce qui concerne la décharge, les accumulateurs Ni-MH supportent des courants de décharge de l’ordre de 2 C alors que les Ni-Cd supportent des courants de décharge de l’ordre de 10&#160;C. Les accumulateurs Ni-Cd sont donnés avec un nombre de cycle charge-décharge dépassant 500 cycles alors que les Ni-MH dépassent les 1000 cycles.
+            </span>
+        </p>
+        <br/>
+        <h3>
+            <b>
+                Effet mémoire
+            </b>
+        </h3>
+        <p>
+            <span>
+                Les accumulateurs Ni-Cd doivent impérativement être complètement déchargés avant la recharge. Si ce point n’est pas respecté, il se produit une dégradation irréversible de l’électrolyte qui se traduit par une perte de capacité. Ce phénomène est connu sous le nom «d’effet mémoire».
+            </span>
+        </p>
+        <br/>
+        <h2 id="FET_toc_id_031"><b>6.3.11 Charge et décharge des accumulateurs au lithium</b></h2>
+        <h3>
+            <b>
+                Charge
+            </b>
+        </h3>
+        <p>
+            <span>
+                Ces accumulateurs doivent être chargés à courant constant puis à tension constante. La charge à courant constant s’effectue jusqu’à 1&#160;C pour les lithium-ions et jusqu’à 10&#160;C pour certains lithium-polymères. Lorsque la tension de l’élément atteint 4,1&#160;V pour les lithium-ions, 4,2&#160;V pour les lithium-polymères et 3,6&#160;V pour les lithium-fer, la charge se poursuit à tension constante. La tension doit être garantie avec une précision élevée. Une charge typique dure environ 3 heures et les 80% de la capacité sont déjà atteints après une heure environ. Sur certains lithium-polymères, la charge peut être très rapide (moins d’une heure).
+            </span>
+        </p>
+        <br/>
+        <h3>
+            <b>
+                Décharge
+            </b>
+        </h3>
+        <p>
+            <span>
+                Pour les accumulateurs lithium-ions, la décharge est de l’ordre de 1&#160;C. Pour les lithium-polymères, la décharge peut être de 40&#160;C en continu et atteindre 90&#160;C en valeur de pointe.
+            </span>
+        </p>
+        <br/>
+        <h3>
+            <b>
+                Remarque
+            </b>
+        </h3>
+        <p>
+            <span>
+                Ces accumulateurs ne présentent pas d’effet mémoire. Il est donc conseillé de les recharger dès que possible.
+            </span>
+        </p>
+        <br/>
+        <h2 id="FET_toc_id_032"><b>6.3.12 Tableau comparatif des accumulateurs courants</b></h2>
+        <table class="fet_tableau_constantes">
+            <tbody>
+                <tr>
+                    <td class="fet_tableau_constantes_entete">
+                        <b>
+                        </b>
+                    </td>
+                    <td class="fet_tableau_constantes_entete">
+                        <b>
+                            Plomb
+                        </b>
+                    </td>
+                    <td class="fet_tableau_constantes_entete">
+                        <b>
+                            Cadmium-nickel (ni-Cd)
+                        </b>
+                    </td>
+                    <td class="fet_tableau_constantes_entete">
+                        <b>
+                            Nickel-métal-hydrure (Ni-MH)
+                        </b>
+                    </td>
+                    <td class="fet_tableau_constantes_entete">
+                        <b>
+                            Lithium-ion (Li-ion)
+                        </b>
+                    </td>
+                    <td class="fet_tableau_constantes_entete">
+                        <b>
+                            Lithium-polymère (Li-po)
+                        </b>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Force électromotrice par élément
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        2.1 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        1.2 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        1.2 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        3.6 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        3.6 ou 3.7 V
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Energie par unité de poids
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        30-50 Wh/kg
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        40-60 Wh/kg
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        60-120 Wh/kg
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        160 Wh/kg
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        130-200 Wh/kg
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Anode
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Plomb
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Cadmium
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Terre rare + nickel
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Carbone
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Carbone
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Cathode
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Plomb
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Nickel
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Nickel
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Lithium
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Lithium
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Electrolyte
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Acide sulfurique
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Hydroxyde de potassium
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Hydroxyde de potassium
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Chlorure de lithium et carbonate de propylène
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Polymère (polyvinyle fluorite par exemple)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Autodécharge
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        3 à 4% par mois
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        20% par mois
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        30% par mois
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        10% par mois
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        10% par mois
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Durée de vie (cycles)
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        500 à 800
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        500
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        1000
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        &gt; 500
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        &gt; 500
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Applications
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Batteries de voiture, batteries stationnaires (stockage d'énergie)
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Pratiquement abandonné au profit des Ni-MH
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Appareils électroniques "grand public" (radios,lecteur MP3, caméras, téléphones sans fils, ...)
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Ordinateurs portables, téléphones mobiles
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Ordinateurs portables, téléphones mobiles, caméras, lecteurs MP3, véhicules électriques
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Stockage
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Chargé
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Déchargé
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Chargé
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Mi-chargé
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        Mi-chargé
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Tension de fin de décharge
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        1.7 à 1.8 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        0.9 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        0.9 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        2.7 à 3 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        2.7 V
+                    </td>
+                </tr>
+                <tr>
+                    <td class="fet_tableau_constantes_ligne">
+                        Tension de fin de charge
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        2.45 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        1.95 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        1.8 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        4.2 V
+                    </td>
+                    <td class="fet_tableau_constantes_ligne">
+                        4.2 V
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <h2 id="FET_toc_id_033"><b>6.3.13 Perspectives futures</b></h2>
+        <p>
+            Le marché des piles et surtout celui des accumulateurs est en pleine expansion, ceci à cause de l’usage de plus en plus intensif des dispositifs mobiles (téléphones, PC, lecteurs MP3, …). On sait déjà que l’avenir des accumulateurs au Lithium sera limité par les réserves naturelles. Ceci sera particulièrement sensible si on envisage d’utiliser ce genre d’accumulateurs dans les véhicules à moteurs. Pour cette raison, de nombreuses recherches sont effectuées pour trouver d’autres solutions qui permettent le stockage de l’électricité sous un faible volume. Dans ce contexte, les technologies qui semblent actuellement (2012) les plus prometteuses sont:
+        </p>
+        <ul>
+            <li>
+                Technologie au Nickel-Zinc
+            </li>
+            <li>
+                Technologie au Nickel-Lithium
+            </li>
+            <li>
+                Pile à combustible
+            </li>
+        </ul>
+        <p>
+            D’autres recherches sont effectuées, on peut citer par exemple la réalisation de nano-centrales nucléaires de la taille d’une pièce de monnaie.
+        </p>
+        <h3>
+            <b>
+                Technologie au Nickel-Zinc
+            </b>
+        </h3>
+        <p>
+            Il s’agit en fait d’une technologie très ancienne, qui n’était plus employée à cause du faible nombre de cycle charge-décharge qu’elle autorisait. Les derniers progrès technologiques semblent indiquer que ce point a été réglé. Ces éléments présentent une tension nominale de 1,65V, une densité d’énergie massique du même ordre que les Li-po et ils se chargent à courant constant suivit d’une charge à tension constante (même profil de charge que les Li-xx).
+        </p>
+        <h3>
+            <b>
+                Technologie au Nickel-Lithium
+            </b>
+        </h3>
+        <p>
+            Cette technologie combinerait les avantages des technologies Ni-MH et Li-xx. On obtiendrait des densités d’énergie double par rapport aux technologies Lithium «classiques». Ceci permettrait donc d’économiser de façon importante nos réserves de Lithium. La tension de ce type d’élément se situe aux alentours de 3,5&#160;V.
+        </p>
+        <h3>
+            <b>
+                Pile à combustible
+            </b>
+        </h3>
+        <p>
+            Cette technologie est ancienne et a surtout été développée dans le contexte spatial. Le principe est d’utiliser la recombinaison de l’hydrogène et de l’oxygène pour générer de l’électricité (électrolyse inverse). La recharge de ces éléments se fait en ajoutant du «combustible» (oxygène et hydrogène). On a donc un élément qui se situe entre la pile (usure des composés électrochimique) et de l’accumulateur (recharge possible en ajoutant du combustible). Les premières piles utilisaient du platine comme électrodes, avec ce que ceci implique en termes de coûts. Ces dernières années, différents progrès techniques ont été effectués et on trouve des piles équipées d’électrodes composées de nickel, chrome et lithium. Différentes voies sont explorées pour éviter l’usage direct de l’hydrogène, ceci afin de trouver une solution sûre au problème du stockage. On trouve actuellement des piles alimentées au méthanol par exemple. Plusieurs fabricants d’ordinateurs portables présentent des prototypes alimentés par des piles à combustible.
+        </p>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+
+<br/></body>
+</html>
+

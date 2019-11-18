@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        myTableStyle
+    </title>
+    <link href="../Styles/exercises_v02_02.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="FET_toc_id_020"><span><b>10.8 Récepteur R-L en série</b></span></h1>
+        <p>
+            Un circuit
+            <i>
+                R-L
+            </i>
+            en série est constitué dʼune résistance parfaite associée à une inductance parfaite en série.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/278d76ec81214d8aae395e22f9f6572b.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Dans ce genre de couplage:
+        </p>
+        <ul>
+            <li>
+                le courant est partout le même, cʼest pourquoi on se sert du vecteur courant comme référence;
+            </li>
+            <li>
+                <i>
+                    U
+                    <sub>
+                        R
+                    </sub>
+                </i>
+                est en phase avec le courant
+                <i>
+                    I
+                </i>
+                ;
+            </li>
+            <li>
+                <i>
+                    U
+                    <sub>
+                        L
+                    </sub>
+                </i>
+                est en avance de 90° sur le courant
+                <i>
+                    I
+                </i>
+            </li>
+            <li>
+                la somme vectorielle des chutes de tension est égale à la tension appliquée.
+                <br/>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mover><mi>U</mi><mo>→</mo></mover><mo></mo><mo>=</mo><mo></mo><msub><mover><mi>U</mi><mo>→</mo></mover><mi>R</mi></msub><mo></mo><mo>+</mo><mo></mo><msub><mover><mi>U</mi><mo>→</mo></mover><mi>L</mi></msub></mstyle></math>
+            </li>
+            <li>
+                Le courant
+                <i>
+                    I
+                </i>
+                est en retard dʼun angle
+                <i>
+                    φ
+                </i>
+                sur la tension
+                <i>
+                    U
+                </i>
+                .
+            </li>
+        </ul>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/cf5e9aa71adb4fd5b03de03d0f21cc45.png" alt="image manquante"/>
+            </div>
+        </div>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/a299ab80b1184f5d833ae03419e1aa05.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Depuis ce diagramme de base, on peut en obtenir deux autres:
+        </p>
+        <ul>
+            <li>
+                En multipliant le diagramme des tensions par le courant, on obtient le diagramme des puissances.
+            </li>
+            <li>
+                En divisant le diagramme des tensions par le courant, on obtient le diagramme des impédances.
+            </li>
+        </ul>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/3d989bcb1773475988053cfc4f197758.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h4>
+            <b>
+                Rappel:
+            </b>
+        </h4>
+        <ul>
+            <li>
+                En multipliant le diagramme des impédances par le courant, on obtient le diagramme des tensions.
+            </li>
+            <li>
+                En multipliant le diagramme des impédances par le carré du courant, on obtient le diagramme des puissances.
+            </li>
+            <li>
+                En divisant le diagramme des puissances par le courant, on obtient le diagramme des tensions.
+            </li>
+            <li>
+                En divisant le diagramme des puissances par le carré du courant, on obtient le diagramme des impédances.
+            </li>
+        </ul>
+        <p>
+            Toutes les valeurs importantes peuvent être calculées à partir des trois diagrammes ci-dessus et de:
+        </p>
+        <ul>
+            <li>
+                La loi dʼOhm
+            </li>
+            <li>
+                La règle de Pythagore
+            </li>
+            <li>
+                Les règles de trigonométrie
+            </li>
+        </ul>
+        <h4>
+            <b>
+                Représentation vectorielle et temporelle de U,I et P d'un circuit R-L série
+            </b>
+        </h4>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/ea6f193f7d2c427aa723e5f62b3f699b.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h4>
+            <b>
+                Exemple 1:
+            </b>
+            circuit R-L série
+        </h4>
+        <p>
+            Une résistance de 150 Ω est mise en série avec une self parfaite de 302 mH.
+        </p>
+        <p>
+            Le circuit est alimenté sous une tension de 230 V - 50 Hz.
+        </p>
+        <p>
+            Calculer:
+        </p>
+        <ol>
+            <li>
+                lʼimpédance du circuit;
+            </li>
+            <li>
+                lʼintensité dans le circuit;
+            </li>
+            <li>
+                la tension aux bornes de la résistance;
+            </li>
+            <li>
+                la tension aux bornes de l'inductance;
+            </li>
+            <li>
+                le facteur de puissance et lʼangle de déphasage;
+            </li>
+            <li>
+                la puissance active, réactive et apparente du récepteur.
+            </li>
+        </ol>
+        <p>
+            Pour exemple ci-dessous.
+        </p>
+        <p>
+            On commence par dessiner les diagrammes concernés:
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/8f8451aa0c4a44f9a7d5696b65f58375.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Ensuite, on les complète.
+        </p>
+        <ol>
+            <li>
+                <p>
+                    Impédance du circuit:
+                </p>
+                <p>
+                    <i>
+                        X
+                        <sub>
+                            L
+                        </sub>
+                    </i>
+                    =
+                    <b>
+                        <i>
+                            ω
+                        </i>
+                    </b>
+                    ·
+                    <i>
+                        L
+                    </i>
+                    = 2·
+                    <i>
+                        <b>
+                            π
+                        </b>
+                        ·f·L
+                    </i>
+                    = 2·
+                    <i>
+                        <b>
+                            π
+                        </b>
+                    </i>
+                    ·50·302·10
+                    <sup>
+                        -3
+                    </sup>
+                    = 94,9
+                    <b>
+                        Ω
+                    </b>
+                </p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>Z</mi><mo>=</mo><msqrt><msup><mi>R</mi><mn>2</mn></msup><mo>+</mo><msup><msub><mi>X</mi><mi>L</mi></msub><mn>2</mn></msup></msqrt><mo>=</mo><msqrt><msup><mn>150</mn><mn>2</mn></msup><mo>+</mo><mn>94</mn><mo>,</mo><mn>9</mn></msqrt><mo>=</mo><mn>177</mn><mtext></mtext><mi>Ω</mi></mstyle></math>
+                </p>
+            </li>
+            <li>
+                <p>
+                    Intensité dans le circuit:
+                </p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>Z</mi></mfrac><mo>=</mo><mfrac><mn>230</mn><mn>177</mn></mfrac><mo>=</mo><mn>1</mn><mo>,</mo><mn>30</mn><mtext></mtext><mi>A</mi></mstyle></math>
+                </p>
+            </li>
+            <li>
+                <p>
+                    La tension aux bornes de la résistance:
+                </p>
+                <p>
+                    <i>
+                        U
+                        <sub>
+                            R
+                        </sub>
+                    </i>
+                    =
+                    <i>
+                        R·I
+                    </i>
+                    = 150·1,30 = 195 V
+                </p>
+            </li>
+            <li>
+                <p>
+                    La tension aux bornes de l'inductance:
+                </p>
+                <p>
+                    <i>
+                        U
+                        <sub>
+                            L
+                        </sub>
+                    </i>
+                    =
+                    <i>
+                        X
+                        <sub>
+                            L
+                        </sub>
+                        ·I
+                    </i>
+                    = 94,9·1,30 = 123 V
+                </p>
+            </li>
+            <li>
+                <p>
+                    Le facteur de puissance et l'angle de déphasage:
+                </p>
+                <p>
+                    <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>cos</mi><mi>φ</mi><mo>=</mo><mfrac><msub><mi>U</mi><mi>R</mi></msub><mi>U</mi></mfrac><mo>=</mo><mfrac><mn>195</mn><mn>230</mn></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>848</mn></mstyle></math>
+                    <span>
+                        ⇒
+                    </span>
+                    <i>
+                        φ
+                    </i>
+                    = 32°;
+                </p>
+            </li>
+            <li>
+                <p>
+                    La puissance active, réactive et apparente du récepteur:
+                </p>
+                <p>
+                    <i>
+                        P = R·I
+                        <sup>
+                            2
+                        </sup>
+                    </i>
+                    = 150·1,30
+                    <i>
+                        <sup>
+                            2
+                        </sup>
+                    </i>
+                    = 254 W
+                </p>
+                <p>
+                    <i>
+                        Q
+                        <sub>
+                            L
+                        </sub>
+                    </i>
+                    =
+                    <i>
+                        X
+                        <sub>
+                            L
+                        </sub>
+                        ·I
+                        <sup>
+                            2
+                        </sup>
+                    </i>
+                    = 94,9·1,30
+                    <i>
+                        <sup>
+                            2
+                        </sup>
+                    </i>
+                    = 16 var
+                </p>
+                <p>
+                    <i>
+                        S
+                    </i>
+                    =
+                    <i>
+                        U·I
+                    </i>
+                    = 230·1,30 = 299 VA
+                </p>
+            </li>
+        </ol>
+        <p>
+            <i>
+                Remarque: il existe de nombreuses possibilités pour obtenir ces résultats selon que l'on utilise la loi d'Ohm, Pythagore ou la trigonométrie!
+            </i>
+        </p>
+        <p>
+            Voici les diagrammes une fois complétés:
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/4c17f9743bb44581bc7ce076510abb93.png" alt="image manquante"/>
+            </div>
+        </div>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/9852404717ab4a999d51a7cd6a1d420a.png" alt="image manquante"/>
+            </div>
+        </div>
+    </div>
+
+<br/></body>
+</html>
+

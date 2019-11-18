@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Exercices 7.5
+    </title>
+    <meta charset="utf-8"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/exercises_v02_02.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <h2>4.3 Exercices électromagnétisme (7.5)</h2>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h3 class="exercise_title sigil_not_in_toc">
+            Exercice 7.5.2a - Champ magnétique d'une bobine
+        </h3>
+        <div class="exercise_question">
+            <div>
+                Déterminer et dessiner le sens de rotation des lignes de champ dans cette bobine. Choisissez la réponse juste ci-après.
+            </div>
+            <div>
+                <img src="../Images/c004d7e7c28a486398edd7627ad6d2a1.png"/>
+            </div>
+        </div>
+        <br/>
+        <button type="button" onclick="checkBoolean(true === true,'1657');">
+            Les lignes sortent à gauche et rentrent à droite de la bobine.
+        </button>
+        <br/>
+        <button type="button" onclick="checkBoolean(true === false,'1657');">
+            Les lignes sortent à droite et rentrent à gauche de la bobine.
+        </button>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton1657" type="button" onclick="showHint('1657');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id="hint1657" style="display:none;">
+            Voir section 7.5.2
+        </div>
+        <div class="exercise_explanation" id="explanation1657" style="display:none;">
+            La réponse correcte est :
+            <div>
+                - Les lignes sortent à gauche et rentrent à droite de la bobine.
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h3 class="exercise_title sigil_not_in_toc">
+            Exercice 7.5.2b - Champ magnétique d'une bobine
+        </h3>
+        <div class="exercise_question">
+            <div>
+                Pour les deux bobines ci-après, déterminer la séquence correcte des pôles de gauche à droite.
+            </div>
+            <div>
+                <img src="../Images/d197a8245d19472184b71be3ab46661b.png"/>
+            </div>
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name="group1ed53" type="radio" id="iscorrectr0ed53"/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                N-S-S-N
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name="group1ed53" type="radio" id="iscorrectr1ed53"/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                S-N-S-N
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name="group1ed53" type="radio" id="iscorrectr2ed53"/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                N-S-N-S
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name="group1ed53" type="radio" id="iscorrectr3ed53"/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                S-N-N-S
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButtoned53" type="button" onclick="validateRadioButton(['iscorrectr3ed53','iscorrectr2ed53','iscorrectr1ed53','iscorrectr0ed53'],['false','true','false','false'],'ed53');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButtoned53" type="button" onclick="showHint('ed53');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id="hinted53" style="display:none;">
+            Voir section 7.5.2
+        </div>
+        <div class="exercise_explanation" id="explanationed53" style="display:none;">
+            La successions des pôles de gauche à droite est : N-S-N-S
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h3 class="exercise_title sigil_not_in_toc">
+            Exercice 7.5.2c Champ magnétique d'une bobine
+        </h3>
+        <div class="exercise_question">
+            <div>
+                Nommer les pôles des bobine (N/S)
+            </div>
+            <div>
+                <img src="../Images/67ee414bfe2245e7861ed89f431e5d0c.png"/>
+            </div>
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id="iscorrectr08969"/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                N-S-S-N
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id="iscorrectr18969"/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                N-S-N-S
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id="iscorrectr28969"/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                S-N-N-S
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" type="checkbox" id="iscorrectr38969"/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                S-N-S-N
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton8969" type="button" onclick="validateCheckBox(['iscorrectr38969','iscorrectr28969','iscorrectr18969','iscorrectr08969'],['false','false','false','true'],'8969');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton8969" type="button" onclick="showHint('8969');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id="hint8969" style="display:none;">
+            Voir section 7.5.2
+        </div>
+        <div class="exercise_explanation" id="explanation8969" style="display:none;">
+            De  gauche à droite, la succession des pôles est : N-S-S-N
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h3 class="exercise_title sigil_not_in_toc">
+            Exercice 7.5a Relation courant-champ magnétique
+        </h3>
+        <div class="exercise_question">
+            <div>
+                Sélectionner le symbole qui représente le sens du courant dans le conducteur qui engendrera le champ magnétique suivant :
+            </div>
+            <div>
+                <img src="../Images/529253810ac04a40b5edab5d9f608692.png"/>
+            </div>
+        </div>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === true,'4b82');">
+            <img src="../Images/b640dcc0fd1c4f7fadef4970d9483858.png"/>
+        </button>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === false,'4b82');">
+            <img src="../Images/799f4d7205f24cea9f5a64a6ab268c33.png"/>
+        </button>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton4b82" type="button" onclick="showHint('4b82');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id="hint4b82" style="display:none;">
+            Voir section 7.5
+        </div>
+        <div class="exercise_explanation" id="explanation4b82" style="display:none;">
+            La bonne réponse est : la croix
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+
+<br/></body>
+</html>
+

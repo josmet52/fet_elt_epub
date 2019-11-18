@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="9ad1ba95c7d740eb8d2f01eb9770dc86"/>
+    <meta name="dtb:depth" content="2" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+<docTitle>
+  <text>ET_ch_03_new</text>
+</docTitle>
+<navMap>
+<navPoint id="navPoint01">
+<navLabel>
+<text>  Résistivité (3.1)</text>
+</navLabel>
+<content src="Text/th_01.xhtml#FET_toc_id_001"/>
+</navPoint>
+<navPoint id="navPoint02">
+<navLabel>
+<text>  Résistance d’un conducteur (3.2)</text>
+</navLabel>
+<content src="Text/th_02.xhtml#FET_toc_id_002"/>
+</navPoint>
+<navPoint id="navPoint03">
+<navLabel>
+<text>  Couplages des résistances (3.3)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_003"/>
+</navPoint>
+<navPoint id="navPoint04">
+<navLabel>
+<text>  Résistance équivalente (3.3.1)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_004"/>
+</navPoint>
+<navPoint id="navPoint05">
+<navLabel>
+<text>  Couplage série (3.3.2)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_005"/>
+</navPoint>
+<navPoint id="navPoint06">
+<navLabel>
+<text>  Différence entre potentiel et tension (3.3.3)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_006"/>
+</navPoint>
+<navPoint id="navPoint07">
+<navLabel>
+<text>  Applications (3.3.4)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_007"/>
+</navPoint>
+<navPoint id="navPoint08">
+<navLabel>
+<text>  Couplage parallèle (3.3.5)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_008"/>
+</navPoint>
+<navPoint id="navPoint09">
+<navLabel>
+<text>  Applications (3.3.6)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_009"/>
+</navPoint>
+<navPoint id="navPoint10">
+<navLabel>
+<text>  Couplage mixte (3.3.7)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_010"/>
+</navPoint>
+<navPoint id="navPoint11">
+<navLabel>
+<text>  Applications (3.3.8)</text>
+</navLabel>
+<content src="Text/th_03.xhtml#FET_toc_id_011"/>
+</navPoint>
+<navPoint id="navPoint12">
+<navLabel>
+<text>  Exercices (3.4)</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_012"/>
+</navPoint>
+<navPoint id="navPoint13">
+<navLabel>
+<text> Exercices</text>
+</navLabel>
+<content src="Text/th_05.xhtml#FET_toc_id_013"/>
+</navPoint>
+</navMap></ncx>

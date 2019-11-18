@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ncx xmlns="http://www.daisy.org/z3986/2005/ncx/" version="2005-1">
+  <head>
+    <meta name="dtb:uid" content="9ad1ba95c7d740eb8d2f01eb9770dc86"/>
+    <meta name="dtb:depth" content="2" />
+    <meta name="dtb:totalPageCount" content="0" />
+    <meta name="dtb:maxPageNumber" content="0" />
+  </head>
+<docTitle>
+  <text>ch01_FET_ELT_exercices_new</text>
+</docTitle>
+<navMap>
+<navPoint id="navPoint01">
+<navLabel>
+<text> Exercices 1.1 : Qu'est-ce que l'électricité</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_001"/>
+</navPoint>
+<navPoint id="navPoint02">
+<navLabel>
+<text> Exercice 1.1.1a Structure de l'atome</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_002"/>
+</navPoint>
+<navPoint id="navPoint03">
+<navLabel>
+<text> Exercice 1.1.1b Structure de l'atome</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_003"/>
+</navPoint>
+<navPoint id="navPoint04">
+<navLabel>
+<text> Exercice 1.1.1c Composition de l'atome</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_004"/>
+</navPoint>
+<navPoint id="navPoint05">
+<navLabel>
+<text> Exercice 1.1.2a Charges et forces agissant dans l’atome</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_005"/>
+</navPoint>
+<navPoint id="navPoint06">
+<navLabel>
+<text> Exercice 1.1.2b Charges et forces agissant dans l’atome</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_006"/>
+</navPoint>
+<navPoint id="navPoint07">
+<navLabel>
+<text> Exercice 1.1.2c Charges et forces agissant dans l’atome</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_007"/>
+</navPoint>
+<navPoint id="navPoint08">
+<navLabel>
+<text> Exercice 1.1.2d Charges et forces agissant dans l’atome</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_008"/>
+</navPoint>
+<navPoint id="navPoint09">
+<navLabel>
+<text> Exercice 1.1.2e Atome de cuivre</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_009"/>
+</navPoint>
+<navPoint id="navPoint10">
+<navLabel>
+<text> Exercice 1.1.2f Electrons de conduction</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_010"/>
+</navPoint>
+<navPoint id="navPoint11">
+<navLabel>
+<text> Exercice 1.1.3a Les ions</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_011"/>
+</navPoint>
+<navPoint id="navPoint12">
+<navLabel>
+<text> Exercice 1.1.3b Les ions</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_012"/>
+</navPoint>
+<navPoint id="navPoint13">
+<navLabel>
+<text> Exercice 1.1.3c Les ions</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_013"/>
+</navPoint>
+<navPoint id="navPoint14">
+<navLabel>
+<text> Exercice 1.1.3d Atome et ions</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_014"/>
+</navPoint>
+<navPoint id="navPoint15">
+<navLabel>
+<text> Exercice 1.1.3e Atomes et ions</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_015"/>
+</navPoint>
+<navPoint id="navPoint16">
+<navLabel>
+<text> Exercice 1.1.3f Atomes et ions</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_016"/>
+</navPoint>
+<navPoint id="navPoint17">
+<navLabel>
+<text> Exercice 1.1.3g Définition du ion</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_017"/>
+</navPoint>
+<navPoint id="navPoint18">
+<navLabel>
+<text> Exercice 1.1.4a Formation d’électrons libres</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_018"/>
+</navPoint>
+<navPoint id="navPoint19">
+<navLabel>
+<text> Exercice 1.1.4b Formation d’électrons libres</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_019"/>
+</navPoint>
+<navPoint id="navPoint20">
+<navLabel>
+<text> Exercice 1.1a Définition de l'électricité</text>
+</navLabel>
+<content src="Text/ex_03.xhtml#FET_toc_id_020"/>
+</navPoint>
+<navPoint id="navPoint21">
+<navLabel>
+<text> Exercices 1.2 : Nature de l'électricité</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_021"/>
+</navPoint>
+<navPoint id="navPoint22">
+<navLabel>
+<text> Exercice 1.2.1a Conduction électrique</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_022"/>
+</navPoint>
+<navPoint id="navPoint23">
+<navLabel>
+<text> Exercice 1.2.1b Sens du courant</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_023"/>
+</navPoint>
+<navPoint id="navPoint24">
+<navLabel>
+<text> Exercice 1.2.2a Source de tension</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_024"/>
+</navPoint>
+<navPoint id="navPoint25">
+<navLabel>
+<text> Exercice 1.2.2b Source de tension</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_025"/>
+</navPoint>
+<navPoint id="navPoint26">
+<navLabel>
+<text> Exercice 1.2.2c Source de tension</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_026"/>
+</navPoint>
+<navPoint id="navPoint27">
+<navLabel>
+<text> Exercice 1.2.3a Vitesse de déplacement</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_027"/>
+</navPoint>
+<navPoint id="navPoint28">
+<navLabel>
+<text> Exercice 1.2.3b Vitesse de déplacement</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_028"/>
+</navPoint>
+<navPoint id="navPoint29">
+<navLabel>
+<text> Exercice 1.2.3c Vitesse de déplacement</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_029"/>
+</navPoint>
+<navPoint id="navPoint30">
+<navLabel>
+<text> Exercice 1.2.3d Vitesse de déplacement des électrons</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_030"/>
+</navPoint>
+<navPoint id="navPoint31">
+<navLabel>
+<text> Exercice 1.2.4a Sens du courant électrique</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_031"/>
+</navPoint>
+<navPoint id="navPoint32">
+<navLabel>
+<text> Exercice 1.2.4b Sens de déplacement du courant</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_032"/>
+</navPoint>
+<navPoint id="navPoint33">
+<navLabel>
+<text> Exercice 1.2.5a Différence de potentiel</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_033"/>
+</navPoint>
+<navPoint id="navPoint34">
+<navLabel>
+<text> Exercice 1.2.5b Différence de potentiel</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_034"/>
+</navPoint>
+<navPoint id="navPoint35">
+<navLabel>
+<text> Exercice 1.2.5c Différence de potentiel</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_035"/>
+</navPoint>
+<navPoint id="navPoint36">
+<navLabel>
+<text> Exercice 1.2.5d Courant électrique</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_036"/>
+</navPoint>
+<navPoint id="navPoint37">
+<navLabel>
+<text> Exercice 1.2.5e Différence de potentiel</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_037"/>
+</navPoint>
+<navPoint id="navPoint38">
+<navLabel>
+<text> Exercice 1.2.5f Etablissement d'un courant électrique</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_038"/>
+</navPoint>
+<navPoint id="navPoint39">
+<navLabel>
+<text> Exercice 1.2.6a Les isolants</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_039"/>
+</navPoint>
+<navPoint id="navPoint40">
+<navLabel>
+<text> Exercice 1.2.6b Les isolants</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_040"/>
+</navPoint>
+<navPoint id="navPoint41">
+<navLabel>
+<text> Exercice 1.2.6c Les isolants</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_041"/>
+</navPoint>
+<navPoint id="navPoint42">
+<navLabel>
+<text> Exercice 1.2.6d Les isolants</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_042"/>
+</navPoint>
+<navPoint id="navPoint43">
+<navLabel>
+<text> Exercice 1.2.7a Les conducteurs électriques</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_043"/>
+</navPoint>
+<navPoint id="navPoint44">
+<navLabel>
+<text> Exercice 1.2.7b Les conducteurs électriques</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_044"/>
+</navPoint>
+<navPoint id="navPoint45">
+<navLabel>
+<text> Exercice 1.2.7c Les conducteurs électriques</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_045"/>
+</navPoint>
+<navPoint id="navPoint46">
+<navLabel>
+<text> Exercice 1.2.7d Les conducteurs électriques</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_046"/>
+</navPoint>
+<navPoint id="navPoint47">
+<navLabel>
+<text> Exercice 1.2.8a Les semi-conducteurs</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_047"/>
+</navPoint>
+<navPoint id="navPoint48">
+<navLabel>
+<text> Exercice 1.2a Matériaux conducteurs</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_048"/>
+</navPoint>
+<navPoint id="navPoint49">
+<navLabel>
+<text> Exercice 1.2b Matériaux isolants</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_049"/>
+</navPoint>
+<navPoint id="navPoint50">
+<navLabel>
+<text> Exercice 1.2c Matériaux semi-conducteurs</text>
+</navLabel>
+<content src="Text/ex_04.xhtml#FET_toc_id_050"/>
+</navPoint>
+<navPoint id="navPoint51">
+<navLabel>
+<text> Exercices 1.3 Effets du courant électrique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_051"/>
+</navPoint>
+<navPoint id="navPoint52">
+<navLabel>
+<text> Exercice 1.3.1a Effet calorifique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_052"/>
+</navPoint>
+<navPoint id="navPoint53">
+<navLabel>
+<text> Exercice 1.3.1b Effet calorifique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_053"/>
+</navPoint>
+<navPoint id="navPoint54">
+<navLabel>
+<text> Exercice 1.3.1c Effet calorifique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_054"/>
+</navPoint>
+<navPoint id="navPoint55">
+<navLabel>
+<text> Exercice 1.3.1d Effet calorifique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_055"/>
+</navPoint>
+<navPoint id="navPoint56">
+<navLabel>
+<text> Exercice 1.3.1e Effet calorifique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_056"/>
+</navPoint>
+<navPoint id="navPoint57">
+<navLabel>
+<text> Exercice 1.3.2a Effet magnétique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_057"/>
+</navPoint>
+<navPoint id="navPoint58">
+<navLabel>
+<text> Exercice 1.3.2b Effet magnétique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_058"/>
+</navPoint>
+<navPoint id="navPoint59">
+<navLabel>
+<text> Exercice 1.3.2c Effet magnétique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_059"/>
+</navPoint>
+<navPoint id="navPoint60">
+<navLabel>
+<text> Exercice 1.3.3a Effet chimique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_060"/>
+</navPoint>
+<navPoint id="navPoint61">
+<navLabel>
+<text> Exercice 1.3.3b Effet chimique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_061"/>
+</navPoint>
+<navPoint id="navPoint62">
+<navLabel>
+<text> Exercice 1.3.3c Effet chimique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_062"/>
+</navPoint>
+<navPoint id="navPoint63">
+<navLabel>
+<text> Exercice 1.3.4a Effet lumineux</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_063"/>
+</navPoint>
+<navPoint id="navPoint64">
+<navLabel>
+<text> Exercice 1.3.4b Effet lumineux</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_064"/>
+</navPoint>
+<navPoint id="navPoint65">
+<navLabel>
+<text> Exercice 1.3.4c Effet lumineux</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_065"/>
+</navPoint>
+<navPoint id="navPoint66">
+<navLabel>
+<text> Exercice 1.3.5a Effet piézo-électrique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_066"/>
+</navPoint>
+<navPoint id="navPoint67">
+<navLabel>
+<text> Exercice 1.3.5b Effet piézo-électrique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_067"/>
+</navPoint>
+<navPoint id="navPoint68">
+<navLabel>
+<text> Exercice 1.3.5c Effet piézo-électrique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_068"/>
+</navPoint>
+<navPoint id="navPoint69">
+<navLabel>
+<text> Exercice 1.3.6a Effet électrostatique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_069"/>
+</navPoint>
+<navPoint id="navPoint70">
+<navLabel>
+<text> Exercice 1.3.6b Effet électrostatique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_070"/>
+</navPoint>
+<navPoint id="navPoint71">
+<navLabel>
+<text> Exercice 1.3.6c Effet électrostatique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_071"/>
+</navPoint>
+<navPoint id="navPoint72">
+<navLabel>
+<text> Exercice 1.3.7a Effet physiologique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_072"/>
+</navPoint>
+<navPoint id="navPoint73">
+<navLabel>
+<text> Exercice 1.3.7b Effet physiologique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_073"/>
+</navPoint>
+<navPoint id="navPoint74">
+<navLabel>
+<text> Exercice 1.3.7c Effet physiologique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_074"/>
+</navPoint>
+<navPoint id="navPoint75">
+<navLabel>
+<text> Exercice 1.3d Déceler le passage du courant électrique</text>
+</navLabel>
+<content src="Text/ex_05.xhtml#FET_toc_id_075"/>
+</navPoint>
+<navPoint id="navPoint76">
+<navLabel>
+<text> Exercices 1.4 Genre de courant</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_076"/>
+</navPoint>
+<navPoint id="navPoint77">
+<navLabel>
+<text> Exercice 1.4.1a Courant continu</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_077"/>
+</navPoint>
+<navPoint id="navPoint78">
+<navLabel>
+<text> Exercice 1.4.1b Courant continu</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_078"/>
+</navPoint>
+<navPoint id="navPoint79">
+<navLabel>
+<text> Exercice 1.4.1c Courant continu</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_079"/>
+</navPoint>
+<navPoint id="navPoint80">
+<navLabel>
+<text> Exercice 1.4.1d Courant continu</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_080"/>
+</navPoint>
+<navPoint id="navPoint81">
+<navLabel>
+<text> Exercice 1.4.1e Courant continu</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_081"/>
+</navPoint>
+<navPoint id="navPoint82">
+<navLabel>
+<text> Exercice 1.4.1f Symbole DC</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_082"/>
+</navPoint>
+<navPoint id="navPoint83">
+<navLabel>
+<text> Exercice 1.4.2a Courant alternatif</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_083"/>
+</navPoint>
+<navPoint id="navPoint84">
+<navLabel>
+<text> Exercice 1.4.2b Courant alternatif</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_084"/>
+</navPoint>
+<navPoint id="navPoint85">
+<navLabel>
+<text> Exercice 1.4.2c Courant alternatif</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_085"/>
+</navPoint>
+<navPoint id="navPoint86">
+<navLabel>
+<text> Exercice 1.4.2d Courant continu</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_086"/>
+</navPoint>
+<navPoint id="navPoint87">
+<navLabel>
+<text> Exercice 1.4.2e Courant alternatif</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_087"/>
+</navPoint>
+<navPoint id="navPoint88">
+<navLabel>
+<text> Exercice 1.4.2f Symbole AC</text>
+</navLabel>
+<content src="Text/ex_06.xhtml#FET_toc_id_088"/>
+</navPoint>
+<navPoint id="navPoint89">
+<navLabel>
+<text> Exercices 1.5 Production d'électricité</text>
+</navLabel>
+<content src="Text/ex_07.xhtml#FET_toc_id_089"/>
+</navPoint>
+<navPoint id="navPoint90">
+<navLabel>
+<text> Exercice 1.5.1a Par échauffement</text>
+</navLabel>
+<content src="Text/ex_07.xhtml#FET_toc_id_090"/>
+</navPoint>
+<navPoint id="navPoint91">
+<navLabel>
+<text> Exercice 1.5.1b Par échauffement</text>
+</navLabel>
+<content src="Text/ex_07.xhtml#FET_toc_id_091"/>
+</navPoint>
+<navPoint id="navPoint92">
+<navLabel>
+<text> Exercice 1.5.1c Par échauffement</text>
+</navLabel>
+<content src="Text/ex_07.xhtml#FET_toc_id_092"/>
+</navPoint>
+<navPoint id="navPoint93">
+<navLabel>
+<text> Exercice 1.5.1d Par échauffement</text>
+</navLabel>
+<content src="Text/ex_07.xhtml#FET_toc_id_093"/>
+</navPoint>
+<navPoint id="navPoint94">
+<navLabel>
+<text> Exercice 1.5.1e Par échauffement</text>
+</navLabel>
+<content src="Text/ex_07.xhtml#FET_toc_id_094"/>
+</navPoint>
+<navPoint id="navPoint95">
+<navLabel>
+<text> Exercice 1.5a Production d'électricité</text>
+</navLabel>
+<content src="Text/ex_07.xhtml#FET_toc_id_095"/>
+</navPoint>
+</navMap></ncx>

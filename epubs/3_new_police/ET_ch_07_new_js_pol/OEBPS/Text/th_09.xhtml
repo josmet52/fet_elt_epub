@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        myTableStyle
+    </title>
+    <link href="../Styles/exercises_v02_02.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="FET_toc_id_040"><span><b>7.9 Couplage des bobines</b></span></h1>
+        <h2 id="FET_toc_id_041"><b>7.9.1 Couplage série</b></h2>
+        <p>
+            Lʼinductance équivalente de bobines placées en série est égale à la somme des inductances partielles.
+        </p>
+        <h4>
+            <b>
+                Formule
+            </b>
+        </h4>
+        <p>
+        </p>
+        <p class="fet_formula">
+            <span>
+                <b>
+                    <i>
+                        L
+                    </i>
+                    =
+                    <i>
+                        L
+                    </i>
+                    <sub>
+                        1
+                    </sub>
+                    +
+                    <i>
+                        L
+                    </i>
+                    <sub>
+                        2
+                    </sub>
+                    +
+                    <i>
+                        L
+                    </i>
+                    <sub>
+                        3
+                    </sub>
+                    +
+                    <i>
+                        …
+                    </i>
+                </b>
+            </span>
+        </p>
+        <br/>
+        <h2 id="FET_toc_id_042"><b>7.9.2 Couplage parallèle</b></h2>
+        <p>
+            Lʼinverse de lʼinductance équivalente est égal à la somme des inverses des inductances partielles.
+        </p>
+        <h4>
+            <b>
+                Formule
+            </b>
+        </h4>
+        <p>
+        </p>
+        <p class="fet_formula">
+            <span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>L</mi><mo>=</mo><mfrac><mn>1</mn><mrow><mstyle><mfrac><mn>1</mn><msub><mi>L</mi><mn>1</mn></msub></mfrac></mstyle><mo>+</mo><mstyle><mfrac><mn>1</mn><msub><mi>L</mi><mn>2</mn></msub></mfrac></mstyle><mo>+</mo><mstyle><mfrac><mn>1</mn><msub><mi>L</mi><mn>3</mn></msub></mfrac></mstyle><mo>+</mo><mo>…</mo></mrow></mfrac></mstyle></math>
+            </span>
+        </p>
+        <br/>
+        <h4>
+            <b>
+                Remarques
+            </b>
+        </h4>
+        <p>
+            Ces formules sont valables pour autant que les flux magnétiques produits par les bobines soient indépendants (circuits magnétiques séparés).
+        </p>
+        <h2 id="FET_toc_id_043"><b>7.9.3 Circuits magnétiques</b></h2>
+        <p>
+            Si les relations précédentes de ce chapitre permettent de déterminer les grandeurs présentes dans une bobine simple, on se trouve souvent dans une configuration de circuit magnétique.
+        </p>
+        <p>
+            On peut dans ce cas se servir des notions connues des circuits électriques et ainsi résoudre par analogie des circuits magnétiques:
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/9d461a422eb840ffb7631754c826ca7c.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Circuit magnétique
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/a43e15fc410f49e590ea5d49291b2a9e.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Circuit électrique équivalent
+        </p>
+        <p>
+            Nous avons déjà défini la force magnétomotrice (Fmm) ou excitation :
+            <i>
+                θ
+            </i>
+            =
+            <i>
+                N
+            </i>
+            ·
+            <i>
+                I
+            </i>
+        </p>
+        <p>
+            Lʼunité de
+            <i>
+                θ
+            </i>
+            est lʼampère mais on utilise également la dénomination «ampère tour» pour rappeler le
+            <i>
+                N
+            </i>
+            , nombre de tour des spires de la formule. Cʼest en magnétisme la cause de la circulation du flux magnétique.
+        </p>
+        <p>
+            <i>
+                Φ
+            </i>
+            est le flux magnétique, somme des lignes de champ qui parcourent le circuit.
+        </p>
+        <p>
+            La dernière grandeur représente lʼéquivalant de la résistance en magnétisme, elle sʼappelle «réluctance magnétique»
+            <i>
+                Rm
+            </i>
+            ou plus simplement réluctance.
+        </p>
+        <p>
+            La «loi dʼohm» magnétique connue aussi sous le nom de loi dʼHopkinson est la suivante:
+        </p>
+        <p>
+        </p>
+        <p class="fet_formula">
+            <span>
+                <b>
+                    <i>
+                        θ
+                    </i>
+                    =
+                    <i>
+                        R
+                        <sub>
+                            m
+                        </sub>
+                    </i>
+                    ·
+                    <i>
+                        Φ
+                    </i>
+                </b>
+            </span>
+        </p>
+        <br/>
+        <p>
+            Pour le calcul de Rm, nous devons tenir compte de la longueur du barreau, (plus cʼest long, plus ça résiste) de sa section (plus elle est importante, mieux ça conduit) et de la qualité du matériau, soit de la perméabilité:
+            <i>
+                μ
+            </i>
+            =
+            <i>
+                μ
+                <sub>
+                    0
+                </sub>
+                · μ
+                <sub>
+                    r
+                </sub>
+            </i>
+            . Ce dernier paramètre est au dénominateur car plus le matériau est perméable, plus Rm sera petit.
+        </p>
+        <p>
+        </p>
+        <p class="fet_formula">
+            <span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>R</mi><mi>m</mi></msub><mo>=</mo><mfrac><mi>l</mi><mrow><mi>A</mi><mo>·</mo><mi>μ</mi></mrow></mfrac></mstyle></math>
+            </span>
+        </p>
+        <br/>
+        <p>
+            A partir de là, on peut appliquer toutes les relations que lʼon connaît des circuits électriques pour le calcul des circuits magnétiques comme: circuits série ou parallèle, lois de Kirchhoff, …
+        </p>
+        <h4>
+            <b>
+                Exemple
+            </b>
+        </h4>
+        <p>
+            Calcul de la force magnétomotrice
+            <i>
+                θ
+            </i>
+            pour produire une induction déterminée dans un entrefer (
+            <i>
+                μ
+            </i>
+            =
+            <i>
+                μ
+                <sub>
+                    0
+                </sub>
+            </i>
+            car dans lʼair,
+            <i>
+                μ
+                <sub>
+                    r
+                </sub>
+            </i>
+            = 1)
+        </p>
+        <p>
+            Longueur de lʼentrefer: 2 mm
+        </p>
+        <p>
+            Valeur de lʼinduction: 0,7 T
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>θ</mi><mo>=</mo><mi>R</mi><mi>m</mi><mo>·</mo><mi>ϕ</mi><mo>=</mo><mfrac><mi>l</mi><mrow><mi>A</mi><mo>·</mo><mi>μ</mi></mrow></mfrac><mo>·</mo><mi>B</mi><mo>·</mo><mi>A</mi><mo>=</mo><mfrac><mrow><mi>l</mi><mo>·</mo><mi>B</mi></mrow><mi>μ</mi></mfrac><mo>=</mo><mi>l</mi><mo>·</mo><mn>800</mn><mtext></mtext><mn>000</mn><mo>·</mo><mi>B</mi></mstyle></math>
+        </p>
+        <p>
+            Dans notre cas :
+        </p>
+        <p>
+            <i>
+                θ
+            </i>
+            = 2 · 10
+            <sup>
+                -3
+            </sup>
+            · 8 · 10
+            <sup>
+                5
+            </sup>
+            · 0,7 =
+            <b>
+                1120 A
+            </b>
+        </p>
+        <p>
+            Remarque: cette manière de faire permet de calculer une grande quantité de circuits à entrefer, car la résistance magnétique de lʼair est
+            <i>
+                µ
+                <sub>
+                    r
+                </sub>
+            </i>
+            plus importante que celle des matériaux qui constituent le «fer» des circuits magnétiques la résistance magnétique est donc principalement constituée de lʼentrefer.
+        </p>
+        <h4>
+            <b>
+                Calcul dʼun circuit complet :
+            </b>
+        </h4>
+        <p>
+            On constitue un circuit magnétique avec des tôles (
+            <i>
+                μ
+                <sub>
+                    r
+                </sub>
+            </i>
+            = 9000, acier pour relais)
+        </p>
+        <p>
+            Déterminez le flux produit dans cette bobine et dans la configuration suivante :
+        </p>
+        <p>
+            Bobine: 300 spires; fil : 0,2 mm
+            <sup>
+                2
+            </sup>
+            85 m long
+            <br/>
+            Alimentation: 1,5 V
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/0a4d4ee9ac6b4d6b988d3ec8e03ee138.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Calcul de la résistance du fil:
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>R</mi><mo>=</mo><mfrac><mrow><mi>ρ</mi><mo>·</mo><mi>l</mi></mrow><mi>A</mi></mfrac><mo>=</mo><mfrac><mrow><mn>0</mn><mo>,</mo><mn>0175</mn><mo>·</mo><mn>85</mn></mrow><mrow><mn>0</mn><mo>,</mo><mn>2</mn></mrow></mfrac><mo>=</mo><mi>7</mi><mo>,</mo><mi>44</mi><mtext></mtext><mi>Ω</mi></mstyle></math>
+        </p>
+        <p>
+            Courant dans la bobine :
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>I</mi><mo>=</mo><mfrac><mi>U</mi><mi>R</mi></mfrac><mo>=</mo><mfrac><mrow><mn>1</mn><mo>,</mo><mn>5</mn></mrow><mrow><mn>7</mn><mo>,</mo><mn>44</mn></mrow></mfrac><mo>=</mo><mi>0</mi><mo>,</mo><mi>202</mi><mtext></mtext><mi>A</mi></mstyle></math>
+        </p>
+        <p>
+            Excitation générée :
+        </p>
+        <p>
+            <i>
+                θ
+            </i>
+            =
+            <i>
+                N
+            </i>
+            ·
+            <i>
+                I
+            </i>
+            = 100 · 0,202 =
+            <b>
+                20,2 A
+            </b>
+        </p>
+        <p>
+            Réluctance :
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>R</mi><mi>m</mi><mo>=</mo><mfrac><mi>l</mi><mrow><mi>A</mi><mo>·</mo><mi>μ</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>2</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>08</mn><mo>+</mo><mn>2</mn><mo>·</mo><mn>0</mn><mo>,</mo><mn>06</mn></mrow><mrow><mn>6</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup><mo>·</mo><mstyle><mfrac><mn>9000</mn><mrow><mn>800</mn><mtext></mtext><mn>000</mn></mrow></mfrac></mstyle></mrow></mfrac><mo>=</mo><mn>41</mn><mo>,</mo><mn>5</mn><mo>·</mo><msup><mn>10</mn><mn>3</mn></msup><mfrac><mi>A</mi><mrow><mi>W</mi><mi>b</mi></mrow></mfrac></mstyle></math>
+        </p>
+        <p>
+            Flux magnétique :
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>ϕ</mi><mo>=</mo><mfrac><mi>θ</mi><mrow><mi>R</mi><mi>m</mi></mrow></mfrac><mo>=</mo><mfrac><mrow><mn>20</mn><mo>,</mo><mn>2</mn></mrow><mrow><mn>41</mn><mtext></mtext><mn>500</mn></mrow></mfrac><mo>=</mo><mn>486</mn><mtext></mtext><mi>μ</mi><mi>W</mi><mi>b</mi></mstyle></math>
+        </p>
+        <p>
+            Afin de vérifier si lʼon est en saturation ou pas, il faut systématiquement calculer lʼinduction, même si cela nʼest pas demandé dans lʼexercice.
+        </p>
+        <p>
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>B</mi><mo>=</mo><mfrac><mi>ϕ</mi><mi>A</mi></mfrac><mo>=</mo><mfrac><mrow><mn>486</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>6</mn></mrow></msup></mrow><mrow><mn>6</mn><mo>·</mo><msup><mn>10</mn><mrow><mo>-</mo><mn>4</mn></mrow></msup></mrow></mfrac><mo>=</mo><mn>0</mn><mo>,</mo><mn>81</mn><mtext></mtext><mi>T</mi></mstyle></math>
+        </p>
+        <p>
+            On peut voir dans le graphique
+            <i>
+                B/H
+            </i>
+            (voir ici) que le flux est dans la zone linéaire pour le matériau choisi (acier à relais basse qualité)
+        </p>
+    </div>
+
+<br/></body>
+</html>
+

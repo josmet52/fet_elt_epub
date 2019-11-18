@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        myTableStyle
+    </title>
+    <link href="../Styles/exercises_v02_02.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_04.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_06.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <div>
+        <h1 id="FET_toc_id_026"><span><b>9.7 Mesure de la résistance</b></span></h1>
+        <p>
+            Pour déterminer la valeur ohmique dʼune résistance, plusieurs solutions sont possibles.
+        </p>
+        <h2 id="FET_toc_id_027"><b>9.7.1 Par la loi dʼohm</b></h2>
+        <p>
+            En se basant sur la loi dʼohm:
+            <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mi>R</mi><mo></mo><mo>=</mo><mo></mo><mfrac><mi>U</mi><mi>I</mi></mfrac></mstyle></math>
+            .
+        </p>
+        <p>
+            On détermine la valeur de la résistance en mesurant le courant traversant la résistance et la tension aux bornes de celle-ci.
+        </p>
+        <p>
+            Le courant dans le voltmètre est négligeable (montage «aval»
+            <i>
+                R
+            </i>
+            <sub>
+                v
+            </sub>
+            &gt;&gt; R).
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/d8f404ce55994561a66c3e2133afeea4.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Schéma de mesure pour de faibles valeurs de résistances
+        </p>
+        <p>
+            La chute de tension aux bornes de lʼampèremètre est négligeable (montage «amont»
+            <i>
+                R
+            </i>
+            <sub>
+                A
+            </sub>
+            &lt;&lt; R).
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/496327295d2c4be0b369993d1f2047ab.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Schéma de mesure pour de grandes valeurs de résistances
+        </p>
+        <h2 id="FET_toc_id_028"><b>9.7.2 Par un ohmmètre</b></h2>
+        <p>
+            Lʼohmmètre affiche directement la valeur de la résistance à mesurer. Lʼinstrument mesure lʼintensité du courant qui traverse la résistance. La tension est fournie à lʼohmmètre par lʼintermédiaire dʼune pile incorporée dans lʼappareil. Lʼinstrument de mesure doit être régulièrement étalonné car la tension de la pile nʼest pas constante. On étalonne lʼappareil en reliant les deux bornes de lʼohmmètre afin dʼamener lʼaiguille sur 0 Ω.
+        </p>
+        <p>
+            Une résistance de réglage permet de faire cette mise à zéro.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/b06aff1898f94b99873d938aec12930c.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Symbole de lʼohmmètre
+        </p>
+        <p>
+            Sur les multimètres, lʼéchelle de lʼohmmètre est inversée, avec le zéro à droite.
+        </p>
+        <p>
+            La résistance à mesurer ne doit pas se trouver sous tension lors de lʼemploi de lʼohmmètre. De plus, il ne faut pas que la mesure soit faussée par dʼautres résistances placées sur le même circuit. Il faut donc débrancher le récepteur pour mesurer sa résistance.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/19ef35e137f24137afbf5da0d764a905.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h2 id="FET_toc_id_029"><b>9.7.3 Par un pont de Wheatstone</b></h2>
+        <p>
+            En plaçant la résistance à mesurer
+            <i>
+                R
+            </i>
+            <sub>
+                x
+            </sub>
+            aux bornes de lʼinstrument, on obtient lʼéquilibre du pont en variant les résistances
+            <i>
+                R
+            </i>
+            <sub>
+                1
+            </sub>
+            et
+            <i>
+                R
+            </i>
+            <sub>
+                2
+            </sub>
+            pour obtenir une tension
+            <i>
+                U
+            </i>
+            = 0 V, soit un courant nul dans le dispositif à cadre mobile.
+        </p>
+        <p>
+            La valeur de la résistance
+            <i>
+                R
+            </i>
+            <sub>
+                x
+            </sub>
+            dépend du rapport
+            <i>
+                R
+            </i>
+            <sub>
+                1
+            </sub>
+            sur
+            <i>
+                R
+            </i>
+            <sub>
+                2
+            </sub>
+            et de la valeur
+            <i>
+                R
+            </i>
+            <sub>
+                3
+            </sub>
+            lue directement sur lʼinstrument.
+        </p>
+        <p>
+            On retrouve ici une application du couplage mixte.
+        </p>
+        <p>
+            Cet instrument de mesure est utilisé pour des mesures de précision.
+        </p>
+        <p>
+            La résistance à mesurer ne doit pas se trouver sous tension lors de lʼemploi du pont de Wheatstone. De plus, il ne faut pas que la mesure soit faussée par dʼautres résistances placées sur le même circuit. Il faut donc débrancher le récepteur pour mesurer sa résistance.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/d779cd9c0bc24febb87231f7b414b3b3.png" alt="image manquante"/>
+            </div>
+        </div>
+        <h4>
+            <b>
+                Formules
+            </b>
+        </h4>
+        <p>
+        </p>
+        <p class="fet_formula">
+            <span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><mfrac><msub><mi>R</mi><mi>x</mi></msub><msub><mi>R</mi><mn>1</mn></msub></mfrac><mo>=</mo><mfrac><msub><mi>R</mi><mn>3</mn></msub><msub><mi>R</mi><mn>2</mn></msub></mfrac></mstyle></math>
+            </span>
+        </p>
+        <br/>
+        <p class="fet_formula">
+            <span>
+                <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="affichage de formules pas supporté par le logiciel"><mstyle><msub><mi>R</mi><mtext>x</mtext></msub><mo>=</mo><mfrac><msub><mi>R</mi><mn>1</mn></msub><msub><mi>R</mi><mn>2</mn></msub></mfrac><mo>⋅</mo><msub><mi>R</mi><mn>3</mn></msub></mstyle></math>
+            </span>
+        </p>
+        <br/>
+        <h2 id="FET_toc_id_030"><b>9.7.4 Par un contrôleur dʼisolement</b></h2>
+        <p>
+            Cet appareil permet de mesurer des résistances élevées de plusieurs mégohms, en particulier des résistances dʼisolement des installations électriques et des récepteurs. On lʼappelle aussi mégohmmètre.
+        </p>
+        <p>
+            Il est important, lors de la mesure, de recréer les conditions nominales de fonctionnement de lʼinstallation afin de déceler le moindre courant de défaut dû à un défaut dʼisolation. Cʼest pourquoi la tension, délivrée par le générateur placé dans le contrôleur dʼisolement, doit être au moins égale à la tension de service.
+        </p>
+        <div>
+            <div class="imagecontainer w50">
+                <img src="../Images/350f0b5e68084d8296994f79ef65a6bd.png" alt="image manquante"/>
+            </div>
+        </div>
+        <p>
+            Contrôleur dʼisolement à magnéto
+        </p>
+        <p>
+            Dans les anciens contrôleurs dʼisolement appelés magnéto (dispositif de mesure à cadre croisé), la tension dʼalimentation est générée par un petit inducteur actionné par une manivelle.
+        </p>
+        <p>
+            Dans les appareils actuels, la tension est produite par un circuit électronique alimenté par un accumulateur.
+        </p>
+        <p>
+            La lecture de la résistance se fait directement sur le cadran de lʼinstrument de mesure.
+        </p>
+        <p>
+            La partie de lʼinstallation à mesurer ne doit pas se trouver sous tension lors de lʼemploi du contrôleur dʼisolement.
+        </p>
+    </div>
+
+<br/></body>
+</html>
+

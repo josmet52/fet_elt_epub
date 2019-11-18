@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>
+        Exercices
+    </title>
+    <meta charset="utf-8"/>
+    <link href="../Styles/exercises_v02_03.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/fet_styles_v02_06.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_09.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/validation_fr_jo_v02_02.js" type="text/javascript">
+    </script>
+</head>
+<body>
+    <h1 id="FET_toc_id_013">Exercices 6.2 : Piles</h1>
+    <div>
+        <br/>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 6.2b - Piles</h2>
+        <div class="exercise_question">
+            <div>
+                Comment se déplacent les électrons à l'intérieur d'une pile ou d'un accumulateur ?
+            </div>
+        </div>
+        <br/>
+        <button type="button" onclick="checkBoolean(true === true,'6615');">
+            du pôle "+" au pôle "-"
+        </button>
+        <br/>
+        <button type="button" onclick="checkBoolean(true === false,'6615');">
+            du pôle "-" au pôle "+"
+        </button>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton6615" type="button" onclick="showHint('6615');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint6615' style='display:none;'>
+            Voir section 6.2
+        </div>
+        <div class="exercise_explanation" id='explanation6615' style='display:none;'>
+            A l'intérieur d'une pile les électrons se déplacent du pôle "+" au pôle "-"
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 6.2c - Piles</h2>
+        <div class="exercise_question">
+            <div>
+                Comment se déplacent les électrons à l'extérieur d'une pile ou d'un accumulateur ?
+            </div>
+        </div>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === true,'4b04');">
+            du pôle "+" au pôle "-"
+        </button>
+        <br/>
+        <button type="button" onclick="checkBoolean(false === false,'4b04');">
+            du pôle "-" au pôle "+"
+        </button>
+        <br/>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton4b04" type="button" onclick="showHint('4b04');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint4b04' style='display:none;'>
+            Voir section 6.2
+        </div>
+        <div class="exercise_explanation" id='explanation4b04' style='display:none;'>
+            A l'extérieur d'une pile ou d'un accumulateur les électrons se déplacent du pôle "-" au pôle "+"
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 6.2d Piles</h2>
+        <div class="exercise_question">
+            <div>
+                A quoi correspond la tension mesurée aux bornes d'une pile à vide ?
+            </div>
+            <div>
+                Choisissez l'affirmation correcte dans la liste ci-après.
+            </div>
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1d3f3' type="radio" id='iscorrectr0d3f3'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Cette tension correspond à la FEM (Force Electro Motrice)
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1d3f3' type="radio" id='iscorrectr1d3f3'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Cette tension correspond à la FEM diminuée de la tension sur la résistance interne Ri.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1d3f3' type="radio" id='iscorrectr2d3f3'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Cette tension correspond à la chute de tension provoquée par la résistance interne Ri.
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButtond3f3" type="button" onclick="validateRadioButton(['iscorrectr2d3f3','iscorrectr1d3f3','iscorrectr0d3f3'],['false','false','true'],'d3f3');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButtond3f3" type="button" onclick="showHint('d3f3');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hintd3f3' style='display:none;'>
+            Voir section 6.2
+        </div>
+        <div class="exercise_explanation" id='explanationd3f3' style='display:none;'>
+            La tension mesurée aux bornes d'une pile à vide correspond à la FEM (Force Electro Motrice)
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 6.2e - Piles</h2>
+        <div class="exercise_question">
+            <div>
+                Quel est l'impact de la résistance interne d'une pile sur sa tension de sortie à vide ?
+            </div>
+            <div>
+                Choisissez l'affirmation correcte dans la liste ci-après.
+            </div>
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1fd49' type="radio" id='iscorrectr1fd49'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La tension est plus faible à cause le la résistance intrene.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1fd49' type="radio" id='iscorrectr0fd49'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Aucun impact
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1fd49' type="radio" id='iscorrectr2fd49'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La tension est plus grande car la tension sur la Ri s'ajoute à la FEM.
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButtonfd49" type="button" onclick="validateRadioButton(['iscorrectr2fd49','iscorrectr1fd49','iscorrectr0fd49'],['false','false','true'],'fd49');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButtonfd49" type="button" onclick="showHint('fd49');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hintfd49' style='display:none;'>
+            Voir section 6.2
+        </div>
+        <div class="exercise_explanation" id='explanationfd49' style='display:none;'>
+            La résistance interne d'une pile n'a aucun impact sur sa tension de sortie à vide.
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 6.2f - Piles</h2>
+        <div class="exercise_question">
+            <div>
+                Quel est l'impact de la résistance interne d'une pile en fonctionnement sur sa tension de sortie ?
+            </div>
+            <div>
+                Choisissez l'affirmation correcte dans la liste ci-après.
+            </div>
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group131d4' type="radio" id='iscorrectr131d4'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La tension de sortie augmente lorsque le courant fourni par la pile&#160;augmente.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group131d4' type="radio" id='iscorrectr231d4'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Aucun impact.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group131d4' type="radio" id='iscorrectr031d4'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                La tension de sortie diminue lorsque le courant fourni par la pile&#160;augmente.&#160;
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group131d4' type="radio" id='iscorrectr331d4'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Plus la résistance interne est grande meilleure est la qualité de la pile.
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton31d4" type="button" onclick="validateRadioButton(['iscorrectr331d4','iscorrectr231d4','iscorrectr131d4','iscorrectr031d4'],['false','false','false','true'],'31d4');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton31d4" type="button" onclick="showHint('31d4');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint31d4' style='display:none;'>
+            Voir section 6.2
+        </div>
+        <div class="exercise_explanation" id='explanation31d4' style='display:none;'>
+            La résistance interne d'une pile en fonctionnement provoque une diminution de la tension de sortie lorsque le courant fourni par la pile&#160;augmente.
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 6.2g Pile</h2>
+        <div class="exercise_question">
+            Qu'est-ce qu'une pile ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group14191' type="radio" id='iscorrectr14191'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Une pile est un générateur de tension continue qui&#160;&#160;produit de l&amp;apos;électricité à partir de la chaleur.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group14191' type="radio" id='iscorrectr24191'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Une pile est un générateur de tension continue qui transforme l&amp;apos;humidité, en la combinant au charbon de l&amp;apos;électrode, en électricité.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group14191' type="radio" id='iscorrectr04191'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Une pile est un générateur de tension continue qui transforme l’énergie chimique en énergie électrique.
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButton4191" type="button" onclick="validateRadioButton(['iscorrectr24191','iscorrectr14191','iscorrectr04191'],['false','false','true'],'4191');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButton4191" type="button" onclick="showHint('4191');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hint4191' style='display:none;'>
+            Voir section 6.2
+        </div>
+        <div class="exercise_explanation" id='explanation4191' style='display:none;'>
+            Une pile est un générateur de tension continue qui transforme l’énergie chimique en énergie électrique.
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+    <div class="exercise_container">
+        <h2 class="exercise_title">Exercice 6.2h Pile</h2>
+        <div class="exercise_question">
+            De façon générale, comment est constituée une pile ?
+        </div>
+        <br/>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1f751' type="radio" id='iscorrectr1f751'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Une pile est constituée d&amp;apos;une électrode plongée dans un électrolyte liquide.
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1f751' type="radio" id='iscorrectr0f751'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                <div>
+                    Une pile est constituée de deux électrodes composées de matériaux de nature différente et d&amp;apos;un électrolyte liquide.
+                </div>
+            </div>
+        </div>
+        <div style="width: 100%;margin-top:15px;margin-bottom:15px;">
+            <input style="width: 10%;display: inline-block;" name='group1f751' type="radio" id='iscorrectr2f751'/>
+            <div style="width: 85%;display: inline-block;vertical-align:middle;">
+                Une pile est constituée d&amp;apos;un électrolyte liquide contenu dans un boitier.
+            </div>
+        </div>
+        <button class="exercise_button" style="margin-top:15px" id="submitButtonf751" type="button" onclick="validateRadioButton(['iscorrectr2f751','iscorrectr1f751','iscorrectr0f751'],['false','false','true'],'f751');">
+            Vérifiez votre réponse
+        </button>
+        <button class="exercise_button" style="margin-top:15px" id="hintButtonf751" type="button" onclick="showHint('f751');">
+            Afficher l'aide
+        </button>
+        <div class="exercise_hint" id='hintf751' style='display:none;'>
+            Voir section 6.2
+        </div>
+        <div class="exercise_explanation" id='explanationf751' style='display:none;'>
+            <div>
+                Pour constituer une pile, il faut deux électrodes composées de matériaux de nature différente et un électrolyte liquide.
+            </div>
+        </div>
+    </div>
+    <div>
+        <br/>
+    </div>
+
+<br/></body>
+</html>
+
