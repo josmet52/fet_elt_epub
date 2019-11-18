@@ -16,6 +16,7 @@ date : 21.06.2018
 import re
 import os
 import tkinter as tk
+import ctypes
 
 class ClasseFetLib():
 
@@ -23,6 +24,30 @@ class ClasseFetLib():
         self.IDENTATION_SPACES = 4
         self.TITLE_TAG_BEG = ("<h1", "<h2", "<math")
         self.TITLE_TAG_END = ("</h1", "</h2", "</math")
+
+    def message_box(self, title, text, style):
+        ## Styles:
+        #  0 : OK
+        #  1 : OK | Cancel
+        #  2 : Abort | Retry | Ignore
+        #  3 : Yes | No | Cancel
+        #  4 : Yes | No
+        #  5 : Retry | No
+        #  6 : Cancel | Try Again | Continue
+
+        ## To also change icon, add these values to previous number
+        # 16 Stop-sign icon
+        # 32 Question-mark icon
+        # 48 Exclamation-point icon
+        # 64 Information-sign icon consisting of an 'i' in a circle
+
+        ## return values
+        # OK = 0
+        # CANCEL = 2
+        # ABORT = 3
+        # YES = 6
+        # NO = 7
+        return ctypes.windll.user32.MessageBoxW(0, text, title, style)
 
     def find_all_substr(self, a_str, substr):
         start = 0

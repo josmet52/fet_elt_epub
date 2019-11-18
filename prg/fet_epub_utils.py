@@ -734,10 +734,13 @@ class ClasseNavBtn:
 
         # remplacer les fichiers .js par ceux à jour
         for existing_string in js_files_string:
+            # print(existing_string)
             # chercher old_js_file_name dans le répertoire/misc/... du epub
             for r_js, d_js, f_js in os.walk(js_path_dir): # répertoire js du epub
                 # pour tous les fichiers anciens
+                # print(f_js)
                 for old_js_file_name in f_js:
+                    # print(old_js_file_name)
                     if existing_string in old_js_file_name: # c'est le fichier à remplacer
                         old_file_name = old_js_file_name
                         new_file_name = new_js_files_names[existing_string]
@@ -789,6 +792,8 @@ class ClasseNavBtn:
             data = []
             data_new = []
 
+            if   "ex_03.xhtml" in working_file :
+                abcderf = 0
             # replace all modified .js references
             # read the xhtml file
             with open(working_file, "r", encoding="utf-8") as rFile:
@@ -819,13 +824,17 @@ class ClasseNavBtn:
 
             # replace all modified .css references
             data_new = []
+            data = []
             # read the xhtml file
             with open(working_file, "r", encoding="utf-8") as rFile:
-                data = rFile.readlines()
+                for llx in rFile:
+                    data.append(llx)
+                # data = rFile.readlines()
             end_head_found = False
             begin_head_found = False
 
             for l in data:
+                # print(l)
                 if "<head>" in l :
                     begin_head_found = True
                 if begin_head_found and not end_head_found:
@@ -1260,7 +1269,7 @@ class ClasseNavBtn:
             else:
                 out_file_name = os.path.basename(in_path_file_name)
 
-            # the out filename goes in the wnav directory
+            # the out filename goes in the moo directory
             out_path_file_name = "".join([self.new_moo_path, out_file_name])
             # prepare the text to display in and out files
             txt_in_file = "".join(["Sce file : ", os.path.basename(in_path_file_name)])
@@ -1300,11 +1309,31 @@ class ClasseNavBtn:
 
             # intégrer les scripts dans les pages xhtml pour moodle
             # pour tous les fichiers xhtml
-            for file in os.listdir(text_path_dir):
+            only_xhtml_files = [f for f in os.listdir(text_path_dir) if os.path.isfile("".join([text_path_dir, f]))]
+            for file in only_xhtml_files:
                 u.manage_info(file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
                 working_file="".join([text_path_dir, file])
                 with open(working_file, "r", encoding="utf-8") as xhtml_file:
                     xhtml_data = xhtml_file.readlines()
+                begin_head_found = False
+                end_head_found = False
+                i_beg_js_name = 0
+                i_end_js_name = 0
+                js_list = []
+                js_txt_beg = "src=\"../Misc/"
+                js_txt_end = ".js"
+                for l in xhtml_data:
+                    if "</head" in l :
+                        end_head_found = True
+                    if begin_head_found and not end_head_found:
+                        if ".js" in l:
+                            i_beg_js_name = l.find(js_txt_beg, 0) + len(js_txt_beg)
+                            i_end_js_name = l.find(js_txt_end) + len(js_txt_end)
+                            js_list.append(l[i_beg_js_name:i_end_js_name])
+
+                    if "<head" in l:
+                        begin_head_found = True
+
                 with open(working_file, "w", encoding="utf-8") as new_xhtml_file:
                     in_body = False
                     script_found = False
@@ -1316,24 +1345,25 @@ class ClasseNavBtn:
                             script_found = True
                             # new_xhtml_file.writelines("</script>\n\n")
                             # new_xhtml_file.writelines("<script>\n")
-                            for js_in_file in os.listdir(js_path_dir):
-                                js_Path_file_name ="".join([js_path_dir, js_in_file])
-                                # if "alternateur" in js_in_file or "cercle" in js_in_file or "oscillo" in js_in_file or "validation" in js_in_file or "rendement" in js_in_file or "jquery" in js_in_file:
-                                # read the script data
-                                with open(js_Path_file_name, "r", encoding="utf-8") as js_file:
-                                    js_data = js_file.readlines()
-                                # write the script data in the xhtml file just before the </body> tag
-                                new_xhtml_file.writelines("//<![CDATA[\n")
-                                # new_xhtml_file.writelines("<script> //<![CDATA[")
-                                for l_j in js_data:
-                                    new_xhtml_file.writelines(l_j)
-                                new_xhtml_file.writelines("//]]>\n")
-                                # new_xhtml_file.writelines("//]]></script>")
+                            only_js_files = [f for f in os.listdir(js_path_dir) if os.path.isfile("".join([js_path_dir, f]))]
+                            for js_in_file in only_js_files:
+                                if js_in_file in js_list:
+                                    js_Path_file_name ="".join([js_path_dir, js_in_file])
+                                    # if "alternateur" in js_in_file or "cercle" in js_in_file or "oscillo" in js_in_file or "validation" in js_in_file or "rendement" in js_in_file or "jquery" in js_in_file:
+                                    # read the script data
+                                    with open(js_Path_file_name, "r", encoding="utf-8") as js_file:
+                                        js_data = js_file.readlines()
+                                    # write the script data in the xhtml file just before the </body> tag
+                                    new_xhtml_file.writelines("//<![CDATA[\n")
+                                    # new_xhtml_file.writelines("<script> //<![CDATA[")
+                                    for l_j in js_data:
+                                        new_xhtml_file.writelines(l_j)
+                                    new_xhtml_file.writelines("//]]>\n")
+                                    # new_xhtml_file.writelines("//]]></script>")
                             new_xhtml_file.writelines(l)
                         else:
                             new_xhtml_file.writelines(l)
                         if "</body>" in l:
-
                             in_body = False
 
             # adapter tous les fichiers texte pour que les boutons reprennent la police choisie (par le exercises.css

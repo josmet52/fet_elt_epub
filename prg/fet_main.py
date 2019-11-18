@@ -45,14 +45,16 @@ version 0.30a - 22.10.2019 - menus réorganisés, boutons supprimés
 version 0.30b - 28.10.2019 - petites corrections
 version 0.30c - 28.10.2019 - rempalcé variables globales (self.xxx)  par variables locales (xxx)
 version 0.30d - 31.10.2019 - nouveau code pour updater .js et .css
+version 0.31a - 14.11.2019 - version stable yc Moodle nav btn
+version 0.32a - 18.11.2019 - version stable manque l'aide et le nettoyage du code
 """
 
 VERSION_FILE = "fet_main.py"
-VERSION_NO = "0.30d"
-VERSION_DATE = "31.10.2019"
+VERSION_NO = "0.32a"
+VERSION_DATE = "18.11.2019"
 VERSION_AUTEUR = "Joseph Métrailler"
-VERSION_DESCRIPTION = ".js and .css new code"
-VERSION_STATUS = "à tester"
+VERSION_DESCRIPTION = "à nettoyer et ajouter l'aide, \npas de gestion avancée des ereurs"
+VERSION_STATUS = "prototype stable pour utilisatteur averti"
 
 
 # external libraries
@@ -62,6 +64,7 @@ import time
 import os
 from tkinter import *
 from PIL import Image, ImageTk
+
 
 # this programm files
 # from fet_class import ClasseFet
@@ -103,15 +106,19 @@ def ask_2_quit():
 # IMPROVE (OR CORREXT)
 ##############
 def dir_improve_pw_epub_go():
-    btnStop = tk.Button(btnFrame, text="CANCEL", textvariable="btnStop", command=lambda: ask_2_quit(),
-                        bg="light blue", state="disabled").grid(row=0, column=1, ipadx=15, padx=2, pady=5)
-    x.dir_improve_pw_epub()
-    for b in btnFrame.winfo_children():
-        if str((b.cget("textvariable"))).strip() == "btnStop" or str((b.cget("textvariable"))).strip() == "lblInfo":
-            b.destroy()
+    answ = y.message_box('Attention !', "Etes-vous sûr de vouloir effectuer cette opération ?\n Il y a un rsique d\'écraser des données valides", 20)
+    if answ == 6:
+        btnStop = tk.Button(btnFrame, text="CANCEL", textvariable="btnStop", command=lambda: ask_2_quit(),
+                            bg="light blue", state="disabled").grid(row=0, column=1, ipadx=15, padx=2, pady=5)
+        x.dir_improve_pw_epub()
+        for b in btnFrame.winfo_children():
+            if str((b.cget("textvariable"))).strip() == "btnStop" or str((b.cget("textvariable"))).strip() == "lblInfo":
+                b.destroy()
 
 def file_improve_pw_epub_go():
-    x.file_improve_pw_epub()
+    answ = y.message_box('Attention !', "Etes-vous sûr de vouloir effectuer cette opération ?\n Il y a un rsique d\'écraser des données valides", 20)
+    if answ == 6:
+        x.file_improve_pw_epub()
 
 # NAV BTN
 ##############
@@ -169,15 +176,19 @@ def file_change_police_go():
 # PREPARE FOR MOODLE
 ##############
 def dir_prepare_for_moodle_go():
-    btnStop = tk.Button(btnFrame, text="CANCEL", textvariable="btnStop", command=lambda: ask_2_quit(),
-                        bg="light blue", state="disabled").grid(row=0, column=1, ipadx=15, padx=2, pady=5)
-    z.dir_prepare_for_moodle()
-    for b in btnFrame.winfo_children():
-        if str((b.cget("textvariable"))).strip() == "btnStop" or str((b.cget("textvariable"))).strip() == "lblInfo":
-            b.destroy()
+    answ = y.message_box('Information !', "Cette fonctionalité n'est pas complètement vérifiée ?\n Les résultats sont à vérifier soigneusement", 52)
+    if answ == 6:
+        btnStop = tk.Button(btnFrame, text="CANCEL", textvariable="btnStop", command=lambda: ask_2_quit(),
+                            bg="light blue", state="disabled").grid(row=0, column=1, ipadx=15, padx=2, pady=5)
+        z.dir_prepare_for_moodle()
+        for b in btnFrame.winfo_children():
+            if str((b.cget("textvariable"))).strip() == "btnStop" or str((b.cget("textvariable"))).strip() == "lblInfo":
+                b.destroy()
 
 def file_prepare_for_moodle_go():
-    z.file_prepare_for_moodle()
+    answ = y.message_box('Information !', "Cette fonctionalité n'est pas complètement vérifiée ?\n Les résultats sont à vérifier soigneusement", 52)
+    if answ == 6:
+        z.file_prepare_for_moodle()
 
 # 2_3_4 et 1_2_3_4
 ##############
@@ -283,7 +294,6 @@ def aide():
         ("FET EPUB optimizer", "".join([ \
         "FET EPUB optimizer", "\n\n" \
         "Aide pas encore rédigée !"]))
-
 # declare the display
 msgDisplay = tk.Tk()
 # fix the dimensions of the application window
@@ -345,40 +355,44 @@ variable.set('USER') # default value
 
 # GLOBAL EPUB MENU
 singleepubmenu = Menu(menubar, tearoff=0)
-singleepubmenu.add_command(label="Correct file", command=lambda: file_improve_pw_epub_go())
-singleepubmenu.add_separator()
-singleepubmenu.add_command(label="Remove nav btn file", command=lambda: file_remove_nav_btn_go())
+singleepubmenu.add_command(label="0 - Correct PW file", command=lambda: file_improve_pw_epub_go())
+# singleepubmenu.add_separator()
+# singleepubmenu.add_command(label="Remove nav btn file", command=lambda: file_remove_nav_btn_go())
 singleepubmenu.add_separator()
 singleepubmenu.add_command(label="1 - Update .js ans .css file", command=lambda: file_update_js_and_css_go())
 singleepubmenu.add_command(label="2 - Change police file", command=lambda: file_change_police_go())
 singleepubmenu.add_command(label="3 - Add nav btn file", command=lambda: file_add_nav_btn_go())
-singleepubmenu.add_command(label="4 - Prepare for moodle file", command=lambda: file_prepare_for_moodle_go())
 singleepubmenu.add_separator()
 singleepubmenu.add_command(label="1 - 2 - 3", command=lambda: file_1_2_3_go())
-singleepubmenu.add_command(label="1 - 2 - 3 - 4", command=lambda: file_1_2_3_4_go())
-menubar.add_cascade(label="1 epub", menu=singleepubmenu)
+singleepubmenu.add_separator()
+singleepubmenu.add_command(label="4 - Prepare for moodle file", command=lambda: file_prepare_for_moodle_go())
+# singleepubmenu.add_command(label="1 - 2 - 3 - 4", command=lambda: file_1_2_3_4_go())
+singleepubmenu.add_separator()
+singleepubmenu.add_command(label="Verify file", command=verify_job_go)
+menubar.add_cascade(label="Single EPUB", menu=singleepubmenu)
 
 # create a pulldown menu, and add it to the menu bar
 direpubmenu = Menu(menubar, tearoff=0)
-direpubmenu.add_command(label="Correct dir", command=lambda: dir_improve_pw_epub_go())
+direpubmenu.add_command(label="Correct PW (dir)", command=lambda: dir_improve_pw_epub_go())
 # direpubmenu.add_separator()
 # direpubmenu.add_command(label="Remove nav btn dir", command=lambda: dir_remove_nav_btn_go())
 direpubmenu.add_separator()
-direpubmenu.add_command(label="Update js and css dir", command=lambda: dir_update_js_and_css_go())
-direpubmenu.add_command(label="Change police dir", command=lambda: dir_change_police_go())
-direpubmenu.add_command(label="Add nav btn dir", command=lambda: dir_add_nav_btn_go())
+direpubmenu.add_command(label="Update js and css (dir)", command=lambda: dir_update_js_and_css_go())
+direpubmenu.add_command(label="Change police (dir)", command=lambda: dir_change_police_go())
+direpubmenu.add_command(label="Add nav btn (dir)", command=lambda: dir_add_nav_btn_go())
+direpubmenu.add_separator()
 direpubmenu.add_command(label="Prepare for moodle dir", command=lambda: dir_prepare_for_moodle_go())
 direpubmenu.add_separator()
-direpubmenu.add_command(label="Verify dir", command=lambda: dir_verify_epub_go())
-menubar.add_cascade(label="batch epub(s)", menu=direpubmenu)
+direpubmenu.add_command(label="Verify (dir)", command=lambda: dir_verify_epub_go())
+menubar.add_cascade(label="Batch epub(s)", menu=direpubmenu)
 
 # UTIL MENU
 utilmenu = Menu(menubar, tearoff=0)
-utilmenu.add_command(label="Verify file", command=verify_job_go)
-utilmenu.add_command(label="Beautify file", command=xml_format_btn_go)
-utilmenu.add_separator()
-utilmenu.add_command(label="View og file check", command=view_log_file_check)
-utilmenu.add_command(label="View log dir check", command=view_log_dir_check)
+# utilmenu.add_command(label="Verify file", command=verify_job_go)
+# utilmenu.add_command(label="Beautify file", command=xml_format_btn_go)
+# utilmenu.add_separator()
+utilmenu.add_command(label="View log (file check)", command=view_log_file_check)
+utilmenu.add_command(label="View log (dir check)", command=view_log_dir_check)
 utilmenu.add_separator()
 utilmenu.add_command(label="Edit init file", command=edit_ini_file)
 # utilmenu.add_separator()
