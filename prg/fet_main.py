@@ -176,19 +176,19 @@ def file_change_police_go():
 # PREPARE FOR MOODLE
 ##############
 def dir_prepare_for_moodle_go():
-    answ = y.message_box('Information !', "Cette fonctionalité n'est pas complètement vérifiée ?\n Les résultats sont à vérifier soigneusement", 52)
-    if answ == 6:
-        btnStop = tk.Button(btnFrame, text="CANCEL", textvariable="btnStop", command=lambda: ask_2_quit(),
-                            bg="light blue", state="disabled").grid(row=0, column=1, ipadx=15, padx=2, pady=5)
-        z.dir_prepare_for_moodle()
-        for b in btnFrame.winfo_children():
-            if str((b.cget("textvariable"))).strip() == "btnStop" or str((b.cget("textvariable"))).strip() == "lblInfo":
-                b.destroy()
+    # answ = y.message_box('Information !', "Cette fonctionalité n'est pas complètement vérifiée ?\n Les résultats sont à vérifier soigneusement", 52)
+    # if answ == 6:
+    btnStop = tk.Button(btnFrame, text="CANCEL", textvariable="btnStop", command=lambda: ask_2_quit(),
+                        bg="light blue", state="disabled").grid(row=0, column=1, ipadx=15, padx=2, pady=5)
+    z.dir_prepare_for_moodle()
+    for b in btnFrame.winfo_children():
+        if str((b.cget("textvariable"))).strip() == "btnStop" or str((b.cget("textvariable"))).strip() == "lblInfo":
+            b.destroy()
 
 def file_prepare_for_moodle_go():
-    answ = y.message_box('Information !', "Cette fonctionalité n'est pas complètement vérifiée ?\n Les résultats sont à vérifier soigneusement", 52)
-    if answ == 6:
-        z.file_prepare_for_moodle()
+    # answ = y.message_box('Information !', "Cette fonctionalité n'est pas complètement vérifiée ?\n Les résultats sont à vérifier soigneusement", 52)
+    # if answ == 6:
+    z.file_prepare_for_moodle()
 
 # 2_3_4 et 1_2_3_4
 ##############
@@ -366,7 +366,7 @@ singleepubmenu.add_separator()
 singleepubmenu.add_command(label="1 - 2 - 3", command=lambda: file_1_2_3_go())
 singleepubmenu.add_separator()
 singleepubmenu.add_command(label="4 - Prepare for moodle file", command=lambda: file_prepare_for_moodle_go())
-# singleepubmenu.add_command(label="1 - 2 - 3 - 4", command=lambda: file_1_2_3_4_go())
+singleepubmenu.add_command(label="1 - 2 - 3 - 4", command=lambda: file_1_2_3_4_go())
 singleepubmenu.add_separator()
 singleepubmenu.add_command(label="Verify file", command=verify_job_go)
 menubar.add_cascade(label="Single EPUB", menu=singleepubmenu)

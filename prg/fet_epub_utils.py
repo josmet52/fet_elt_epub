@@ -1149,7 +1149,7 @@ class ClasseNavBtn:
         self.dir_job_status = True
         # demande le nom du répertoire à travailler
         file_options = {}
-        file_options['initialdir'] = self.new_nav_path #self.org_path
+        file_options['initialdir'] = self.new_police_path #self.org_path
         file_options['title'] = 'Please select a directory with epub(s)'
         dir_name = filedialog.askdirectory(**file_options)
 
@@ -1236,7 +1236,7 @@ class ClasseNavBtn:
 
         # ask for the filename to work with
         in_path_file_name = filedialog.askopenfilename(title="Sélectionnez à préparer pour moodle",
-                                                     initialdir=self.new_nav_path,
+                                                     initialdir=self.new_police_path,
                                                      filetypes=[('epub files', '.epub'), ('all files', '.*')])
 
         # disable all buttons that can not be used during this task
@@ -1313,8 +1313,68 @@ class ClasseNavBtn:
             for file in only_xhtml_files:
                 u.manage_info(file, u.DISPLAY_AND_LOG, u.COLOR_BLUE)
                 working_file="".join([text_path_dir, file])
+
                 with open(working_file, "r", encoding="utf-8") as xhtml_file:
                     xhtml_data = xhtml_file.readlines()
+
+                # 1ère étape dans le <head> chercher s'il y a des références à des fichiers .css
+                begin_head_found = False
+                end_head_found = False
+                i_beg_css_name = 0
+                i_end_css_name = 0
+                css_list = []
+                css_txt_beg = "href=\"../Styles"
+                css_txt_end = ".css"
+                for l in xhtml_data:
+                    if "</head" in l :
+                        end_head_found = True
+                    if begin_head_found and not end_head_found:
+                        if ".css" in l :
+                            i_beg_css_name = l.find(css_txt_beg, 0) + len(css_txt_beg)
+                            i_end_css_name = l.find(css_txt_end) + len(css_txt_end)
+                            css_list.append(l[i_beg_css_name:i_end_css_name])
+                    if "<head" in l:
+                        begin_head_found = True
+                #
+                # print(working_file)
+                # for css_file in css_list:
+                #     print(css_file)
+                # print()
+
+                # insérer le texte des fichiers css directement dans les pages xhtml
+                begin_head_found = False
+                end_head_found = False
+                beg_style = "<style>\n"
+                end_style = "</style>\n"
+                with open(working_file, "w", encoding="utf-8") as new_xhtml_file:
+                    for l in xhtml_data:
+                        if "</head" in l :
+                            end_head_found = True
+                            # ajouter le contenu des fichiers css dans le head du fichier xhtml
+                            for css_file in css_list:
+                                css_path_file_name = "".join([css_path_dir, css_file])
+                                new_xhtml_file.writelines(beg_style)
+                                with open(css_path_file_name, "r", encoding="utf-8") as css_file_to_copy:
+                                    for css_l in css_file_to_copy:
+                                        new_xhtml_file.writelines(css_l)
+                                new_xhtml_file.writelines(end_style)
+
+
+                        if begin_head_found and not end_head_found:
+                            # supprimer les liste de référence aux fichies .css
+                            for css_file in css_list:
+                                if css_file in l:
+                                    l = ""
+                        if "<head" in l:
+                            begin_head_found = True
+                        new_xhtml_file.writelines(l)
+
+
+
+                # 2ème étape dans le <head> xhtml chercher s'il y a des références à des fichier .js  et identifie ces fichiers
+                with open(working_file, "r", encoding="utf-8") as xhtml_file:
+                    xhtml_data = xhtml_file.readlines()
+
                 begin_head_found = False
                 end_head_found = False
                 i_beg_js_name = 0
@@ -1326,14 +1386,19 @@ class ClasseNavBtn:
                     if "</head" in l :
                         end_head_found = True
                     if begin_head_found and not end_head_found:
-                        if ".js" in l:
+                        if ".js" in l and not "MathJax" in l:
                             i_beg_js_name = l.find(js_txt_beg, 0) + len(js_txt_beg)
                             i_end_js_name = l.find(js_txt_end) + len(js_txt_end)
                             js_list.append(l[i_beg_js_name:i_end_js_name])
-
                     if "<head" in l:
                         begin_head_found = True
+                #
+                # print(working_file)
+                # for js_file in js_list:
+                #     print(js_file)
+                # print()
 
+                # insérer le contenu des fichier .js directement dans les pages .xhtml
                 with open(working_file, "w", encoding="utf-8") as new_xhtml_file:
                     in_body = False
                     script_found = False
@@ -1341,11 +1406,17 @@ class ClasseNavBtn:
                     for l in xhtml_data:
                         if "<body>" in l:
                             in_body = True
-                        if "</script>" in l and in_body:
+                        if ("</script>" in l and in_body) or ("</body>" in l and not script_found) :
+                            if "</script"in l :
+                                beg_script = "//<![CDATA[\n"
+                                end_script = "//]]>\n"
+                            elif "</body" in l:
+                                beg_script = "<script>\n//<![CDATA[\n"
+                                end_script = "//]]>\n</script>\n"
                             script_found = True
                             # new_xhtml_file.writelines("</script>\n\n")
                             # new_xhtml_file.writelines("<script>\n")
-                            only_js_files = [f for f in os.listdir(js_path_dir) if os.path.isfile("".join([js_path_dir, f]))]
+                            only_js_files = [f for f in os.listdir(js_path_dir) if (os.path.isfile("".join([js_path_dir, f])) and ".js" in f)]
                             for js_in_file in only_js_files:
                                 if js_in_file in js_list:
                                     js_Path_file_name ="".join([js_path_dir, js_in_file])
@@ -1354,11 +1425,11 @@ class ClasseNavBtn:
                                     with open(js_Path_file_name, "r", encoding="utf-8") as js_file:
                                         js_data = js_file.readlines()
                                     # write the script data in the xhtml file just before the </body> tag
-                                    new_xhtml_file.writelines("//<![CDATA[\n")
+                                    new_xhtml_file.writelines(beg_script)
                                     # new_xhtml_file.writelines("<script> //<![CDATA[")
                                     for l_j in js_data:
                                         new_xhtml_file.writelines(l_j)
-                                    new_xhtml_file.writelines("//]]>\n")
+                                    new_xhtml_file.writelines(end_script)
                                     # new_xhtml_file.writelines("//]]></script>")
                             new_xhtml_file.writelines(l)
                         else:

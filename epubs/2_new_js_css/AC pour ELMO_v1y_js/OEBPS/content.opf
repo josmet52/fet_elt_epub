@@ -116,9 +116,9 @@
     <item id="recepteur_triphase_etoile_2.png" href="Images/recepteur_triphase_etoile_2.png" media-type="image/png"/>
     <item id="recepteur_triphase_triangle_1.png" href="Images/recepteur_triphase_triangle_1.png" media-type="image/png"/>
     <item id="recepteur_triphase_triangle_2.png" href="Images/recepteur_triphase_triangle_2.png" media-type="image/png"/>
-    <item id="exercises_v02_02.css" href="Styles/exercises_v02_02.css" media-type="text/css"/>
-    <item id="fet_styles_v02_04.css" href="Styles/fet_styles_v02_04.css" media-type="text/css"/>
-    <item id="pw_table_style_v02_06.css" href="Styles/pw_table_style_v02_06.css" media-type="text/css"/>
+    <item id="exercises_v02_04.css" href="Styles/exercises_v02_04.css" media-type="text/css"/>
+    <item id="fet_styles_v02_06.css" href="Styles/fet_styles_v02_06.css" media-type="text/css"/>
+    <item id="pw_table_style_v02_09.css" href="Styles/pw_table_style_v02_09.css" media-type="text/css"/>
     <item id="anim_styles_v02_03.css" href="Styles/anim_styles_v02_03.css" media-type="text/css"/>
     <item id="anim_freq-ampl-oscillo_v1f.xhtml" href="Text/anim_freq-ampl-oscillo_v1f.xhtml" media-type="application/xhtml+xml" properties="scripted"/>
     <item id="anim_freq_ampl_oscillo_v02_02.js" href="Misc/anim_freq_ampl_oscillo_v02_02.js" media-type="application/javascript"/>
