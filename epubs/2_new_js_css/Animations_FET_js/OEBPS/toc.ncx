@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta content="9ad1ba95c7d740eb8d2f01eb9770dc86" name="dtb:uid"/>
+    <meta content="1" name="dtb:depth"/>
+    <meta content="0" name="dtb:totalPageCount"/>
+    <meta content="0" name="dtb:maxPageNumber"/>
+  </head>
+  <docTitle>
+    <text>AC pour ELMO v1x</text>
+  </docTitle>
+  <navMap>
+    <navPoint id="navPoint1">
+      <navLabel>
+        <text>L'alternateur triphasé: animation</text>
+      </navLabel>
+      <content src="Text/anim_alternateur_v2a.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint2">
+      <navLabel>
+        <text>Cercle trigonométrique et/ou valeur instantanée d'un signal alternatif: animation</text>
+      </navLabel>
+      <content src="Text/anim_cercle_trigo_val_inst_v2a.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint3">
+      <navLabel>
+        <text>Animation : la chaine de l'électricité et pertes en ligne</text>
+      </navLabel>
+      <content src="Text/anim_chaine_electricite_v2a.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint4">
+      <navLabel>
+        <text>Animation : fréquence, amplitude, phase</text>
+      </navLabel>
+      <content src="Text/anim_freq_ampl_oscillo_v2a.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint5">
+      <navLabel>
+        <text>Animation : la chaine du rendement</text>
+      </navLabel>
+      <content src="Text/anim_rendement_v1a.xhtml"/>
+    </navPoint>
+    <navPoint id="navPoint6">
+      <navLabel>
+        <text>Références</text>
+      </navLabel>
+      <content src="Text/page_reference.xhtml"/>
+    </navPoint>
+  </navMap>
+</ncx>

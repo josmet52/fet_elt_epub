@@ -1,0 +1,89 @@
+* {
+    font-family : Arial SansSerif;
+    font-size: 14px;
+}
+.canvas	{
+    background-color: #ebfaff;
+    border: 1px solid black;
+    border-radius: 10px;
+    color: black;
+    cursor: default;
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+    float : left;
+}
+.fet_tableau {
+    display: table;
+    margin: 5px;
+    padding: 0px;
+}
+.fet_ligne {
+    display: table-row;
+    padding: 0px;
+}
+.fet_cellule{
+    display: table-cell;
+    font-size: 12px;
+    padding: 20px 5px;
+    text-align: center;
+    vertical-align: top;
+}
+.slide-container,
+.info-txt-container {
+    border-radius: 5px;
+    background-color: #ebfaff;
+    border : 1px #2a7189 solid;
+    padding : 5px;
+    width: 100px;
+    margin : 2px;
+    display: inline-block;
+    text-align : center;
+}
+.slide-container {
+    margin: 5px 0px 5px 0px;
+    padding-top: 10px;
+    height: auto;
+    background-color: lightcyan;
+}
+.slider {
+    width: 98%;
+    height : 15px;
+    padding-top: 0px;
+    margin: 0px;
+    background-color: gray;
+    opacity: 0.6;
+}
+.slider:hover {
+    cursor: pointer;
+    color : red;
+    opacity: 1;
+}
+.fet_cellule_in {
+    vertical-align: middle;
+}
+
+
+.canvas{
+    border: 1px solid greenyellow;
+}
+.fet_tableau {
+    border: 1px solid blue;
+}
+.fet_ligne {
+    border: 1px solid green;
+}
+.fet_cellule {
+    border: 1px solid coral;
+}
+.fet_tableau,
+.fet_ligne,
+.fet_cellule,
+.canvas{
+    border-width: 0px;
+    padding: 0px;
+}
+
+
+

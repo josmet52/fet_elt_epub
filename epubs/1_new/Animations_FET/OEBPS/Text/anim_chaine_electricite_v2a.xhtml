@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+<head>
+    <title>Animation_chaine_electrique_pertes_ligne</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../Styles/fet_styles_v1r.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v1r.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/anim_styles_v02_03.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/anim_chaine_electricite_v02_00.js" type="text/javascript"><!--empty--></script>
+    <script src="../Misc/jquery_v1_12_4.js" type="text/javascript"></script>
+</head>
+
+<body onload="init()">
+    <h2> Animation : la chaine de l'électricité et pertes en ligne</h2>
+    <div class="fet_tableau">
+        <div class="fet_ligne">
+            <div class="fet_cellule_canvas" id="cellule_canvas_id">
+                <canvas id="canvas_display_id">
+                    <img src="../Images/ChemEl_2.png" alt="Image_le_chemin_electricite"/>Holala !! ce browser ne supporte pas les animations
+                    <br/>
+                </canvas>
+            </div>
+            <div class="fet_cellule" id="cellule_input_lignes_id">
+                <div class="fet_ligne">
+                    <div class="fet_cellule_entree_valeurs" id="troiscells1" style="color:red;">
+                        <p style="text-decoration: underline; margin:5px;"> <b>Haute tension</b>
+                        </p>
+                        Tension [kV]
+                        <br/>
+                        <label>230
+                            <input type="radio" name="radio_u_ht" value="230000" checked="checked"/>
+                        </label>
+                        <label>100
+                            <input type="radio" name="radio_u_ht" value="100000"/>
+                        </label>
+                        <br/>
+                        Distance [km]
+                        <br/>
+                        <label>500
+                        <input type="radio" name="radio_d_ht" value="500000" checked="checked"/>
+                        </label>
+                        <label>100
+                        <input type="radio" name="radio_d_ht" value="100000"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="fet_ligne">
+                    <div class="fet_cellule_entree_valeurs" id="troiscells2" style="color:blue;">
+                        <p style="text-decoration: underline; margin:5px;"> <b>Moyenne tension</b>
+                        </p>
+                        Tension [kV]
+                        <br/>
+                        <label>16
+                        <input type="radio" name="radio_u_mt" value="16000" checked="checked"/>
+                        </label>
+                        <label>5
+                        <input type="radio" name="radio_u_mt" value="5000"/>
+                        </label>
+                        <br/>
+                        Distance [km]
+                        <br/>
+                        <label>50
+                        <input type="radio" name="radio_d_mt" value="50000"/>
+                        </label>
+                        <label>20
+                        <input type="radio" name="radio_d_mt" value="20000" checked="checked"/>
+                        </label>
+                    </div>
+                </div>
+               <div class="fet_ligne">
+                    <div class="fet_cellule_entree_valeurs" id="troiscells3" style="color:green;">
+                        <p style="text-decoration: underline; margin:5px;"> <b>Basse tension</b>
+                        </p>
+                        Tension [V]
+                        <br/>
+                        <label>230
+                        <input type="radio" name="radio_u_bt" value="230" checked="checked"/>
+                        </label>
+                        <label>110
+                        <input type="radio" name="radio_u_bt" value="110"/>
+                        </label>
+                        <br/>
+                        Distance [m]
+                        <br/>
+                        <label>500
+                        <input type="radio" name="radio_d_bt" value="500"/>
+                        </label>
+                        <label>100
+                        <input type="radio" name="radio_d_bt" value="100" checked="checked"/>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="fet_cellule" id="cellule_input_reseaux_id">
+                <div class="fet_ligne">
+                    <div class="fet_cellule_entree_valeurs" id="deuxcells1" style="color:black;">
+                        <br/>
+                        <br/>
+                        <p style="text-decoration: underline; margin:5px;"> <b>Nombre de <br/>sous réseaux</b></p>
+                        <br/>
+                        <b>Moyenne tension</b>
+                        <br/>
+                        <label>3
+                        <input type="radio" name="radio_nbre_mt" value="3" checked="checked"/>
+                        </label>
+                        <label>1
+                        <input type="radio" name="radio_nbre_mt" value="1"/>
+                        </label>
+                        <br/>
+                        <b>Basse tension</b>
+                        <br/>
+                        <label>3
+                        <input type="radio" name="radio_nbre_bt" value="3" checked="checked"/>
+                        </label>
+                        <label>1
+                        <input type="radio" name="radio_nbre_bt" value="1"/>
+                        </label>
+                    </div>
+                </div>
+                <div class="fet_ligne">
+                    <div class="fet_cellule_entree_valeurs" id="deuxcells2" style="color:black;">
+                        <p style="text-decoration: underline; margin:5px;"> <b>Village</b>
+                        </p>
+                        <br/>
+                        <b>Nombre villas</b>
+                        <br/>
+                        <label>50
+                        <input type="radio" name="radio_n_villa" value="50"/>
+                        </label>
+                        <label>10
+                        <input type="radio" name="radio_n_villa" value="10" checked="checked"/>
+                        </label>
+                        <br/>
+                        <b>Puissance / villa</b>
+                        <br/>
+                        <label>5 kW
+                        <input type="radio" name="radio_p_villa" value="5000"/>
+                        </label>
+                        <label>2 kW
+                        <input type="radio" name="radio_p_villa" value="2000" checked="checked"/>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fet_tableau">
+        <div class="fet_ligne">
+            <div class="fet_cellule_comment">
+                <p style="text-align:left; padding-left:20px;"> <b>Conditions de calcul</b>
+                    <br/>Les conducteurs HT et MT sont en Aldrey (ρ = 0,033 Ω mm²/m) et cuivre pour la BT (ρ = 0,0175 Ω mm²/m) . Les fils ont les diametres suivants : HT 15 mm, MT 10 mm, BT 6 mm.
+                </p>
+            </div>
+            <div class="fet_cellule_comment">
+                <p style="text-align:left; padding-left:20px;"><b>Remarque</b>
+                    <br/>La distribution locale se fait en étoile avec une distance moyenne telle qu'indiquée.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

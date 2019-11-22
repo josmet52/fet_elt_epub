@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html>
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr" lang="fr">
+
+<head>
+    <title>
+        Animation_chaine_rendement
+    </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="../Styles/fet_styles_v02_07.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/pw_table_style_v02_10.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/anim_styles_v02_03.css" rel="stylesheet" type="text/css"/>
+    <script src="../Misc/anim_rendement_v02_03.js" type="text/javascript">
+    </script>
+</head>
+<body onload="initRendement()">
+    <h2>Animation : la chaine du rendement</h2>
+    <div class="fet_tableau">
+        <div class="fet_ligne">
+            <div class="fet_cellule" id="cellule_canvas_id">
+                <canvas class="canvas" id="canvas_display_id">
+                    <img src="../Images/rendement_1f.png" alt="Image_le_chemin_electricite"/>
+                    Holala !! ce browser ne supporte                pas les animations
+                    <br/>
+                </canvas>
+            </div>
+            <div class="fet_cellule_in">
+                <div class="fet_ligne">
+                    <div class="slide-container">
+                        <label>
+                            <input class="slider" id="slider_turbine_id" type="range" min="50" max="100" value="80" onchange="displayValue()"/>
+                        </label>
+                        <p class="lbl-slider">
+                            Turbine
+                        </p>
+                        <div id="r_turbine_id">
+                            η = 80%
+                        </div>
+                    </div>
+                </div>
+                <br/>
+                <div class="fet_ligne">
+                    <div class="slide-container">
+                        <label>
+                            <input class="slider" id="slider_alternateur_id" type="range" min="50" max="100" value="85" onchange="displayValue()"/>
+                        </label>
+                        <p class="lbl-slider" id="txt_freq_id">
+                            Alternateur
+                        </p>
+                        <div id="r_alternateur_id">
+                            η = 85%
+                        </div>
+                    </div>
+                    <br/>
+                    <br/>
+                </div>
+                <br/>
+                <div class="fet_ligne">
+                    <div class="slide-container">
+                        <label>
+                            <input class="slider" id="slider_transfo_id" type="range" min="50" max="100" value="90" onchange="displayValue()"/>
+                        </label>
+                        <p class="lbl-slider" id="txt_phase_id">
+                            Transformateur
+                        </p>
+                        <div id="r_transfo_id">
+                            η = 90%
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<br/></body>
+</html>
+
