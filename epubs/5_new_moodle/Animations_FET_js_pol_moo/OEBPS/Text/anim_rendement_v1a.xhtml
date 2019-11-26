@@ -764,7 +764,7 @@ img{
         <div class="fet_ligne">
             <div class="fet_cellule" id="cellule_canvas_id">
                 <canvas class="canvas" id="canvas_display_id">
-                    <img src="rendement_1f.png" alt="Image_le_chemin_electricite"/>
+                    <img src="../Images/rendement_1f.png" alt="Image_le_chemin_electricite"/>
                     Holala !! ce browser ne supporte                pas les animations
                     <br/>
                 </canvas>
@@ -825,7 +825,7 @@ function initRendement() {
     ctx = canvas_element.getContext("2d");
 
     image_de_fond = new Image();
-    image_de_fond.src = 'rendement_1f.png';
+    image_de_fond.src = '../Images/rendement_1f.png';
 
     // f_reduction_w = 0.85;
     // f_reduction_h = 0.85;
@@ -865,7 +865,7 @@ function onResizeActionRendement() {
 
     // var disp_w = (f_reduction_w * window.innerWidth);
     // var disp_h = (f_reduction_h * window.innerHeight);
-    var scale_factor = 0.8;
+    var scale_factor = 0.85;
     var disp_w = (scale_factor * window.innerWidth);
     var disp_h = (scale_factor * window.innerHeight);
 

@@ -274,9 +274,9 @@ class ClasseFetLib():
                     if attrib[0] == "media-type":
                         a_media_type = attrib[1]
 
-                if a_file_ext == ".xhtml":
-                    if self.DEBUG: print (a_file_name)
-                    if self.DEBUG: print(opf_line.replace("\n", "").strip())
+                # if a_file_ext == ".xhtml":
+                #     if self.DEBUG: print (a_file_name)
+                #     if self.DEBUG: print(opf_line.replace("\n", "").strip())
                     # for attr in attrib_list:
                     #     print(attr)
                     # print()
@@ -536,7 +536,7 @@ class ClasseFetLib():
                     # if nbre_tags > 1 :
                     #     print(l)
                     script_data.append(l.replace("</form>", ""))
-## ZONE A PROBLEME DEBUT ====================================================================================
+## ZONE A PROBLEME FIN ====================================================================================
             if "</body>" in l:
                 body_found = False
             if "</script>" in l:

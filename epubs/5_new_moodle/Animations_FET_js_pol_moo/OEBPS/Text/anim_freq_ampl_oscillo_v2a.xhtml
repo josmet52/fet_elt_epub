@@ -1005,14 +1005,13 @@ function onResizeActionOscillo() {
         cel_phase.style.display = "none";
     }
 
-    var scale_factor = 0.5;
-    var w0 = parseInt(scale_factor * window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth);
-    var h0 = parseInt(scale_factor * window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight);
+    // var w = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+    // var h = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
     // var w0 = parseInt(0.95 * window.innerWidth);
     // var h0 = parseInt(0.95 * window.innerHeight);
-    // var w0 = parseInt(scale_factor * window.innerWidth);
-    // var h0 = parseInt(scale_factor * window.innerHeight);
-
+    var scale_factor = 0.95;
+    var w0 = parseInt(scale_factor * window.innerWidth);
+    var h0 = parseInt(scale_factor * window.innerHeight);
 
     xy_factor = 1.2;
     h_factor = 0.75;
@@ -1024,8 +1023,6 @@ function onResizeActionOscillo() {
         h1 = w0 * h_factor;
         w1 = h1 * xy_factor;
     }
-
-
 
     cel_tension.width = h1 / 3 ;
     cel_phase.width = h1 / 3 ;

@@ -115,7 +115,6 @@ class ClasseFet:
         if not os.path.isdir(self.log_path):
             os.mkdir(self.log_path)
 
-
         self.nbre_passes = 0
         self.nbre_erreurs = 0
         self.second_try = 0
@@ -186,181 +185,6 @@ class ClasseFet:
         self.TOC_DEEP = ini.TOC_DEEP
         self.FONT_NAME = ini.FONT_NAME
         self.VERIF_EPUB = ini.VERIF_EPUB
-
-        # # lecture des répertoires dans le fichier .ini
-        # self.ini_path_file_name = "".join([self.cwd, self.INI_FILE_NAME])
-        # if os.path.isfile(self.ini_path_file_name):
-        #
-        #     with open(self.ini_path_file_name, "r", encoding="utf-8") as f_init:
-        #         r = f_init.readlines()
-        #         for p in r:
-        #             x = p.split("=")
-        #             x[0] = x[0].strip().lower()
-        #             if len(x) > 1 :
-        #                 x[1] = x[1].strip().lower()
-        #
-        #                 # ne pas traiter les commentaires
-        #                 if x[0][:1] != "#":
-        #
-        #                     if x[0] == "short_strings_names_js":
-        #                         x_js = x[1].split(" ")
-        #                         for x_js_strings in x_js:
-        #                             self.strings_names_js.append(x_js_strings)
-        #
-        #                     if x[0] == "short_strings_names_css":
-        #                         x_css = x[1].split(" ")
-        #                         for x_css_strings in x_css:
-        #                             self.strings_names_css.append(x_css_strings)
-        #
-        #                     if x[0] == "short_mandatory_files_js":
-        #                         x_js = x[1].split(" ")
-        #                         for x_js_strings in x_js:
-        #                             self.mandatory_names_js.append(x_js_strings)
-        #
-        #                     if x[0] == "short_mandatory_files_css":
-        #                         x_css = x[1].split(" ")
-        #                         for x_css_strings in x_css:
-        #                             self.mandatory_names_css.append(x_css_strings)
-        #
-        #                     if x[0] == "ini_org_dir":
-        #                         self.org_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-        #                                             "").replace("//", "/")
-        #
-        #                     elif x[0] == "ini_new_dir":
-        #                         self.new_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-        #                                             "").replace("//", "/")
-        #
-        #                     elif x[0] == "ini_tmp_dir":
-        #                         self.tmp_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-        #                                             "").replace("//", "/")
-        #
-        #                     elif x[0] == "ini_new_nav_dir":
-        #                         self.new_nav_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-        #                                             "").replace("//", "/")
-        #
-        #                     elif x[0] == "ini_new_js_css_dir":
-        #                         self.new_js_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-        #                                             "").replace("//", "/")
-        #
-        #                     elif x[0] == "ini_new_moodle_dir":
-        #                         self.new_moo_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-        #                                             "").replace("//", "/")
-        #
-        #                     elif x[0] == "ini_new_police_dir":
-        #                         self.new_police_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-        #                                             "").replace("//", "/")
-        #
-        #                     elif x[0] == "ini_js_css_ok_dir":
-        #                         self.js_css_path = "".join([x[1].replace("\"", ""), "/"]).replace("\n", "").replace(" ",
-        #                                             "").replace("//", "/")
-        #
-        #                     elif x[0] == "ini_var_debug" :
-        #                         if x[1].replace("\n", "") == "true" : self.DEBUG = True
-        #                         else : self.DEBUG = False
-        #
-        #                     elif x[0] == "ini_var_log_this_run" :
-        #                         if x[1].replace("\n", "") == "true" : self.LOG_THIS_RUN = True
-        #                         else : self.LOG_THIS_RUN = False
-        #
-        #                     elif x[0] == "ini_var_verbose" :
-        #                         if x[1].replace("\n", "") == "true" : self.VERBOSE = True
-        #                         else : self.VERBOSE = False
-        #
-        #                     elif x[0] == "ini_var_with_dir" :
-        #                         if x[1].replace("\n", "") == "true" : self.WITH_DIR = True
-        #                         else : self.WITH_DIR = False
-        #
-        #                     elif x[0] == "ini_var_with_zip" :
-        #                         if x[1].replace("\n", "") == "true" : self.WITH_ZIP = True
-        #                         else : self.WITH_ZIP = False
-        #
-        #                     elif x[0] == "ini_var_img_size_max" :
-        #                         if x[1].isnumeric() : self.IMG_SIZE_MAX = int(x[1])
-        #                         else : self.IMG_SIZE_MAX = 20000
-        #
-        #                     elif x[0] == "ini_var_toc_deep" :
-        #                         self.TOC_DEEP = x[1]
-        #
-        #                     elif x[0] == "ini_var_font" :
-        #                         self.FONT_NAME = x[1]
-        #
-        #                     elif x[0] == "ini_var_verif_epub" :
-        #                         if x[1].replace("\n", "") == "true" : self.VERIF_EPUB = True
-        #                         else : self.VERIF_EPUB = False
-
-            # if self.DEBUG:
-            #     print("\n", "ORG_PATH", self.org_path, "\n", "NEW_PATH", self.new_path, "\n", "TEMP_PATH",
-            #                      self.tmp_path, "\n", "LOG_PATH", self.log_path, "\n",
-            #                      self.js_css_path, "\n")
-            # if not (org_ok and new_ok and tmp_ok and log_ok and js_css_ok):
-            #     msg_info = "".join(["Le fichier fet_epub.ini n'est pas complet ou comporte des erreurs. \n"
-            #                         "Il doit definir les répertoires \n"
-            #                         "org_dir: qui contient les fichiers source\n"
-            #                         "new_dir: qui est le répertoire de sortie des fichiers modifiés\n"
-            #                         "tmp_dir: qui est le répertoire temporaire\n"
-            #                         "js_dir: qui est le répertoire des fichiers java script\n\n"
-            #                         "Le programme se termine ici.\n"
-            #                         "Corrigez le fichier .ini et relancez le programme.\n\n"
-            #                         "Les entrées sont de la forme :\n"
-            #                         "logDir=\"C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/log\""])
-            #     messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
-            #     exit()
-
-            # if not os.path.isdir(self.new_path):
-            #     os.mkdir(self.new_path)
-            # if not os.path.isdir(self.tmp_path):
-            #     os.mkdir(self.tmp_path)
-            # if not os.path.isdir(self.org_path):
-            #     msg_info = "".join([
-            #                     "Le répertoire d'entrée org_dir n'existe pas\n"
-            #                     "ou le fichier fet_epub.ini n'est pas complet ou comporte des erreurs. "
-            #                     "veuillez corriger le problème avant de relancer le programme\n\n"
-            #                     "Le fichier fet_epub.ini doit se trouver dans le répertoire de lancement de l'application "
-            #                     "et doit definir les répertoires suivants\n\n"
-            #                     "org_dir: qui contient les fichiers epub à travailler (entrée)\n"
-            #                     "new_dir: qui est le répertoire de sortie des fichiers modifiés\n"
-            #                     "tmp_dir: qui est le répertoire de travail temporaire\n"
-            #                     "js_dir: qui est le répertoire des fichiers java script\n\n"
-            #                     "Les entrées sont de la forme :\n"
-            #                     "logDir=\"C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/log\""
-            #                     "\nLe programme se termine ici.\n"])
-            #     messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
-            #     messagebox.showerror("Fichier ini défectueux \n", msg_info, icon='error')
-            # if not os.path.isdir(self.js_css_path):
-            #     msg_info = "".join([
-            #                     "Le répertoire d'entrée js_dir n'existe pas\n"
-            #                     "ou le fichier fet_epub.ini n'est pas complet ou comporte des erreurs. "
-            #                     "veuillez corriger le problème avant de relancer le programme\n\n"
-            #                     "Le fichier fet_epub.ini doit se trouver dans le répertoire de lancement de l'application "
-            #                     "et doit definir les répertoires suivants\n\n"
-            #                     "org_dir: qui contient les fichiers epub à travailler (entrée)\n"
-            #                     "new_dir: qui est le répertoire de sortie des fichiers modifiés\n"
-            #                     "tmp_dir: qui est le répertoire de travail temporaire\n"
-            #                     "js_dir: qui est le répertoire des fichiers java script\n\n"
-            #                     "Les entrées sont de la forme :\n"
-            #                     "logDir=\"C:/Users/jmetr/_data/mandats/FET_new/fet_elt_epub/epubs/log\""
-            #                     "\nLe programme se termine ici.\n"])
-            #     messagebox.showerror("Fichier ini défectueux \n", "".join([msg_info]), icon='error')
-            #     quit()
-
-        #     n_epub = 0
-        #     for files in os.listdir(self.org_path):
-        #         if not os.path.isdir(self.org_path + files):
-        #             f = files.split(".")
-        #             if f[1] == "epub":
-        #                 n_epub += 1
-        #     if n_epub == 0:
-        #         msg = "Il n\'y a pas de fichier epub dans le répertoire d\'entrée orgPath\n" \
-        #               "Le programme va se fermer!\n\n" \
-        #               "Corrigez le chemin des fichiers d'entrée puis relancez le programme."
-        #         messagebox.showerror("Fichier ini défectueux \n", msg, icon='error')
-        #         quit()
-        # else:
-        #     msg = "".join(["Le fichier fet_epub.ini doit se trouver dans le répertoire de lancement de l'application.\n"
-        #                    "Déplacez le fichier dans le bon répertoire et relancez l'application.\n\n"
-        #                    "Le programme va se fermer."])
-        #     messagebox.showerror("Fichier ini manquant \n", msg, icon='error')
-        #     quit()
 
     def file_improve_pw_epub(self):
         """
@@ -1035,6 +859,7 @@ class ClasseFet:
                     del xhtml_data[i]
                 # insérer les nouvelles références
                 i = 0
+                index = 0
                 head_found = False
                 for l in xhtml_data:
                     if "</head>" in l:

@@ -138,7 +138,7 @@
     <item id="anim_alternateur_v02_05.js" href="Misc/anim_alternateur_v02_05.js" media-type="application/javascript"/>
     <item id="anim_cercle_trigo_val_inst_v02_04.js" href="Misc/anim_cercle_trigo_val_inst_v02_04.js" media-type="application/javascript"/>
     <item id="anim_freq_ampl_oscillo_v02_05.js" href="Misc/anim_freq_ampl_oscillo_v02_05.js" media-type="application/javascript"/>
-    <item id="anim_rendement_v02_03.js" href="Misc/anim_rendement_v02_03.js" media-type="application/javascript"/>
+    <item id="anim_rendement_v02_04.js" href="Misc/anim_rendement_v02_04.js" media-type="application/javascript"/>
     <item id="anim_chaine_electricite_v02_00.js" href="Misc/anim_chaine_electricite_v02_00.js" media-type="application/javascript"/>
     <item id="jquery_v1_12_4.js" href="Misc/jquery_v1_12_4.js" media-type="application/javascript"/>
     <item id="anim_styles_v02_03.css" href="Styles/anim_styles_v02_03.css" media-type="text/css"/>
